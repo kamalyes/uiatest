@@ -1,0 +1,723 @@
+2020-09-08 23:32:18,622 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:32:18,652 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:32:18,677 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:32:18,677 - Adb_Tools.py [line:71] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:32:18,705 - Adb_Tools.py [line:78] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:32:18,705 - Adb_Tools.py [line:37] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:32:18,705 - Adb_Tools.py [line:39] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:32:18,705 - Adb_Tools.py [line:47] - ERROR: [WinError 3] 系统找不到指定的路径。: 'D:\\Work_Spaces\\PyCharm_Project\\UiAutomationFramework\\APKPath'
+2020-09-08 23:32:18,730 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:32:48,257 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:32:48,283 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:32:48,307 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:32:48,307 - Adb_Tools.py [line:71] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:32:48,333 - Adb_Tools.py [line:78] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:32:48,333 - Adb_Tools.py [line:37] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:32:48,333 - Adb_Tools.py [line:39] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:32:48,358 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:33:22,226 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:33:22,251 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:33:22,275 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:33:22,276 - Adb_Tools.py [line:71] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:33:22,302 - Adb_Tools.py [line:78] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:33:22,302 - Adb_Tools.py [line:37] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:33:22,302 - Adb_Tools.py [line:39] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:33:22,327 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:33:31,038 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:33:31,071 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:33:31,103 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:33:31,103 - Adb_Tools.py [line:71] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:33:31,134 - Adb_Tools.py [line:78] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:33:31,135 - Adb_Tools.py [line:37] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:33:31,135 - Adb_Tools.py [line:39] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:33:31,161 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:33:31,161 - Adb_Tools.py [line:71] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:33:31,188 - Adb_Tools.py [line:78] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:33:31,215 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:34:17,672 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:34:17,698 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:34:17,708 - Adb_Tools.py [line:37] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:34:17,708 - Adb_Tools.py [line:39] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:34:17,735 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:35:50,760 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:35:50,785 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:35:50,809 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:35:50,809 - Adb_Tools.py [line:71] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:35:50,834 - Adb_Tools.py [line:78] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:35:50,835 - Adb_Tools.py [line:37] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:35:50,835 - Adb_Tools.py [line:39] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:35:50,859 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:35:50,859 - Adb_Tools.py [line:71] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:35:50,885 - Adb_Tools.py [line:78] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:35:50,909 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:35:59,825 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:35:59,852 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:35:59,877 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:35:59,877 - Adb_Tools.py [line:71] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:35:59,905 - Adb_Tools.py [line:78] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:35:59,905 - Adb_Tools.py [line:37] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:35:59,906 - Adb_Tools.py [line:39] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:35:59,931 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:35:59,931 - Adb_Tools.py [line:71] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:35:59,956 - Adb_Tools.py [line:78] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:36:07,784 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:36:07,809 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:36:07,834 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:36:07,834 - Adb_Tools.py [line:71] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:36:07,860 - Adb_Tools.py [line:78] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:36:07,860 - Adb_Tools.py [line:37] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:36:07,860 - Adb_Tools.py [line:39] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:36:33,843 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:36:38,648 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:36:38,676 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:36:38,701 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:36:38,701 - Adb_Tools.py [line:71] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:36:38,728 - Adb_Tools.py [line:78] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:36:38,728 - Adb_Tools.py [line:37] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:36:38,728 - Adb_Tools.py [line:39] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:36:53,179 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:36:53,205 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:37:00,428 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:37:00,454 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:37:00,455 - Adb_Tools.py [line:71] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:37:00,480 - Adb_Tools.py [line:78] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:37:00,480 - Adb_Tools.py [line:37] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:37:00,480 - Adb_Tools.py [line:39] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:37:05,678 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:37:05,678 - Adb_Tools.py [line:37] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:37:05,678 - Adb_Tools.py [line:39] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:37:12,566 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:37:12,592 - Adb_Tools.py [line:59] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:37:12,592 - Adb_Tools.py [line:71] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:37:12,618 - Adb_Tools.py [line:78] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:39:15,746 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:39:22,996 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:39:56,393 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:39:56,394 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:39:56,394 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:40:07,208 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:40:07,208 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:40:07,208 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:40:07,235 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:40:07,235 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:40:07,261 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:40:07,267 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:40:07,267 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:40:07,267 - Adb_Tools.py [line:99] - INFO: 检索到的设备：None
+2020-09-08 23:40:07,267 - Adb_Tools.py [line:110] - ERROR: 'NoneType' object is not iterable
+2020-09-08 23:40:32,420 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:40:32,446 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:40:32,446 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:40:32,471 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:40:32,474 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:40:32,474 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:40:32,499 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:40:32,500 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:40:32,527 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:40:32,530 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:40:32,530 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:40:32,530 - Adb_Tools.py [line:99] - INFO: 检索到的设备：None
+2020-09-08 23:40:32,530 - Adb_Tools.py [line:110] - ERROR: 'NoneType' object is not iterable
+2020-09-08 23:40:42,234 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:40:42,259 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:40:42,259 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:40:42,285 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:40:42,285 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:40:42,285 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:40:42,310 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:40:42,310 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:40:42,336 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:40:42,336 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:40:42,336 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:40:42,337 - Adb_Tools.py [line:99] - INFO: 检索到的设备：['D8H6R19630008844']
+2020-09-08 23:40:42,337 - Adb_Tools.py [line:101] - INFO: 当前被安装终端ID：D8H6R19630008844，安装过程中请勿移除USB连接！！！
+2020-09-08 23:40:42,363 - Adb_Tools.py [line:108] - ERROR: 设备：D8H6R19630008844安装失败！！！
+2020-09-08 23:41:22,292 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:41:22,319 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:41:22,319 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:41:22,345 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:41:22,345 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:41:22,345 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:41:22,369 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:41:22,370 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:41:22,399 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:41:22,399 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:41:22,399 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:41:22,400 - Adb_Tools.py [line:99] - INFO: 检索到的设备：['D8H6R19630008844']
+2020-09-08 23:41:22,400 - Adb_Tools.py [line:101] - INFO: 当前被安装终端ID：D8H6R19630008844，安装过程中请勿移除USB连接！！！
+2020-09-08 23:41:22,426 - Adb_Tools.py [line:108] - ERROR: 设备：D8H6R19630008844安装失败！！！Performing Streamed Install
+2020-09-08 23:43:53,996 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:43:54,022 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:43:54,022 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:43:54,048 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:43:54,048 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:43:54,048 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:43:54,072 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:43:54,072 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:43:54,099 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:43:54,099 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:43:54,099 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:43:54,099 - Adb_Tools.py [line:99] - INFO: 检索到的设备：['D8H6R19630008844']
+2020-09-08 23:43:54,099 - Adb_Tools.py [line:101] - INFO: 当前被安装终端ID：D8H6R19630008844，安装过程中请勿移除USB连接！！！
+2020-09-08 23:43:54,126 - Adb_Tools.py [line:108] - ERROR: 设备：D8H6R19630008844安装失败！！！
+2020-09-08 23:46:08,475 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:46:08,501 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:46:08,501 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:46:08,527 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:46:08,527 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:46:08,527 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:46:08,551 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:46:08,552 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:46:08,580 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:46:08,580 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:46:08,580 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:46:08,580 - Adb_Tools.py [line:99] - INFO: 检索到的设备：['D8H6R19630008844']
+2020-09-08 23:46:08,580 - Adb_Tools.py [line:101] - INFO: 当前被安装终端ID：D8H6R19630008844，安装过程中请勿移除USB连接！！！
+2020-09-08 23:46:08,606 - Adb_Tools.py [line:108] - ERROR: 设备：D8H6R19630008844安装失败！！！
+2020-09-08 23:46:22,355 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:46:22,381 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:46:22,381 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:46:22,406 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:46:22,406 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:46:22,406 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:46:22,431 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:46:22,431 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:46:22,459 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:46:22,459 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:46:22,459 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:46:22,459 - Adb_Tools.py [line:99] - INFO: 检索到的设备：['D8H6R19630008844']
+2020-09-08 23:46:22,459 - Adb_Tools.py [line:101] - INFO: 当前被安装终端ID：D8H6R19630008844，安装过程中请勿移除USB连接！！！
+2020-09-08 23:46:22,486 - Adb_Tools.py [line:108] - ERROR: 设备：D8H6R19630008844安装失败！！！
+2020-09-08 23:48:36,603 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:48:36,629 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:48:36,629 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:48:36,655 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:48:36,655 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:48:36,655 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:48:36,680 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:48:36,680 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:48:36,708 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:48:36,708 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:48:36,708 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:48:36,708 - Adb_Tools.py [line:99] - INFO: 检索到的设备：['D8H6R19630008844']
+2020-09-08 23:48:36,708 - Adb_Tools.py [line:101] - INFO: 当前被安装终端ID：D8H6R19630008844，安装过程中请勿移除USB连接！！！
+2020-09-08 23:48:36,734 - Adb_Tools.py [line:108] - ERROR: 设备：D8H6R19630008844安装失败！！！
+2020-09-08 23:49:01,463 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:49:01,489 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:49:01,489 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:49:01,515 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:49:01,515 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:49:01,515 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:49:01,540 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:49:01,540 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:49:01,566 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:49:01,566 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:49:01,566 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:49:01,566 - Adb_Tools.py [line:99] - INFO: 检索到的设备：['D8H6R19630008844']
+2020-09-08 23:49:01,566 - Adb_Tools.py [line:101] - INFO: 当前被安装终端ID：D8H6R19630008844，安装过程中请勿移除USB连接！！！
+2020-09-08 23:49:01,592 - Adb_Tools.py [line:108] - ERROR: 设备：D8H6R19630008844安装失败！！！
+2020-09-08 23:49:01,617 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:49:01,617 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:49:01,644 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:49:14,958 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:49:14,983 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:49:14,984 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:49:15,009 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:49:15,009 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:49:15,009 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:49:15,034 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:49:15,034 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:49:15,062 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:49:15,062 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:49:15,062 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:49:15,062 - Adb_Tools.py [line:99] - INFO: 检索到的设备：['D8H6R19630008844']
+2020-09-08 23:49:15,062 - Adb_Tools.py [line:101] - INFO: 当前被安装终端ID：D8H6R19630008844，安装过程中请勿移除USB连接！！！
+2020-09-08 23:49:15,088 - Adb_Tools.py [line:108] - ERROR: 设备：D8H6R19630008844安装失败！！！
+2020-09-08 23:49:15,113 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:49:15,113 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:49:15,140 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:49:27,603 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:49:27,631 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:49:27,631 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:49:27,658 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:49:27,658 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:49:27,658 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:49:27,688 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:49:27,689 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:49:27,718 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:49:27,718 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:49:27,718 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:49:27,718 - Adb_Tools.py [line:99] - INFO: 检索到的设备：['D8H6R19630008844']
+2020-09-08 23:49:27,718 - Adb_Tools.py [line:101] - INFO: 当前被安装终端ID：D8H6R19630008844，安装过程中请勿移除USB连接！！！
+2020-09-08 23:49:27,745 - Adb_Tools.py [line:108] - ERROR: 设备：D8H6R19630008844安装失败！！！
+2020-09-08 23:49:27,770 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:49:27,771 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:49:27,797 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:49:36,644 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:49:36,672 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:49:36,672 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:49:36,697 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:49:36,697 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:49:36,697 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:49:36,722 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:49:36,722 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:49:36,747 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:49:36,747 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:49:36,747 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:49:36,747 - Adb_Tools.py [line:99] - INFO: 检索到的设备：['D8H6R19630008844']
+2020-09-08 23:49:36,747 - Adb_Tools.py [line:101] - INFO: 当前被安装终端ID：D8H6R19630008844，安装过程中请勿移除USB连接！！！
+2020-09-08 23:49:36,773 - Adb_Tools.py [line:108] - ERROR: 设备：D8H6R19630008844安装失败！！！
+2020-09-08 23:49:36,798 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:49:36,798 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:49:36,823 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:51:01,985 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:51:02,012 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:51:02,012 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:51:02,042 - Adb_Tools.py [line:79] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-08 23:51:02,042 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:51:02,042 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:51:02,069 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:51:02,069 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:51:02,098 - Adb_Tools.py [line:79] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-08 23:51:02,098 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:51:02,098 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:51:02,123 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:51:02,123 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:51:02,149 - Adb_Tools.py [line:79] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-08 23:51:09,038 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:51:09,064 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:51:09,064 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:51:09,090 - Adb_Tools.py [line:79] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-08 23:51:09,090 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:51:09,090 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:51:09,115 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:51:09,115 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:51:09,141 - Adb_Tools.py [line:79] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-08 23:51:09,141 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:51:09,141 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:51:09,166 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:51:09,166 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:51:09,192 - Adb_Tools.py [line:79] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-08 23:51:12,006 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:51:12,031 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:51:12,031 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:51:12,058 - Adb_Tools.py [line:79] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-08 23:51:12,058 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:51:12,058 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:51:12,088 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:51:12,088 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:51:12,114 - Adb_Tools.py [line:79] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-08 23:51:12,114 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:51:12,114 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:51:12,139 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:51:12,139 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:51:12,165 - Adb_Tools.py [line:79] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-08 23:51:14,321 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:51:14,346 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:51:14,346 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:51:14,372 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:51:14,372 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:51:14,372 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:51:14,397 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:51:14,397 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:51:14,423 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:51:14,423 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:51:14,423 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:51:14,423 - Adb_Tools.py [line:99] - INFO: 检索到的设备：['D8H6R19630008844']
+2020-09-08 23:51:14,423 - Adb_Tools.py [line:101] - INFO: 当前被安装终端ID：D8H6R19630008844，安装过程中请勿移除USB连接！！！
+2020-09-08 23:51:14,449 - Adb_Tools.py [line:108] - ERROR: 设备：D8H6R19630008844安装失败！！！
+2020-09-08 23:51:14,474 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:51:14,474 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:51:14,500 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:51:14,568 - Adb_Tools.py [line:392] - ERROR: 'int' object has no attribute 'strip'
+2020-09-08 23:52:43,993 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:52:44,018 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:52:44,018 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:52:44,044 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:52:44,044 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:52:44,044 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:52:44,069 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:52:44,069 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:52:44,095 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:52:44,095 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:52:44,095 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:52:44,095 - Adb_Tools.py [line:99] - INFO: 检索到的设备：['D8H6R19630008844']
+2020-09-08 23:52:44,095 - Adb_Tools.py [line:101] - INFO: 当前被安装终端ID：D8H6R19630008844，安装过程中请勿移除USB连接！！！
+2020-09-08 23:52:44,121 - Adb_Tools.py [line:108] - ERROR: 设备：D8H6R19630008844安装失败！！！
+2020-09-08 23:52:44,146 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:52:44,146 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:52:44,172 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:52:44,248 - Adb_Tools.py [line:388] - ERROR: 'tuple' object has no attribute 'split'
+2020-09-08 23:52:57,152 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:52:57,179 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:52:57,179 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:52:57,206 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:52:57,206 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:52:57,206 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:52:57,231 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:52:57,231 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:52:57,258 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:52:57,258 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:52:57,258 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:52:57,258 - Adb_Tools.py [line:99] - INFO: 检索到的设备：['D8H6R19630008844']
+2020-09-08 23:52:57,258 - Adb_Tools.py [line:101] - INFO: 当前被安装终端ID：D8H6R19630008844，安装过程中请勿移除USB连接！！！
+2020-09-08 23:52:57,284 - Adb_Tools.py [line:108] - ERROR: 设备：D8H6R19630008844安装失败！！！
+2020-09-08 23:52:57,309 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:52:57,309 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:52:57,335 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:53:20,521 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:53:20,547 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:53:20,547 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:53:20,572 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:53:20,572 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:53:20,572 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:53:20,597 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:53:20,597 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:53:20,623 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:53:20,623 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:53:20,623 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:53:20,623 - Adb_Tools.py [line:99] - INFO: 检索到的设备：['D8H6R19630008844']
+2020-09-08 23:53:20,623 - Adb_Tools.py [line:101] - INFO: 当前被安装终端ID：D8H6R19630008844，安装过程中请勿移除USB连接！！！
+2020-09-08 23:53:20,651 - Adb_Tools.py [line:108] - ERROR: 设备：D8H6R19630008844安装失败！！！
+2020-09-08 23:53:20,677 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:53:20,677 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:53:20,703 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:53:20,765 - Adb_Tools.py [line:386] - INFO: ['51job', 'ALIPUSH_CACHE', 'ANRSnap', 'AlivcData', 'Android', 'ByteDownload', 'CSDNDownload', 'Catfish', 'DCIM', 'Download', 'EventCon', 'Fonts', 'HCE_CCB', 'Huawei', 'Installation', 'Live', 'MT2', 'MagnifierSDK', 'MasterArchive', 'Mob', 'Pictures', 'QQBrowser', 'QQGroupVideo', 'RDModules', 'SonicResource', 'Sounds', 'SunlandAction', 'SunlandDownload', 'TMRI_12123', 'Tencent', 'XMind', 'alipay', 'amap', 'app', 'autonavi', 'aweme_monitor', 'backup', 'backups', 'baidu', 'bddownload', 'bytedance', 'cache', 'capture_qsvf', 'cio_mobile_qq', 'cmb', 'cmb.pb', 'com.helloworld.naicha', 'com.job.android', 'com.netease.cloudmusic', 'com.tencent.mobileqq', 'com.tencent.mtt', 'com.tencent.now_KcSdk', 'device_known', 'documents', 'eop_download', 'mkdirtes', 'monitor', 'naicha', 'net.csdn.csdnplus', 'netease', 'now', 'odapp', 'pimsecure_debug.txt', 'qqstory', 'qsvf', 'sogou', 'storage', 'sunland', 'sunland_cache', 'sunland_large_img', 'system', 'tbs', 'tencentmapsdk', 'tieba', 'tmp', 'umeng_cache', 'websites', 'window_dump.xml', '灏氬痉鏈烘瀯']
+2020-09-08 23:54:22,472 - ImportJar.py [line:17] - INFO: 所需模块导入成功 Required modules imported successfully！
+2020-09-08 23:54:22,502 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:54:22,502 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:54:22,527 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:54:22,527 - Adb_Tools.py [line:35] - INFO: 上级所在目录为：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework
+2020-09-08 23:54:22,528 - Adb_Tools.py [line:37] - INFO: APK存储路径：D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\APKPath
+2020-09-08 23:54:22,553 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:54:22,554 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:54:22,580 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:54:22,581 - Adb_Tools.py [line:93] - INFO: 成功接收到check_local_file方法return的安装包绝对路径：None
+2020-09-08 23:54:22,581 - Adb_Tools.py [line:94] - INFO: ----------Start Install APK--------------
+2020-09-08 23:54:22,581 - Adb_Tools.py [line:99] - INFO: 检索到的设备：['D8H6R19630008844']
+2020-09-08 23:54:22,581 - Adb_Tools.py [line:101] - INFO: 当前被安装终端ID：D8H6R19630008844，安装过程中请勿移除USB连接！！！
+2020-09-08 23:54:22,607 - Adb_Tools.py [line:108] - ERROR: 设备：D8H6R19630008844安装失败！！！
+2020-09-08 23:54:22,633 - Adb_Tools.py [line:57] - INFO: 
+Android Debug Bridge version 1.0.41
+Version 30.0.4-6686687
+Installed as D:\SDK-Install\platform-tools\adb.exe
+
+2020-09-08 23:54:22,633 - Adb_Tools.py [line:69] - INFO: ----------Start Connect Device--------------
+2020-09-08 23:54:22,660 - Adb_Tools.py [line:76] - INFO: 设备连接成功['D8H6R19630008844']
+2020-09-08 23:54:22,660 - Adb_Tools.py [line:388] - ERROR: getstatusoutput() got an unexpected keyword argument 'encoding'

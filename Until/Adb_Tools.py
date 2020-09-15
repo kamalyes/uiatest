@@ -12,7 +12,6 @@ import configparser,subprocess
 from Logger import GlobalLog
 from ATestClass import ImportJar
 from Until import GetAbspath
-
 logger = GlobalLog.Logger.write_log()
 ImportJar.check_import()
 conf_ini = "../Config/Logger.ini"
@@ -21,8 +20,7 @@ conf.read(conf_ini)
 package_name = conf.get("Apk_Info", "package_name")
 class Adb_Tools(object):
     def __init__(self):
-        self.apk_filepath = None
-        self.adb_info =None
+        self.check_devices_status()
 
     def check_local_file(self):
         """
@@ -65,7 +63,7 @@ class Adb_Tools(object):
         :return devices_name：设备ID
         """
         try:
-            adb_info = Adb_Tools.check_adb_path(self)
+            adb_info = self.check_adb_path()
             if adb_info == True:
                 logger.info("----------Start Connect Device--------------")
                 str_init = ' '
@@ -371,41 +369,299 @@ class Adb_Tools(object):
         except Exception as TypeError:
             logger.error(TypeError)
 
-    # def logcat_magement(devices_name,method):
-    #     """
-    #     :param clear_logcat  清理日志
-    #     :param cache_logcat  缓存日志
-    #     :param get_crash_logcat crash崩溃日志
-    #     :return: True False
-    #     """
-    #     try:
-    #         if method == "clear_logcat":
-    #
-    #         elif method == "get_crash_logcat":
-    #
-    #         elif method == "cache_logcat":
-    #
-    #         else:
-    #
-    #     except Exception as ModuleNotFoundError:
-
-
-
-
-    def get_device_time(self):
+    def file_exists(self,devices_name,target):
         """
-        获取设备时间
+        判断文件在目标路径是否存在
+        :param devices_name:设备号
+        :param target：目标文件路径
         :return:
         """
-        return self.shell('date').read().strip()
+        try:
+            if devices_name ==False:
+                pass
+            else:
+                for dev_name in devices_name:
+                    file_info = subprocess.getstatusoutput("adb -s %s shell ls %s" % (dev_name, target))
+                    if file_info[0] == 1:
+                        logger.error("%s文件不存在！！！"%(target))
+                        return  False
+                    else:
+                        logger.info("%s文件存在！！！"%(target))
+                        return True
+        except Exception as ModuleNotFoundError:
+            logger.error(ModuleNotFoundError)
+
+    def is_install(self,devices_name, package_name):
+        """
+        判断目标app在设备上是否已安装
+        :param target_app: 目标app包名
+        :return: bool
+        """
+        try:
+            if devices_name ==False:
+                pass
+            else:
+                for dev_name in devices_name:
+                    file_info = subprocess.getstatusoutput("adb -s %s shell pm list packages %s" % (dev_name, package_name))
+                    # logger.info(file_info)
+                    if file_info[0] == 1:
+                        logger.error("本地未安装：package_name：%s"%(package_name))
+                        return  False
+                    else:
+                        logger.info("本地已安装：package_name：%s"%(package_name))
+                        return  True
+        except Exception as ModuleNotFoundError:
+            logger.error(ModuleNotFoundError)
+
+    def get_display_state(self,devices_name):
+        """
+        获取屏幕状态
+        :return: 亮屏/灭屏
+        """
+        try:
+            if devices_name ==False:
+                pass
+            else:
+                for dev_name in devices_name:
+                    file_info = subprocess.getstatusoutput("adb -s %s shell dumpsys power" %(dev_name))[1].replace("\n","")
+                    print(file_info.strip())
+        except Exception as ModuleNotFoundError:
+            logger.error(ModuleNotFoundError)
+
+
+    def get_screen_normal_size(self):
+        """
+        获取设备屏幕分辨率 >> 标配
+        :return:
+        """
+        return self.shell('wm size').read().strip().split()[-1].split('x')
+
+    def get_screen_reality_size(self):
+        """
+        获取设备屏幕分辨率 >> 实际分辨率
+        :return:
+        """
+        x = 0
+        y = 0
+        l = self.shell(r'getevent -p | %s -e "0"' % self.__find).readlines()
+        for n in l:
+            if len(n.split()) > 0:
+                if n.split()[0] == '0035':
+                    x = int(n.split()[7].split(',')[0])
+                elif n.split()[0] == '0036':
+                    y = int(n.split()[7].split(',')[0])
+        return x, y
+
+    def get_device_interior_sdcard(self):
+        """
+        获取内部SD卡空间
+        :return: (path,total,used,free,block)
+        """
+        return self.shell('df | %s \/mnt\/shell\/emulated' % self.__find).read().strip().split()
+
+    def get_device_external_sdcard(self):
+        """
+        获取外部SD卡空间
+        :return: (path,total,used,free,block)
+        """
+        return self.shell('df | %s \/storage' % self.__find).read().strip().split()
+
+    def kill_process(self, pid):
+        """
+        杀死进程
+        pass: 一般需要权限不推荐使用
+        :return:
+        """
+        return self.shell('kill %s' % pid).read().strip()
+
+    def quit_app(self, package):
+        """
+        退出应用
+        :return:
+        """
+        return self.shell('am force-stop %s' % package).read().strip()
+
+    def recovery(self):
+        """
+        重启设备并进入recovery模式
+        :return:
+        """
+        self.adb('reboot recovery')
+
+    def fastboot(self):
+        """
+        重启设备并进入fastboot模式
+        :return:
+        """
+        self.adb('reboot bootloader')
+
+    def get_wifi_state(self):
+        """
+        获取WiFi连接状态
+        :return:
+        """
+        return 'enabled' in self.shell('dumpsys wifi | %s ^Wi-Fi' % self.__find).read().strip()
+
+    def get_data_state(self):
+        """
+        获取移动网络连接状态
+        :return:
+        """
+        return '2' in self.shell(
+            'dumpsys telephony.registry | %s mDataConnectionState' % self.__find).read().strip()
+
+    def get_network_state(self):
+        """
+        设备是否连上互联网
+        :return:
+        """
+        return 'unknown host' not in self.shell('ping -w 1 www.baidu.com').read().strip()
+
+    def call(self, number):
+        """
+        拨打电话
+        :param number:
+        :return:
+        """
+        self.shell('am start -a android.intent.action.CALL -d tel:%s' % number)
+
+    def open_url(self, url):
+        """
+        打开网页
+        :return:
+        """
+        self.shell('am start -a android.intent.action.VIEW -d %s' % url)
+
+    def start_application(self, component):
+        """
+        启动一个应用
+        e.g: com.android.settings/com.android.settings.Settings
+        """
+        self.shell("am start -n %s" % component)
+
+    def send_keyevent(self, keycode):
+        """
+        发送一个按键事件
+        https://developer.android.com/reference/android/view/KeyEvent.html
+        :return:
+        """
+        self.shell('input keyevent %s' % keycode)
+
+    def rotation_screen(self, param):
+        """
+        旋转屏幕
+        :param param: 0 >> 纵向，禁止自动旋转; 1 >> 自动旋转
+        :return:
+        """
+        self.shell('/system/bin/content insert --uri content://settings/system --bind '
+                   'name:s:accelerometer_rotation --bind value:i:%s' % param)
+
+    class KeyCode:
+        KEYCODE_CALL = 5  # 拨号键
+        KEYCODE_ENDCALL = 6  # 挂机键
+        KEYCODE_HOME = 3  # Home键
+        KEYCODE_MENU = 82  # 菜单键
+        KEYCODE_BACK = 4  # 返回键
+        KEYCODE_SEARCH = 84  # 搜索键
+        KEYCODE_CAMERA = 27  # 拍照键
+        KEYCODE_FOCUS = 80  # 对焦键
+        KEYCODE_POWER = 26  # 电源键
+        KEYCODE_NOTIFICATION = 83  # 通知键
+        KEYCODE_MUTE = 91  # 话筒静音键
+        KEYCODE_VOLUME_MUTE = 164  # 扬声器静音键
+        KEYCODE_VOLUME_UP = 24  # 音量+键
+        KEYCODE_VOLUME_DOWN = 25  # 音量-键
+        KEYCODE_ENTER = 66  # 回车键
+        KEYCODE_ESCAPE = 111  # ESC键
+        KEYCODE_DPAD_CENTER = 23  # 导航键 >> 确定键
+        KEYCODE_DPAD_UP = 19  # 导航键 >> 向上
+        KEYCODE_DPAD_DOWN = 20  # 导航键 >> 向下
+        KEYCODE_DPAD_LEFT = 21  # 导航键 >> 向左
+        KEYCODE_DPAD_RIGHT = 22  # 导航键 >> 向右
+        KEYCODE_MOVE_HOME = 122  # 光标移动到开始键
+        KEYCODE_MOVE_END = 123  # 光标移动到末尾键
+        KEYCODE_PAGE_UP = 92  # 向上翻页键
+        KEYCODE_PAGE_DOWN = 93  # 向下翻页键
+        KEYCODE_DEL = 67  # 退格键
+        KEYCODE_FORWARD_DEL = 112  # 删除键
+        KEYCODE_INSERT = 124  # 插入键
+        KEYCODE_TAB = 61  # Tab键
+        KEYCODE_NUM_LOCK = 143  # 小键盘锁
+        KEYCODE_CAPS_LOCK = 115  # 大写锁定键
+        KEYCODE_BREAK = 121  # Break / Pause键
+        KEYCODE_SCROLL_LOCK = 116  # 滚动锁定键
+        KEYCODE_ZOOM_IN = 168  # 放大键
+        KEYCODE_ZOOM_OUT = 169  # 缩小键
+        KEYCODE_0 = 7
+        KEYCODE_1 = 8
+        KEYCODE_2 = 9
+        KEYCODE_3 = 10
+        KEYCODE_4 = 11
+        KEYCODE_5 = 12
+        KEYCODE_6 = 13
+        KEYCODE_7 = 14
+        KEYCODE_8 = 15
+        KEYCODE_9 = 16
+        KEYCODE_A = 29
+        KEYCODE_B = 30
+        KEYCODE_C = 31
+        KEYCODE_D = 32
+        KEYCODE_E = 33
+        KEYCODE_F = 34
+        KEYCODE_G = 35
+        KEYCODE_H = 36
+        KEYCODE_I = 37
+        KEYCODE_J = 38
+        KEYCODE_K = 39
+        KEYCODE_L = 40
+        KEYCODE_M = 41
+        KEYCODE_N = 42
+        KEYCODE_O = 43
+        KEYCODE_P = 44
+        KEYCODE_Q = 45
+        KEYCODE_R = 46
+        KEYCODE_S = 47
+        KEYCODE_T = 48
+        KEYCODE_U = 49
+        KEYCODE_V = 50
+        KEYCODE_W = 51
+        KEYCODE_X = 52
+        KEYCODE_Y = 53
+        KEYCODE_Z = 54
+        KEYCODE_PLUS = 81  # +
+        KEYCODE_MINUS = 69  # -
+        KEYCODE_STAR = 17  # *
+        KEYCODE_SLASH = 76  # /
+        KEYCODE_EQUALS = 70  # =
+        KEYCODE_AT = 77  # @
+        KEYCODE_POUND = 18  # #
+        KEYCODE_APOSTROPHE = 75  # '
+        KEYCODE_BACKSLASH = 73  # \
+        KEYCODE_COMMA = 55  # ,
+        KEYCODE_PERIOD = 56  # .
+        KEYCODE_LEFT_BRACKET = 71  # [
+        KEYCODE_RIGHT_BRACKET = 72  # ]
+        KEYCODE_SEMICOLON = 74  # ;
+        KEYCODE_GRAVE = 68  # `
+        KEYCODE_SPACE = 62  # 空格键
+        KEYCODE_MEDIA_PLAY = 126  # 多媒体键 >> 播放
+        KEYCODE_MEDIA_STOP = 86  # 多媒体键 >> 停止
+        KEYCODE_MEDIA_PAUSE = 127  # 多媒体键 >> 暂停
+        KEYCODE_MEDIA_PLAY_PAUSE = 85  # 多媒体键 >> 播放 / 暂停
+        KEYCODE_MEDIA_FAST_FORWARD = 90  # 多媒体键 >> 快进
+        KEYCODE_MEDIA_REWIND = 89  # 多媒体键 >> 快退
+        KEYCODE_MEDIA_NEXT = 87  # 多媒体键 >> 下一首
+        KEYCODE_MEDIA_PREVIOUS = 88  # 多媒体键 >> 上一首
+        KEYCODE_MEDIA_CLOSE = 128  # 多媒体键 >> 关闭
+        KEYCODE_MEDIA_EJECT = 129  # 多媒体键 >> 弹出
+        KEYCODE_MEDIA_RECORD = 130  # 多媒体键 >> 录音
 
 
 if __name__ == '__main__':
     adb = Adb_Tools()
-    # adb.check_devices_status()
-    # adb.install_apk(adb.check_local_file(),adb.check_devices_status())
+    adb.install_apk(adb.check_local_file(),adb.check_devices_status())
     # adb.clear_package(adb.check_devices_status())
-    adb.check_adb_path()
+    # adb.check_adb_path()
     # adb.get_current_package(adb.check_devices_status())
     # adb.get_battery_info(adb.check_devices_status())
     # adb.remote_connectdev(adb.check_devices_status(),adb.get_ipconfig(adb.check_devices_status()))
@@ -415,3 +671,5 @@ if __name__ == '__main__':
     # adb.get_process(adb.check_devices_status(),keyword="com.tencent.mobileqq")
     # adb.get_screenshot(adb.check_devices_status(),source="sdcard")
     # adb.get_ipconfig(adb.check_devices_status())
+    # adb.is_install(adb.check_devices_status(),package_name="com.tencent.mobileqq")
+    adb.get_display_state(adb.check_devices_status())

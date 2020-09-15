@@ -1,0 +1,2 @@
+2020-09-15 17:26:27,996 - Adb_Tools.py [line:176] - ERROR: 设备：D8H6R19630008844安装失败adb: failed to install E:\WorkSpace\PycharmProjects\UiAutomationFramework\APKPath\qq_8.4.10.4675vdefault_CheckIn_537065629_debug.apk: Failure [INSTALL_FAILED_ABORTED: User rejected permissions]
+2020-09-15 19:59:15,885 - Appium.py [line:173] - ERROR: 按类查找元素失败！ 

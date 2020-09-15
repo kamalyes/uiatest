@@ -7,7 +7,6 @@ time
 numpy
 random
 loguru
-loguru
 logging
 datetime
 configobj
