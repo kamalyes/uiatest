@@ -14,21 +14,21 @@ class GlobalLoguru:
     def write_log(self):
         # 错误日志
         logger.add(
-            os.path.join(os.path.abspath(os.path.dirname(os.getcwd())), "Result/Logs/Error_Logs/{time:YYYY-MM-DD}.log"),
+            os.path.join(os.path.abspath(os.path.dirname(os.getcwd())), "Result/Logs/{time:YYYY-MM-DD}/Error_Logs/{time:YYYY-MM-DD}.log"),
             format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message} ",
             filter=lambda x: True if x["level"].name == "ERROR" else False,
             rotation="500MB", retention=7, level='ERROR', encoding='utf-8',enqueue=True
         )
         # 成功日志
         logger.add(
-            os.path.join(os.path.abspath(os.path.dirname(os.getcwd())), "Result/Logs/Success_Logs/{time:YYYY-MM-DD}.log"),
+            os.path.join(os.path.abspath(os.path.dirname(os.getcwd())), "Result/Logs/{time:YYYY-MM-DD}/Success_Logs/{time:YYYY-MM-DD}.log"),
             format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}",
             filter=lambda x: True if x["level"].name == "SUCCESS" else False,
             rotation="500MB", retention=7, level='SUCCESS', encoding='utf-8',enqueue=True
         )
         # Default日志
         logger.add(
-            os.path.join(os.path.abspath(os.path.dirname(os.getcwd())), "Result/Logs/Default_Logs/{time:YYYY-MM-DD}.log"),
+            os.path.join(os.path.abspath(os.path.dirname(os.getcwd())), "Result/Logs/{time:YYYY-MM-DD}/Default_Logs/{time:YYYY-MM-DD}.log"),
             format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}",
             rotation="500MB", retention=7, level='DEBUG', encoding='utf-8',enqueue=True
         )

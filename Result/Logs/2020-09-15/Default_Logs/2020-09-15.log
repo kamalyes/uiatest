@@ -44,3 +44,19 @@
 2020-09-15 20:06:45,336 - connectionpool.py [line:752] - WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001CFDEADE708>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /wd/hub/session
 2020-09-15 20:06:47,339 - connectionpool.py [line:752] - WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001CFDEADEF88>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /wd/hub/session
 2020-09-15 20:07:34,338 - TestMain.py [line:16] - INFO: app启动
+2020-09-15 16:16:12,344 - SendEmali.py [line:14] - INFO: aaaa
+2020-09-15 16:17:31,678 - SendEmali.py [line:106] - INFO: 邮件发送成功~！
+2020-09-15 16:19:24,513 - SendEmali.py [line:106] - INFO: 邮件发送成功~！
+2020-09-15 16:24:50,618 - SendEmali.py [line:106] - INFO: 邮件发送成功~！
+2020-09-15 16:26:58,289 - SendEmali.py [line:106] - INFO: 邮件发送成功~！
+2020-09-15 16:26:59,789 - SendEmali.py [line:106] - INFO: 邮件发送成功~！
+2020-09-15 16:27:01,276 - SendEmali.py [line:106] - INFO: 邮件发送成功~！
+2020-09-15 16:27:06,647 - SendEmali.py [line:106] - INFO: 邮件发送成功~！
+2020-09-15 16:33:30,831 - SendEmali.py [line:106] - INFO: 邮件发送成功~！
+2020-09-15 16:33:32,332 - SendEmali.py [line:106] - INFO: 邮件发送成功~！
+2020-09-15 16:33:33,878 - SendEmali.py [line:106] - INFO: 邮件发送成功~！
+2020-09-15 16:33:39,792 - SendEmali.py [line:106] - INFO: 邮件发送成功~！
+2020-09-15 16:35:39,882 - SendEmali.py [line:106] - INFO: 邮件发送成功~！
+2020-09-15 16:35:41,469 - SendEmali.py [line:106] - INFO: 邮件发送成功~！
+2020-09-15 16:35:42,970 - SendEmali.py [line:106] - INFO: 邮件发送成功~！
+2020-09-15 16:35:54,483 - SendEmali.py [line:106] - INFO: 邮件发送成功~！

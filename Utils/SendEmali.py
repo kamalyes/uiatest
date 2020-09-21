@@ -7,83 +7,117 @@
 # Date： 2020/5/6 19:27
 '''
 __author__ = 'v_yanqyu'
-import smtplib, os
+import smtplib
+from email.header import Header
+from Logger.GlobalLog import Logger
+logger = Logger.write_log()
 from email.mime.text import MIMEText
+from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
-import base64
-
-class SendMail(object):
-    def __init__(self, username, passwd, recv, title, content,
-                 file=None, ssl=False,
-                 email_host='smtp.163.com', port=25, ssl_port=465):
+# 邮件发送
+class EmailSendLib(object):
+    def __init__(self,user_email,passwd,title,smtp_server,addressee):
         '''
-        :param username: 用户名
-        :param passwd: 密码
-        :param recv: 收件人，多个要传list
-        :param title: 邮件标题
-        :param content: 邮件正文
-        :param file: 附件路径，如果不在当前目录下，要写绝对路径，默认没有附件
-        :param ssl: 是否安全链接，默认为普通
-        :param email_host: smtp服务器地址，默认为163服务器
-        :param port: 非安全链接端口，默认为25
-        :param ssl_port: 安全链接端口，默认为465
+        :param self.user_email： 发件人邮箱
+        :param self.passwd： 发件人密码
+        :param title：标题
+        :param smtp_server：邮箱服务器
+        :param addressee：收件人邮箱
         '''
-        self.username = username  # 用户名
-        self.passwd = passwd  # 密码
-        self.recv = recv  # 收件人，多个要传list
-        self.title = title  # 邮件标题
-        self.content = content  # 邮件正文
-        self.file = file  # 附件路径，如果不在当前目录下，要写绝对路径
-        self.email_host = email_host  # smtp服务器地址
-        self.port = port  # 普通端口
-        self.ssl = ssl  # 是否安全链接
-        self.ssl_port = ssl_port  # 安全链接端口
+        self.user_email = user_email
+        self.passwd = passwd
+        self.title = title
+        self.smtp_server = smtp_server
+        self.addressee = "%s"%(addressee)
 
-    def send_mail(self):
-        msg = MIMEMultipart()
-        # 发送内容的对象
-        if self.file:  # 处理附件的
-            file_name = os.path.split(self.file)[-1]  # 只取文件名，不取路径
-            try:
-                f = open(self.file, 'rb').read()
-            except Exception as e:
-                raise Exception('附件打不开！！！！')
-            else:
-                att = MIMEText(f, "base64", "utf-8")
-                att["Content-Type"] = 'application/octet-stream'
-                # base64.b64encode(file_name.encode()).decode()
-                new_file_name = '=?utf-8?b?' + base64.b64encode(file_name.encode()).decode() + '?='
-                # 这里是处理文件名为中文名的，必须这么写
-                att["Content-Disposition"] = 'attachment; filename="%s"' % (new_file_name)
-                msg.attach(att)
-        msg.attach(MIMEText(self.content))  # 邮件正文的内容
-        msg['Subject'] = self.title  # 邮件主题
-        msg['From'] = self.username  # 发送者账号
-        msg['To'] = ','.join(self.recv)  # 接收者账号列表
-        if self.ssl:
-            self.smtp = smtplib.SMTP_SSL(self.email_host, port=self.ssl_port)
-        else:
-            self.smtp = smtplib.SMTP(self.email_host, port=self.port)
-        # 发送邮件服务器的对象
-        self.smtp.login(self.username, self.passwd)
+    @staticmethod
+    def _send_enclosure(email_data, file_path):
+        '''
+        附件发送
+        :param file_path:附件的存储路径
+        :return:
+        '''
+        enclosure_data = MIMEMultipart()
+        enclosure_data.attach(email_data)
+        # 读取文件二进制流
+        with open(file_path, 'rb') as f:
+            file_data = MIMEText(f.read(), 'base64', 'UTF-8')
+        file_data['Content-Type'] = 'application/octet-stream'
+        file_data['Content-Disposition'] = 'attachment; filename=%s' % file_path
+        enclosure_data.attach(file_data)
+        return enclosure_data
+
+    @staticmethod
+    def _send_image(email_data, image_path):
+        '''
+        图片是嵌入在 HTML 中进行发送展示
+        :param email_data: 图片地址
+        :param image_path:
+        :return:
+        '''
+        email_image = '''
+            <div><img src='cid:image-index'></div>
+        '''
+        image_data = MIMEMultipart()
+        email_data.attach(image_data)
+        image_data.attach(MIMEText(email_image, 'html', 'UTF-8'))
+        # 读取图片二进制流
+        with open(image_path, 'rb') as f:
+            image_data = MIMEImage(f.read())
+        image_data.add_header('Content-ID', '<image-index>')
+        email_data.attach(image_data)
+        return email_data
+
+    def send(self, subject, content, send_type='plain', file_path=None, image_path=None):
+        '''
+        邮件发送
+        :param file_path: 附件路径
+        :param image_path: 图片路径
+        :param email_data:发送实体定义
+        :param send_type 发送类型：enclosure-附件格式 image-图文格式
+        :param email_data['Subject']  邮件主题
+        :param email_data['From'] 邮件标题
+        :param email_data['To'] 收件人
+        :return:
+        '''
+        email_data = MIMEText(content, send_type, 'UTF-8')
+        email_data['Subject'] = Header(subject, 'UTF-8')
+        email_data['From'] = Header("%s<%s>" % (self.title, self.user_email), 'UTF-8')
+        email_data['To'] = Header(';'.join(self.addressee), 'UTF-8')
+        email_cursor = smtplib.SMTP_SSL(self.smtp_server, 465)
+        # 发送附件
+        if send_type == 'enclosure':
+            email_data = self._send_enclosure(email_data, file_path)
+        # 发送图片
+        if send_type == 'image':
+            email_data = MIMEMultipart()
+            email_data = self._send_image(email_data, image_path)
+
         try:
-            self.smtp.sendmail(self.username, self.recv, msg.as_string())
-            pass
+            # 登录服务器
+            email_cursor.login(self.user_email, self.passwd)
+            # 发送邮件
+            email_cursor.sendmail(self.user_email, self.addressee, email_data.as_string())
+            # 开启 DEBUG
+            # email_cursor.set_debuglevel(1)
         except Exception as e:
-            print('出错了。。', e)
+            logger.error('邮件发送失败-:', e)
         else:
-            print('发送成功！')
-        self.smtp.quit()
+            logger.info('邮件发送成功~！')
+        finally:
+            email_cursor.quit()
 
+es = EmailSendLib(user_email="mryu168@163.com",passwd="EKCXFRDVJLSUUITM",title="test",smtp_server="smtp.163.com",addressee="mryu168@163.com")
+# 发送文本 send_type 参数需要指定为 plain，因为 plain 为默认参数所以可以忽略
+es.send('测试邮件(标题)', '测试邮件(内容) - 文本')
 
-if __name__ == '__main__':
-    m = SendMail(
-        username='mryu168@163.com',
-        passwd='hc201902',
-        recv=['501893067@qq.com'],
-        title='Test',
-        content='',
-        file=r'Test.txt',
-        ssl=True,
-    )
-    m.send_mail()
+# 发送 html send_type 参数需要指定为 html
+es.send('测试邮件(标题)', '<h2> 测试邮件(内容) - HTML </h2>', send_type='html')
+
+# 发送带有 [附件] 的格式：send_type 参数需要指定为 enclosure file_path 参数为文件路径
+es.send('测试邮件(标题)', '测试邮件(内容) - 附件', send_type='enclosure', file_path='../Result/Test.txt')
+
+# 发送带有 [图片] 的格式：
+# 发送图片 send_type 参数需要指定为 image
+# image_path 参数为图片路径
+es.send('测试邮件(标题)', '测试邮件(内容) - 图片', send_type='image', image_path='../Result/mbuntu-5.jpg')

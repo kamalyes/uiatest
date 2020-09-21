@@ -3,19 +3,20 @@
 '''
 # FileName： Adb_Tools.py
 # Author : v_yanqyu
-# Desc: PyCharm
+# Desc: Adb工具类
 # Date： 2020/9/6 18:56
 '''
 __author__ = 'v_yanqyu'
-import os,re,time
+import os,re
 import platform,datetime
 import configparser,subprocess
 from Logger import GlobalLog
-from ATestClass import ImportJar
-from Utils import GetAbspath
+from Utils import ImportJar
+from Utils import Dir_Tools
 
 logger = GlobalLog.Logger.write_log()
 ImportJar.check_import()
+
 conf_ini = "../Config/Logger.ini"
 conf = configparser.ConfigParser()
 conf.read(conf_ini)
@@ -45,7 +46,7 @@ class Adb_Tools(object):
         :return apk_filepath：拼接后的安卓包完整目录
         """
         apklist = []
-        superiordirectory = GetAbspath.get_superiordirectory()
+        superiordirectory = Dir_Tools.Doc_Process().get_superior_dir()
         logger.info("上级所在目录为：{}".format(superiordirectory))
         general_file = superiordirectory + "\APKPath"
         logger.info("APK存储路径：{}".format(general_file))
@@ -820,7 +821,6 @@ class Adb_Tools(object):
                     return True
         except Exception as TypeError:
             logger.error(TypeError)
-
 
     def call(self, devices_name,index,number):
         """
