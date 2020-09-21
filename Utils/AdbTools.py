@@ -11,17 +11,18 @@ import os,re
 import platform,datetime
 import configparser,subprocess
 from Logger import GlobalLog
-from Utils import ImportJar
+from Utils import LibraryManage
 from Utils import DirTools
 
 logger = GlobalLog.Logger.write_log()
-ImportJar.check_import()
+JarTools = LibraryManage.JarManage()
+JarTools.check_import(filepath=r'../requirements.txt')
 
 conf_ini = r"../Config/config.ini"
 conf = configparser.ConfigParser()
 conf.read(conf_ini,encoding="utf-8")
 package_name = conf.get("Android-Info", "package_name")
-
+logger.info(package_name)
 class Adb_Manage(object):
     def check_filtered(self):
         '''

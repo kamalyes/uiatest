@@ -1,7 +1,7 @@
 #!/usr/bin/env python 3.7
 # -*- coding:utf-8 -*-
 '''
-# FileName： GetSystemTime.py
+# FileName： SystemTime.py
 # Author : v_yanqyu
 # Desc: 时间获取类
 # Date： 2020/9/17 19:05
