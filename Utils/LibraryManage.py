@@ -29,8 +29,8 @@ class JarManage():
             for i in range(len(jarlist)):
                 # logger.info(jarlist[i])
                 __import__(jarlist[i])
-        except Exception as IOError:
-            logger.error(IOError)
+        except Exception as ModuleNotFoundError:
+            logger.error(ModuleNotFoundError)
 
     def updatejar(self):
         """
