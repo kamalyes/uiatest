@@ -1,7 +1,7 @@
 #!/usr/bin/env python 3.7
 # -*- coding:utf-8 -*-
 '''
-# FileName： Adb_Tools.py
+# FileName： AdbTools.py
 # Author : v_yanqyu
 # Desc: Adb工具类
 # Date： 2020/9/6 18:56
@@ -12,15 +12,15 @@ import platform,datetime
 import configparser,subprocess
 from Logger import GlobalLog
 from Utils import ImportJar
-from Utils import Dir_Tools
+from Utils import DirTools
 
 logger = GlobalLog.Logger.write_log()
 ImportJar.check_import()
 
-conf_ini = "../Config/Logger.ini"
+conf_ini = r"../Config/config.ini"
 conf = configparser.ConfigParser()
-conf.read(conf_ini)
-package_name = conf.get("Apk_Info", "package_name")
+conf.read(conf_ini,encoding="utf-8")
+package_name = conf.get("Android-Info", "package_name")
 
 class Adb_Tools(object):
     def check_filtered(self):
@@ -46,7 +46,7 @@ class Adb_Tools(object):
         :return apk_filepath：拼接后的安卓包完整目录
         """
         apklist = []
-        superiordirectory = Dir_Tools.Doc_Process().get_superior_dir()
+        superiordirectory = DirTools.Doc_Process().get_superior_dir()
         logger.info("上级所在目录为：{}".format(superiordirectory))
         general_file = superiordirectory + "\APKPath"
         logger.info("APK存储路径：{}".format(general_file))

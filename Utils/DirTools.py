@@ -1,7 +1,7 @@
 #!/usr/bin/env python 3.7
 # -*- coding:utf-8 -*-
 '''
-# FileName： Dir_Tools.py
+# FileName： DirTools.py
 # Author : v_yanqyu
 # Desc: PyCharm
 # Date： 2020/5/6 19:15
@@ -36,6 +36,22 @@ class Doc_Process():
         """
         superior_directorys = os.path.abspath(os.path.join(os.getcwd(), "../.."))
         return superior_directorys
+
+    def get_dirlist(self,filePath):
+        '''
+        获取指定目录下所有的文件名并返回一个列表，剔除其中的__init__.py和__pycache__。
+        :param filePath:
+        :return:
+        '''
+        current_files = os.listdir(filePath)
+        all_files = []
+        for file_name in current_files:
+            full_file_name = os.path.join(filePath, file_name)
+            all_files.append(full_file_name)
+            if os.path.isdir(full_file_name):
+                next_level_files = self.get_dirlist(full_file_name)
+                all_files.extend(next_level_files)
+        return all_files
 
     def creat_zip(self,method,filepath,target_path=""):
         """
@@ -137,6 +153,7 @@ class Doc_Process():
 
     def copy_file(self,filepath, target):
         """
+        复制文件
         :param method:
         :param filepath:
         :param target:
@@ -157,6 +174,7 @@ class Doc_Process():
 
     def remove_file(self,filepath):
         """
+        删除文件或文件夹
         :param filepath:
         :return:
         """
@@ -201,3 +219,4 @@ if __name__ == '__main__':
     # d.copy_file(filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils",target=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils\COPYS")
     # d.remove_file(filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils\AA")
     # d.make_file(filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils\AA\aaa")
+    # d.get_dirlist(filePath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils")

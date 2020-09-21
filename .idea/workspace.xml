@@ -2,27 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d96fc8a-cf34-4b1c-9370-cb2cee07a3b8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Common/GetPyList.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Common/ScannerCase.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Config/Appium.ini" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Config/MySQLdb.ini" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Start_Run.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Config/db.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Logger/PublicLogger.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Proxy/GetProxy.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TestCase/InstallApk.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TestCase/LoginQQ.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Result/Logs/2020-09-21/Default_Logs/2020-09-21.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Result/Logs/2020-09-21/Error_Logs/2020-09-21.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Utils/ConfigHandle.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ATestClass/TestMain.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Common/GetPyList.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Common/Insert_DB.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Common/MysqlManager.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Config/Appium.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Config/Logger.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/GetAbspath.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/ReadConfig.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Common/Insert_DB.py" afterPath="$PROJECT_DIR$/Common/Insert_DB.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Common/MysqlManager.py" afterPath="$PROJECT_DIR$/Common/MysqlManager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/Logger.ini" afterPath="$PROJECT_DIR$/Config/Logger.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logger/GlobalLoguru.py" afterPath="$PROJECT_DIR$/Logger/GlobalLoguru.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README-CN.md" afterPath="$PROJECT_DIR$/README-CN.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/Logs/2020-09-15/Default_Logs/2020-09-15.log" afterPath="$PROJECT_DIR$/Result/Logs/2020-09-15/Default_Logs/2020-09-15.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/Adb_Tools.py" afterPath="$PROJECT_DIR$/Utils/Adb_Tools.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/SendEmali.py" afterPath="$PROJECT_DIR$/Utils/SendEmali.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ATestClass/ImportJar.py" afterPath="$PROJECT_DIR$/Utils/ImportJar.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ATestClass/ReadConfig.py" afterPath="$PROJECT_DIR$/Utils/ReadConfig.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Config/MySQLdb.ini" afterPath="$PROJECT_DIR$/Config/config.ini" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utils/Adb_Tools.py" afterPath="$PROJECT_DIR$/Utils/AdbTools.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Utils/Dir_Tools.py" afterPath="$PROJECT_DIR$/Utils/DirTools.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,15 +26,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/UiAutomationFramework$SendEmali.coverage" NAME="SendEmali Coverage Results" MODIFIED="1600158938223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
-    <SUITE FILE_PATH="coverage/UiAutomationFramework$GetPyList.coverage" NAME="GetPyList Coverage Results" MODIFIED="1600186068928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
-    <SUITE FILE_PATH="coverage/UiAutomationFramework$Adb_Tools.coverage" NAME="Adb_Tools Coverage Results" MODIFIED="1599582182255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Until" />
+    <SUITE FILE_PATH="coverage/UiAutomationFramework$SendEmali.coverage" NAME="SendEmali Coverage Results" MODIFIED="1600663054784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/UiAutomationFramework$GetPyList.coverage" NAME="GetPyList Coverage Results" MODIFIED="1600662755985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$Nosetests_in_My_Launcher.coverage" NAME="Nosetests in My_Launcher Coverage Results" MODIFIED="1600274180645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/UiAutomationFramework$Adb_Tools.coverage" NAME="Adb_Tools Coverage Results" MODIFIED="1600663511909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$GlobalLoguru.coverage" NAME="GlobalLoguru Coverage Results" MODIFIED="1600578723469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Logger" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$Adb.coverage" NAME="Adb Coverage Results" MODIFIED="1599578963493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Until" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$Nosetests_in_CustomAirtestCase.coverage" NAME="Nosetests in CustomAirtestCase Coverage Results" MODIFIED="1600183003622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
-    <SUITE FILE_PATH="coverage/UiAutomationFramework$Dir_Tools.coverage" NAME="Dir_Tools Coverage Results" MODIFIED="1600583487316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/UiAutomationFramework$ConfigHandle.coverage" NAME="ConfigHandle Coverage Results" MODIFIED="1600664876698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/UiAutomationFramework$Dir_Tools.coverage" NAME="Dir_Tools Coverage Results" MODIFIED="1600663034460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$Insert_DB.coverage" NAME="Insert_DB Coverage Results" MODIFIED="1600168646234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
+    <SUITE FILE_PATH="coverage/UiAutomationFramework$ReadConfig.coverage" NAME="ReadConfig Coverage Results" MODIFIED="1600664232549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$Nosetests_in_CustomAirtestCase__1_.coverage" NAME="Nosetests in CustomAirtestCase (1) Coverage Results" MODIFIED="1600183110870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$Nosetests_in_ScannerCase.coverage" NAME="Nosetests in ScannerCase Coverage Results" MODIFIED="1600185543385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$MysqlManager.coverage" NAME="MysqlManager Coverage Results" MODIFIED="1600187178106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
@@ -55,11 +51,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GlobalLog.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GlobalLog.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Logger/GlobalLog.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="110" column="45" lean-forward="false" selection-start-line="110" selection-start-column="44" selection-end-line="110" selection-end-column="45" />
+            <state relative-caret-position="186">
+              <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
               <folding>
                 <element signature="e#166#180#0" expanded="true" />
               </folding>
@@ -67,32 +63,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MySQLdb.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Config/MySQLdb.ini">
+      <file leaf-file-name="config.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Config/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Logger.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Config/Logger.ini">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="35" lean-forward="false" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+            <state relative-caret-position="528">
+              <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="UpdateJar.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/UpdateJar.py">
+        <entry file="file://$PROJECT_DIR$/Utils/UpdateJar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            <state relative-caret-position="144">
+              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdbTools.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/AdbTools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="e#163#175#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,25 +98,25 @@
       <file leaf-file-name="ScannerCase.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Common/ScannerCase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            <state relative-caret-position="144">
+              <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetPyList.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/GetPyList.py">
+      <file leaf-file-name="DirTools.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Utils/DirTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+            <state relative-caret-position="186">
+              <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="13" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Appium.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Config/Appium.ini">
+      <file leaf-file-name="ImportJar.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/ImportJar.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -127,41 +125,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Appium.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/Appium.py">
+      <file leaf-file-name="ConfigHandle.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/ConfigHandle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
-              <caret line="365" column="29" lean-forward="true" selection-start-line="365" selection-start-column="29" selection-end-line="365" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MysqlManager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/MysqlManager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="364" column="43" lean-forward="false" selection-start-line="364" selection-start-column="31" selection-end-line="364" selection-end-column="43" />
+            <state relative-caret-position="357">
+              <caret line="155" column="45" lean-forward="false" selection-start-line="155" selection-start-column="45" selection-end-line="155" selection-end-column="45" />
               <folding>
-                <marker date="1600187065056" expanded="true" signature="4066:4078" ph="insert into missing_value... " />
-                <marker date="1600187065056" expanded="true" signature="4903:4925" ph="select * fro... missing_value" />
-                <marker date="1600187065056" expanded="true" signature="5060:5083" ph="select missi... missing_value" />
-                <marker date="1600187065056" expanded="true" signature="5931:5943" ph="insert into missing_value... " />
-                <marker date="1600187065056" expanded="true" signature="6981:7001" ph="DELETE FROM " />
-                <marker date="1600187065056" expanded="true" signature="8045:8067" ph="UPDATE missi... " />
-                <marker date="1600187065056" expanded="true" signature="8295:8307" ph="DROP TABLE m... " />
-                <marker date="1600187065056" expanded="true" signature="8490:8502" ph="DELETE FROM " />
-                <marker date="1600187065056" expanded="true" signature="8772:8786" ph="select * fro... missing_value" />
+                <element signature="e#165#187#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Insert_DB.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/Insert_DB.py">
+      <file leaf-file-name="SendEmali.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/SendEmali.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+            <state relative-caret-position="721">
+              <caret line="122" column="92" lean-forward="true" selection-start-line="122" selection-start-column="92" selection-end-line="122" selection-end-column="92" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetSystemTime.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/GetSystemTime.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -187,9 +177,11 @@
       <find>self.ls</find>
       <find>server</find>
       <find>re</find>
+      <find>print</find>
     </findStrings>
     <replaceStrings>
       <replace>smtp_server</replace>
+      <replace>logger.info</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -205,19 +197,26 @@
         <option value="$PROJECT_DIR$/Common/Insert_DB.py" />
         <option value="$PROJECT_DIR$/Config/db.conf" />
         <option value="$PROJECT_DIR$/Config/mysqldb.ini" />
-        <option value="$PROJECT_DIR$/Utils/Adb_Tools.py" />
         <option value="$PROJECT_DIR$/Common/Test.py" />
         <option value="$PROJECT_DIR$/Common/ScannerCase.py" />
         <option value="$PROJECT_DIR$/Result/__init__.py" />
-        <option value="$PROJECT_DIR$/Common/GetPyList.py" />
-        <option value="$PROJECT_DIR$/Config/Appium.ini" />
         <option value="$PROJECT_DIR$/TestCase/Test.py" />
         <option value="$PROJECT_DIR$/Common/MysqlManager.py" />
         <option value="$PROJECT_DIR$/ATestClass/Airtest.py" />
         <option value="$PROJECT_DIR$/Utils/My_Launcher.py" />
         <option value="$PROJECT_DIR$/Logger/GlobalLoguru.py" />
+        <option value="$PROJECT_DIR$/Logger/GlobalLog.py" />
+        <option value="$PROJECT_DIR$/Common/GetPyList.py" />
+        <option value="$PROJECT_DIR$/Utils/GetAbspath.py" />
         <option value="$PROJECT_DIR$/Utils/Dir_Tools.py" />
+        <option value="$PROJECT_DIR$/Config/MySQLdb.ini" />
         <option value="$PROJECT_DIR$/Config/Logger.ini" />
+        <option value="$PROJECT_DIR$/Config/Appium.ini" />
+        <option value="$PROJECT_DIR$/Utils/Adb_Tools.py" />
+        <option value="$PROJECT_DIR$/Config/config.ini" />
+        <option value="$PROJECT_DIR$/Utils/ReadConfig.py" />
+        <option value="$PROJECT_DIR$/Utils/ConfigHandle.py" />
+        <option value="$PROJECT_DIR$/Utils/DirTools.py" />
       </list>
     </option>
   </component>
@@ -248,6 +247,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -285,6 +286,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Result" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UiAutomationFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UiAutomationFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Result" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Logs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -380,24 +399,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Logs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UiAutomationFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UiAutomationFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Result" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Android_Logs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -448,24 +449,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UiAutomationFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UiAutomationFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ATestClass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -487,7 +472,97 @@
       <recent name="D:\Work_Spaces\PyCharm_Project\UiAutomationFramework" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.ConfigHandle">
+    <configuration default="false" name="Dir_Tools" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="UiAutomationFramework" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils\DirTools.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SendEmali" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="UiAutomationFramework" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/SendEmali.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Adb_Tools" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="UiAutomationFramework" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils\AdbTools.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ReadConfig" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="UiAutomationFramework" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils\ConfigHandle.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ConfigHandle" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="UiAutomationFramework" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/ConfigHandle.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -702,6 +777,22 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.Dir_Tools" />
+      <item index="1" class="java.lang.String" itemvalue="Python.SendEmali" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Adb_Tools" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ReadConfig" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ConfigHandle" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.ConfigHandle" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ReadConfig" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Adb_Tools" />
+        <item index="3" class="java.lang.String" itemvalue="Python.SendEmali" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Dir_Tools" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -740,7 +831,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15831557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15991472" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -776,42 +867,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Utils/Adb_Tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12624">
-          <caret line="526" column="68" lean-forward="true" selection-start-line="526" selection-start-column="0" selection-end-line="527" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/MySQLdb.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/Logger.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Common/MysqlManager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1600187065056" expanded="true" signature="4066:4078" ph="insert into missing_value... " />
-            <marker date="1600187065056" expanded="true" signature="4903:4925" ph="select * fro... missing_value" />
-            <marker date="1600187065056" expanded="true" signature="5060:5083" ph="select missi... missing_value" />
-            <marker date="1600187065056" expanded="true" signature="5931:5943" ph="insert into missing_value... " />
-            <marker date="1600187065056" expanded="true" signature="6981:7001" ph="DELETE FROM " />
-            <marker date="1600187065056" expanded="true" signature="8045:8067" ph="UPDATE missi... " />
-            <marker date="1600187065056" expanded="true" signature="8295:8307" ph="DROP TABLE m... " />
-            <marker date="1600187065056" expanded="true" signature="8490:8502" ph="DELETE FROM " />
-            <marker date="1600187065056" expanded="true" signature="8772:8786" ph="select * fro... missing_value" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -841,20 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/SendEmali.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="101" column="30" lean-forward="true" selection-start-line="101" selection-start-column="30" selection-end-line="101" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/Adb_Tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12504">
-          <caret line="526" column="68" lean-forward="false" selection-start-line="526" selection-start-column="0" selection-end-line="527" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Common/Test.py" />
     <entry file="file://D:/Program Files/Python37/Lib/site-packages/airtest/cli/runner.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -878,22 +924,171 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Result/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/Proxy/GetProxy.py">
+    <entry file="file://$PROJECT_DIR$/Proxy/GetProxy.py" />
+    <entry file="file://$PROJECT_DIR$/TestCase/Test.py" />
+    <entry file="file://$PROJECT_DIR$/TestCase/LoginQQ.py" />
+    <entry file="file://$PROJECT_DIR$/Utils/ImportJar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logger/PublicLogger.py" />
+    <entry file="file://$PROJECT_DIR$/Result/Logs/2020-09-20/Default_Logs/2020-09-20.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/Test.py" />
-    <entry file="file://$PROJECT_DIR$/TestCase/LoginQQ.py">
+    <entry file="file://$PROJECT_DIR$/TestCase/initialization.py" />
+    <entry file="file://$PROJECT_DIR$/Utils/COPY/Adb_Tools.py" />
+    <entry file="file://$PROJECT_DIR$/Utils/AA/aa/a" />
+    <entry file="file://$USER_HOME$/.PyCharm2016.3/system/python_stubs/959216962/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="486" column="8" lean-forward="false" selection-start-line="486" selection-start-column="4" selection-end-line="486" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/My_Launcher.py" />
+    <entry file="file://$PROJECT_DIR$/KeyCode.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Emoji.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-288">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Start_Run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="3" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Result/Android_Logs/Crash_Logs/CrashInfo.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="22" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logger/GlobalLoguru.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="40" column="37" lean-forward="false" selection-start-line="40" selection-start-column="37" selection-end-line="42" selection-end-column="39" />
+          <folding>
+            <element signature="e#191#200#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/db.conf" />
+    <entry file="file://$PROJECT_DIR$/Common/Insert_DB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/UpdateJar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Appium.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="365" column="29" lean-forward="false" selection-start-line="365" selection-start-column="29" selection-end-line="365" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/GetAbspath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/GetSystemTime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/GetPyList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/ScannerCase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/ImportJar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/MysqlManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="364" column="43" lean-forward="false" selection-start-line="364" selection-start-column="31" selection-end-line="364" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/MySQLdb.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/Logger.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/Appium.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -909,239 +1104,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/ReadConfig.py">
+    <entry file="file://$PROJECT_DIR$/Utils/UpdateJar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logger/PublicLogger.py">
+    <entry file="file://$PROJECT_DIR$/Utils/SendEmali.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="721">
+          <caret line="122" column="92" lean-forward="true" selection-start-line="122" selection-start-column="92" selection-end-line="122" selection-end-column="92" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Result/Logs/2020-09-20/Default_Logs/2020-09-20.log">
+    <entry file="file://$PROJECT_DIR$/Config/config.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="528">
+          <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/initialization.py">
+    <entry file="file://$PROJECT_DIR$/Utils/AdbTools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/COPY/Adb_Tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1800">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/AA/aa/a">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2016.3/system/python_stubs/959216962/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="486" column="8" lean-forward="false" selection-start-line="486" selection-start-column="4" selection-end-line="486" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/Dir_Tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-726">
-          <caret line="155" column="44" lean-forward="true" selection-start-line="144" selection-start-column="8" selection-end-line="155" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/GetSystemTime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2944">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/ImportJar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/My_Launcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-972">
-          <caret line="130" column="8" lean-forward="true" selection-start-line="130" selection-start-column="8" selection-end-line="130" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KeyCode.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Emoji.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-288">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Start_Run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="3" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Result/Android_Logs/Crash_Logs/CrashInfo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logger/GlobalLoguru.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="40" column="37" lean-forward="false" selection-start-line="40" selection-start-column="37" selection-end-line="42" selection-end-column="39" />
+        <state relative-caret-position="368">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#191#200#0" expanded="true" />
+            <element signature="e#163#175#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/db.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/MysqlManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="364" column="43" lean-forward="false" selection-start-line="364" selection-start-column="31" selection-end-line="364" selection-end-column="43" />
-          <folding>
-            <marker date="1600187065056" expanded="true" signature="4066:4078" ph="insert into missing_value... " />
-            <marker date="1600187065056" expanded="true" signature="4903:4925" ph="select * fro... missing_value" />
-            <marker date="1600187065056" expanded="true" signature="5060:5083" ph="select missi... missing_value" />
-            <marker date="1600187065056" expanded="true" signature="5931:5943" ph="insert into missing_value... " />
-            <marker date="1600187065056" expanded="true" signature="6981:7001" ph="DELETE FROM " />
-            <marker date="1600187065056" expanded="true" signature="8045:8067" ph="UPDATE missi... " />
-            <marker date="1600187065056" expanded="true" signature="8295:8307" ph="DROP TABLE m... " />
-            <marker date="1600187065056" expanded="true" signature="8490:8502" ph="DELETE FROM " />
-            <marker date="1600187065056" expanded="true" signature="8772:8786" ph="select * fro... missing_value" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Insert_DB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Appium.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="365" column="29" lean-forward="true" selection-start-line="365" selection-start-column="29" selection-end-line="365" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/Appium.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/GetPyList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/MySQLdb.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/ScannerCase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/UpdateJar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/Logger.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="35" lean-forward="false" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logger/GlobalLog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="110" column="45" lean-forward="false" selection-start-line="110" selection-start-column="44" selection-end-line="110" selection-end-column="45" />
+        <state relative-caret-position="186">
+          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
           <folding>
             <element signature="e#166#180#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/ConfigHandle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="155" column="45" lean-forward="false" selection-start-line="155" selection-start-column="45" selection-end-line="155" selection-end-column="45" />
+          <folding>
+            <element signature="e#165#187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/DirTools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="13" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
