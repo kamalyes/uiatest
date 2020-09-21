@@ -7,6 +7,7 @@
 @Date  :2020/9/21 13:18
 '''
 import subprocess
+
 from Logger import GlobalLog  # 导入日志模块
 logger = GlobalLog.Logger.write_log() #调用日志模块
 
@@ -14,6 +15,7 @@ class JarManage():
     def check_import(self,filepath):
         """
         导入所需要的第三方库
+        :param filepath 自动（requirement）导入文件的路径
         :return:
         """
         try:
@@ -27,10 +29,10 @@ class JarManage():
                     jarlist.append(content.strip())
             file.close()
             for i in range(len(jarlist)):
-                # logger.info(jarlist[i])
                 __import__(jarlist[i])
+            logger.info("扫描到本地已成功安装所需要库：%s" % (jarlist))
         except Exception as ModuleNotFoundError:
-            logger.error(ModuleNotFoundError)
+            logger.error("导入库阶段出错,%s"%(ModuleNotFoundError))
 
     def updatejar(self):
         """
@@ -56,5 +58,6 @@ class JarManage():
         logger.info("检查更新情况:")
         subprocess.call(com_list)
 
-JarManage().check_import(filepath=r'../requirements.txt')
-# JarManage().updatejar()
+if __name__ == '__main__':
+    JarManage().check_import(filepath=r'../requirements.txt')
+    # JarManage().updatejar()

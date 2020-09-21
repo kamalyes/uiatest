@@ -9,3 +9,27 @@
 2020-09-21 13:23:56,498 - LibraryManage.py [line:25] - ERROR: 本地环境没有所需第三方库 Check whether the third-party library of the local environment is downloaded
 2020-09-21 13:36:17,117 - LibraryManage.py [line:25] - ERROR: 本地环境没有所需第三方库 Check whether the third-party library of the local environment is downloaded
 2020-09-21 13:49:54,847 - LibraryManage.py [line:33] - ERROR: No module named 'aa'
+2020-09-21 13:58:34,756 - AdbTools.py [line:94] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-21 13:58:34,756 - AdbTools.py [line:63] - ERROR: local variable 'i' referenced before assignment
+2020-09-21 13:58:48,157 - AdbTools.py [line:95] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-21 13:58:48,157 - AdbTools.py [line:64] - ERROR: local variable 'i' referenced before assignment
+2020-09-21 13:59:04,887 - AdbTools.py [line:94] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-21 13:59:04,887 - AdbTools.py [line:63] - ERROR: local variable 'i' referenced before assignment
+2020-09-21 14:00:00,207 - AdbTools.py [line:94] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-21 14:00:00,207 - AdbTools.py [line:63] - ERROR: local variable 'i' referenced before assignment
+2020-09-21 14:00:15,627 - AdbTools.py [line:94] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-21 14:00:15,627 - AdbTools.py [line:63] - ERROR: local variable 'i' referenced before assignment
+2020-09-21 14:01:12,051 - AdbTools.py [line:94] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-21 14:01:12,051 - AdbTools.py [line:63] - ERROR: local variable 'i' referenced before assignment
+2020-09-21 14:01:34,471 - AdbTools.py [line:94] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-21 14:01:34,471 - AdbTools.py [line:63] - ERROR: local variable 'i' referenced before assignment
+2020-09-21 14:03:37,316 - AdbTools.py [line:94] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-21 14:03:37,316 - AdbTools.py [line:63] - ERROR: local variable 'i' referenced before assignment
+2020-09-21 14:10:14,087 - AdbTools.py [line:91] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-21 14:10:14,087 - AdbTools.py [line:60] - ERROR: local variable 'i' referenced before assignment
+2020-09-21 14:11:39,126 - AdbTools.py [line:91] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-09-21 14:11:39,126 - AdbTools.py [line:60] - ERROR: local variable 'i' referenced before assignment
+2020-09-21 14:12:11,517 - AdbTools.py [line:60] - ERROR: local variable 'i' referenced before assignment
+2020-09-21 14:12:57,666 - AdbTools.py [line:60] - ERROR: local variable 'i' referenced before assignment
+2020-09-21 15:07:29,216 - AdbTools.py [line:60] - ERROR: local variable 'i' referenced before assignment
+2020-09-21 15:09:04,875 - AdbTools.py [line:60] - ERROR: local variable 'i' referenced before assignment
