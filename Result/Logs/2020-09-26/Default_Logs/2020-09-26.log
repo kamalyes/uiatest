@@ -1,0 +1,14 @@
+2020-09-26 10:23:49,514 - GlobalLog.py [line:124] - INFO: 删除(..\Result\Logs\2020-09-26\Error_Logs)失败！！！
+2020-09-26 10:23:49,514 - GlobalLog.py [line:127] - INFO: 过期的文件：['..\\Result\\Logs', '..\\Result\\Logs\\2020-09-18', '..\\Result\\Logs\\2020-09-18\\Default_Logs', '..\\Result\\Logs\\2020-09-18\\Error_Logs', '..\\Result\\Logs\\2020-09-19', '..\\Result\\Logs\\2020-09-19\\Default_Logs', '..\\Result\\Logs\\2020-09-19\\Error_Logs', '..\\Result\\Logs\\2020-09-20', '..\\Result\\Logs\\2020-09-20\\Default_Logs', '..\\Result\\Logs\\2020-09-20\\Error_Logs', '..\\Result\\Logs\\2020-09-21', '..\\Result\\Logs\\2020-09-21\\Default_Logs', '..\\Result\\Logs\\2020-09-21\\Error_Logs', '..\\Result\\Logs\\2020-09-25', '..\\Result\\Logs\\2020-09-25\\Default_Logs', '..\\Result\\Logs\\2020-09-25\\Error_Logs', '..\\Result\\Logs\\2020-09-26', '..\\Result\\Logs\\2020-09-26\\Default_Logs', '..\\Result\\Logs\\2020-09-26\\Error_Logs']
+2020-09-26 10:23:49,522 - GlobalLog.py [line:128] - INFO: 不满足条件的文件：[]
+2020-09-26 10:23:49,522 - GlobalLog.py [line:135] - INFO: this is a logger info message
+2020-09-26 10:23:49,522 - GlobalLog.py [line:136] - WARNING: this is a logger warning message
+2020-09-26 10:23:49,522 - GlobalLog.py [line:137] - ERROR: this is a logger error message
+2020-09-26 10:23:49,523 - GlobalLog.py [line:138] - CRITICAL: this is a logger critical message
+2020-09-26 10:23:57,365 - GlobalLog.py [line:124] - INFO: 删除(..\Result\Logs\2020-09-26\Error_Logs)失败！！！
+2020-09-26 10:23:57,365 - GlobalLog.py [line:127] - INFO: 过期的文件：['..\\Result\\Logs', '..\\Result\\Logs\\2020-09-26', '..\\Result\\Logs\\2020-09-26\\Default_Logs', '..\\Result\\Logs\\2020-09-26\\Error_Logs']
+2020-09-26 10:23:57,365 - GlobalLog.py [line:128] - INFO: 不满足条件的文件：[]
+2020-09-26 10:23:57,365 - GlobalLog.py [line:135] - INFO: this is a logger info message
+2020-09-26 10:23:57,365 - GlobalLog.py [line:136] - WARNING: this is a logger warning message
+2020-09-26 10:23:57,365 - GlobalLog.py [line:137] - ERROR: this is a logger error message
+2020-09-26 10:23:57,365 - GlobalLog.py [line:138] - CRITICAL: this is a logger critical message
