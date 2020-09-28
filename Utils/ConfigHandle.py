@@ -3,13 +3,13 @@
 '''
 # FileName： IniHandle.py
 # Author : v_yanqyu
-# Desc: PyCharm
+# Desc: ConfigFile 节点处理类
 # Date： 2020/9/6 15:55
 '''
 __author__ = 'v_yanqyu'
 import os,configparser
 from Logger import GlobalLog
-logger = GlobalLog.Logger.write_log()
+logger = GlobalLog.Logger().write_log()#调用日志模块
 
 class IniHandle():
     def __init__(self):

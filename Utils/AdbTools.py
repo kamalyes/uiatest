@@ -11,18 +11,14 @@ import os,re
 import platform,datetime
 import configparser,subprocess
 from Logger import GlobalLog
-from Utils import LibraryManage
-from Utils import DirTools
-
-logger = GlobalLog.Logger.write_log()
-JarTools = LibraryManage.JarManage()
-JarTools.check_import(filepath=r'../requirements.txt')
+logger = GlobalLog.Logger().write_log()#调用日志模块
 
 conf_ini = r"../Config/config.ini"
 conf = configparser.ConfigParser()
 conf.read(conf_ini,encoding="utf-8")
 package_name = conf.get("Android-Info", "package_name")
-logger.info(package_name)
+# logger.info(package_name)
+
 class Adb_Manage(object):
     def check_filtered(self):
         '''
@@ -449,12 +445,12 @@ class Adb_Manage(object):
 
     def logcat_magement(self,devices_name,method,filePath):
         """
+        日志管理
         :param clear_logcat  清理日志
         :param cache_logcat  缓存日志
         :param crash_logcat  crash崩溃日志
         :param history_logcat 历史crash日志（不需要二次触发）
         :return: True False
-
         /dev/log/main ： 主应用程序log，除了下三个外，其他用户空间log将写入此节点，包括System.out.print及System.erro.print等
         /dev/log/events ： 系统事件信息，二进制log信息将写入此节点，需要程序解析
         /dev/log/radio ： 射频通话相关信息，tag 为"HTC_RIL" "RILJ" "RILC" "RILD" "RIL" "AT" "GSM" "STK"的log信息将写入此节点
@@ -903,7 +899,7 @@ class Adb_Manage(object):
 
 if __name__ == '__main__':
     adb = Adb_Manage()
-    # adb.check_filtered()
+    adb.check_filtered()
     # adb.check_local_file()
     # adb.check_adb_path() #该方法可以不用执行、类部类已操作
     # check_devices_status=adb.check_devices_status()

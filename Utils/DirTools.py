@@ -11,8 +11,8 @@ __author__ = 'v_yanqyu'
 import os
 import zipfile,gzip,shutil
 from Logger import GlobalLog
-logger = GlobalLog.Logger.write_log()
-class Doc_Process():
+logger = GlobalLog.Logger().write_log()#调用日志模块
+class Doc_Process(object):
     def get_pwd(self):
         """
         获取当前文件路径
@@ -209,14 +209,15 @@ class Doc_Process():
                 logger.error("%s已存在，跳过创建！" % (filepath))
         except Exception as FileNotFoundError:
             logger.error(FileNotFoundError)
+
 if __name__ == '__main__':
     d = Doc_Process()
-    # logger.info(d.get_pwd())
-    # logger.info(d.get_superior_dir())
-    # logger.info(d.get_superior_dirs())
+    logger.info(d.get_pwd())
+    logger.info(d.get_superior_dir())
+    logger.info(d.get_superior_dirs())
     # d.creat_zip(method="allfile",filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils",target_path="aaaa.gzip")
     # d.get_filetype(file_path=r"E:\WorkSpace\PycharmProjects\UiAutomationFramework\Utils\not_exist.py")
     # d.copy_file(filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils",target=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils\COPYS")
-    # d.remove_file(filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils\AA")
+    # d.remove_file(filepath=r"..\Result\Logs\2020-09-21\Default_Logs\2020-09-21.log")
     # d.make_file(filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils\AA\aaa")
     # d.get_dirlist(filePath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils")

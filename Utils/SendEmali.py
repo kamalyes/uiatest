@@ -9,8 +9,8 @@
 __author__ = 'v_yanqyu'
 import smtplib
 from email.header import Header
-from Logger.GlobalLog import Logger
-logger = Logger.write_log()
+from Logger import GlobalLog
+logger = GlobalLog.Logger().write_log()#调用日志模块
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart

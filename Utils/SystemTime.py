@@ -7,11 +7,10 @@
 # Date： 2020/9/17 19:05
 '''
 __author__ = 'v_yanqyu'
-import os
 import time
 import datetime
 from Logger import GlobalLog
-logger = GlobalLog.Logger.write_log()
+logger = GlobalLog.Logger().write_log()#调用日志模块
 
 class TimeUtil:
 

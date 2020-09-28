@@ -4,11 +4,17 @@ sys
 xlwt
 xlrd
 time
+gzip
+email
 numpy
+shutil
 random
 loguru
+zipfile
 logging
+smtplib
 datetime
+platform
 configobj
 subprocess
 configparser

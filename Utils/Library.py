@@ -1,15 +1,14 @@
 #!/usr/bin/env python 3.7
 # -*- coding:utf-8 -*-
 '''
-@File  :LibraryManage.py
+@File  :Library.py
 @Author:v_yanqyu
 @Desc  : Py第三方库管理类
 @Date  :2020/9/21 13:18
 '''
 import subprocess
-
 from Logger import GlobalLog  # 导入日志模块
-logger = GlobalLog.Logger.write_log() #调用日志模块
+logger = GlobalLog.Logger().write_log()#调用日志模块
 
 class JarManage():
     def check_import(self,filepath):
