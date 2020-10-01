@@ -1,10 +1,11 @@
-#!/usr/bin/env python 3.7
 # -*- coding:utf-8 -*-
+#!/usr/bin/env python 3.7
+# Python version 2.7.16 or 3.7.6
 '''
-@File  :Library.py
-@Author:v_yanqyu
+@File  : LibraryTools.py
+@Author: v_yanqyu
 @Desc  : Py第三方库管理类
-@Date  :2020/9/21 13:18
+@Date  : 2020/9/21 13:18
 '''
 import subprocess
 from Logger import GlobalLog  # 导入日志模块

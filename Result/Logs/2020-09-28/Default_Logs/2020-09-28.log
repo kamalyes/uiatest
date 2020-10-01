@@ -1,0 +1,5 @@
+[DEBUG 2020-09-28 11:12:01]This is debug message
+[INFO 2020-09-28 11:12:01]This is info message
+[WARNING 2020-09-28 11:12:01]This is warning message
+[ERROR 2020-09-28 11:12:01]This is error
+[CRITICAL 2020-09-28 11:12:01]This is critical message

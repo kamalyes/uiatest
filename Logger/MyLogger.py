@@ -1,15 +1,22 @@
-#!/usr/bin/env python 3.7
 # -*- coding:utf-8 -*-
+#!/usr/bin/env python 3.7
+# Python version 2.7.16 or 3.7.6
 '''
 @File  :MyLogger.py
 @Author: v_yanqyu
-@Desc  : 简易封装
+@Desc  : MyLogger简易封装
 @Date  :2020/9/26-10:22
 '''
 
-import logging
-import os
-import time
+import time,logging
+import os,configparser
+conf_ini = r"../Config/config.ini"
+conf = configparser.ConfigParser()
+conf.read(conf_ini,encoding="utf-8")
+log_dir = conf.get("Logger-Path", "log_dir")
+def_dir = conf.get("Logger-Path", "def_log_dir")
+err_dir = conf.get("Logger-Path", "error_log_dir")
+
 
 LEVELS = {
     'debug': logging.DEBUG,
@@ -22,16 +29,6 @@ LEVELS = {
 logger = logging.getLogger()
 level = 'default'
 
-
-def create_file(filename):
-    path = filename[0:filename.rfind('/')]
-    if not os.path.isdir(path):
-        os.makedirs(path)
-    if not os.path.isfile(filename):
-        fd = open(filename, mode='w', encoding='utf-8')
-        fd.close()
-    else:
-        pass
 
 def set_handler(levels):
     if levels == 'error':
@@ -50,42 +47,31 @@ def remove_handler(levels):
 def get_current_time():
     return time.strftime(MyLog.date, time.localtime(time.time()))
 
-
 class MyLog:
-    # 获取项目的根目录
     project_path = os.getcwd()
     logs_path = os.path.join(project_path, log_dir)
     local_date = time.strftime('%Y-%m-%d', time.localtime(time.time()))
-    # 日期文件夹路径
     date_file_path = os.path.join(logs_path, local_date)
-    # 如果没有日期文件夹，创建该文件夹
     if not os.path.exists(date_file_path):
         os.makedirs(date_file_path)
-    # 完整日志存放路径
     all_log_path = os.path.join(date_file_path, def_dir)
-    # 如果没有完整日志文件夹，创建该文件夹
     if not os.path.exists(all_log_path):
         os.makedirs(all_log_path)
-    # 错误日志存放路径
     error_log_path = os.path.join(date_file_path, err_dir)
-    # 如果没有错误日志文件夹，创建该文件夹
     if not os.path.exists(error_log_path):
         os.makedirs(error_log_path)
-    # 获取本地时间，转为年月日时分秒格式
     local_time = time.strftime('%Y-%m-%d', time.localtime(time.time()))
     # 设置日志文件名
     all_log_name = all_log_path + local_time + '.log'
     error_log_name = error_log_path + local_time + '.log'
-    create_file(all_log_name)
-    create_file(error_log_name)
     date = '%Y-%m-%d %H:%M:%S'
     # 将日志输出到屏幕
     console = logging.StreamHandler()
     console.setLevel(LEVELS.get(level, logging.NOTSET))
     # 将日志输出到文件
     logger.setLevel(LEVELS.get(level, logging.NOTSET))
-    handler = logging.FileHandler(log_file, encoding='utf-8')
-    err_handler = logging.FileHandler(err_file, encoding='utf-8')
+    handler = logging.FileHandler(all_log_name, encoding='utf-8')
+    err_handler = logging.FileHandler(error_log_name, encoding='utf-8')
 
     @staticmethod
     def debug(log_meg):

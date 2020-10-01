@@ -1,5 +1,6 @@
-#!/usr/bin/env python 3.7
 # -*- coding:utf-8 -*-
+#!/usr/bin/env python 3.7
+# Python version 2.7.16 or 3.7.6
 '''
 # FileName： AdbTools.py
 # Author : v_yanqyu
@@ -11,12 +12,14 @@ import os,re
 import platform,datetime
 import configparser,subprocess
 from Logger import GlobalLog
+from Utils import DirTools
 logger = GlobalLog.Logger().write_log()#调用日志模块
 
 conf_ini = r"../Config/config.ini"
 conf = configparser.ConfigParser()
 conf.read(conf_ini,encoding="utf-8")
 package_name = conf.get("Android-Info", "package_name")
+
 # logger.info(package_name)
 
 class Adb_Manage(object):
@@ -44,9 +47,9 @@ class Adb_Manage(object):
         """
         apklist = []
         superiordirectory = DirTools.Doc_Process().get_superior_dir()
-        logger.info("上级所在目录为：{}".format(superiordirectory))
+        # logger.info("上级所在目录为：{}".format(superiordirectory))
         general_file = superiordirectory + "\APKPath"
-        logger.info("APK存储路径：{}".format(general_file))
+        # logger.info("APK存储路径：{}".format(general_file))
         try:
             path = os.listdir(general_file)
             for i in range(0,len(path)):
@@ -122,10 +125,11 @@ class Adb_Manage(object):
         :param apk_filepath：拼接后的安卓包完整目录
         """
         try:
-            if devices_name == False:
+            if devices_name == False :
                 pass
-            else:
-                #安装错误常见列表
+            install_status = conf.get("Android-Info", "install_status")
+            if install_status in(1,2):
+                # 安装错误常见列表
                 errors = {'INSTALL_FAILED_ALREADY_EXISTS': '程序已经存在',
                           'INSTALL_DEVICES_NOT_FOUND': '找不到设备',
                           'INSTALL_FAILED_DEVICE_OFFLINE': '设备离线',
@@ -162,16 +166,18 @@ class Adb_Manage(object):
                 # 循环遍历出所有已连接的终端设备,便于后期调用
                 print(apklist)
                 logger.info("成功接收到check_local_file方法return的安装包绝对路径：{}".format(apklist[index]))
-                logger.info("检索到的设备：%s"%(devices_name))
+                logger.info("检索到的设备：%s" % (devices_name))
                 for dev_name in devices_name:
                     logger.info("当前终端ID：%s，安装过程中请勿移除USB连接！！！" % (dev_name))
-                    install_info =  subprocess.getstatusoutput(r'adb -s %s install -r %s' % (dev_name, apklist[index]))
-                    install_status =install_info[1]
-                    if install_status == "Success":
+                    install_info = subprocess.getstatusoutput(r'adb -s %s install -r %s' % (dev_name, apklist[index]))
+                    install_status = install_info[1]
+                    if install_status == "Success" and install_status == 1 :
                         logger.info("设备：%s安装成功！！！" % (dev_name))
+                    elif install_status == "Success" and install_status == 2 :
+                        logger.info("设备：%s覆盖安装成功！！！" % (dev_name))
                     else:
                         # 可在此做判断是否安装成功并展示error
-                        logger.error("设备：%s安装失败%s" % (dev_name,install_info[1]))
+                        logger.error("设备：%s安装失败%s" % (dev_name, install_info[1]))
         except Exception as TypeError:
             logger.error(TypeError)
 
@@ -902,9 +908,9 @@ if __name__ == '__main__':
     adb.check_filtered()
     # adb.check_local_file()
     # adb.check_adb_path() #该方法可以不用执行、类部类已操作
-    # check_devices_status=adb.check_devices_status()
+    check_devices_status=adb.check_devices_status()
     # adb.uninstall_apk(check_devices_status,package_name="com.tencent.mobileqq")
-    # adb.install_apk(adb.check_local_file(),check_devices_status,index=0)
+    adb.install_apk(adb.check_local_file(),check_devices_status,index=0)
     # adb.clear_package(check_devices_status,package_name="com.tencent.mobileqq")
     # adb.get_current_package(check_devices_status)
     # adb.get_battery_info(check_devices_status)

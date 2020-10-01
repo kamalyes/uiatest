@@ -1,9 +1,10 @@
-#!/usr/bin/env python 3.7
 # -*- coding:utf-8 -*-
+#!/usr/bin/env python 3.7
+# Python version 2.7.16 or 3.7.6
 '''
-# FileName： SendEmali.py
+# FileName：SendEmali.py
 # Author : v_yanqyu
-# Desc: PyCharm
+# Desc:   PyCharm
 # Date： 2020/5/6 19:27
 '''
 __author__ = 'v_yanqyu'
