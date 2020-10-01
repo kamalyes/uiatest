@@ -15,10 +15,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
 from Logger import GlobalLog
-logger = GlobalLog.Logger.write_log()
-conf_ini = "../Config/Logger.ini"
+logger = GlobalLog.Logger().write_log()  #导入日志模块
+conf_ini = "../Config/config.ini"
 conf = configparser.ConfigParser()
-conf.read(conf_ini)
+conf.read(conf_ini,encoding="utf-8")
 appium_service = conf.get("APPNIUM_SERVER", "service_ip")
 
 class AppDevice(object):

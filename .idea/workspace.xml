@@ -1,33 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d96fc8a-cf34-4b1c-9370-cb2cee07a3b8" name="Default" comment=":bug:Update Allure Report Class">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Config/district.xls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Utils/AreaCode.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Utils/Ciphers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Utils/RandomText.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Utils/ValidityIDCard.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Result/Logs/2020-09-28/Default_Logs/2020-09-28.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Result/Logs/2020-09-28/Error_Logs/2020-09-28.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/Deciphering.py" afterPath="" />
+    <list default="true" id="9d96fc8a-cf34-4b1c-9370-cb2cee07a3b8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Common/Appium.py" afterPath="$PROJECT_DIR$/Common/Appium.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Common/ScannerCase.py" afterPath="$PROJECT_DIR$/Common/ScannerCase.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/config.ini" afterPath="$PROJECT_DIR$/Config/config.ini" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logger/GlobalLog.py" afterPath="$PROJECT_DIR$/Logger/GlobalLog.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logger/GlobalLoguru.py" afterPath="$PROJECT_DIR$/Logger/GlobalLoguru.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logger/MyLogger.py" afterPath="$PROJECT_DIR$/Logger/MyLogger.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/AdbTools.py" afterPath="$PROJECT_DIR$/Utils/AdbTools.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/CheckEnviron.py" afterPath="$PROJECT_DIR$/Utils/CheckEnviron.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/DirTools.py" afterPath="$PROJECT_DIR$/Utils/DirTools.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/Encryption.py" afterPath="$PROJECT_DIR$/Utils/Encryption.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/FaceRecogn.py" afterPath="$PROJECT_DIR$/Utils/FaceRecogn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/InspectCrawling.py" afterPath="$PROJECT_DIR$/Utils/InspectCrawling.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/SendEmali.py" afterPath="$PROJECT_DIR$/Utils/SendEmali.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/SystemTime.py" afterPath="$PROJECT_DIR$/Utils/SystemTime.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/Verification.py" afterPath="$PROJECT_DIR$/Utils/Verification.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Utils/ConfigHandle.py" afterPath="$PROJECT_DIR$/Utils/IniHandle.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Utils/Library.py" afterPath="$PROJECT_DIR$/Utils/LibraryTools.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/RandomText.py" afterPath="$PROJECT_DIR$/Utils/RandomText.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,14 +36,14 @@
     <SUITE FILE_PATH="coverage/AutomationFramework$MyLogger.coverage" NAME="MyLogger Coverage Results" MODIFIED="1601551386153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Logger" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$GetSystemTime.coverage" NAME="GetSystemTime Coverage Results" MODIFIED="1600583621230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$Verification.coverage" NAME="Verification Coverage Results" MODIFIED="1601031488407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
-    <SUITE FILE_PATH="coverage/AutomationFramework$RandomText.coverage" NAME="RandomText Coverage Results" MODIFIED="1601551528667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutomationFramework$RandomText.coverage" NAME="RandomText Coverage Results" MODIFIED="1601551551854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/AutomationFramework$GlobalLog.coverage" NAME="GlobalLog Coverage Results" MODIFIED="1601087037251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Logger" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$Nosetests_in_UiAutomationFramework__2_.coverage" NAME="Nosetests in UiAutomationFramework (2) Coverage Results" MODIFIED="1600491687087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AutomationFramework$RandomData.coverage" NAME="RandomData Coverage Results" MODIFIED="1601550585814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$Adb_Tools.coverage" NAME="Adb_Tools Coverage Results" MODIFIED="1600663511909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$SystemTime.coverage" NAME="SystemTime Coverage Results" MODIFIED="1601098976090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/AutomationFramework$ScannerCase.coverage" NAME="ScannerCase Coverage Results" MODIFIED="1601551411319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
-    <SUITE FILE_PATH="coverage/AutomationFramework$AdbTools.coverage" NAME="AdbTools Coverage Results" MODIFIED="1601531293579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutomationFramework$AdbTools.coverage" NAME="AdbTools Coverage Results" MODIFIED="1601552232409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/AutomationFramework$constant.coverage" NAME="constant Coverage Results" MODIFIED="1601550035080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$MysqlManager.coverage" NAME="MysqlManager Coverage Results" MODIFIED="1600187178106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$InspectCrawling.coverage" NAME="InspectCrawling Coverage Results" MODIFIED="1601036203380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
@@ -80,6 +60,7 @@
     <SUITE FILE_PATH="coverage/AutomationFramework$Assert.coverage" NAME="Assert Coverage Results" MODIFIED="1601085825616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestClass" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$Adb.coverage" NAME="Adb Coverage Results" MODIFIED="1599578963493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Until" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$Library.coverage" NAME="Library Coverage Results" MODIFIED="1601098979096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutomationFramework$Appium.coverage" NAME="Appium Coverage Results" MODIFIED="1601552888488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
     <SUITE FILE_PATH="coverage/AutomationFramework$RequestMain.coverage" NAME="RequestMain Coverage Results" MODIFIED="1601086057348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$CheckEnviron.coverage" NAME="CheckEnviron Coverage Results" MODIFIED="1601042840034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/UiAutomationFramework$Dir_Tools.coverage" NAME="Dir_Tools Coverage Results" MODIFIED="1600663034460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
@@ -96,24 +77,106 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RandomText.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/RandomText.py">
+      <file leaf-file-name="InspectCrawling.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/InspectCrawling.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1296">
-              <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+            <state relative-caret-position="264">
+              <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="48" />
               <folding>
-                <element signature="e#184#207#0" expanded="true" />
+                <element signature="e#182#197#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ValidityIDCard.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RandomText.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/RandomText.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1227">
+              <caret line="73" column="44" lean-forward="false" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
+              <folding>
+                <element signature="e#184#197#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Config/config.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="15" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GlobalLog.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Logger/GlobalLog.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#199#220#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValidityIDCard.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils/ValidityIDCard.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="1848">
+              <caret line="77" column="39" lean-forward="true" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
+              <folding>
+                <element signature="e#176#192#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Appium.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Common/Appium.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-72">
+              <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="25" />
+              <folding>
+                <element signature="e#196#215#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdbTools.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/AdbTools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2946">
+              <caret line="913" column="45" lean-forward="false" selection-start-line="913" selection-start-column="45" selection-end-line="913" selection-end-column="45" />
+              <folding>
+                <element signature="e#196#208#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmindToTapd_3.7.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/XmindToTapd_3.7.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-288">
+              <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ciphers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/Ciphers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="24" />
+              <folding>
+                <element signature="e#169#182#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,12 +209,12 @@
     </findStrings>
     <replaceStrings>
       <replace>smtp_server</replace>
-      <replace>logger.info</replace>
       <replace>Adb</replace>
       <replace>AdbManage</replace>
       <replace>adb</replace>
       <replace>logger</replace>
       <replace>constant</replace>
+      <replace>logger.info</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -185,12 +248,10 @@
         <option value="$PROJECT_DIR$/Utils/Deciphering.py" />
         <option value="$PROJECT_DIR$/Utils/Decrypto.py" />
         <option value="$PROJECT_DIR$/Utils/CiphersHelper.py" />
-        <option value="$PROJECT_DIR$/Config/config.ini" />
         <option value="$PROJECT_DIR$/Utils/RandomLibary.py" />
         <option value="$PROJECT_DIR$/Utils/RandomData.py" />
         <option value="$PROJECT_DIR$/Utils/identity.py" />
         <option value="$PROJECT_DIR$/Utils/constant.py" />
-        <option value="$PROJECT_DIR$/Utils/AdbTools.py" />
         <option value="$PROJECT_DIR$/Utils/AreaCode.py" />
         <option value="$PROJECT_DIR$/Utils/CheckEnviron.py" />
         <option value="$PROJECT_DIR$/Utils/Ciphers.py" />
@@ -200,7 +261,6 @@
         <option value="$PROJECT_DIR$/Utils/FaceRecogn.py" />
         <option value="$PROJECT_DIR$/Utils/InspectCrawling.py" />
         <option value="$PROJECT_DIR$/Utils/LibraryTools.py" />
-        <option value="$PROJECT_DIR$/Utils/RandomText.py" />
         <option value="$PROJECT_DIR$/Utils/SendEmali.py" />
         <option value="$PROJECT_DIR$/Utils/SystemTime.py" />
         <option value="$PROJECT_DIR$/Utils/ValidityIDCard.py" />
@@ -208,9 +268,12 @@
         <option value="$PROJECT_DIR$/Utils/XmindToTapd_3.7.py" />
         <option value="$PROJECT_DIR$/Logger/MyLogger.py" />
         <option value="$PROJECT_DIR$/Logger/GlobalLoguru.py" />
-        <option value="$PROJECT_DIR$/Logger/GlobalLog.py" />
-        <option value="$PROJECT_DIR$/Common/Appium.py" />
         <option value="$PROJECT_DIR$/Common/ScannerCase.py" />
+        <option value="$PROJECT_DIR$/Logger/GlobalLog.py" />
+        <option value="$PROJECT_DIR$/Utils/RandomText.py" />
+        <option value="$PROJECT_DIR$/Utils/AdbTools.py" />
+        <option value="$PROJECT_DIR$/Config/config.ini" />
+        <option value="$PROJECT_DIR$/Common/Appium.py" />
       </list>
     </option>
   </component>
@@ -241,6 +304,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -461,8 +526,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -488,7 +551,7 @@
       <recent name="D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Result" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ValidityIDCard">
+  <component name="RunManager" selected="Python.Appium">
     <configuration default="false" name="RandomText" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -503,24 +566,6 @@
       <module name="UiAutomationFramework" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/RandomText.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Ciphers" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="UiAutomationFramework" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/Ciphers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -543,24 +588,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="MyLogger" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Logger" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="UiAutomationFramework" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Logger/MyLogger.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="ScannerCase" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -575,6 +602,42 @@
       <module name="UiAutomationFramework" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Common/ScannerCase.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="AdbTools" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="UiAutomationFramework" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/AdbTools.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Appium" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="UiAutomationFramework" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Common/Appium.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -795,18 +858,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.RandomText" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Ciphers" />
-      <item index="2" class="java.lang.String" itemvalue="Python.ValidityIDCard" />
-      <item index="3" class="java.lang.String" itemvalue="Python.MyLogger" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ScannerCase" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ValidityIDCard" />
+      <item index="2" class="java.lang.String" itemvalue="Python.ScannerCase" />
+      <item index="3" class="java.lang.String" itemvalue="Python.AdbTools" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Appium" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ValidityIDCard" />
-        <item index="1" class="java.lang.String" itemvalue="Python.RandomText" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ScannerCase" />
-        <item index="3" class="java.lang.String" itemvalue="Python.MyLogger" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Ciphers" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Appium" />
+        <item index="1" class="java.lang.String" itemvalue="Python.AdbTools" />
+        <item index="2" class="java.lang.String" itemvalue="Python.RandomText" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ValidityIDCard" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ScannerCase" />
       </list>
     </recent_temporary>
   </component>
@@ -849,7 +912,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601262317246</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=":tada: Update random text and algorithm encryption and decryption">
+      <created>1601551744955</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601551744955</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -888,11 +958,10 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18230277" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18443497" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3308026" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -905,6 +974,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -938,7 +1008,8 @@
     <MESSAGE value=":bug:Function entry introduction error" />
     <MESSAGE value=":bug:Fix New verification code identification" />
     <MESSAGE value=":bug:Update Allure Report Class" />
-    <option name="LAST_COMMIT_MESSAGE" value=":bug:Update Allure Report Class" />
+    <MESSAGE value=":tada: Update random text and algorithm encryption and decryption" />
+    <option name="LAST_COMMIT_MESSAGE" value=":tada: Update random text and algorithm encryption and decryption" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -950,8 +1021,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Config/Logger.ini" />
-    <entry file="file://$PROJECT_DIR$/Config/Appium.ini" />
     <entry file="file://$PROJECT_DIR$/ATestClass/TestMain.py" />
     <entry file="file://$PROJECT_DIR$/Utils/ImportJar.py" />
     <entry file="file://$PROJECT_DIR$/Utils/UpdateJar.py" />
@@ -1024,33 +1093,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/RandomLibary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-184">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/AdbTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="32" />
-          <folding>
-            <element signature="e#196#208#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/RandomLibary.py" />
     <entry file="file://$PROJECT_DIR$/Utils/AreaCode.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,17 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/Ciphers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding>
-            <element signature="e#169#182#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1076,7 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,9 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding>
-            <element signature="e#170#183#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1094,7 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1102,17 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/InspectCrawling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding>
-            <element signature="e#182#197#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1120,9 +1143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding>
-            <element signature="e#177#194#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1130,7 +1150,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,7 +1157,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,15 +1164,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/XmindToTapd_3.7.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1172,14 +1181,97 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/ScannerCase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/Ciphers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <element signature="e#169#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1944">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/XmindToTapd_3.7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-288">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/RandomText.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1227">
+          <caret line="73" column="44" lean-forward="false" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
+          <folding>
+            <element signature="e#184#197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Python37/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="1103" column="41" lean-forward="false" selection-start-line="1103" selection-start-column="26" selection-end-line="1103" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/InspectCrawling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="48" />
+          <folding>
+            <element signature="e#182#197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/AdbTools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2946">
+          <caret line="913" column="45" lean-forward="false" selection-start-line="913" selection-start-column="45" selection-end-line="913" selection-end-column="45" />
+          <folding>
+            <element signature="e#196#208#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/ValidityIDCard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1848">
+          <caret line="77" column="39" lean-forward="true" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
+          <folding>
+            <element signature="e#176#192#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logger/GlobalLog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        <state relative-caret-position="384">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#199#220#0" expanded="true" />
           </folding>
@@ -1188,43 +1280,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Config/config.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        <state relative-caret-position="420">
+          <caret line="28" column="15" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/Appium.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/ScannerCase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/RandomText.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1296">
-          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        <state relative-caret-position="-72">
+          <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="25" />
           <folding>
-            <element signature="e#184#207#0" expanded="true" />
+            <element signature="e#196#215#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/ValidityIDCard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>

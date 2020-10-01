@@ -14,9 +14,9 @@ import os,configparser
 conf_ini = r"../Config/config.ini"
 conf = configparser.ConfigParser()
 conf.read(conf_ini,encoding="utf-8")
-log_dir = conf.get("Logger-Path", "log_dir")
-def_dir = conf.get("Logger-Path", "def_log_dir")
-err_dir = conf.get("Logger-Path", "error_log_dir")
+log_dir = conf.get("Logger_Path", "log_dir")
+def_dir = conf.get("Logger_Path", "def_log_dir")
+err_dir = conf.get("Logger_Path", "error_log_dir")
 
 class Logger(object):
     def write_log(self):

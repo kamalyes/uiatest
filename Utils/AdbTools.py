@@ -18,7 +18,7 @@ logger = GlobalLog.Logger().write_log()#调用日志模块
 conf_ini = r"../Config/config.ini"
 conf = configparser.ConfigParser()
 conf.read(conf_ini,encoding="utf-8")
-package_name = conf.get("Android-Info", "package_name")
+package_name = conf.get("Android_Info", "package_name")
 
 # logger.info(package_name)
 
