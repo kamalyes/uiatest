@@ -1,4 +1,0 @@
-2020-09-26 10:23:49,522 - GlobalLog.py [line:137] - ERROR: this is a logger error message
-2020-09-26 10:23:49,523 - GlobalLog.py [line:138] - CRITICAL: this is a logger critical message
-2020-09-26 10:23:57,365 - GlobalLog.py [line:137] - ERROR: this is a logger error message
-2020-09-26 10:23:57,365 - GlobalLog.py [line:138] - CRITICAL: this is a logger critical message

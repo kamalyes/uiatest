@@ -12,6 +12,7 @@ import os
 import time,datetime
 from loguru import logger
 class GlobalLoguru:
+    @classmethod
     def write_log(self):
         # 错误日志
         logger.add(
@@ -19,13 +20,6 @@ class GlobalLoguru:
             format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message} ",
             filter=lambda x: True if x["level"].name == "ERROR" else False,
             rotation="500MB", retention=7, level='ERROR', encoding='utf-8',enqueue=True
-        )
-        # 成功日志
-        logger.add(
-            os.path.join(os.path.abspath(os.path.dirname(os.getcwd())), "Result/Logs/{time:YYYY-MM-DD}/Success_Logs/{time:YYYY-MM-DD}.log"),
-            format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}",
-            filter=lambda x: True if x["level"].name == "SUCCESS" else False,
-            rotation="500MB", retention=7, level='SUCCESS', encoding='utf-8',enqueue=True
         )
         # Default日志
         logger.add(
@@ -37,6 +31,7 @@ class GlobalLoguru:
         self.logger = logger
         return self.logger
 
+    @classmethod
     def delete_log(self,days=''):
         # 定义文件路径
         filepath = r"../Result/Logs/"
@@ -67,8 +62,8 @@ class GlobalLoguru:
             print(TypeError)
 
 if __name__ == '__main__':
-    GlobalLoguru().delete_log(days=-6)
-    logger=GlobalLoguru().write_log()
+    GlobalLoguru.delete_log(days=-6)
+    logger=GlobalLoguru.write_log()
     logger.error("这是一个Error问题")
     logger.debug("这是一个Debug问题")
     logger.info("这是一个Info问题")

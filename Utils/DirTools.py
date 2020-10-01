@@ -14,6 +14,7 @@ import zipfile,gzip,shutil
 from Logger import GlobalLog
 logger = GlobalLog.Logger().write_log()#调用日志模块
 class Doc_Process(object):
+    @classmethod
     def get_pwd(self):
         """
         获取当前文件路径
@@ -22,6 +23,7 @@ class Doc_Process(object):
         pwd = os.path.abspath(os.path.dirname(__file__))
         return pwd
 
+    @classmethod
     def get_superior_dir(self):
         """
         获取上级目录
@@ -30,6 +32,7 @@ class Doc_Process(object):
         superior_directory = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
         return superior_directory
 
+    @classmethod
     def get_superior_dirs(self):
         """
         获取上上级目录
@@ -38,6 +41,7 @@ class Doc_Process(object):
         superior_directorys = os.path.abspath(os.path.join(os.getcwd(), "../.."))
         return superior_directorys
 
+    @classmethod
     def get_dirlist(self,filePath):
         '''
         获取指定目录下所有的文件名并返回一个列表，剔除其中的__init__.py和__pycache__。
@@ -54,6 +58,7 @@ class Doc_Process(object):
                 all_files.extend(next_level_files)
         return all_files
 
+    @classmethod
     def creat_zip(self,method,filepath,target_path=""):
         """
         打包文件为压缩包
@@ -93,6 +98,7 @@ class Doc_Process(object):
         finally:
             zip_file.close()
 
+    @classmethod
     def un_zip(self,method,filepath,target_path=""):
         """
         解压多种类型的压缩包
@@ -118,6 +124,7 @@ class Doc_Process(object):
         finally:
             zip_file.close()
 
+    @classmethod
     def get_filetype(self,file_path):
         """
         判断传入的文件状态
@@ -152,6 +159,7 @@ class Doc_Process(object):
         except Exception as IOError:
             logger.error(IOError)
 
+    @classmethod
     def copy_file(self,filepath, target):
         """
         复制文件
@@ -173,6 +181,7 @@ class Doc_Process(object):
         else:
             logger.error('请检查filepath是否正确！')
 
+    @classmethod
     def remove_file(self,filepath):
         """
         删除文件或文件夹
@@ -195,6 +204,7 @@ class Doc_Process(object):
         except Exception as FileNotFoundError:
             logger.error(FileNotFoundError)
 
+    @classmethod
     def make_file(self,filepath):
         """
         创建多级文件夹(注意这里必须上级文件夹存在才可以)
@@ -212,13 +222,12 @@ class Doc_Process(object):
             logger.error(FileNotFoundError)
 
 if __name__ == '__main__':
-    d = Doc_Process()
-    logger.info(d.get_pwd())
-    logger.info(d.get_superior_dir())
-    logger.info(d.get_superior_dirs())
-    # d.creat_zip(method="allfile",filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils",target_path="aaaa.gzip")
-    # d.get_filetype(file_path=r"E:\WorkSpace\PycharmProjects\UiAutomationFramework\Utils\not_exist.py")
-    # d.copy_file(filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils",target=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils\COPYS")
-    # d.remove_file(filepath=r"..\Result\Logs\2020-09-21\Default_Logs\2020-09-21.log")
-    # d.make_file(filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils\AA\aaa")
-    # d.get_dirlist(filePath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils")
+    logger.info(Doc_Process.get_pwd())
+    logger.info(Doc_Process.get_superior_dir())
+    logger.info(Doc_Process.get_superior_dirs())
+    # Doc_Process.creat_zip(method="allfile",filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils",target_path="aaaa.gzip")
+    # Doc_Process.get_filetype(file_path=r"E:\WorkSpace\PycharmProjects\UiAutomationFramework\Utils\not_exist.py")
+    # Doc_Process.copy_file(filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils",target=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils\COPYS")
+    # Doc_Process.remove_file(filepath=r"..\Result\Logs\2020-09-21\Default_Logs\2020-09-21.log")
+    # Doc_Process.make_file(filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils\AA\aaa")
+    # Doc_Process.get_dirlist(filePath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils")

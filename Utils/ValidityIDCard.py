@@ -11,8 +11,6 @@
 import re,random
 from Utils import AreaCode
 from datetime import datetime, timedelta
-
-
 class IdNumber(str):
 
     def __init__(self, id_number):
@@ -71,7 +69,7 @@ class IdNumber(str):
         # 随机生成一个区域码(6位数)
         id_number = str(random.choice(list(AreaCode.AREA_INFO.keys())))
         # 限定出生日期范围(8位数)
-        start, end = datetime.strptime("1960-01-01", "%Y-%m-%d"), datetime.strptime("2000-12-30", "%Y-%m-%d")
+        start, end = datetime.strptime("1960-01-01", "%Y-%m-%d"), datetime.strptime("2020-12-30", "%Y-%m-%d")
         birth_days = datetime.strftime(start + timedelta(random.randint(0, (end - start).days + 1)), "%Y%m%d")
         id_number += str(birth_days)
         # 顺序码(2位数)
@@ -92,4 +90,4 @@ if __name__ == '__main__':
     print(IdNumber(idcard).get_age())  # 年龄:21(岁)
     print(IdNumber(idcard).get_sex())  # 性别:1(男)
     print(IdNumber(idcard).get_check_digit())  # 校验码:1
-    print(IdNumber.verify_id(idcard))  # 检验身份证是否正确:False
+    print(IdNumber.verify_id(idcard))  # 检验身份证是否正确:True

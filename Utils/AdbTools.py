@@ -127,7 +127,7 @@ class Adb_Manage(object):
         try:
             if devices_name == False :
                 pass
-            install_status = conf.get("Android-Info", "install_status")
+            install_status = conf.get("Android_Info", "install_status")
             if install_status in(1,2):
                 # 安装错误常见列表
                 errors = {'INSTALL_FAILED_ALREADY_EXISTS': '程序已经存在',

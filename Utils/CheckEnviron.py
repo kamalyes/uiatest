@@ -14,6 +14,7 @@ adbManage = AdbTools.Adb_Manage()
 jarManage = LibraryTools.JarManage()
 
 class Environment(object):
+    @classmethod
     def run(self):
         """
         :param adbManage.check_filtered 检查本地环境是Win还是linux
@@ -23,4 +24,4 @@ class Environment(object):
         adbManage.check_filtered()
         jarManage.check_import(filepath=r'../requirements.txt')
 
-Environment().run()
+Environment.run()

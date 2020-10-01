@@ -19,6 +19,7 @@ def_dir = conf.get("Logger_Path", "def_log_dir")
 err_dir = conf.get("Logger_Path", "error_log_dir")
 
 class Logger(object):
+    @classmethod
     def write_log(self):
         """
         日志处理(写入文本、控制台输出)
@@ -88,6 +89,7 @@ class Logger(object):
             logger.addHandler(console)
         return logger
 
+    @classmethod
     def delete_log(self,days=''):
         """
         大于多少天的日志自动删除
@@ -129,8 +131,8 @@ class Logger(object):
         logger.info("不满足条件的文件：%s"%(not_conformity))
 
 if __name__ == '__main__':
-    logger = Logger().write_log()
-    delete = Logger().delete_log(days=5)
+    logger = Logger.write_log()
+    delete = Logger.delete_log(days=5)
     # 日志
     logger.debug('this is a logger debug message')
     logger.info('this is a logger info message')

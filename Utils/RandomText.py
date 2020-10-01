@@ -10,7 +10,9 @@
 import random
 import string
 import configparser
+from faker import Factory
 from Logger import GlobalLog
+
 logger = GlobalLog.Logger().write_log()#调用日志模块
 
 conf_ini = r"../Config/config.ini"

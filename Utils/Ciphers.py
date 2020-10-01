@@ -18,6 +18,7 @@ from Logger import GlobalLog
 logger = GlobalLog.Logger().write_log()  # 导入日志模块
 
 class Helper():
+    @classmethod
     def base64_encrypt(self,key):
         """
         base64 算法加密
@@ -27,6 +28,7 @@ class Helper():
         binary = base64.b64encode(key.encode())
         return binary
 
+    @classmethod
     def base64_decrypt(self, binary):
         """
         base64 算法解密
@@ -36,6 +38,7 @@ class Helper():
         b64decode = base64.b64decode(binary).decode()
         return b64decode
 
+    @classmethod
     def md5_encrypt(self, decode_msg):
         """
         md5 算法加密
@@ -46,6 +49,7 @@ class Helper():
         hl.update(decode_msg.encode('utf-8'))
         return hl.hexdigest()
 
+    @classmethod
     def sha1_encrypt(self, decode_msg):
         """
         sha1 算法加密
@@ -56,6 +60,7 @@ class Helper():
         sh.update(decode_msg.encode('utf-8'))
         return sh.hexdigest()
 
+    @classmethod
     def sha256_encrypt(self, decode_msg):
         """
         sha256 算法加密
@@ -66,6 +71,7 @@ class Helper():
         sh.update(decode_msg.encode('utf-8'))
         return sh.hexdigest()
 
+    @classmethod
     def des_encrypt(self, decode_msg, key):
         """
         DES 算法加密
@@ -78,6 +84,7 @@ class Helper():
         text = de.encrypt(mss.encode())
         return binascii.b2a_hex(text).decode()
 
+    @classmethod
     def aes_encrypt(self, decode_msg, key, vi):
         """
         AES 算法的加密
@@ -90,7 +97,7 @@ class Helper():
         txt = obj.encrypt(decode_msg.encode())
         return binascii.b2a_hex(txt).decode()
 
-
+    @classmethod
     def aes_decrypt(self, decode_msg, key, vi):
         """
         AES 算法的解密
@@ -104,8 +111,8 @@ class Helper():
         return obj.decrypt(decode_msg).decode()
 
 if __name__ == '__main__':
-    print(Helper().base64_encrypt(key="你好"))
-    print(Helper().base64_decrypt(binary=Helper().base64_encrypt(key="你好")))
-    print(Helper().md5_encrypt('你好'))
+    print(Helper.base64_encrypt(key="你好"))
+    print(Helper.base64_decrypt(binary=Helper().base64_encrypt(key="你好")))
+    print(Helper.md5_encrypt('你好'))
 
 
