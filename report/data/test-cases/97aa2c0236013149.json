@@ -1,0 +1,61 @@
+{
+  "uid" : "97aa2c0236013149",
+  "name" : "test_xfail_expected_failure",
+  "fullName" : "TestCase.test_case1.TestCase1#test_xfail_expected_failure",
+  "historyId" : "30d8c7c2e41d9a797b90b733d2e9d46f",
+  "time" : {
+    "start" : 1601554607868,
+    "stop" : 1601554607868,
+    "duration" : 0
+  },
+  "description" : "this test is an xfail that will be marked as expected failure",
+  "descriptionHtml" : "<p>this test is an xfail that will be marked as expected failure</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "AssertionError: assert False",
+  "statusTrace" : "self = <test_case1.TestCase1 object at 0x0000027E913A2A58>\n\n    @pytest.mark.xfail(condition=lambda: True, reason='this test is expecting failure')\n    def test_xfail_expected_failure(self):\n        \"\"\"this test is an xfail that will be marked as expected failure\"\"\"\n>       assert False\nE       assert False\n\nTestCase\\test_case1.py:33: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.xfail(condition=<function TestCase1.<lambda> at 0x0000027E91335F28>, reason='this test is expecting failure')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_case1"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase1"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-DGT7652I"
+  }, {
+    "name" : "thread",
+    "value" : "3636-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_case1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.xfail(condition=<function TestCase1.<lambda> at 0x0000027E91335F28>, reason='this test is expecting failure')" ]
+  },
+  "source" : "97aa2c0236013149.json",
+  "parameterValues" : [ ]
+}

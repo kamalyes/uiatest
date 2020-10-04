@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Thu Oct 01 20:20:06 GMT+08:00 2020","Thu Oct 01 20:20:06 GMT+08:00 2020","0","TestCase","test_case1","TestCase1","","","test_broken",""
+"skipped","Thu Oct 01 20:20:06 GMT+08:00 2020","Thu Oct 01 20:20:06 GMT+08:00 2020","0","TestCase","test_case1","TestCase1","","","test_skip","this test is skipped"
+"skipped","Thu Oct 01 20:20:06 GMT+08:00 2020","Thu Oct 01 20:20:06 GMT+08:00 2020","0","TestCase","test_case2","TestCase2","","","test_xfail_expected_failure","this test is an xfail that will be marked as expected failure"
+"failed","Thu Oct 01 20:20:06 GMT+08:00 2020","Thu Oct 01 20:20:06 GMT+08:00 2020","0","TestCase","test_case1","TestCase1","","","test_failure","this test fails"
+"skipped","Thu Oct 01 20:20:06 GMT+08:00 2020","Thu Oct 01 20:20:06 GMT+08:00 2020","0","TestCase","test_case1","TestCase1","","","test_xfail_expected_failure","this test is an xfail that will be marked as expected failure"
+"passed","Thu Oct 01 20:20:06 GMT+08:00 2020","Thu Oct 01 20:20:06 GMT+08:00 2020","0","TestCase","test_case1","TestCase1","","","test_success","this test succeeds"

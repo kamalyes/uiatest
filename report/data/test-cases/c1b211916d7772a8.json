@@ -1,0 +1,56 @@
+{
+  "uid" : "c1b211916d7772a8",
+  "name" : "test_broken",
+  "fullName" : "TestCase.test_case1.TestCase1#test_broken",
+  "historyId" : "2dc724b7e3579bf673815e98c73bf25e",
+  "time" : {
+    "start" : 1601554607865,
+    "stop" : 1601554607865,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "Exception: oops",
+  "statusTrace" : "self = <test_case1.TestCase1 object at 0x0000027E913A27B8>\n\n    def test_broken(self):\n>       raise Exception('oops')\nE       Exception: oops\n\nTestCase\\test_case1.py:28: Exception",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_case1"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase1"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-DGT7652I"
+  }, {
+    "name" : "thread",
+    "value" : "3636-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_case1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c1b211916d7772a8.json",
+  "parameterValues" : [ ]
+}

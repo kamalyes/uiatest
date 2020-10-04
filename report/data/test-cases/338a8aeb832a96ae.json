@@ -1,0 +1,89 @@
+{
+  "uid" : "338a8aeb832a96ae",
+  "name" : "test_broken",
+  "fullName" : "TestCase.test_case1.TestCase1#test_broken",
+  "historyId" : "2dc724b7e3579bf673815e98c73bf25e",
+  "time" : {
+    "start" : 1601554806386,
+    "stop" : 1601554806386,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "Exception: oops",
+  "statusTrace" : "self = <test_case1.TestCase1 object at 0x00000201F6459CF8>\n\n    def test_broken(self):\n>       raise Exception('oops')\nE       Exception: oops\n\nTestCase\\test_case1.py:28: Exception",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_case1"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase1"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-DGT7652I"
+  }, {
+    "name" : "thread",
+    "value" : "11800-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_case1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c1b211916d7772a8",
+      "status" : "broken",
+      "statusDetails" : "Exception: oops",
+      "time" : {
+        "start" : 1601554607865,
+        "stop" : 1601554607865,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "fb3228c5b073b7cf",
+      "status" : "broken",
+      "statusDetails" : "Exception: oops",
+      "time" : {
+        "start" : 1601554570540,
+        "stop" : 1601554570540,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e57a8d24dd962f79",
+      "status" : "broken",
+      "statusDetails" : "Exception: oops",
+      "time" : {
+        "start" : 1601554444945,
+        "stop" : 1601554444946,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ "broken" ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "338a8aeb832a96ae.json",
+  "parameterValues" : [ ]
+}

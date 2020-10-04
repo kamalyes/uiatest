@@ -1,0 +1,121 @@
+{
+  "2dc724b7e3579bf673815e98c73bf25e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "338a8aeb832a96ae",
+      "status" : "broken",
+      "statusDetails" : "Exception: oops",
+      "time" : {
+        "start" : 1601554806386,
+        "stop" : 1601554806386,
+        "duration" : 0
+      }
+    } ]
+  },
+  "117e57609a21946202b0b99674d2f2c9" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4056437823db7128",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1601554806360,
+        "stop" : 1601554806360,
+        "duration" : 0
+      }
+    } ]
+  },
+  "30d8c7c2e41d9a797b90b733d2e9d46f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4de0456ae8e2fa7c",
+      "status" : "skipped",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1601554806389,
+        "stop" : 1601554806389,
+        "duration" : 0
+      }
+    } ]
+  },
+  "71376ad81a06424aefd35bf6e4e53748" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "27be920b1d814754",
+      "status" : "passed",
+      "time" : {
+        "start" : 1601554806359,
+        "stop" : 1601554806359,
+        "duration" : 0
+      }
+    } ]
+  },
+  "46f36f83b5c5706ca16711eea755d493" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1a3047764b05ccf1",
+      "status" : "skipped",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1601554806392,
+        "stop" : 1601554806392,
+        "duration" : 0
+      }
+    } ]
+  },
+  "9ced205957b807785e52bd3433046402" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "767f205ad7ad7c2f",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: for a reason!",
+      "time" : {
+        "start" : 1601554806385,
+        "stop" : 1601554806385,
+        "duration" : 0
+      }
+    } ]
+  }
+}

@@ -1,0 +1,19 @@
+[ {
+  "values" : [ "1.8.0_191" ],
+  "name" : "Java"
+}, {
+  "values" : [ "Production" ],
+  "name" : "Stand"
+}, {
+  "values" : [ "127.0.0.1/login" ],
+  "name" : "ApiUrl"
+}, {
+  "values" : [ "85.0.4183.121" ],
+  "name" : "Browser.Version"
+}, {
+  "values" : [ "3.7.1" ],
+  "name" : "Python.Version"
+}, {
+  "values" : [ "Chrome" ],
+  "name" : "Browser"
+} ]
