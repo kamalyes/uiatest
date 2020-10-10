@@ -10,9 +10,12 @@
 
 import re,random
 from Utils import AreaCode
+from Logger.GlobalLog import Logger
 from datetime import datetime, timedelta
-class IdNumber(str):
 
+logger = Logger.write_log()
+class IdNumber(str):
+    
     def __init__(self, id_number):
         super(IdNumber, self).__init__()
         self.id = id_number
@@ -83,11 +86,11 @@ class IdNumber(str):
 if __name__ == '__main__':
     random_sex = random.randint(0, 1)  # 随机生成男(1)或女(0)
     idcard = IdNumber.generate_id(random_sex)# 随机生成身份证号
-    print(idcard)
-    print(IdNumber(idcard).area_id)  # 地址编码:431121
-    print(IdNumber(idcard).get_area_name())  # 地址:湖南省永州市祁阳县
-    print(IdNumber(idcard).get_birthday())  # 生日:1999-3-15
-    print(IdNumber(idcard).get_age())  # 年龄:21(岁)
-    print(IdNumber(idcard).get_sex())  # 性别:1(男)
-    print(IdNumber(idcard).get_check_digit())  # 校验码:1
-    print(IdNumber.verify_id(idcard))  # 检验身份证是否正确:True
+    logger.info(idcard)
+    logger.info(IdNumber(idcard).area_id)  # 地址编码:431121
+    logger.info(IdNumber(idcard).get_area_name())  # 地址:湖南省永州市祁阳县
+    logger.info(IdNumber(idcard).get_birthday())  # 生日:1999-3-15
+    logger.info(IdNumber(idcard).get_age())  # 年龄:21(岁)
+    logger.info(IdNumber(idcard).get_sex())  # 性别:1(男)
+    logger.info(IdNumber(idcard).get_check_digit())  # 校验码:1
+    logger.info(IdNumber.verify_id(idcard))  # 检验身份证是否正确:True
