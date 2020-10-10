@@ -94,7 +94,7 @@ class YamlHandle():
 
 if __name__ == '__main__':
     YamlHandle = YamlHandle()
-    data = YamlHandle.yamldata(filepath = r'..\YamlData\register.yaml')
+    data = YamlHandle.yamldata(filepath = r'..\YamlData\Register.yaml')
     logger.info(YamlHandle.getdict(key="name", data=data))
-    # logger.info(YamlHandle.changetype(filepath=r'..\YamlData\register.yaml'))
+    # logger.info(YamlHandle.changetype(filepath=r'..\YamlData\Register.yaml'))
     YamlHandle.writeyaml(filepath = r'..\YamlData\Token.yaml',data={'a':'b'},method="w")
