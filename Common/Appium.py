@@ -14,8 +14,8 @@ from appium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
-from Logger import GlobalLog
-logger = GlobalLog.Logger().write_log()  #导入日志模块
+from Logger.GlobalLog import Logger
+logger = Logger.write_log()  #导入日志模块
 conf_ini = "../Config/config.ini"
 conf = configparser.ConfigParser()
 conf.read(conf_ini,encoding="utf-8")

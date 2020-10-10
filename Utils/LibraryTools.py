@@ -8,8 +8,8 @@
 @Date  : 2020/9/21 13:18
 '''
 import subprocess
-from Logger import GlobalLog  # 导入日志模块
-logger = GlobalLog.Logger().write_log()#调用日志模块
+from Logger.GlobalLog import  Logger # 导入日志模块
+logger = Logger.write_log()#调用日志模块
 
 class JarManage():
     def check_import(self,filepath):

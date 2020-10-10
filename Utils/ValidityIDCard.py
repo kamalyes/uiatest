@@ -4,7 +4,7 @@
 '''
 @File  : ValidityIDCard.py
 @Author: v_yanqyu
-@Desc  : 身份证效验
+@Desc  : 身份证效验&随机生成身份证信息
 @Date  : 2020/10/1 15:01
 '''
 

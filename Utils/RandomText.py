@@ -10,16 +10,14 @@
 import random
 import string
 import configparser
-from faker import Factory
 from Logger import GlobalLog
-
 logger = GlobalLog.Logger().write_log()#调用日志模块
 
 conf_ini = r"../Config/config.ini"
 conf = configparser.ConfigParser()
 conf.read(conf_ini,encoding="utf-8")
 
-class RandomNum():
+class Character():
     def email(self,emailtype=None,maxnum=None,rad_count=None):
         """
         :param emailtype: 邮箱类型
@@ -137,8 +135,8 @@ class RandomNum():
         return name_list
 
 if __name__ == '__main__':
-    logger.info(RandomNum().email(emailtype = "@qq.com",maxnum=10,rad_count=5))
-    logger.info(RandomNum().verifi(maxnum=6,radcount=2))
-    logger.info(RandomNum().phone(radcount=6))
-    logger.info(RandomNum().name(length=2,radcount=10))
+    logger.info(Character().email(emailtype = "@qq.com",maxnum=10,rad_count=5))
+    logger.info(Character().verifi(maxnum=6,radcount=2))
+    logger.info(Character().phone(radcount=6))
+    logger.info(Character().name(length=2,radcount=10))
 
