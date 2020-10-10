@@ -7,7 +7,6 @@
 # Desc: 时间获取类
 # Date： 2020/9/17 19:05
 '''
-__author__ = 'v_yanqyu'
 import time
 import datetime
 from Logger import GlobalLog

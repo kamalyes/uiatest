@@ -7,7 +7,6 @@
 # Desc: PyCharm
 # Date： 2020/7/15 16:15
 '''
-__author__ = 'v_yanqyu'
 import logging,shutil
 import time,datetime
 import os,configparser

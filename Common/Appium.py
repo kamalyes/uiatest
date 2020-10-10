@@ -7,7 +7,6 @@
 # Desc: PyCharm
 # Date： 2020/9/15 19:00
 '''
-__author__ = 'v_yanqyu'
 import configparser
 import os,re,time,base64
 from appium import webdriver

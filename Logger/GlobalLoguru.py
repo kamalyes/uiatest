@@ -7,7 +7,6 @@
 # Desc: 日志操作模块,屏幕输出/文件输出 可选(默认屏幕和文件均输出)
 # Date： 2020/5/7 10:05
 '''
-__author__ = 'v_yanqyu'
 import os
 import time,datetime
 from loguru import logger

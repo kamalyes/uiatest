@@ -4,10 +4,9 @@
 '''
 # FileName：SendEmali.py
 # Author : v_yanqyu
-# Desc:   PyCharm
+# Desc:   邮件发送
 # Date： 2020/5/6 19:27
 '''
-__author__ = 'v_yanqyu'
 import smtplib
 from email.header import Header
 from Logger import GlobalLog
@@ -15,7 +14,7 @@ logger = GlobalLog.Logger().write_log()#调用日志模块
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
-# 邮件发送
+
 class EmailSendLib(object):
     def __init__(self,user_email,passwd,title,smtp_server,addressee):
         '''

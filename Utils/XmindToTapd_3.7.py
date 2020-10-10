@@ -7,7 +7,6 @@
 # Desc: XmindToTapd小工具
 # Date： 2020/7/16 15:55
 '''
-__author__ = 'v_yanqyu'
 
 import os
 import xlwt
@@ -21,8 +20,6 @@ import sys
 import copy
 import importlib
 importlib.reload(sys)
-
-
 # 对输入编码转码处理
 decode_list = ["GB2312", "utf-8", "ISO-8859-2", "ascii", "windows-1252"]
 NULL = None

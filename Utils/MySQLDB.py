@@ -4,7 +4,7 @@
 '''
 @File  : MySQLDB.py
 @Author: v_yanqyu
-@Desc  : 
+@Desc  : MySQL驱动类
 @Date  : 2020/10/1 9:11
 '''
 import pandas as pd

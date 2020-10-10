@@ -8,7 +8,6 @@
 # Date： 2020/5/6 19:15
 '''
 
-__author__ = 'v_yanqyu'
 import os
 import zipfile,gzip,shutil
 from Logger import GlobalLog

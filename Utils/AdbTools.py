@@ -7,7 +7,6 @@
 # Desc: Adb工具类
 # Date： 2020/9/6 18:56
 '''
-__author__ = 'v_yanqyu'
 import os,re
 import platform,datetime
 import configparser,subprocess
