@@ -1,0 +1,16 @@
+2020-10-15 01:19:33,499 - DictClean.py [line:115] - ERROR: 该内容不支持转换、请检查是否为JSON或Body类型
+2020-10-15 01:19:47,245 - DictClean.py [line:115] - ERROR: 该内容不支持转换、请检查是否为JSON或Body类型
+2020-10-15 01:20:13,183 - DictClean.py [line:116] - ERROR: 该内容不支持转换、请检查是否为JSON或Body类型
+2020-10-15 01:20:29,360 - DictClean.py [line:116] - ERROR: 该内容不支持转换、请检查是否为JSON或Body类型
+2020-10-15 12:03:06,256 - RequestTools.py [line:159] - ERROR: 请求失败！
+Traceback (most recent call last):
+  File "D:\Work_Spaces\PyCharm_Project\AutoFramework\Utils\RequestTools.py", line 150, in get_post_json
+    playload = YamlHandle.StrToJson(method="BodyToJson",string=json)
+  File "D:\Work_Spaces\PyCharm_Project\AutoFramework\Utils\DictClean.py", line 111, in StrToJson
+    str = string.split('&')
+AttributeError: 'dict' object has no attribute 'split'
+2020-10-15 12:05:04,831 - DictClean.py [line:124] - ERROR: 该内容不支持转换、请检查是否为JSON或Body类型
+2020-10-15 12:05:44,645 - DictClean.py [line:124] - ERROR: 该内容不支持转换、请检查是否为JSON或Body类型
+2020-10-15 12:05:54,826 - DictClean.py [line:124] - ERROR: 该内容不支持转换、请检查是否为JSON或Body类型
+2020-10-15 12:06:01,850 - DictClean.py [line:124] - ERROR: 该内容不支持转换、请检查是否为JSON或Body类型
+2020-10-15 12:08:18,388 - DictClean.py [line:124] - ERROR: 该内容不支持转换、请检查是否为JSON或Body类型
