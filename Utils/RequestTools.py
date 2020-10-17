@@ -9,10 +9,10 @@
 '''
 import json,random,requests
 from faker import Factory
-from Logger import GlobalLog
-from Utils.DictClean import YamlHandle
-logger = GlobalLog.Logger().write_log()#调用日志模块
 from Utils import IniHandle
+from Utils.DictClean import YamlHandle
+from Logger.GlobalLog import  Logger # 导入日志模块
+logger = Logger.write_log()#调用日志模块
 filepath = r'../Config/config.ini'
 IniHandle = IniHandle.IniHandle()
 
@@ -148,7 +148,7 @@ class Https_Request():
         """
         try:
             playload = YamlHandle.StrToJson(method,string=json)
-            r = requests.post(url, json=playload, headers=headers, proxies=proxies, timeout=3)
+            r = requests.post(url, params=playload, headers=headers, proxies=proxies, timeout=3)
             logger.info("请求的接口：%s" % url)
             status_code = r.status_code  # 获取返回的状态码
             logger.info("获取返回的状态码:%d" % status_code)

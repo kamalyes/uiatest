@@ -9,8 +9,8 @@
 '''
 __author__ = 'v_yanqyu'
 import os,configparser
-from Logger import GlobalLog
-logger = GlobalLog.Logger().write_log()#调用日志模块
+from Logger.GlobalLog import Logger
+logger = Logger.write_log()#调用日志模块
 
 class IniHandle():
     def __init__(self):

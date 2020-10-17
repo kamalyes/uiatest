@@ -8,5 +8,6 @@
 @Date  : 2020/10/16 17:07
 '''
 
-from Logger.GlobalLog import Logger
-logger = Logger.write_log()
+from Logger.GlobalLog import  Logger # 导入日志模块
+logger = Logger.write_log()#调用日志模块
+

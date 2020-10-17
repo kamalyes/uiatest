@@ -14,3 +14,174 @@ AttributeError: 'dict' object has no attribute 'split'
 2020-10-15 12:05:54,826 - DictClean.py [line:124] - ERROR: 该内容不支持转换、请检查是否为JSON或Body类型
 2020-10-15 12:06:01,850 - DictClean.py [line:124] - ERROR: 该内容不支持转换、请检查是否为JSON或Body类型
 2020-10-15 12:08:18,388 - DictClean.py [line:124] - ERROR: 该内容不支持转换、请检查是否为JSON或Body类型
+2020-10-15 12:56:41,749 - DictClean.py [line:124] - ERROR: 该内容不支持转换、请检查是否为JSON或Body类型
+2020-10-15 12:56:44,863 - RequestTools.py [line:159] - ERROR: 请求失败！
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Program Files\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "D:\Program Files\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "D:\Program Files\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Program Files\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Program Files\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Program Files\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\util\retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\packages\six.py", line 735, in reraise
+    raise value
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 336, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.tone.qq.com', port=443): Read timed out. (read timeout=3)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Work_Spaces\PyCharm_Project\AutoFramework\Utils\RequestTools.py", line 151, in get_post_json
+    r = requests.post(url, params=playload, headers=headers, proxies=proxies, timeout=3)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 119, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.tone.qq.com', port=443): Read timed out. (read timeout=3)
+2020-10-15 23:56:13,705 - DictClean.py [line:124] - ERROR: 该内容不支持转换、请检查是否为JSON或Body类型
+2020-10-15 23:56:16,876 - RequestTools.py [line:159] - ERROR: 请求失败！
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Program Files\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "D:\Program Files\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "D:\Program Files\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Program Files\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Program Files\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Program Files\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\util\retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\packages\six.py", line 735, in reraise
+    raise value
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 336, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.tone.qq.com', port=443): Read timed out. (read timeout=3)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Work_Spaces\PyCharm_Project\AutoFramework\Utils\RequestTools.py", line 151, in get_post_json
+    r = requests.post(url, params=playload, headers=headers, proxies=proxies, timeout=3)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 119, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.tone.qq.com', port=443): Read timed out. (read timeout=3)
+2020-10-15 23:56:26,584 - DictClean.py [line:124] - ERROR: 该内容不支持转换、请检查是否为JSON或Body类型
+2020-10-15 23:56:29,711 - RequestTools.py [line:159] - ERROR: 请求失败！
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Program Files\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "D:\Program Files\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "D:\Program Files\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Program Files\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Program Files\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Program Files\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\util\retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\packages\six.py", line 735, in reraise
+    raise value
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\connectionpool.py", line 336, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.tone.qq.com', port=443): Read timed out. (read timeout=3)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Work_Spaces\PyCharm_Project\AutoFramework\Utils\RequestTools.py", line 151, in get_post_json
+    r = requests.post(url, params=playload, headers=headers, proxies=proxies, timeout=3)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 119, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.tone.qq.com', port=443): Read timed out. (read timeout=3)

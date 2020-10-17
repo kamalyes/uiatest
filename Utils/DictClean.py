@@ -9,7 +9,7 @@
 '''
 import yaml,json
 from Logger.GlobalLog import Logger
-logger = Logger.write_log()
+logger = Logger.write_log()#调用日志模块
 
 # 初始化列表、及yaml文件的异常抛出
 tmp_list = []

@@ -14,9 +14,8 @@ from hashlib import sha1, md5
 from Crypto.Hash import SHA256
 from Crypto.Cipher import AES
 from Crypto.Cipher import DES
-from Logger import GlobalLog
-logger = GlobalLog.Logger().write_log()  # 导入日志模块
-
+from Logger.GlobalLog import Logger
+logger = Logger.write_log()#调用日志模块
 class Helper():
     @classmethod
     def base64_encrypt(self,key):

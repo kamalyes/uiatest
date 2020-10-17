@@ -10,9 +10,9 @@
 import os,re
 import platform,datetime
 import configparser,subprocess
-from Logger import GlobalLog
+from Logger.GlobalLog import Logger
 from Utils import DirTools
-logger = GlobalLog.Logger().write_log()#调用日志模块
+logger = Logger.write_log()#调用日志模块
 
 conf_ini = r"../Config/config.ini"
 conf = configparser.ConfigParser()

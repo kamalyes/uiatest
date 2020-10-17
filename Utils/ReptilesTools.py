@@ -7,3 +7,5 @@
 @Desc  : 爬虫类封装
 @Date  : 2020/10/16 17:17
 '''
+from Logger.GlobalLog import  Logger # 导入日志模块
+logger = Logger.write_log()#调用日志模块

@@ -10,8 +10,8 @@
 
 import os
 import zipfile,gzip,shutil
-from Logger import GlobalLog
-logger = GlobalLog.Logger().write_log()#调用日志模块
+from Logger.GlobalLog import Logger
+logger = Logger.write_log()#调用日志模块
 class Doc_Process(object):
     @classmethod
     def get_pwd(self):

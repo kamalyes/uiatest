@@ -12,8 +12,8 @@ import re,random
 from Utils import AreaCode
 from Logger.GlobalLog import Logger
 from datetime import datetime, timedelta
-
 logger = Logger.write_log()
+
 class IdNumber(str):
     
     def __init__(self, id_number):

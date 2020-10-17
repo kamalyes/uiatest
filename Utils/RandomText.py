@@ -10,8 +10,8 @@
 import random
 import string
 import configparser
-from Logger import GlobalLog
-logger = GlobalLog.Logger().write_log()#调用日志模块
+from Logger.GlobalLog import  Logger # 导入日志模块
+logger = Logger.write_log()#调用日志模块
 
 conf_ini = r"../Config/config.ini"
 conf = configparser.ConfigParser()
