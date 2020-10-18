@@ -13,6 +13,15 @@ from Logger.GlobalLog import Logger
 logger = Logger.write_log()#调用日志模块
 
 class IniHandle():
+    def __init__(self,filepath=None):
+        try:
+            if filepath is None:
+                filepath = r'../Config/config.ini'
+            self.conf = configparser.ConfigParser()
+            self.conf.read(filepath, encoding="utf-8")
+        except Exception as FileNotFoundError:
+            logger.error("文件读取失败，请检查%s是否存在,错误信息：%s" % (filepath,FileNotFoundError))
+
     @classmethod
     def openconfig(self,filepath=None):
         """
@@ -30,29 +39,32 @@ class IniHandle():
         except Exception as FileNotFoundError:
             logger.error("文件读取失败，请检查%s是否存在"%(filepath))
 
-    @classmethod
-    def allsection(self,filepath=None):
+    def allsection(self):
         """
         获取ini文件下所有的section值
         :return:  all_section
         """
-        conf = self.openconfig(filepath)
-        return conf.sections()
+        return self.conf.sections()
 
-    @classmethod
-    def options(self,section_name,filepath=None):
+    def options(self,section):
         """
-        获取指定section的所有option
+        获取指定section的所有option的Key
         :return:
         """
-        conf = self.openconfig(filepath)
-        if conf.has_section(section_name):
-            return conf.options(section_name)
+        if self.conf.has_section(section):
+            return self.conf.options(section)
         else:
-            raise ValueError(section_name)
+            raise ValueError(section)
 
-    @classmethod
-    def optvalue(self,node,key,filepath=None):
+    def sectoption(self,section):
+        """
+        获取指定section下的option的键值对
+        :return: List形式的 [('a', 'b'),('aa', 'bb')]
+        """
+        if self.conf.has_section(section):
+            return self.conf.items(section)
+
+    def optvalue(self,node,key):
         """
         获取指定section下option的value值
         :param filepath 需要读取的文件
@@ -60,37 +72,26 @@ class IniHandle():
         :param key  所需要查询内容的单一key
         :return: result 返回对应key的value值
         """
-        conf = self.openconfig(filepath)
-        result = conf.get(node, key)
-        return result
+        return self.conf.get(node, key)
 
-    @classmethod
-    def all_items(self,section,filepath=None):
-        """
-        获取指定section下的option的键值对
-        :return: List形式的 [('a', 'b'),('aa', 'bb')]
-        """
-        conf = self.openconfig(filepath)
-        if conf.has_section(section):
-            return conf.items(section)
-
-    @classmethod
-    def  all_items(self,filepath=None):
+    def  allitems(self):
         """
         打印配置文件所有的值(该方法并不是很常用)
         :return:
         """
-        conf = self.openconfig(filepath)
         for section in self.allsection():
             logger.info("[" + section + "]")
-            for K, V in conf.items(section):
+            for K, V in self.conf.items(section):
                 logger.info(K + "=" + V)
-
 
 if __name__ == '__main__':
     filepath = r'../Config/config.ini'
+    logger.info(IniHandle(filepath))
+    IniHandle = IniHandle()
+    logger.info(IniHandle.allsection())
     logger.info(IniHandle.openconfig(filepath))
     logger.info(IniHandle.optvalue(node="Proxy_Setting",key="proxy_switch"))
-    logger.info(IniHandle.allsection())
-    logger.info(IniHandle.options(section_name="Proxy_Setting"))
-    # logger.info(IniHandle.all_items())
+    # logger.info(IniHandle().allsection())
+    logger.info(IniHandle.options(section="Proxy_Setting"))
+    logger.info(IniHandle.sectoption(section='Proxy_Setting'))
+    # logger.info(IniHandle().allitems())

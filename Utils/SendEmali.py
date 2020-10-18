@@ -11,12 +11,13 @@ import smtplib
 from email.header import Header
 from Logger.GlobalLog import Logger
 logger = Logger.write_log()#调用日志模块
+from Utils.ConfigParser import IniHandle
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 
 class EmailSendLib(object):
-    def __init__(self,user_email,passwd,title,smtp_server,addressee):
+    def __init__(self,user_email=None,passwd=None,title=None,smtp_server=None,addressee=None):
         '''
         :param self.user_email： 发件人邮箱
         :param self.passwd： 发件人密码
@@ -24,10 +25,24 @@ class EmailSendLib(object):
         :param smtp_server：邮箱服务器
         :param addressee：收件人邮箱
         '''
+        if user_email is None:
+            user_email = IniHandle.optvalue('EMAIL','user_email')
         self.user_email = user_email
+
+        if passwd is None:
+            passwd = IniHandle.optvalue('EMAIL','passwd')
         self.passwd = passwd
-        self.title = title
+
+        if smtp_server is None:
+            smtp_server = IniHandle.optvalue('EMAIL','smtp_server')
         self.smtp_server = smtp_server
+
+        if title is None:
+            title = IniHandle.optvalue('EMAIL','title')
+        self.title = title
+
+        if addressee is None:
+            addressee = IniHandle.optvalue('EMAIL','addressee')
         self.addressee = "%s"%(addressee)
 
     @staticmethod
@@ -106,18 +121,18 @@ class EmailSendLib(object):
             logger.info('邮件发送成功~！')
         finally:
             email_cursor.quit()
+if __name__ == '__main__':
+    Email = EmailSendLib(user_email="mryu168@163.com",passwd="EKCXFRDVJLSUUITM",title="test",smtp_server="smtp.163.com",addressee="mryu168@163.com")
+    # 发送文本 send_type 参数需要指定为 plain，因为 plain 为默认参数所以可以忽略
+    Email.send('测试邮件(标题)', '测试邮件(内容) - 文本')
 
-Email = EmailSendLib(user_email="mryu168@163.com",passwd="EKCXFRDVJLSUUITM",title="test",smtp_server="smtp.163.com",addressee="mryu168@163.com")
-# 发送文本 send_type 参数需要指定为 plain，因为 plain 为默认参数所以可以忽略
-Email.send('测试邮件(标题)', '测试邮件(内容) - 文本')
+    # 发送 html send_type 参数需要指定为 html
+    Email.send('测试邮件(标题)', '<h2> 测试邮件(内容) - HTML </h2>', send_type='html')
 
-# 发送 html send_type 参数需要指定为 html
-Email.send('测试邮件(标题)', '<h2> 测试邮件(内容) - HTML </h2>', send_type='html')
+    # 发送带有 [附件] 的格式：send_type 参数需要指定为 enclosure file_path 参数为文件路径
+    Email.send('测试邮件(标题)', '测试邮件(内容) - 附件', send_type='enclosure', file_path='../Result/Test.txt')
 
-# 发送带有 [附件] 的格式：send_type 参数需要指定为 enclosure file_path 参数为文件路径
-Email.send('测试邮件(标题)', '测试邮件(内容) - 附件', send_type='enclosure', file_path='../Result/Test.txt')
-
-# 发送带有 [图片] 的格式：
-# 发送图片 send_type 参数需要指定为 image
-# image_path 参数为图片路径
-Email.send('测试邮件(标题)', '测试邮件(内容) - 图片', send_type='image', image_path='../Result/mbuntu-5.jpg')
+    # 发送带有 [图片] 的格式：
+    # 发送图片 send_type 参数需要指定为 image
+    # image_path 参数为图片路径
+    Email.send('测试邮件(标题)', '测试邮件(内容) - 图片', send_type='image', image_path='../Result/mbuntu-5.jpg')
