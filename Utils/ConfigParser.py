@@ -37,7 +37,7 @@ class IniHandle():
             conf.read(filepath, encoding="utf-8")
             return conf
         except Exception as FileNotFoundError:
-            logger.error("文件读取失败，请检查%s是否存在"%(filepath))
+            logger.error("文件读取失败，请检查%s是否存在,错误信息：%s"%(filepath,FileNotFoundError))
 
     def checksection(self, section,option=None):
         """
@@ -152,6 +152,7 @@ class IniHandle():
         conf.read(conf_ini, encoding="utf-8")
         return conf
 
+
 if __name__ == '__main__':
     filepath = r'../Config/config.ini'
     logger.info(IniHandle(filepath))
@@ -164,4 +165,4 @@ if __name__ == '__main__':
     logger.info(IniHandle.sectoption('Proxy_Setting'))
     # logger.info(IniHandle().allitems())式展示：%s"%(dics))
     IniHandle.checksection("Proxy_Setting")
-    IniHandle().rmseoption(section="rose")
+    IniHandle.rmseoption(section="rose")

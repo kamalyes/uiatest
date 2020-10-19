@@ -18,6 +18,7 @@ from Utils.ConfigParser import IniHandle
 from Utils.CheckStatus import CodeWriting
 from Utils.DictClean import YamlHandle
 logger = Logger.write_log()   # 调用日志模块
+IniHandle =  IniHandle()
 
 class HttpsServer():
     @classmethod
