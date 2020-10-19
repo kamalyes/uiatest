@@ -39,6 +39,20 @@ class IniHandle():
         except Exception as FileNotFoundError:
             logger.error("文件读取失败，请检查%s是否存在"%(filepath))
 
+    def checksection(self, section,option=None):
+        """
+        检查节点
+        :param section:
+        :return:
+        """
+        try:
+            if option is None:
+                self.conf.has_section(section)
+            else:
+                self.conf.has_option(section, option)
+        except Exception as  e:
+            logger.info("无此节点，错误信息%s"%(e))
+
     def allsection(self):
         """
         获取ini文件下所有的section值
@@ -84,6 +98,60 @@ class IniHandle():
             for K, V in self.conf.items(section):
                 logger.info(K + "=" + V)
 
+    def readsections(self):
+        """
+        读取所有section到字典中
+        :return:
+        """
+        res_1 = {}
+        res_2 = {}
+        sections = self.conf.sections()
+        for sec in sections:
+            for key, val in self.conf.items(sec):
+                res_2[key] = val
+            res_1[sec] = res_2.copy()
+            res_2.clear()
+        return res_1
+
+    def rmseoption(self, section, key=None):
+        """
+        删除一个 section中的一个item（以键值KEY为标识）
+        :param section:
+        :param key:
+        :return:
+        """
+        if key is None:
+            self.checksection(section)
+            self.conf.remove_section(section)
+        else:
+            self.checksection(section, key)
+            self.conf.remove_option(section, key)
+
+    def addsection(self, section):
+        """
+        添加一个section
+        :param section:
+        :return:
+        """
+        self.conf.add_section(section)
+
+    def additem(self, section, key, value):
+        """
+        往section添加key和value
+        :param section:
+        :param key:
+        :param value:
+        :return:
+        """
+        self.conf.set(section, key, value)
+
+    @classmethod
+    def readconfig(self):
+        conf_ini = r"../Config/config.ini"
+        conf = configparser.ConfigParser()
+        conf.read(conf_ini, encoding="utf-8")
+        return conf
+
 if __name__ == '__main__':
     filepath = r'../Config/config.ini'
     logger.info(IniHandle(filepath))
@@ -92,6 +160,8 @@ if __name__ == '__main__':
     logger.info(IniHandle.openconfig(filepath))
     logger.info(IniHandle.optvalue(node="Proxy_Setting",key="proxy_switch"))
     # logger.info(IniHandle().allsection())
-    logger.info(IniHandle.options(section="Proxy_Setting"))
-    logger.info(IniHandle.sectoption(section='Proxy_Setting'))
-    # logger.info(IniHandle().allitems())
+    logger.info(IniHandle.options("Proxy_Setting"))
+    logger.info(IniHandle.sectoption('Proxy_Setting'))
+    # logger.info(IniHandle().allitems())式展示：%s"%(dics))
+    IniHandle.checksection("Proxy_Setting")
+    IniHandle().rmseoption(section="rose")
