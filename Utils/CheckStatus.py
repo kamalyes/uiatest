@@ -7,7 +7,6 @@
 # Desc: 根据穿过来的status_code返回相应的文案
 # Date： 2020/10/21 17:57
 '''
-import json
 from Logger.GlobalLog import Logger
 logger = Logger.write_log()
 class CodeWriting():
