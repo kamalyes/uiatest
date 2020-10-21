@@ -83,6 +83,61 @@ class HttpsRequest():
         user_agent = self.get_user_agent(num=5, method='custom')
         return {'User-Agent': user_agent}
 
+
+    def send_request(self, url, method,agreement=None,data=None, headers=None,timeout=None,cookies=None,verify=None):
+        """
+        :param url: 请求地址
+        :param data: 传参数据
+        :param header: 头部信息
+        :param agreement 协议 Https 则加密的SLL Http则普通协议 不填则默认return url
+        :return: res 返回基本信息
+        """
+        if agreement == 'https':
+            address = 'https://%s'%(url)
+        elif agreement == 'http':
+            address = 'http://%s'%(url)
+        else:
+            address = url
+        logger.info(address)
+
+        proxy_handler = urllib.request.ProxyHandler(self.proxy_state())
+        opener = urllib.request.build_opener(proxy_handler)
+
+        if method == "get":
+            logger.info("get请求")
+            response = opener.open(address, data=data, timeout=5)
+
+        elif method == "post":
+            logger.info("post请求")
+            response = opener.open(address, data=data, timeout=5)
+            logger.info(response)
+
+        elif method == "delete":
+            logger.info("delete请求")
+            response = opener.open(address, data=data, timeout=5)
+
+        elif method == "put":
+            logger.info("put请求")
+            response = opener.open(address, data=data, timeout=5)
+
+        elif method == "trace":
+            logger.info("trace请求")
+            response = opener.open(address, data=data, timeout=5)
+
+        elif method == "head":
+            logger.info("head请求")
+            response = opener.open(address, data=data, timeout=5)
+
+        elif method == "options":
+            logger.info("options请求")
+            response = opener.open(address, data=data, timeout=5)
+
+        elif method == "patch":
+            logger.info("patch请求")
+            response = opener.open(address, data=data, timeout=5)
+
+        return  response
+
     @classmethod
     def get_response(self,response):
         """
