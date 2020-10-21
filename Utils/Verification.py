@@ -8,7 +8,7 @@
 @Date  :2020/9/25-22:19
 '''
 import random
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from PIL import Image, ImageDraw, ImageFont
 from io import BytesIO
 import os
 

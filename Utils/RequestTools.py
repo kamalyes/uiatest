@@ -18,7 +18,6 @@ from Utils.ConfigParser import IniHandle
 from Utils.CheckStatus import CodeWriting
 from Utils.DictClean import YamlHandle
 logger = Logger.write_log()   # 调用日志模块
-conf = IniHandle.readconfig()
 
 class HttpsServer():
     @classmethod
@@ -30,9 +29,9 @@ class HttpsServer():
         开关状态关闭的情况下才会返回value即：False
         """
         try:
-            off_status = conf.get("Proxy_Setting","proxy_switch")
+            off_status = IniHandle.optvalue(node='Proxy_Setting',key='proxy_switch')
             if off_status is not  None:
-                proxies = eval(conf.get("Proxy_Setting", "proxy_type")) #强转为dict类型 否则 request模块识别不了str类型
+                proxies = IniHandle.optvalue(node='Proxy_Setting',key='proxy_type')
                 return proxies
         except Exception as ModuleNotFoundError:
             logger.error(ModuleNotFoundError)

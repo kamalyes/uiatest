@@ -8,20 +8,12 @@
 # Date： 2020/9/6 18:56
 '''
 
-import os,re
+import os,re,subprocess
 import platform,datetime
-import configparser,subprocess
 from Logger.GlobalLog import Logger
 from Utils import DirTools
 logger = Logger.write_log()#调用日志模块
-from Logger.Console import *
-
-# logger.warning(Skull)
-
-conf_ini = r"../Config/config.ini"
-conf = configparser.ConfigParser()
-conf.read(conf_ini,encoding="utf-8")
-package_name = conf.get("Android_Info", "package_name")
+from Utils.ConfigParser import IniHandle
 
 class Adb_Manage(object):
     def check_filtered(self):
@@ -128,7 +120,7 @@ class Adb_Manage(object):
         try:
             if devices_name == False :
                 pass
-            status = conf.get("Android_Info", "install_status")
+            status = IniHandle.optvalue(node='Android_Info', key='install_status')
             if status in(1,2):
                 # 安装错误常见列表
                 errors = {'INSTALL_FAILED_ALREADY_EXISTS': '程序已经存在',

@@ -8,12 +8,10 @@
 @Date  : 2020/10/21 23:27
 '''
 
-import configparser
 from Utils.ExcelTools import *
 from Logger.GlobalLog import Logger
 logger =Logger.write_log()
 from Utils.ConfigParser import IniHandle
-conf = IniHandle.readconfig()
 
 class OverallSitua():
     @classmethod
@@ -22,7 +20,7 @@ class OverallSitua():
         将excel数据转化为Dict便于其它模块调用
         :return:
         """
-        filepath = conf.get("TestCase_Info", "InterfaceCase_Path")
+        filepath = IniHandle.optvalue(node='TestCase_Info', key='InterfaceCase_Path')
         wookbook = ExcelHandle.open_excel(filepath)
         data = ExcelHandle.once_read(wookbook)
         return data
@@ -34,15 +32,15 @@ class OverallSitua():
         :return:
         """
         # 初始化公共key值、可在config中进行修改
-        id = conf.get("TestCase_Info", "id")
-        cata = conf.get("TestCase_Info", "cata")
-        name = conf.get("TestCase_Info", "name")
-        method = conf.get("TestCase_Info", "method")
-        url = conf.get("TestCase_Info", "url")
-        headers = conf.get("TestCase_Info", "headers")
-        data = conf.get("TestCase_Info", "data")
-        code = conf.get("TestCase_Info", "code")
-        status = conf.get("TestCase_Info", "status")
+        id = IniHandle.optvalue(node='TestCase_Info', key='id')
+        cata = IniHandle.optvalue(node='TestCase_Info', key='cata')
+        name = IniHandle.optvalue(node='TestCase_Info', key='name')
+        method = IniHandle.optvalue(node='TestCase_Info', key='method')
+        url = IniHandle.optvalue(node='TestCase_Info', key='url')
+        headers = IniHandle.optvalue(node='TestCase_Info', key='headers')
+        data = IniHandle.optvalue(node='TestCase_Info', key='data')
+        code = IniHandle.optvalue(node='TestCase_Info', key='code')
+        status = IniHandle.optvalue(node='TestCase_Info', key='status')
 
         data = self.excel_data()
         for i in range(len(data)):

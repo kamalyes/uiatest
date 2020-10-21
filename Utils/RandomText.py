@@ -9,13 +9,8 @@
 '''
 import random
 import string
-import configparser
 from Logger.GlobalLog import  Logger # 导入日志模块
 logger = Logger.write_log()#调用日志模块
-
-conf_ini = r"../Config/config.ini"
-conf = configparser.ConfigParser()
-conf.read(conf_ini,encoding="utf-8")
 
 class Character():
     def email(self,emailtype=None,maxnum=None,rad_count=None):
