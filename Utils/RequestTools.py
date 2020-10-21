@@ -14,13 +14,13 @@ import requests as requests
 from faker import Factory
 from requests_toolbelt import MultipartEncoder
 from Logger.GlobalLog import Logger  # 导入日志模块
-from Utils import IniHandle
+from Utils import ConfigParser
 from Utils.CheckStatus import CodeWriting
 from Utils.DictClean import YamlHandle
-
+from Utils.ConfigParser import IniHandle
+conf = IniHandle.readconfig()
 logger = Logger.write_log()   # 调用日志模块
-filepath = r'../Config/config.ini'
-IniHandle = IniHandle.IniHandle()
+
 
 class HttpsServer():
     @classmethod
@@ -31,8 +31,8 @@ class HttpsServer():
         :return: proxies：正常开启状态下返回代理配置键值对类似于 {'http': 'http://localhost:12639', 'https': 'http://localhost:12639'}
         开关状态关闭的情况下才会返回value即：False
         """
-        sections = IniHandle.readSectionItems(filepath)
-        proxy_info = IniHandle.prettySecToDic('Proxy_Setting')
+        sections = ConfigParser.readSectionItems(filepath)
+        proxy_info = ConfigParser.prettySecToDic('Proxy_Setting')
         for key in proxy_info:
             value = dict.get(proxy_info, key)
             if key == "proxy_switch" and value == "True":

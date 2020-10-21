@@ -2,7 +2,7 @@
 #!/usr/bin/env python 3.7
 # Python version 2.7.16 or 3.7.6
 '''
-# FileName： IniHandle.py
+# FileName： ConfigParser.py
 # Author : v_yanqyu
 # Desc: ConfigFile 节点处理类
 # Date： 2020/9/6 15:55
@@ -141,6 +141,12 @@ class IniHandle():
         elif mode == 'a':
             self.conf.write(open(self.filepath, "a"))                      # 追加模式写入
 
+    @classmethod
+    def readconfig(self):
+        conf_ini = r"../Config/config.ini"
+        conf = configparser.ConfigParser()
+        conf.read(conf_ini, encoding="utf-8")
+        return conf
 
 if __name__ == '__main__':
     filepath = r'../Config/config.ini'

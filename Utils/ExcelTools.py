@@ -37,7 +37,7 @@ class ExcelHandle:
         :return:
         """
         name_sheets = workbook.sheet_names()
-        logger.info("检索到所有的工作节点有%s个、依次为：%s" % (len(name_sheets), name_sheets))
+        # logger.info("检索到所有的工作节点有%s个、依次为：%s" % (len(name_sheets), name_sheets))
         for index in range(0, len(name_sheets)):
             sheet = workbook.sheet_by_name(name_sheets[index])
             rows = sheet.nrows
@@ -78,7 +78,7 @@ class ExcelHandle:
         content = []
         merge = {}
         name_sheets = workbook.sheet_names()
-        logger.info("检索到所有的工作节点有%s个、依次为：%s" % (len(name_sheets), name_sheets))
+        # logger.info("检索到所有的工作节点有%s个、依次为：%s" % (len(name_sheets), name_sheets))
         for index in range(0, len(name_sheets)):
             sheet_info = workbook.sheet_by_name(name_sheets[index])
             first_line = sheet_info.row_values(0)
@@ -92,7 +92,7 @@ class ExcelHandle:
                 elif chigh - clow == 1:
                     for n in range(rhigh - rlow - 1):
                         merge[(rlow + n + 1, clow)] = value_mg_cell
-            logger.info("检索到%s工作录下所有的合并单元格坐标及内容：%s" % (name_sheets[index], merge))
+            # logger.info("检索到%s工作录下所有的合并单元格坐标及内容：%s" % (name_sheets[index], merge))
             for i in range(1, sheet_info.nrows):  # 开始为组成字典准备数据
                 other_line = sheet_info.row_values(i)
                 for key in merge.keys():
