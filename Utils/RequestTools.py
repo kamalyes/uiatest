@@ -115,21 +115,24 @@ class HttpsServer():
             else:
                 logger.warning("未携带Cookies信息上来，请注意是否会存在有登录态失效问题！！！")
 
-            if content_type == 'from' or content_type == 'From' or content_type == 'FROM':
+            if content_type in('from','From','FROM'):
                 headers['Content-Type'] = "application/x-www-form-urlencoded"
-            elif content_type == 'text/html' or content_type == 'Text/Html' or content_type == 'TEXT/HTML':
+
+            elif content_type in('text/html','Text/Html', 'TEXT/HTML'):
                 headers['Content-Type'] = "text/html;charset=utf-8"
-            elif content_type == 'json' or content_type == 'Json' or content_type == 'JSON':
+
+            elif content_type in ('json','Json','JSON'):
                 headers['Content-Type'] = "application/json; charset=utf-8"
+
             else:
                 headers['Content-Type'] = "application/json; charset=utf-8"
                 logger.warning("%s不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型" % (content_type))
 
-            if method == 'get' or method == 'Get' or method == 'GET':
+            if method in ('get','Get','GET'):
                 logger.info("get请求！！！")
                 response = requests.get(address, params=data, headers=headers)
 
-            elif method == 'post' or method == 'Post' or method == 'POST':
+            elif  method in ('post','Post','POST'):
                 logger.info("正在对地址：%s 发起Post请求！！！" % (address))
                 if type(data) == dict:
                     data = json.dumps(data).encode(encoding='utf-8')
@@ -139,7 +142,7 @@ class HttpsServer():
                 else:
                     logger.error("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
 
-            elif method == 'delete' or method == 'Delete' or method == 'DELETE':
+            elif method in ('delete','Delete','DELETE'):
                 logger.info("正在对地址：%s 发起Delete请求！！！" % (address))
                 if type(data) == dict:
                     data = json.dumps(data).encode(encoding='utf-8')
@@ -149,7 +152,7 @@ class HttpsServer():
                 else:
                     logger.warning("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
 
-            elif method == 'put' or method == 'Put' or method == 'PUT':
+            elif method in ('put','Put','PUT'):
                 logger.info("正在对地址：%s 发起Put请求！！！" % (address))
                 if type(data) == dict:
                     data = json.dumps(data).encode(encoding='utf-8')
@@ -159,7 +162,7 @@ class HttpsServer():
                 else:
                     logger.warning("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
 
-            elif method == 'trace' or method == 'Trace' or method == 'TRACE':
+            elif method in ('trace','Trace','TRACE'):
                 logger.info("正在对地址：%s 发起Trace请求！！！" % (address))
                 if type(data) == dict:
                     data = json.dumps(data).encode(encoding='utf-8')
@@ -169,7 +172,7 @@ class HttpsServer():
                 else:
                     logger.warning("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
 
-            elif method == 'head' or method == 'Head' or method == 'HEAD':
+            elif method in ('head','Head','HEAD'):
                 logger.info("正在对地址：%s 发起Head请求！！！" % (address))
                 if type(data) == dict:
                     data = json.dumps(data).encode(encoding='utf-8')
@@ -179,7 +182,7 @@ class HttpsServer():
                 else:
                     logger.warning("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
 
-            elif method == 'options' or method == 'Options' or method == 'OPTIONS':
+            elif method in ('options','Options','OPTIONS'):
                 logger.info("正在对地址：%s 发起Options请求！！！" % (address))
                 if type(data) == dict:
                     data = json.dumps(data).encode(encoding='utf-8')
@@ -189,7 +192,7 @@ class HttpsServer():
                 else:
                     logger.warning("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
 
-            elif method == 'patch' or method == 'Patch' or method == 'PATCH':
+            elif method in ('patch','Patch','PATCH'):
                 logger.error("patch这种方式使用比较少暂时不做详细的修饰,需要使用则需去掉注释再次调试下！！！")
                 # logger.info("正在对地址：%s 发起Patch请求！！！" % (address))
                 # if type(data) == dict:
@@ -200,7 +203,7 @@ class HttpsServer():
                 # else:
                 # logger.warning("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
 
-            elif method == 'upload' or method == 'Upload' or method == 'UPLOAD':
+            elif method in ('upload','Upload','UPLOAD'):
                 # print(type(data))
                 logger.info("正在对地址：%s 发起上传文件请求" % (address))
                 # 利用os的切片得到尾部filename信息
@@ -253,7 +256,7 @@ class HttpsServer():
             logger.error(FileNotFoundError)
 
 if __name__ == '__main__':
-    proxies = HttpsServer.proxy_state(off_status=1)
+    proxies = HttpsServer.proxy_state()
     url = "https://nowpic.gtimg.com/feeds_pic/ajNVdqHZLLCWsvtZtXqSLIeV5D3icBicKfYWT1iad8rD3hKa0ruwwBg8A/"
     data = {"data":"value"}
     cookies = "openkey=openkey&xg_mid=&openid=501893067&format=json&session_id=hy_gameid&amode=1&offer_id=1450006664&session_token=&extend=&sdkversion=1.6.9v&pfkey=pfKey&pf=huyu_m-2001-android-861080041549585&session_type=st_dummy"

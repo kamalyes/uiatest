@@ -31,7 +31,7 @@ class EmailSendLib(object):
         self.addressee = "%s"%(addressee)
 
     @staticmethod
-    def _send_enclosure(email_data, file_path):
+    def enclosure(email_data, file_path):
         '''
         附件发送
         :param file_path:附件的存储路径
@@ -48,7 +48,7 @@ class EmailSendLib(object):
         return enclosure_data
 
     @staticmethod
-    def _send_image(email_data, image_path):
+    def image(email_data, image_path):
         '''
         图片是嵌入在 HTML 中进行发送展示
         :param email_data: 图片地址
@@ -87,11 +87,11 @@ class EmailSendLib(object):
         email_cursor = smtplib.SMTP_SSL(self.smtp_server, 465)
         # 发送附件
         if send_type == 'enclosure':
-            email_data = self._send_enclosure(email_data, file_path)
+            email_data = self.enclosure(email_data, file_path)
         # 发送图片
         if send_type == 'image':
             email_data = MIMEMultipart()
-            email_data = self._send_image(email_data, image_path)
+            email_data = self.image(email_data, image_path)
 
         try:
             # 登录服务器
@@ -107,17 +107,17 @@ class EmailSendLib(object):
         finally:
             email_cursor.quit()
 
-es = EmailSendLib(user_email="mryu168@163.com",passwd="EKCXFRDVJLSUUITM",title="test",smtp_server="smtp.163.com",addressee="mryu168@163.com")
+Email = EmailSendLib(user_email="mryu168@163.com",passwd="EKCXFRDVJLSUUITM",title="test",smtp_server="smtp.163.com",addressee="mryu168@163.com")
 # 发送文本 send_type 参数需要指定为 plain，因为 plain 为默认参数所以可以忽略
-es.send('测试邮件(标题)', '测试邮件(内容) - 文本')
+Email.send('测试邮件(标题)', '测试邮件(内容) - 文本')
 
 # 发送 html send_type 参数需要指定为 html
-es.send('测试邮件(标题)', '<h2> 测试邮件(内容) - HTML </h2>', send_type='html')
+Email.send('测试邮件(标题)', '<h2> 测试邮件(内容) - HTML </h2>', send_type='html')
 
 # 发送带有 [附件] 的格式：send_type 参数需要指定为 enclosure file_path 参数为文件路径
-es.send('测试邮件(标题)', '测试邮件(内容) - 附件', send_type='enclosure', file_path='../Result/Test.txt')
+Email.send('测试邮件(标题)', '测试邮件(内容) - 附件', send_type='enclosure', file_path='../Result/Test.txt')
 
 # 发送带有 [图片] 的格式：
 # 发送图片 send_type 参数需要指定为 image
 # image_path 参数为图片路径
-es.send('测试邮件(标题)', '测试邮件(内容) - 图片', send_type='image', image_path='../Result/mbuntu-5.jpg')
+Email.send('测试邮件(标题)', '测试邮件(内容) - 图片', send_type='image', image_path='../Result/mbuntu-5.jpg')

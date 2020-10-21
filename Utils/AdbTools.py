@@ -128,8 +128,8 @@ class Adb_Manage(object):
         try:
             if devices_name == False :
                 pass
-            install_status = conf.get("Android_Info", "install_status")
-            if install_status in(1,2):
+            status = conf.get("Android_Info", "install_status")
+            if status in(1,2):
                 # 安装错误常见列表
                 errors = {'INSTALL_FAILED_ALREADY_EXISTS': '程序已经存在',
                           'INSTALL_DEVICES_NOT_FOUND': '找不到设备',
@@ -172,9 +172,9 @@ class Adb_Manage(object):
                     logger.info("当前终端ID：%s，安装过程中请勿移除USB连接！！！" % (dev_name))
                     install_info = subprocess.getstatusoutput(r'adb -s %s install -r %s' % (dev_name, apklist[index]))
                     install_status = install_info[1]
-                    if install_status == "Success" and install_status == 1 :
+                    if install_status == "Success" and status == 1 :
                         logger.info("设备：%s安装成功！！！" % (dev_name))
-                    elif install_status == "Success" and install_status == 2 :
+                    elif install_status == "Success" and status == 2 :
                         logger.info("设备：%s覆盖安装成功！！！" % (dev_name))
                     else:
                         # 可在此做判断是否安装成功并展示error

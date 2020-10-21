@@ -62,5 +62,5 @@ class CodeWriting():
         return msg
 
 if __name__ == "__main__":
-    for i in range(200,205):
+    for i in (200,301):
         CodeWriting.notice(i)

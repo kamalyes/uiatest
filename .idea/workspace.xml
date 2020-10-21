@@ -2,121 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d832e2b5-873d-49df-9000-f123650d4ca8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/HongNiangWhiteList.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/AutoFramework.iml" afterPath="$PROJECT_DIR$/.idea/AutoFramework.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/app.js" afterPath="$PROJECT_DIR$/AllureReport/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/behaviors.csv" afterPath="$PROJECT_DIR$/AllureReport/data/behaviors.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/behaviors.json" afterPath="$PROJECT_DIR$/AllureReport/data/behaviors.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/categories.csv" afterPath="$PROJECT_DIR$/AllureReport/data/categories.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/categories.json" afterPath="$PROJECT_DIR$/AllureReport/data/categories.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/packages.json" afterPath="$PROJECT_DIR$/AllureReport/data/packages.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/suites.csv" afterPath="$PROJECT_DIR$/AllureReport/data/suites.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/suites.json" afterPath="$PROJECT_DIR$/AllureReport/data/suites.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/107a073ee4e237c8.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/107a073ee4e237c8.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/112759fcf7f24d17.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/112759fcf7f24d17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/1a3047764b05ccf1.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/1a3047764b05ccf1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/23035f297475b6d2.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/23035f297475b6d2.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/244fdbce44b29d9.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/244fdbce44b29d9.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/27be920b1d814754.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/27be920b1d814754.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/2ac6f4daf8bbdd4a.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/2ac6f4daf8bbdd4a.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/2acc00480ecb7be4.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/2acc00480ecb7be4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/2b2676459e539b83.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/2b2676459e539b83.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/338a8aeb832a96ae.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/338a8aeb832a96ae.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/4056437823db7128.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/4056437823db7128.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/45b0c559c0751e13.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/45b0c559c0751e13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/4b14c8fe1acb69de.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/4b14c8fe1acb69de.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/4de0456ae8e2fa7c.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/4de0456ae8e2fa7c.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/767f205ad7ad7c2f.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/767f205ad7ad7c2f.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/97aa2c0236013149.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/97aa2c0236013149.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/c1b211916d7772a8.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/c1b211916d7772a8.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/c487e605819f9b8a.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/c487e605819f9b8a.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/c4ffca10d26e1065.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/c4ffca10d26e1065.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/d26d7617674f3df.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/d26d7617674f3df.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/e57a8d24dd962f79.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/e57a8d24dd962f79.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/ea120a319e0cb3b1.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/ea120a319e0cb3b1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/f4b3a6a6e517f620.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/f4b3a6a6e517f620.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/test-cases/fb3228c5b073b7cf.json" afterPath="$PROJECT_DIR$/AllureReport/data/test-cases/fb3228c5b073b7cf.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/data/timeline.json" afterPath="$PROJECT_DIR$/AllureReport/data/timeline.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/export/influxDbData.txt" afterPath="$PROJECT_DIR$/AllureReport/export/influxDbData.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/export/mail.html" afterPath="$PROJECT_DIR$/AllureReport/export/mail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/export/prometheusData.txt" afterPath="$PROJECT_DIR$/AllureReport/export/prometheusData.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/history/categories-trend.json" afterPath="$PROJECT_DIR$/AllureReport/history/categories-trend.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/history/duration-trend.json" afterPath="$PROJECT_DIR$/AllureReport/history/duration-trend.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/history/history-trend.json" afterPath="$PROJECT_DIR$/AllureReport/history/history-trend.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/history/history.json" afterPath="$PROJECT_DIR$/AllureReport/history/history.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/history/retry-trend.json" afterPath="$PROJECT_DIR$/AllureReport/history/retry-trend.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/index.html" afterPath="$PROJECT_DIR$/AllureReport/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/plugins/behaviors/index.js" afterPath="$PROJECT_DIR$/AllureReport/plugins/behaviors/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/plugins/packages/index.js" afterPath="$PROJECT_DIR$/AllureReport/plugins/packages/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/plugins/screen-diff/index.js" afterPath="$PROJECT_DIR$/AllureReport/plugins/screen-diff/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/plugins/screen-diff/styles.css" afterPath="$PROJECT_DIR$/AllureReport/plugins/screen-diff/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/styles.css" afterPath="$PROJECT_DIR$/AllureReport/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/widgets/behaviors.json" afterPath="$PROJECT_DIR$/AllureReport/widgets/behaviors.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/widgets/categories-trend.json" afterPath="$PROJECT_DIR$/AllureReport/widgets/categories-trend.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/widgets/categories.json" afterPath="$PROJECT_DIR$/AllureReport/widgets/categories.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/widgets/duration-trend.json" afterPath="$PROJECT_DIR$/AllureReport/widgets/duration-trend.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/widgets/duration.json" afterPath="$PROJECT_DIR$/AllureReport/widgets/duration.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/widgets/environment.json" afterPath="$PROJECT_DIR$/AllureReport/widgets/environment.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/widgets/history-trend.json" afterPath="$PROJECT_DIR$/AllureReport/widgets/history-trend.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/widgets/retry-trend.json" afterPath="$PROJECT_DIR$/AllureReport/widgets/retry-trend.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/widgets/severity.json" afterPath="$PROJECT_DIR$/AllureReport/widgets/severity.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/widgets/status-chart.json" afterPath="$PROJECT_DIR$/AllureReport/widgets/status-chart.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/widgets/suites.json" afterPath="$PROJECT_DIR$/AllureReport/widgets/suites.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AllureReport/widgets/summary.json" afterPath="$PROJECT_DIR$/AllureReport/widgets/summary.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Common/Appium.py" afterPath="$PROJECT_DIR$/Common/Appium.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Common/ScannerCase.py" afterPath="$PROJECT_DIR$/Common/ScannerCase.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/config.ini" afterPath="$PROJECT_DIR$/Config/config.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Emoji.md" afterPath="$PROJECT_DIR$/Emoji.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KeyCode.md" afterPath="$PROJECT_DIR$/KeyCode.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logger/GlobalLog.py" afterPath="$PROJECT_DIR$/Logger/GlobalLog.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logger/GlobalLoguru.py" afterPath="$PROJECT_DIR$/Logger/GlobalLoguru.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logger/MyLogger.py" afterPath="$PROJECT_DIR$/Logger/MyLogger.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python Scitpt.md" afterPath="$PROJECT_DIR$/Python Scitpt.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README-CN.md" afterPath="$PROJECT_DIR$/README-CN.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/Android_Logs/Crash_Logs/CrashInfo.txt" afterPath="$PROJECT_DIR$/Result/Android_Logs/Crash_Logs/CrashInfo.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/Logs/2020-10-09/Default_Logs/2020-10-09.log" afterPath="$PROJECT_DIR$/Result/Logs/2020-10-09/Default_Logs/2020-10-09.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/Logs/2020-10-09/Error_Logs/2020-10-09.log" afterPath="$PROJECT_DIR$/Result/Logs/2020-10-09/Error_Logs/2020-10-09.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/Logs/2020-10-10/Default_Logs/2020-10-10.log" afterPath="$PROJECT_DIR$/Result/Logs/2020-10-10/Default_Logs/2020-10-10.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/Logs/2020-10-10/Error_Logs/2020-10-10.log" afterPath="$PROJECT_DIR$/Result/Logs/2020-10-10/Error_Logs/2020-10-10.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/Logs/2020-10-15/Default_Logs/2020-10-15.log" afterPath="$PROJECT_DIR$/Result/Logs/2020-10-15/Default_Logs/2020-10-15.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/Logs/2020-10-15/Error_Logs/2020-10-15.log" afterPath="$PROJECT_DIR$/Result/Logs/2020-10-15/Error_Logs/2020-10-15.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/Logs/2020-10-16/Default_Logs/2020-10-16.log" afterPath="$PROJECT_DIR$/Result/Logs/2020-10-16/Default_Logs/2020-10-16.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/Logs/2020-10-17/Default_Logs/2020-10-17.log" afterPath="$PROJECT_DIR$/Result/Logs/2020-10-17/Default_Logs/2020-10-17.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/Report/environment.properties" afterPath="$PROJECT_DIR$/Result/Report/environment.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Start_Run.py" afterPath="$PROJECT_DIR$/Start_Run.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/Logs/2020-10-21/Default_Logs/2020-10-21.log" afterPath="$PROJECT_DIR$/Result/Logs/2020-10-21/Default_Logs/2020-10-21.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/Logs/2020-10-21/Error_Logs/2020-10-21.log" afterPath="$PROJECT_DIR$/Result/Logs/2020-10-21/Error_Logs/2020-10-21.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/AdbTools.py" afterPath="$PROJECT_DIR$/Utils/AdbTools.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/AreaCode.py" afterPath="$PROJECT_DIR$/Utils/AreaCode.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/AssertTools.py" afterPath="$PROJECT_DIR$/Utils/AssertTools.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/CheckEnviron.py" afterPath="$PROJECT_DIR$/Utils/CheckEnviron.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/Ciphers.py" afterPath="$PROJECT_DIR$/Utils/Ciphers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/DictClean.py" afterPath="$PROJECT_DIR$/Utils/DictClean.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/DirTools.py" afterPath="$PROJECT_DIR$/Utils/DirTools.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/ExcelTools.py" afterPath="$PROJECT_DIR$/Utils/ExcelTools.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/FaceRecogn.py" afterPath="$PROJECT_DIR$/Utils/FaceRecogn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/IniHandle.py" afterPath="$PROJECT_DIR$/Utils/IniHandle.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/InspectCrawling.py" afterPath="$PROJECT_DIR$/Utils/InspectCrawling.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/LibraryTools.py" afterPath="$PROJECT_DIR$/Utils/LibraryTools.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/MySQLDB.py" afterPath="$PROJECT_DIR$/Utils/MySQLDB.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/ProxyNetwork.py" afterPath="$PROJECT_DIR$/Utils/ProxyNetwork.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/RandomText.py" afterPath="$PROJECT_DIR$/Utils/RandomText.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/RegularFiltering.py" afterPath="$PROJECT_DIR$/Utils/RegularFiltering.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/ReptilesTools.py" afterPath="$PROJECT_DIR$/Utils/ReptilesTools.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/CheckStatus.py" afterPath="$PROJECT_DIR$/Utils/CheckStatus.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/ProxyPool.py" afterPath="$PROJECT_DIR$/Utils/ProxyPool.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/RequestTools.py" afterPath="$PROJECT_DIR$/Utils/RequestTools.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/SendEmali.py" afterPath="$PROJECT_DIR$/Utils/SendEmali.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/SystemTime.py" afterPath="$PROJECT_DIR$/Utils/SystemTime.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/ValidityIDCard.py" afterPath="$PROJECT_DIR$/Utils/ValidityIDCard.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/Verification.py" afterPath="$PROJECT_DIR$/Utils/Verification.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/XmindToTapd_3.7.py" afterPath="$PROJECT_DIR$/Utils/XmindToTapd_3.7.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YamlData/Cookies.yaml" afterPath="$PROJECT_DIR$/YamlData/Cookies.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YamlData/Register.yaml" afterPath="$PROJECT_DIR$/YamlData/Register.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YamlData/Token.yaml" afterPath="$PROJECT_DIR$/YamlData/Token.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YamlData/Headers.yaml" afterPath="$PROJECT_DIR$/YamlData/Headers.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YamlData/ResponseJson.yaml" afterPath="$PROJECT_DIR$/YamlData/ResponseJson.yaml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -126,7 +21,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/AutoFramework$RequestTools.coverage" NAME="RequestTools Coverage Results" MODIFIED="1603289288514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/AutoFramework$CheckResponse.coverage" NAME="CheckResponse Coverage Results" MODIFIED="1603281652987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$Console.coverage" NAME="Console Coverage Results" MODIFIED="1603289316912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Logger" />
+    <SUITE FILE_PATH="coverage/AutoFramework$SelectDict.coverage" NAME="SelectDict Coverage Results" MODIFIED="1603289311294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$CheckStatus.coverage" NAME="CheckStatus Coverage Results" MODIFIED="1603289662947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/AutoFramework$ProxyPool.coverage" NAME="ProxyPool Coverage Results" MODIFIED="1603281646200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -134,72 +33,16 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ProxyPool.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/ProxyPool.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="721">
-              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequestTools.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/RequestTools.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="82" column="8" lean-forward="false" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PieChart.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/PieChart.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#198#216#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SelectDict.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/SelectDict.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="707">
-              <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CheckStatus.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/CheckStatus.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="649">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-              <folding>
-                <element signature="e#195#206#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Console.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Logger/Console.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>4</find>
+      <find>send(</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>5</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -207,11 +50,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Utils/RequestTools.py" />
-        <option value="$PROJECT_DIR$/Utils/ProxyPool.py" />
         <option value="$PROJECT_DIR$/Utils/CheckResponse.py" />
-        <option value="$PROJECT_DIR$/Utils/CheckStatus.py" />
         <option value="$PROJECT_DIR$/Utils/SelectDict.py" />
+        <option value="$PROJECT_DIR$/Result/Logs/2020-10-21/Error_Logs/2020-10-21.log" />
+        <option value="$PROJECT_DIR$/Utils/RequestTools.py" />
+        <option value="$PROJECT_DIR$/Utils/CheckStatus.py" />
+        <option value="$PROJECT_DIR$/Result/Logs/2020-10-21/Default_Logs/2020-10-21.log" />
+        <option value="$PROJECT_DIR$/Utils/AdbTools.py" />
+        <option value="$PROJECT_DIR$/Utils/ProxyPool.py" />
+        <option value="$PROJECT_DIR$/Utils/ValidityIDCard.py" />
+        <option value="$PROJECT_DIR$/Utils/SendEmali.py" />
       </list>
     </option>
   </component>
@@ -243,7 +91,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -283,6 +130,94 @@
               <option name="myItemId" value="Result" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Report" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutoFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutoFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Result" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2020-10-21" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Error_Logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutoFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutoFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Result" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2020-10-21" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Default_Logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutoFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutoFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Result" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutoFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutoFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Result" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -298,8 +233,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutoFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutoFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutoFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutoFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,25 +273,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="D:\Program Files\2019 NodeJS\node_global\node.exe" />
   </component>
-  <component name="RunManager" selected="Python.CheckResponse">
-    <configuration default="false" name="ProxyPool" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="AutoFramework" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/ProxyPool.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.CheckStatus">
     <configuration default="false" name="CheckResponse" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -342,6 +288,78 @@
       <module name="AutoFramework" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/CheckResponse.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CheckStatus" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AutoFramework" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/CheckStatus.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RequestTools" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AutoFramework" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/RequestTools.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SelectDict" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AutoFramework" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/SelectDict.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Console" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Logger" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AutoFramework" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Logger/Console.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -435,6 +453,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -554,14 +578,20 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Python.ProxyPool" />
-      <item index="1" class="java.lang.String" itemvalue="Python.CheckResponse" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.CheckResponse" />
+      <item index="1" class="java.lang.String" itemvalue="Python.CheckStatus" />
+      <item index="2" class="java.lang.String" itemvalue="Python.RequestTools" />
+      <item index="3" class="java.lang.String" itemvalue="Python.SelectDict" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Console" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.CheckResponse" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ProxyPool" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.CheckStatus" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Console" />
+        <item index="2" class="java.lang.String" itemvalue="Python.SelectDict" />
+        <item index="3" class="java.lang.String" itemvalue="Python.RequestTools" />
+        <item index="4" class="java.lang.String" itemvalue="Python.CheckResponse" />
       </list>
     </recent_temporary>
   </component>
@@ -576,29 +606,44 @@
       <option name="presentableId" value="Default" />
       <updated>1603281455659</updated>
     </task>
+    <task id="LOCAL-00001" summary=":art:Add public log and status code check class">
+      <created>1603282000155</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603282000155</updated>
+    </task>
+    <task id="LOCAL-00002" summary=":art:Add public log and status code check class">
+      <created>1603282187377</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603282187377</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15191898" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15351813" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -608,47 +653,27 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=":art:Add public log and status code check class" />
+    <option name="LAST_COMMIT_MESSAGE" value=":art:Add public log and status code check class" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Utils/RequestTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="82" column="8" lean-forward="false" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/CheckResponse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/SelectDict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utils/ProxyPool.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="960">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/HTMLTestRunner.py">
+    <entry file="file://$PROJECT_DIR$/Utils/RequestTools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1752">
+          <caret line="82" column="8" lean-forward="false" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -663,21 +688,254 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/SelectDict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logger/Console.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Utils/CheckStatus.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#195#206#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/CheckResponse.py" />
+    <entry file="file://$PROJECT_DIR$/Utils/HTMLTestRunner.py" />
+    <entry file="file://$PROJECT_DIR$/Result/Logs/2020-10-21/Error_Logs/2020-10-21.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="56" column="112" lean-forward="false" selection-start-line="56" selection-start-column="112" selection-end-line="56" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Logger/Console.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        <state relative-caret-position="-15">
+          <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logger/GlobalLog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1872">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logger/GlobalLoguru.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1181">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logger/MyLogger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1584">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/CheckEnviron.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Result/Logs/2020-10-21/Default_Logs/2020-10-21.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/AdbTools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1152">
+          <caret line="130" column="12" lean-forward="false" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/CheckStatus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="56" column="49" lean-forward="true" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
+          <folding>
+            <element signature="e#195#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/LibraryTools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1071">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/MySQLDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1728">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1591394766000" expanded="true" signature="2702:2730" ph="select * fro... china" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/PieChart.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-495">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#198#216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/ProxyNetwork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/ProxyPool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/RandomText.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3024">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/RegularFiltering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/ReptilesTools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/RequestTools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-317">
+          <caret line="233" column="30" lean-forward="true" selection-start-line="233" selection-start-column="30" selection-end-line="233" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/SelectDict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/SendEmali.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="122" column="5" lean-forward="false" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/ValidityIDCard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/Verification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="84" column="36" lean-forward="false" selection-start-line="84" selection-start-column="36" selection-end-line="84" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/XmindToTapd_3.7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/ScannerCase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Appium.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Start_Run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#126#139#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

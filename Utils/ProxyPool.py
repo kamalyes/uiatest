@@ -4,7 +4,7 @@
 '''
 # FileName： ProxyPool.py
 # Author : v_yanqyu
-# Desc: 代理IP
+# Desc: 随机代理池
 # Date： 2020/10/12 18:25
 '''
 

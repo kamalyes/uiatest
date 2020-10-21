@@ -52,84 +52,16 @@
 2020-10-21 15:50:55,860 - RequestTools.py [line:239] - ERROR: 'NoneType' object does not support item assignment
 2020-10-21 15:51:08,610 - RequestTools.py [line:233] - ERROR: 'NoneType' object does not support item assignment
 2020-10-21 15:51:38,565 - RequestTools.py [line:233] - ERROR: 'NoneType' object does not support item assignment
-2020-10-21 15:52:33,559 - RequestTools.py [line:233] - ERROR: 'NoneType' object does not support item assignment
-2020-10-21 15:58:55,571 - RequestTools.py [line:122] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请修改为表单/文本/Json类型
-2020-10-21 15:58:56,366 - RequestTools.py [line:122] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请修改为表单/文本/Json类型
-2020-10-21 16:27:03,707 - RequestTools.py [line:124] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请修改为表单/文本/Json类型
-2020-10-21 16:27:42,569 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:28:19,837 - RequestTools.py [line:124] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:31:54,363 - RequestTools.py [line:124] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:32:31,846 - RequestTools.py [line:124] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:33:41,932 - RequestTools.py [line:126] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:33:42,532 - RequestTools.py [line:126] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:34:02,980 - RequestTools.py [line:126] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:34:07,944 - RequestTools.py [line:126] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:34:12,397 - RequestTools.py [line:126] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:36:31,292 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:39:10,077 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:39:43,778 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:40:06,603 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:40:06,804 - RequestTools.py [line:229] - ERROR: https://now.qq.com请求失败,可能被墙掉了
-2020-10-21 16:40:19,409 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:40:19,615 - RequestTools.py [line:229] - ERROR: https://now.qq.com请求失败,可能被墙掉了
-2020-10-21 16:40:30,296 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:40:30,493 - RequestTools.py [line:229] - ERROR: https://now.qq.com请求失败,可能被墙掉了
-2020-10-21 16:42:09,445 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:42:10,490 - DictClean.py [line:101] - ERROR: module 'Utils.DirTools' has no attribute 'copy_file'
-2020-10-21 16:42:10,490 - RequestTools.py [line:250] - ERROR: local variable 'file' referenced before assignment
-2020-10-21 16:42:47,002 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:46:57,290 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:47:16,112 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:47:42,216 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:48:11,691 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:48:32,149 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:48:32,311 - CheckStatus.py [line:59] - ERROR: (尚未实施)服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码
-2020-10-21 16:49:17,787 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:49:17,953 - CheckStatus.py [line:59] - ERROR: (尚未实施)服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码
-2020-10-21 16:53:19,803 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:54:56,513 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:55:07,217 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:56:31,253 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:56:34,012 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:56:36,551 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:56:48,099 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:58:08,611 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:58:20,824 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:58:30,144 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 16:58:47,673 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:00:07,341 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:00:08,351 - DictClean.py [line:101] - ERROR: module 'Utils.DirTools' has no attribute 'copy_file'
-2020-10-21 17:00:08,351 - RequestTools.py [line:250] - ERROR: local variable 'file' referenced before assignment
-2020-10-21 17:01:02,722 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:01:02,884 - CheckStatus.py [line:60] - ERROR: (尚未实施)服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码
-2020-10-21 17:01:18,921 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:01:26,774 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:01:27,001 - CheckStatus.py [line:60] - ERROR: (尚未实施)服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码
-2020-10-21 17:02:23,508 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:02:23,675 - CheckStatus.py [line:60] - ERROR: 返回码：501,基本信息：(尚未实施)服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码
-2020-10-21 17:02:55,947 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:02:56,149 - CheckStatus.py [line:60] - ERROR: 返回码：501,错误信息：(尚未实施)服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码
-2020-10-21 17:03:16,628 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:03:16,831 - CheckStatus.py [line:60] - ERROR: 返回码：501,错误信息：(尚未实施)服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码
-2020-10-21 17:04:30,002 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:04:30,202 - CheckStatus.py [line:60] - ERROR: 返回码：501,错误信息：(尚未实施)服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码
-2020-10-21 17:04:34,670 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:04:34,859 - DictClean.py [line:101] - ERROR: module 'Utils.DirTools' has no attribute 'copy_file'
-2020-10-21 17:04:34,860 - RequestTools.py [line:251] - ERROR: local variable 'file' referenced before assignment
-2020-10-21 17:04:34,860 - DictClean.py [line:101] - ERROR: module 'Utils.DirTools' has no attribute 'copy_file'
-2020-10-21 17:04:55,933 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:05:00,441 - DictClean.py [line:101] - ERROR: module 'Utils.DirTools' has no attribute 'copy_file'
-2020-10-21 17:05:00,441 - RequestTools.py [line:251] - ERROR: local variable 'file' referenced before assignment
-2020-10-21 17:05:00,442 - DictClean.py [line:101] - ERROR: module 'Utils.DirTools' has no attribute 'copy_file'
-2020-10-21 17:05:24,193 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:12:59,227 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:13:33,994 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:13:41,913 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:13:50,495 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:14:50,363 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:15:49,550 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:19:29,787 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:21:03,436 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:22:15,932 - RequestTools.py [line:126] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
-2020-10-21 17:29:47,097 - RequestTools.py [line:222] - ERROR: 请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！
-2020-10-21 17:29:47,098 - RequestTools.py [line:239] - ERROR: 异常抛出local variable 'response' referenced before assignment
+2020-10-21 16:52:09,555 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:52:10,590 - DictClean.py [line:101] - ERROR: module 'Utils.DirTools' has no attribute 'copy_file'
+2020-10-21 16:52:10,590 - RequestTools.py [line:250] - ERROR: local variable 'file' referenced before assignment2020-10-21 17:05:30,002 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:05:30,202 - CheckStatus.py [line:60] - ERROR: 返回码：501,错误信息：(尚未实施)服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码
+2020-10-21 17:05:35,670 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:05:35,859 - DictClean.py [line:101] - ERROR: module 'Utils.DirTools' has no attribute 'copy_file'
+2020-10-21 17:05:35,860 - RequestTools.py [line:251] - ERROR: local variable 'file' referenced before assignment
+2020-10-21 17:05:35,860 - DictClean.py [line:101] - ERROR: module 'Utils.DirTools' has no attribute 'copy_file'
+2020-10-21 17:05:55,933 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:05:00,551 - DictClean.py [line:101] - ERROR: module 'Utils.DirTools' has no attribute 'copy_file'
+2020-10-21 17:05:00,551 - RequestTools.py [line:251] - ERROR: local variable 'file' referenced before assignment
+2020-10-21 17:05:00,552 - DictClean.py [line:101] - ERROR: module 'Utils.DirTools' has no attribute 'copy_file'2020-10-21 22:07:34,258 - RequestTools.py [line:235] - ERROR: 异常抛出local variable 'response' referenced before assignment
+2020-10-21 22:08:09,135 - RequestTools.py [line:234] - ERROR: 异常抛出local variable 'response' referenced before assignment
