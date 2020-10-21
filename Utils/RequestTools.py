@@ -206,7 +206,7 @@ class HttpsServer():
             elif method in ('upload','Upload','UPLOAD'):
                 # print(type(data))
                 logger.info("正在对地址：%s 发起上传文件请求" % (address))
-                # 利用os的切片得到尾部filename信息
+                # 利用os的切片得到tail即文件名
                 head, tail = os.path.split(filepath)
                 logger.info("传参时所需的文件名：%s" % (tail))
                 logger.info(headers)
@@ -217,6 +217,7 @@ class HttpsServer():
                 headers.update(content_type)
                 logger.info("请求头部信息：%s" % (headers))
                 response = requests.post(url=url, headers=headers, data=data, files=files, timeout=5)
+
             else:
                 logger.warning("暂不支持%s类型请求！！！" % (method))
 

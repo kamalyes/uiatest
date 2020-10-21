@@ -2,13 +2,12 @@
 #!/usr/bin/env python 3.7
 # Python version 2.7.16 or 3.7.6
 '''
-# FileName： SelectDict.py
+# FileName： OtherTools.py
 # Author : v_yanqyu
 # Desc: 从一个json集合中获取某个键的值
 # Date： 2020/10/15 13:59
 '''
 import json,re
-
 def get_target_value(key, dic, tmp_list):
     """
     :param key: get_param 依赖以前的key值

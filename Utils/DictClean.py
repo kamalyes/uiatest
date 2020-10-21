@@ -126,7 +126,6 @@ class YamlHandle():
         else:
             logger.error("该内容不支持转换、请检查是否为JSON或Body类型")
             return False
-
 if __name__ == '__main__':
     data = YamlHandle.yamldata(filepath = r'..\YamlData\Register.yaml')
     # logger.info(YamlHandle.getdict(key="name", data=data))
