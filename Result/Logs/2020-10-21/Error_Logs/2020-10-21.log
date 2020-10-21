@@ -1,0 +1,135 @@
+2020-10-21 11:50:08,728 - RequestTools.py [line:185] - ERROR: HTTPSConnectionPool(host='www.baidu.com', port=553): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001F566539888>, 'Connection to www.baidu.com timed out. (connect timeout=5)'))
+2020-10-21 11:56:56,250 - RequestTools.py [line:185] - ERROR: HTTPSConnectionPool(host='www.baidu.com', port=553): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002806057C958>, 'Connection to www.baidu.com timed out. (connect timeout=5)'))
+2020-10-21 11:59:36,555 - RequestTools.py [line:185] - ERROR: unhashable type: 'slice'
+2020-10-21 12:08:15,659 - RequestTools.py [line:191] - ERROR: name 'cookies' is not defined
+2020-10-21 12:18:25,872 - RequestTools.py [line:118] - ERROR: 请检查传入的content_type是否正确，暂只支持表单/文本/Json类型！！！
+2020-10-21 12:20:38,177 - RequestTools.py [line:119] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请修改为表单/文本/Json类型
+2020-10-21 12:22:01,593 - RequestTools.py [line:119] - ERROR: Text不支持类型-->后面操作默认Json定义,若有问题则请修改为表单/文本/Json类型
+2020-10-21 12:30:20,586 - DictClean.py [line:52] - ERROR: mapping values are not allowed here
+  in "..\YamlData\ResponseJson.yaml", line 8, column 25
+2020-10-21 12:30:51,938 - DictClean.py [line:96] - ERROR: 'allow_unicode' is an invalid keyword argument for open()
+2020-10-21 12:30:51,938 - RequestTools.py [line:222] - ERROR: local variable 'file' referenced before assignment
+2020-10-21 12:31:28,158 - DictClean.py [line:52] - ERROR: mapping values are not allowed here
+  in "..\YamlData\ResponseJson.yaml", line 8, column 25
+2020-10-21 12:31:50,285 - DictClean.py [line:52] - ERROR: mapping values are not allowed here
+  in "..\YamlData\ResponseJson.yaml", line 8, column 25
+2020-10-21 12:35:05,951 - DictClean.py [line:52] - ERROR: expected '<document start>', but found '<block mapping start>'
+  in "..\YamlData\ResponseJson.yaml", line 2, column 1
+2020-10-21 12:35:18,175 - DictClean.py [line:52] - ERROR: expected '<document start>', but found '<block mapping start>'
+  in "..\YamlData\ResponseJson.yaml", line 2, column 1
+2020-10-21 12:36:55,158 - RequestTools.py [line:203] - ERROR: get_response() got an unexpected keyword argument 'parameter'
+2020-10-21 13:08:58,870 - RequestTools.py [line:219] - ERROR: [Errno 13] Permission denied: '../Resources'
+2020-10-21 13:09:13,857 - RequestTools.py [line:219] - ERROR: [Errno 13] Permission denied: '..\\Resources'
+2020-10-21 13:10:21,999 - RequestTools.py [line:219] - ERROR: [Errno 13] Permission denied: '..\\Resources'
+2020-10-21 13:10:38,751 - RequestTools.py [line:219] - ERROR: [Errno 2] No such file or directory: '..\\Resources\\DejaV'
+2020-10-21 13:28:26,575 - RequestTools.py [line:223] - ERROR: local variable 'response' referenced before assignment
+2020-10-21 13:55:19,953 - RequestTools.py [line:220] - ERROR: name 'header' is not defined
+2020-10-21 13:55:50,523 - RequestTools.py [line:219] - ERROR: local variable 'response' referenced before assignment
+2020-10-21 13:55:58,958 - RequestTools.py [line:219] - ERROR: local variable 'response' referenced before assignment
+2020-10-21 13:55:55,119 - RequestTools.py [line:219] - ERROR: local variable 'response' referenced before assignment
+2020-10-21 13:59:56,575 - RequestTools.py [line:228] - ERROR: 'utf-8' codec can't decode byte 0xc7 in position 392: invalid continuation byte
+2020-10-21 15:01:56,319 - DictClean.py [line:98] - ERROR: changetype() missing 1 required positional argument: 'filepath'
+2020-10-21 15:01:56,319 - RequestTools.py [line:226] - ERROR: local variable 'file' referenced before assignment
+2020-10-21 15:03:06,133 - RequestTools.py [line:227] - ERROR: Object of type Response is not JSON serializable
+2020-10-21 15:07:11,503 - RequestTools.py [line:225] - ERROR: 请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！
+2020-10-21 15:07:11,505 - RequestTools.py [line:231] - ERROR: local variable 'response' referenced before assignment
+2020-10-21 15:07:32,666 - RequestTools.py [line:225] - ERROR: 请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！
+2020-10-21 15:07:32,667 - RequestTools.py [line:231] - ERROR: local variable 'response' referenced before assignment
+2020-10-21 15:08:37,506 - RequestTools.py [line:223] - ERROR: 请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！
+2020-10-21 15:08:37,506 - RequestTools.py [line:230] - ERROR: local variable 'response' referenced before assignment
+2020-10-21 15:09:05,032 - RequestTools.py [line:230] - ERROR: a bytes-like object is required, not 'dict'
+2020-10-21 15:09:20,519 - RequestTools.py [line:231] - ERROR: a bytes-like object is required, not 'dict'
+2020-10-21 15:09:55,212 - RequestTools.py [line:230] - ERROR: a bytes-like object is required, not 'dict'
+2020-10-21 15:11:10,655 - RequestTools.py [line:229] - ERROR: list indices must be integers or slices, not str
+2020-10-21 15:11:26,790 - RequestTools.py [line:230] - ERROR: list indices must be integers or slices, not str
+2020-10-21 15:25:36,310 - RequestTools.py [line:237] - ERROR: 连接失败，该URL可能被墙掉了
+2020-10-21 15:26:23,753 - RequestTools.py [line:237] - ERROR: 请求失败https://www.baidu.com可能被墙掉了
+2020-10-21 15:31:00,781 - RequestTools.py [line:236] - ERROR: https://www.baidu.com请求失败,可能被墙掉了
+2020-10-21 15:38:32,996 - RequestTools.py [line:237] - ERROR: https://www.baidu.com请求失败,可能被墙掉了
+2020-10-21 15:39:12,038 - RequestTools.py [line:237] - ERROR: https://api.unipay.qq.com/v1/r/1550006665/get_ip_list请求失败,可能被墙掉了
+2020-10-21 15:39:26,193 - RequestTools.py [line:237] - ERROR: https://api.unipay.qq.com/请求失败,可能被墙掉了
+2020-10-21 15:39:51,151 - RequestTools.py [line:237] - ERROR: a bytes-like object is required, not 'dict'
+2020-10-21 15:50:55,860 - RequestTools.py [line:239] - ERROR: 'NoneType' object does not support item assignment
+2020-10-21 15:51:08,610 - RequestTools.py [line:233] - ERROR: 'NoneType' object does not support item assignment
+2020-10-21 15:51:38,565 - RequestTools.py [line:233] - ERROR: 'NoneType' object does not support item assignment
+2020-10-21 15:52:33,559 - RequestTools.py [line:233] - ERROR: 'NoneType' object does not support item assignment
+2020-10-21 15:58:55,571 - RequestTools.py [line:122] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请修改为表单/文本/Json类型
+2020-10-21 15:58:56,366 - RequestTools.py [line:122] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请修改为表单/文本/Json类型
+2020-10-21 16:27:03,707 - RequestTools.py [line:124] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请修改为表单/文本/Json类型
+2020-10-21 16:27:42,569 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:28:19,837 - RequestTools.py [line:124] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:31:54,363 - RequestTools.py [line:124] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:32:31,846 - RequestTools.py [line:124] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:33:41,932 - RequestTools.py [line:126] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:33:42,532 - RequestTools.py [line:126] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:34:02,980 - RequestTools.py [line:126] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:34:07,944 - RequestTools.py [line:126] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:34:12,397 - RequestTools.py [line:126] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:36:31,292 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:39:10,077 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:39:43,778 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:40:06,603 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:40:06,804 - RequestTools.py [line:229] - ERROR: https://now.qq.com请求失败,可能被墙掉了
+2020-10-21 16:40:19,409 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:40:19,615 - RequestTools.py [line:229] - ERROR: https://now.qq.com请求失败,可能被墙掉了
+2020-10-21 16:40:30,296 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:40:30,493 - RequestTools.py [line:229] - ERROR: https://now.qq.com请求失败,可能被墙掉了
+2020-10-21 16:42:09,445 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:42:10,490 - DictClean.py [line:101] - ERROR: module 'Utils.DirTools' has no attribute 'copy_file'
+2020-10-21 16:42:10,490 - RequestTools.py [line:250] - ERROR: local variable 'file' referenced before assignment
+2020-10-21 16:42:47,002 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:46:57,290 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:47:16,112 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:47:42,216 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:48:11,691 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:48:32,149 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:48:32,311 - CheckStatus.py [line:59] - ERROR: (尚未实施)服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码
+2020-10-21 16:49:17,787 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:49:17,953 - CheckStatus.py [line:59] - ERROR: (尚未实施)服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码
+2020-10-21 16:53:19,803 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:54:56,513 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:55:07,217 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:56:31,253 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:56:34,012 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:56:36,551 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:56:48,099 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:58:08,611 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:58:20,824 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:58:30,144 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 16:58:47,673 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:00:07,341 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:00:08,351 - DictClean.py [line:101] - ERROR: module 'Utils.DirTools' has no attribute 'copy_file'
+2020-10-21 17:00:08,351 - RequestTools.py [line:250] - ERROR: local variable 'file' referenced before assignment
+2020-10-21 17:01:02,722 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:01:02,884 - CheckStatus.py [line:60] - ERROR: (尚未实施)服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码
+2020-10-21 17:01:18,921 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:01:26,774 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:01:27,001 - CheckStatus.py [line:60] - ERROR: (尚未实施)服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码
+2020-10-21 17:02:23,508 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:02:23,675 - CheckStatus.py [line:60] - ERROR: 返回码：501,基本信息：(尚未实施)服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码
+2020-10-21 17:02:55,947 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:02:56,149 - CheckStatus.py [line:60] - ERROR: 返回码：501,错误信息：(尚未实施)服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码
+2020-10-21 17:03:16,628 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:03:16,831 - CheckStatus.py [line:60] - ERROR: 返回码：501,错误信息：(尚未实施)服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码
+2020-10-21 17:04:30,002 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:04:30,202 - CheckStatus.py [line:60] - ERROR: 返回码：501,错误信息：(尚未实施)服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码
+2020-10-21 17:04:34,670 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:04:34,859 - DictClean.py [line:101] - ERROR: module 'Utils.DirTools' has no attribute 'copy_file'
+2020-10-21 17:04:34,860 - RequestTools.py [line:251] - ERROR: local variable 'file' referenced before assignment
+2020-10-21 17:04:34,860 - DictClean.py [line:101] - ERROR: module 'Utils.DirTools' has no attribute 'copy_file'
+2020-10-21 17:04:55,933 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:05:00,441 - DictClean.py [line:101] - ERROR: module 'Utils.DirTools' has no attribute 'copy_file'
+2020-10-21 17:05:00,441 - RequestTools.py [line:251] - ERROR: local variable 'file' referenced before assignment
+2020-10-21 17:05:00,442 - DictClean.py [line:101] - ERROR: module 'Utils.DirTools' has no attribute 'copy_file'
+2020-10-21 17:05:24,193 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:12:59,227 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:13:33,994 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:13:41,913 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:13:50,495 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:14:50,363 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:15:49,550 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:19:29,787 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:21:03,436 - RequestTools.py [line:125] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:22:15,932 - RequestTools.py [line:126] - ERROR: None不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型
+2020-10-21 17:29:47,097 - RequestTools.py [line:222] - ERROR: 请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！
+2020-10-21 17:29:47,098 - RequestTools.py [line:239] - ERROR: 异常抛出local variable 'response' referenced before assignment

@@ -1,0 +1,94 @@
+2020-10-20 12:27:59,599 - AdbTools.py [line:92] - ERROR: [WinError 3] 系统找不到指定的路径。: 'E:\\WorkSpace\\PycharmProjects\\AutoFramework\\APKPath'
+2020-10-20 12:30:54,874 - AdbTools.py [line:90] - ERROR: [WinError 3] 系统找不到指定的路径。: 'E:\\WorkSpace\\PycharmProjects\\AutoFramework\\APKPath'
+2020-10-20 12:31:03,513 - AdbTools.py [line:90] - ERROR: [WinError 3] 系统找不到指定的路径。: 'E:\\WorkSpace\\PycharmProjects\\AutoFramework\\APKPath'
+2020-10-20 12:31:15,257 - AdbTools.py [line:88] - ERROR: [WinError 3] 系统找不到指定的路径。: 'E:\\WorkSpace\\PycharmProjects\\AutoFramework\\APKPath'
+2020-10-20 12:31:56,897 - AdbTools.py [line:88] - ERROR: [WinError 3] 系统找不到指定的路径。: 'E:\\WorkSpace\\PycharmProjects\\AutoFramework\\APKPath'
+2020-10-20 12:32:28,607 - AdbTools.py [line:88] - ERROR: [WinError 3] 系统找不到指定的路径。: 'E:\\WorkSpace\\PycharmProjects\\AutoFramework\\APKPath'
+2020-10-20 13:50:34,651 - RequestTools.py [line:115] - ERROR: 请求失败！
+Traceback (most recent call last):
+  File "E:/WorkSpace/PycharmProjects/AutoFramework/Utils/RequestTools.py", line 106, in get_main
+    r = requests.get(url, params=params, headers=headers, files=files, proxies=proxies, timeout=5)
+  File "C:\Python3.7.6\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Python3.7.6\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python3.7.6\lib\site-packages\requests\sessions.py", line 521, in request
+    prep.url, proxies, stream, verify, cert
+  File "C:\Python3.7.6\lib\site-packages\requests\sessions.py", line 698, in merge_environment_settings
+    no_proxy = proxies.get('no_proxy') if proxies is not None else None
+AttributeError: 'str' object has no attribute 'get'
+2020-10-20 13:56:44,453 - RequestTools.py [line:115] - ERROR: 请求失败！
+Traceback (most recent call last):
+  File "E:/WorkSpace/PycharmProjects/AutoFramework/Utils/RequestTools.py", line 106, in get_main
+    r = requests.get(url, params=params, headers=headers, files=files, proxies=proxies, timeout=5)
+  File "C:\Python3.7.6\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Python3.7.6\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python3.7.6\lib\site-packages\requests\sessions.py", line 521, in request
+    prep.url, proxies, stream, verify, cert
+  File "C:\Python3.7.6\lib\site-packages\requests\sessions.py", line 698, in merge_environment_settings
+    no_proxy = proxies.get('no_proxy') if proxies is not None else None
+AttributeError: 'str' object has no attribute 'get'
+2020-10-20 13:57:09,900 - RequestTools.py [line:115] - ERROR: 请求失败！
+Traceback (most recent call last):
+  File "E:/WorkSpace/PycharmProjects/AutoFramework/Utils/RequestTools.py", line 106, in get_main
+    r = requests.get(url, params=params, headers=headers, files=files, proxies=proxies, timeout=5)
+  File "C:\Python3.7.6\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Python3.7.6\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python3.7.6\lib\site-packages\requests\sessions.py", line 521, in request
+    prep.url, proxies, stream, verify, cert
+  File "C:\Python3.7.6\lib\site-packages\requests\sessions.py", line 698, in merge_environment_settings
+    no_proxy = proxies.get('no_proxy') if proxies is not None else None
+AttributeError: 'str' object has no attribute 'get'
+2020-10-20 15:35:01,858 - DictClean.py [line:52] - ERROR: could not determine a constructor for the tag 'tag:yaml.org,2002:python/object:requests.models.PreparedRequest'
+  in "..\YamlData\Response.yaml", line 5, column 9
+2020-10-20 15:35:33,819 - DictClean.py [line:52] - ERROR: could not determine a constructor for the tag 'tag:yaml.org,2002:python/object:requests.models.PreparedRequest'
+  in "..\YamlData\Response.yaml", line 5, column 9
+2020-10-20 16:15:00,979 - DictClean.py [line:96] - ERROR: [Errno 2] No such file or directory: "'..\\YamlData\\Response.yaml'"
+2020-10-20 16:15:00,979 - RequestTools.py [line:174] - ERROR: local variable 'file' referenced before assignment
+2020-10-20 16:16:13,610 - DictClean.py [line:96] - ERROR: [Errno 2] No such file or directory: "'..\\YamlData\\Response.yaml'"
+2020-10-20 16:16:13,610 - RequestTools.py [line:174] - ERROR: local variable 'file' referenced before assignment
+2020-10-20 16:16:39,714 - DictClean.py [line:96] - ERROR: [Errno 2] No such file or directory: "r'..\\YamlData\\Response.yaml'"
+2020-10-20 16:16:39,715 - RequestTools.py [line:173] - ERROR: local variable 'file' referenced before assignment
+2020-10-20 16:32:30,990 - DictClean.py [line:52] - ERROR: mapping values are not allowed here
+  in "..\YamlData\Response.yaml", line 6, column 24
+2020-10-20 16:32:56,926 - DictClean.py [line:52] - ERROR: mapping values are not allowed here
+  in "..\YamlData\Response.yaml", line 6, column 24
+2020-10-20 16:57:01,144 - AdbTools.py [line:60] - ERROR: [WinError 3] 系统找不到指定的路径。: 'E:\\WorkSpace\\PycharmProjects\\AutoFramework\\APKPath'
+2020-10-20 16:58:38,008 - AdbTools.py [line:60] - ERROR: [WinError 3] 系统找不到指定的路径。: 'E:\\WorkSpace\\PycharmProjects\\AutoFramework\\APKPath'
+2020-10-20 16:59:46,268 - AdbTools.py [line:60] - ERROR: [WinError 3] 系统找不到指定的路径。: 'E:\\WorkSpace\\PycharmProjects\\AutoFramework\\APKPath'
+2020-10-20 16:59:59,905 - AdbTools.py [line:62] - ERROR: [WinError 3] 系统找不到指定的路径。: 'E:\\WorkSpace\\PycharmProjects\\AutoFramework\\APKPath'
+2020-10-20 17:00:14,427 - AdbTools.py [line:62] - ERROR: [WinError 3] 系统找不到指定的路径。: 'E:\\WorkSpace\\PycharmProjects\\AutoFramework\\APKPath'
+2020-10-20 17:02:56,135 - AdbTools.py [line:62] - ERROR: [WinError 3] 系统找不到指定的路径。: 'E:\\WorkSpace\\PycharmProjects\\AutoFramework\\APKPath'
+2020-10-20 17:11:22,968 - DictClean.py [line:52] - ERROR: expected '<document start>', but found '<scalar>'
+  in "../Config/config.ini", line 2, column 1
+2020-10-20 17:11:58,198 - DictClean.py [line:52] - ERROR: expected '<document start>', but found '<scalar>'
+  in "../Config/config.ini", line 2, column 1
+2020-10-20 17:15:25,185 - DictClean.py [line:52] - ERROR: expected '<document start>', but found '<scalar>'
+  in "../Config/config.ini", line 2, column 1
+2020-10-20 17:48:04,860 - AdbTools.py [line:62] - ERROR: [WinError 3] 系统找不到指定的路径。: 'E:\\WorkSpace\\PycharmProjects\\AutoFramework\\APKPath'
+2020-10-20 18:00:00,130 - AdbTools.py [line:93] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-10-20 18:00:00,131 - AdbTools.py [line:62] - ERROR: [WinError 3] 系统找不到指定的路径。: 'E:\\WorkSpace\\PycharmProjects\\AutoFramework\\APKPath'
+2020-10-20 18:59:10,821 - DictClean.py [line:52] - ERROR: expected '<document start>', but found '<scalar>'
+  in "../Config/config.ini", line 2, column 1
+2020-10-20 18:59:25,870 - DictClean.py [line:52] - ERROR: expected '<document start>', but found '<scalar>'
+  in "../Config/config.ini", line 2, column 1
+2020-10-20 18:59:54,041 - DictClean.py [line:52] - ERROR: expected '<document start>', but found '<scalar>'
+  in "../Config/config.ini", line 2, column 1
+2020-10-20 19:01:22,885 - DictClean.py [line:52] - ERROR: expected '<document start>', but found '<scalar>'
+  in "../Config/config.ini", line 2, column 1
+2020-10-20 19:02:47,072 - DictClean.py [line:52] - ERROR: expected '<document start>', but found '<scalar>'
+  in "../Config/config.ini", line 2, column 1
+2020-10-20 19:03:08,779 - DictClean.py [line:52] - ERROR: expected '<document start>', but found '<scalar>'
+  in "../Config/config.ini", line 2, column 1
+2020-10-20 19:03:56,128 - DictClean.py [line:52] - ERROR: expected '<document start>', but found '<scalar>'
+  in "../Config/config.ini", line 2, column 1
+2020-10-20 19:04:45,210 - DictClean.py [line:52] - ERROR: expected '<document start>', but found '<scalar>'
+  in "../Config/config.ini", line 2, column 1
+2020-10-20 19:04:56,555 - DictClean.py [line:52] - ERROR: expected '<document start>', but found '<scalar>'
+  in "../Config/config.ini", line 2, column 1
+2020-10-20 19:29:59,742 - RequestTools.py [line:122] - ERROR: 'str' object has no attribute 'url'
+2020-10-20 19:30:09,815 - RequestTools.py [line:122] - ERROR: 'str' object has no attribute 'url'

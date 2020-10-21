@@ -1,0 +1,8 @@
+2020-10-21 11:59:58,701 - RequestTools.py [line:102] - INFO: https://www.baidu.com
+2020-10-21 11:59:58,701 - RequestTools.py [line:111] - INFO: 正在对地址：https://www.baidu.com 发起Post请求！！！
+2020-10-21 11:50:08,728 - RequestTools.py [line:185] - ERROR: HTTPSConnectionPool(host='www.baidu.com', port=555): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib5.connection.HTTPSConnection object at 0x000001F566559888>, 'Connection to www.baidu.com timed out. (connect timeout=5)'))
+2020-10-21 11:56:56,225 - RequestTools.py [line:102] - INFO: https://www.baidu.com
+2020-10-21 11:56:56,226 - RequestTools.py [line:111] - INFO: 正在对地址：https://www.baidu.com 发起Post请求！！！
+2020-10-21 11:56:56,250 - RequestTools.py [line:185] - ERROR: HTTPSConnectionPool(host='www.baidu.com', port=555): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib5.connection.HTTPSConnection object at 0x000002806057C958>, 'Connection to www.baidu.com timed out. (connect timeout=5)'))
+2020-10-21 11:58:22,115 - RequestTools.py [line:102] - INFO: https://api.unipay.qq.com/v1/r/1550006665/get_ip_list
+2020-10-21 11:58:22,115 - RequestTools.py [line:111] - INFO: 正在对地址：https://api.unipay.qq.com/v1/r/1550006665/get_ip_list 发起Post请求！！！
