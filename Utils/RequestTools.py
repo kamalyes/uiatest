@@ -7,18 +7,24 @@
 # Desc:    网络请求封装
 # Date： 2020/10/9 11:19
 '''
-import urllib,random
+import json
+import os
+import random
+import requests as requests
 from faker import Factory
+from requests_toolbelt import MultipartEncoder
+from Logger.GlobalLog import Logger  # 导入日志模块
 from Utils import IniHandle
+from Utils.CheckStatus import CodeWriting
 from Utils.DictClean import YamlHandle
-from Logger.GlobalLog import  Logger # 导入日志模块
-logger = Logger.write_log()#调用日志模块
+
+logger = Logger.write_log()   # 调用日志模块
 filepath = r'../Config/config.ini'
 IniHandle = IniHandle.IniHandle()
 
-class HttpsRequest():
+class HttpsServer():
     @classmethod
-    def proxy_state(self,off_status):
+    def proxy_state(self):
         """
         解析ini配置文件 拉取proxy_switch状态返回所需结果
         :param sections 读取的ini节点路径
@@ -29,7 +35,7 @@ class HttpsRequest():
         proxy_info = IniHandle.prettySecToDic('Proxy_Setting')
         for key in proxy_info:
             value = dict.get(proxy_info, key)
-            if key == "proxy_switch" and value == "True" and off_status == 1:
+            if key == "proxy_switch" and value == "True":
                 proxies = eval(dict.get(proxy_info, "proxy_type")) #强转为dict类型 否则 request模块识别不了str类型
                 return proxies
             else:
@@ -83,60 +89,147 @@ class HttpsRequest():
         user_agent = self.get_user_agent(num=5, method='custom')
         return {'User-Agent': user_agent}
 
-
-    def send_request(self, url, method,agreement=None,data=None, headers=None,timeout=None,cookies=None,verify=None):
+    @classmethod
+    def send_request(self, url, method,agreement=None,filepath=None,cookies =None,content_type=None,data=None):
         """
         :param url: 请求地址
         :param data: 传参数据
         :param header: 头部信息
+        :param filepath：文件位置 str类型绝对路径
         :param agreement 协议 Https 则加密的SLL Http则普通协议 不填则默认return url
-        :return: res 返回基本信息
+        :return: response 返回基本信息
         """
-        if agreement == 'https':
-            address = 'https://%s'%(url)
-        elif agreement == 'http':
-            address = 'http://%s'%(url)
-        else:
-            address = url
-        logger.info(address)
+        try:
+            if agreement == 'https':
+                address = 'https://%s' % (url)
+            elif agreement == 'http':
+                address = 'http://%s' % (url)
+            else:
+                address = url
+            logger.info(address)
 
-        proxy_handler = urllib.request.ProxyHandler(self.proxy_state())
-        opener = urllib.request.build_opener(proxy_handler)
+            headers = self.get_header()
 
-        if method == "get":
-            logger.info("get请求")
-            response = opener.open(address, data=data, timeout=5)
+            if cookies is not None:
+                headers['Cookies'] = cookies
+            else:
+                logger.warning("未携带Cookies信息上来，请注意是否会存在有登录态失效问题！！！")
 
-        elif method == "post":
-            logger.info("post请求")
-            response = opener.open(address, data=data, timeout=5)
-            logger.info(response)
+            if content_type == 'from' or content_type == 'From' or content_type == 'FROM':
+                headers['Content-Type'] = "application/x-www-form-urlencoded"
+            elif content_type == 'text/html' or content_type == 'Text/Html' or content_type == 'TEXT/HTML':
+                headers['Content-Type'] = "text/html;charset=utf-8"
+            elif content_type == 'json' or content_type == 'Json' or content_type == 'JSON':
+                headers['Content-Type'] = "application/json; charset=utf-8"
+            else:
+                headers['Content-Type'] = "application/json; charset=utf-8"
+                logger.warning("%s不支持类型-->后面操作默认Json定义,若有问题则请在方法中添加content_type类型为表单/文本/Json类型" % (content_type))
 
-        elif method == "delete":
-            logger.info("delete请求")
-            response = opener.open(address, data=data, timeout=5)
+            if method == 'get' or method == 'Get' or method == 'GET':
+                logger.info("get请求！！！")
+                response = requests.get(address, params=data, headers=headers)
 
-        elif method == "put":
-            logger.info("put请求")
-            response = opener.open(address, data=data, timeout=5)
+            elif method == 'post' or method == 'Post' or method == 'POST':
+                logger.info("正在对地址：%s 发起Post请求！！！" % (address))
+                if type(data) == dict:
+                    data = json.dumps(data).encode(encoding='utf-8')
+                    response = requests.post(address, json=data, headers=headers, timeout=5)
+                elif type(data) == str:
+                    response = requests.post(address, data=data, headers=headers, timeout=5)
+                else:
+                    logger.error("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
 
-        elif method == "trace":
-            logger.info("trace请求")
-            response = opener.open(address, data=data, timeout=5)
+            elif method == 'delete' or method == 'Delete' or method == 'DELETE':
+                logger.info("正在对地址：%s 发起Delete请求！！！" % (address))
+                if type(data) == dict:
+                    data = json.dumps(data).encode(encoding='utf-8')
+                    response = requests.post(address, json=data, headers=headers, timeout=5)
+                elif type(data) == str:
+                    response = requests.post(address, data=data, headers=headers, timeout=5)
+                else:
+                    logger.warning("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
 
-        elif method == "head":
-            logger.info("head请求")
-            response = opener.open(address, data=data, timeout=5)
+            elif method == 'put' or method == 'Put' or method == 'PUT':
+                logger.info("正在对地址：%s 发起Put请求！！！" % (address))
+                if type(data) == dict:
+                    data = json.dumps(data).encode(encoding='utf-8')
+                    response = requests.post(address, json=data, headers=headers, timeout=5)
+                elif type(data) == str:
+                    response = requests.post(address, data=data, headers=headers, timeout=5)
+                else:
+                    logger.warning("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
 
-        elif method == "options":
-            logger.info("options请求")
-            response = opener.open(address, data=data, timeout=5)
+            elif method == 'trace' or method == 'Trace' or method == 'TRACE':
+                logger.info("正在对地址：%s 发起Trace请求！！！" % (address))
+                if type(data) == dict:
+                    data = json.dumps(data).encode(encoding='utf-8')
+                    response = requests.post(address, json=data, headers=headers, timeout=5)
+                elif type(data) == str:
+                    response = requests.post(address, data=data, headers=headers, timeout=5)
+                else:
+                    logger.warning("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
 
-        elif method == "patch":
-            logger.info("patch请求")
-            response = opener.open(address, data=data, timeout=5)
+            elif method == 'head' or method == 'Head' or method == 'HEAD':
+                logger.info("正在对地址：%s 发起Head请求！！！" % (address))
+                if type(data) == dict:
+                    data = json.dumps(data).encode(encoding='utf-8')
+                    response = requests.post(address, json=data, headers=headers, timeout=5)
+                elif type(data) == str:
+                    response = requests.post(address, data=data, headers=headers, timeout=5)
+                else:
+                    logger.warning("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
 
-        return  response
+            elif method == 'options' or method == 'Options' or method == 'OPTIONS':
+                logger.info("正在对地址：%s 发起Options请求！！！" % (address))
+                if type(data) == dict:
+                    data = json.dumps(data).encode(encoding='utf-8')
+                    response = requests.post(address, json=data, headers=headers, timeout=5)
+                elif type(data) == str:
+                    response = requests.post(address, data=data, headers=headers, timeout=5)
+                else:
+                    logger.warning("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
+
+            elif method == 'patch' or method == 'Patch' or method == 'PATCH':
+                logger.error("patch这种方式使用比较少暂时不做详细的修饰,需要使用则需去掉注释再次调试下！！！")
+                # logger.info("正在对地址：%s 发起Patch请求！！！" % (address))
+                # if type(data) == dict:
+                #     data = json.dumps(data).encode(encoding='utf-8')
+                #     response = requests.post(address, json=data, headers=headers, timeout=5)
+                # elif type(data) == str:
+                #     response = requests.post(address, data=data, headers=headers, timeout=5)
+                # else:
+                # logger.warning("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
+
+            elif method == 'upload' or method == 'Upload' or method == 'UPLOAD':
+                # print(type(data))
+                logger.info("正在对地址：%s 发起上传文件请求" % (address))
+                # 利用os的切片得到尾部filename信息
+                head, tail = os.path.split(filepath)
+                logger.info("传参时所需的文件名：%s" % (tail))
+                logger.info(headers)
+                files = {'file': open(filepath, 'rb').read()}  # 流式上传
+                # 将请求的参数转换成 MultipartEncoder格式
+                encode_data = MultipartEncoder(files)
+                content_type = {'Content-Type': encode_data.content_type}
+                headers.update(content_type)
+                logger.info("请求头部信息：%s" % (headers))
+                response = requests.post(url=url, headers=headers, data=data, files=files, timeout=5)
+            else:
+                logger.warning("暂不支持%s类型请求！！！" % (method))
+
+            # 请求头部信息注入yaml
+            YamlHandle.writeyaml(filepath=r'..\YamlData\Headers.yaml', data=headers, method="w")
+
+            if response.status_code == 200:
+                response = HttpsServer.get_response(response=response)
+                logger.info("响应实体：%s" % (response))
+                # 写入响应yaml
+                YamlHandle.writeyaml(filepath=r'..\YamlData\ResponseJson.yaml', data=response, method="w")
+                return response
+            else:
+                CodeWriting.notice("%s" % (response.status_code))
+        except Exception as e:
+            logger.error("异常抛出%s"%(e))
 
     @classmethod
     def get_response(self,response):
@@ -151,7 +244,7 @@ class HttpsRequest():
             headers = response.headers
             status_code = response.status_code
             filepath = r'..\YamlData\Response%s.yaml'%('Json')
-            data = {'address': address, 'method': str(method), 'content': content, 'headers': str(headers),
+            data = {'address': address, 'method': str(method), 'content': str(content).encode('utf-8'), 'headers': str(headers),
                     'status_code': status_code}
             YamlHandle.writeyaml(filepath=filepath, data=data, method="a")
             data = YamlHandle.yamldata(filepath=filepath)
@@ -160,4 +253,8 @@ class HttpsRequest():
             logger.error(FileNotFoundError)
 
 if __name__ == '__main__':
-    proxies = HttpsRequest.proxy_state(off_status=1)
+    proxies = HttpsServer.proxy_state(off_status=1)
+    url = "https://nowpic.gtimg.com/feeds_pic/ajNVdqHZLLCWsvtZtXqSLIeV5D3icBicKfYWT1iad8rD3hKa0ruwwBg8A/"
+    data = {"data":"value"}
+    cookies = "openkey=openkey&xg_mid=&openid=501893067&format=json&session_id=hy_gameid&amode=1&offer_id=1450006664&session_token=&extend=&sdkversion=1.6.9v&pfkey=pfKey&pf=huyu_m-2001-android-861080041549585&session_type=st_dummy"
+    HttpsServer.send_request(url=url,method='upload',filepath=r"..\Resources\DejaVuSans.ttf")

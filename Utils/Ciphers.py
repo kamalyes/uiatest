@@ -11,9 +11,6 @@
 import base64
 import binascii
 from hashlib import sha1, md5
-from Crypto.Hash import SHA256
-from Crypto.Cipher import AES
-from Crypto.Cipher import DES
 from Logger.GlobalLog import Logger
 logger = Logger.write_log()#调用日志模块
 class Helper():
@@ -21,7 +18,6 @@ class Helper():
     def base64_encrypt(self,key):
         """
         base64 算法加密
-        binary 需要转成2进制格式才可以转换，所以我们这里再手动转换一下
         :return:加密后的字符
         """
         binary = base64.b64encode(key.encode())

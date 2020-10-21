@@ -9,6 +9,7 @@ gzip
 email
 mysql
 numpy
+faker
 pandas
 shutil
 random
@@ -22,3 +23,4 @@ platform
 configobj
 subprocess
 configparser
+requests_toolbelt

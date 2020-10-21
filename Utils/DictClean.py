@@ -9,6 +9,8 @@
 '''
 import yaml,json
 from Logger.GlobalLog import Logger
+from Utils import DirTools
+
 logger = Logger.write_log()#调用日志模块
 
 # 初始化列表、及yaml文件的异常抛出
@@ -84,14 +86,15 @@ class YamlHandle():
         :param filepath: 目标文件路径
         :param data:     json实体即dict类型的数据
         :param method:   w：全新写入、a：追加数据
+        :param allow_unicode 处理乱码 content: "{\"ret\" : 1001,\"msg\: "请求参数错误(openid)"} -->'content': '{"ret" : 1001,"msg" : "请求参数错误(openid)
         """
         try:
             if method == "w":
                 with open(filepath, "w", encoding="utf-8") as file:
-                    yaml.dump(data, file)
+                    yaml.dump(data, file,allow_unicode=True)
             elif method == "a":
                 with open(filepath, "a+", encoding="utf-8") as file:
-                    yaml.dump(data, file)
+                    yaml.dump(data, file,allow_unicode=True)
         except Exception as FileNotFoundError:
             logger.error(FileNotFoundError)
         finally:

@@ -134,9 +134,16 @@ class Character():
             count +=1
         return name_list
 
+    def sample_list(self,length):
+        '''生成给定长度的字符串，返回列表格式'''
+        numbers = ''.join(map(str, [i for i in range(10) if i != 4]))  # 数字
+        init_chars = ''.join(numbers)
+        return random.sample(init_chars, length)
+
 if __name__ == '__main__':
     logger.info(Character().email(emailtype = "@qq.com",maxnum=10,rad_count=5))
     logger.info(Character().verifi(maxnum=6,radcount=2))
     logger.info(Character().phone(radcount=6))
     logger.info(Character().name(length=2,radcount=10))
+    logger.info(Character().sample_list(length=5))
 

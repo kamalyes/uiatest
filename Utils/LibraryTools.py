@@ -59,5 +59,5 @@ class JarManage():
         subprocess.call(com_list)
 
 if __name__ == '__main__':
-    JarManage().check_import(filepath=r'../requirements.txt')
-    # JarManage().updatejar()
+    # JarManage().check_import(filepath=r'../requirements.txt')
+    JarManage().updatejar()

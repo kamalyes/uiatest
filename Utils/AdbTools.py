@@ -7,19 +7,21 @@
 # Desc: Adb工具类
 # Date： 2020/9/6 18:56
 '''
+
 import os,re
 import platform,datetime
 import configparser,subprocess
 from Logger.GlobalLog import Logger
 from Utils import DirTools
 logger = Logger.write_log()#调用日志模块
+from Logger.Console import WarningMgs
+
+# logger.warning(WarningMgs)
 
 conf_ini = r"../Config/config.ini"
 conf = configparser.ConfigParser()
 conf.read(conf_ini,encoding="utf-8")
 package_name = conf.get("Android_Info", "package_name")
-
-# logger.info(package_name)
 
 class Adb_Manage(object):
     def check_filtered(self):
@@ -887,7 +889,6 @@ class Adb_Manage(object):
                 return send_key
         except Exception as TypeError:
             logger.error(TypeError)
-
 
     def switch_directory(self,devices_name,filePath=""):
         """
