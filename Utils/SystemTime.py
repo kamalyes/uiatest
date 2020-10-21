@@ -100,29 +100,9 @@ class TimeUtil:
         if not isinstance(timestamp, (int, float)):
             return None
         time_tuple = time.localtime(timestamp)
-
-        return str(time_tuple[0]) + "年" + str(time_tuple[1]) + "月" + str(time_tuple[2]) + "日"
-
-    @classmethod
-    def timestamp_to_time(self, timestamp):
-        """
-        时间戳格式化为xxx时xx分xx秒
-        :param timestamp:
-        :return: timestamp_to_time
-        """
-        if not isinstance(timestamp, (int, float)):
-            return None
-        time_tuple = time.localtime(timestamp)
-        return str(time_tuple[4]) + "时" + str(time_tuple[5]) + "分" + str(time_tuple[6]) + "秒"
-
-    @classmethod
-    def timestamp_to_datetime(self, timestamp):
-        """
-        时间戳格式化为xxx年xx月xx日xx时xx分xx秒
-        :param timestamp:
-        :return timestamp_to_datetime
-        """
-        return self.timestamp_to_date(timestamp) + self.timestamp_to_time(timestamp)
+        specific_data = str(time_tuple[0]) + "-" + str(time_tuple[1]) + "-" + str(time_tuple[2]) + " " \
+                        + str(time_tuple[3]) + ":" + str(time_tuple[4]) + ":" + str(time_tuple[5])
+        return specific_data
 
     @classmethod
     def get_everyday(self, start, end):
@@ -163,8 +143,6 @@ if __name__ == "__main__":
     logger.info(TimeUtil.get_chinesedatetime())
     logger.info(TimeUtil.compute_date(10))
     logger.info(TimeUtil.compute_date(-6))
-    logger.info(TimeUtil.timestamp_to_date(1600341939))
-    logger.info(TimeUtil.timestamp_to_time(1600341939))
-    logger.info(TimeUtil.timestamp_to_datetime(1600341939))
+    logger.info(TimeUtil.timestamp_to_date(1603282677.5209892))
     logger.info(TimeUtil.get_everyday("2020-06-05", "2020-07-01"))
     logger.info(TimeUtil.get_singtime("2020-06-01 18:50:00"))
