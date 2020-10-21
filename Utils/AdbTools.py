@@ -14,9 +14,9 @@ import configparser,subprocess
 from Logger.GlobalLog import Logger
 from Utils import DirTools
 logger = Logger.write_log()#调用日志模块
-from Logger.Console import WarningMgs
+from Logger.Console import *
 
-# logger.warning(WarningMgs)
+# logger.warning(Skull)
 
 conf_ini = r"../Config/config.ini"
 conf = configparser.ConfigParser()
