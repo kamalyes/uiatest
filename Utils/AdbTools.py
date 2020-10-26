@@ -8,12 +8,14 @@
 # Date： 2020/9/6 18:56
 '''
 
-import os,re,subprocess
+import os,re
 import platform,datetime
+import configparser,subprocess
 from Logger.GlobalLog import Logger
 from Utils import DirTools
-logger = Logger.write_log()#调用日志模块
 from Utils.ConfigParser import IniHandle
+
+logger = Logger.write_log()#调用日志模块
 
 class Adb_Manage(object):
     def check_filtered(self):
@@ -79,7 +81,7 @@ class Adb_Manage(object):
             if adb_info == True:
                 devices_name = re.findall('\n(.+?)\t', subprocess.getstatusoutput("adb devices")[1])
                 if devices_name != []:
-                    logger.info("设备连接成功%s" % (devices_name))
+                    # logger.info("设备连接成功%s" % (devices_name))
                     return devices_name
                 else:
                     logger.error("请检查目标设备是否与主机连接成功！！！")
@@ -120,41 +122,8 @@ class Adb_Manage(object):
         try:
             if devices_name == False :
                 pass
-            status = IniHandle.optvalue(node='Android_Info', key='install_status')
+            status= IniHandle().optvalue(node="Android_Info", key="install_status")
             if status in(1,2):
-                # 安装错误常见列表
-                errors = {'INSTALL_FAILED_ALREADY_EXISTS': '程序已经存在',
-                          'INSTALL_DEVICES_NOT_FOUND': '找不到设备',
-                          'INSTALL_FAILED_DEVICE_OFFLINE': '设备离线',
-                          'INSTALL_FAILED_INVALID_APK': '无效的APK',
-                          'INSTALL_FAILED_INVALID_URI': '无效的链接',
-                          'INSTALL_FAILED_INSUFFICIENT_STORAGE': '没有足够的存储空间',
-                          'INSTALL_FAILED_DUPLICATE_PACKAGE': '已存在同名程序',
-                          'INSTALL_FAILED_NO_SHARED_USER': '要求的共享用户不存在',
-                          'INSTALL_FAILED_UPDATE_INCOMPATIBLE': '版本不能共存',
-                          'INSTALL_FAILED_SHARED_USER_INCOMPATIBLE': '需求的共享用户签名错误',
-                          'INSTALL_FAILED_MISSING_SHARED_LIBRARY': '需求的共享库已丢失',
-                          'INSTALL_FAILED_REPLACE_COULDNT_DELETE': '需求的共享库无效',
-                          'INSTALL_FAILED_DEXOPT': 'dex优化验证失败',
-                          'INSTALL_FAILED_DEVICE_NOSPACE': '手机存储空间不足导致apk拷贝失败',
-                          'INSTALL_FAILED_DEVICE_COPY_FAILED': '文件拷贝失败',
-                          'INSTALL_FAILED_OLDER_SDK': '系统版本过旧',
-                          'INSTALL_FAILED_CONFLICTING_PROVIDER': '存在同名的内容提供者',
-                          'INSTALL_FAILED_NEWER_SDK': '系统版本过新',
-                          'INSTALL_FAILED_TEST_ONLY': '调用者不被允许测试的测试程序',
-                          'INSTALL_FAILED_CPU_ABI_INCOMPATIBLE': '包含的本机代码不兼容',
-                          'CPU_ABIINSTALL_FAILED_MISSING_FEATURE': '使用了一个无效的特性',
-                          'INSTALL_FAILED_CONTAINER_ERROR': 'SD卡访问失败',
-                          'INSTALL_FAILED_INVALID_INSTALL_LOCATION': '无效的安装路径',
-                          'INSTALL_FAILED_MEDIA_UNAVAILABLE': 'SD卡不存在',
-                          'INSTALL_FAILED_INTERNAL_ERROR': '系统问题导致安装失败',
-                          'INSTALL_PARSE_FAILED_NO_CERTIFICATES': '文件未通过认证 >> 设置开启未知来源',
-                          'INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES': '文件认证不一致 >> 先卸载原来的再安装',
-                          'INSTALL_FAILED_INVALID_ZIP_FILE': '非法的zip文件 >> 先卸载原来的再安装',
-                          'INSTALL_CANCELED_BY_USER': '需要用户确认才可进行安装',
-                          'INSTALL_FAILED_VERIFICATION_FAILURE': '验证失败 >> 尝试重启手机',
-                          'DEFAULT': '未知错误'
-                          }
 
                 # 循环遍历出所有已连接的终端设备,便于后期调用
                 print(apklist)
