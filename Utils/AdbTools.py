@@ -232,7 +232,7 @@ class Adb_Manage(object):
         except Exception as TypeError:
             logger.error(TypeError)
 
-    def get_current_package(self,devices_name):
+    def get_current_package(self,devices_name=None):
         '''
         获取当前运行
         :param devices_name: 设备号

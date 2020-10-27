@@ -1,0 +1,612 @@
+--------- beginning of main
+--------- beginning of system
+I/ActivityManager( 1415): Controller Pid : 11291
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +250ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +328ms
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{5bb5afd u0 com.tencent.now/.app.startup.LauncherActivity t134 f}
+I/ActivityManager( 1415): START u0 {act=android.intent.action.SHOW_BRIGHTNESS_DIALOG cmp=com.android.systemui/.settings.BrightnessDialog} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +192ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.web.UserCreditWebActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.web.UserCreditWebActivity: +233ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +365ms
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{17dead1c u0 com.tencent.now/.app.startup.LauncherActivity t134 f}
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.visithistory.HistoryActivity} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.visithistory.HistoryActivity: +169ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.userinfomation.userpage.ClientCenterActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.userinfomation.userpage.ClientCenterActivity: +310ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +441ms
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{a92629e u0 com.tencent.now/.app.startup.LauncherActivity t134 f}
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.visithistory.HistoryActivity} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.visithistory.HistoryActivity: +132ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {act=android.intent.action.ASSIST flg=0x34000000 cmp=com.tencent.mtt/.businesscenter.intent.IntentDispatcherActivity (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +220ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.userinfomation.userpage.ClientCenterActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.userinfomation.userpage.ClientCenterActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.userinfomation.userpage.ClientCenterActivity: +196ms (total +338ms)
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.privatemessage.activity.PMChatActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.privatemessage.activity.PMChatActivity: +299ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.phonecertification.PhoneCertificationWebActivity (has extras)} from uid 10201 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.bbk.calendar/.MainActivity sel=act=android.intent.action.MAIN cat=[android.intent.category.APP_CALENDAR]}} from uid 1000 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.phonecertification.PhoneCertificationWebActivity: +346ms (total +524ms)
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10199 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Process com.tencent.mobileqq:mini (pid 5372) has died
+I/ActivityManager( 1415): Controller Pid : 0
+W/ActivityManager( 1415): getTasks: caller 10199 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Controller Pid : 11719
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +239ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.baidu.input_bbk.service/com.baidu.input_bbk.settings.SettingsMain} from uid 10054 on display 0
+W/ActivityManager( 1415): mCallerApp.pid =1415,mCallerApp.uid=1000
+W/ActivityManager( 1415): mCallingPidFilter=1415,mCallingUidFilter=1000
+I/ActivityManager( 1415): Start proc 11874:com.android.systemui:screenshot/u0a15 for service com.android.systemui/.screenshot.TakeScreenshotService
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.android.contacts/.DialtactsContactsEntryActivity sel=act=android.intent.action.MAIN cat=[android.intent.category.APP_CONTACTS]}} from uid 1000 on display 0
+W/ActivityManager( 1415): mCallerApp.pid =2309,mCallerApp.uid=10054
+W/ActivityManager( 1415): mCallingPidFilter=2309,mCallingUidFilter=10054
+I/ActivityManager( 1415): Start proc 11902:com.baidu.input_bbk.service:baidu_speech/u0a54 for service com.baidu.input_bbk.service/com.baidu.speech.VoiceRecognitionService
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10054 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.bbk.calendar/.MainActivity sel=act=android.intent.action.MAIN cat=[android.intent.category.APP_CALENDAR]}} from uid 1000 on display 0
+I/ActivityManager( 1415): Killing 5604:com.tencent.mobileqq:mini3/u0a199 (adj 15): empty for 3900s
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10199 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.baidu.input_bbk.service/com.baidu.input_bbk.settings.SettingsMain} from uid 10054 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +269ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +202ms
+I/ActivityManager( 1415): Controller Pid : 0
+W/ActivityManager( 1415): getTasks: caller 10199 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Controller Pid : 12072
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +260ms
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.phonecertification.PhoneCertificationWebActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.phonecertification.PhoneCertificationWebActivity: +348ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +309ms
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.baidu.input_bbk.service/com.baidu.input_bbk.settings.SettingsMain} from uid 10054 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.baidu.input_bbk.service/com.baidu.input_bbk.settings.SettingsMain} from uid 10054 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +328ms
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{6a3c002 u0 com.tencent.now/.app.startup.LauncherActivity t134 f}
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): Controller Pid : 0
+I/ActivityManager( 1415): Controller Pid : 12310
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +199ms
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.phonecertification.PhoneCertificationWebActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.phonecertification.PhoneCertificationWebActivity: +287ms
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.phonecertification.PhoneCertificationWebActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.phonecertification.PhoneCertificationWebActivity: +285ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +274ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.SHOW_BRIGHTNESS_DIALOG cmp=com.android.systemui/.settings.BrightnessDialog} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=com.android.bbk_phoneInstructions flg=0x10000000 cmp=com.android.BBKPhoneInstructions/.PhoneInstructionsList} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.phonecertification.PhoneCertificationWebActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.phonecertification.PhoneCertificationWebActivity: +267ms
+I/ActivityManager( 1415): Controller Pid : 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): Unable to start service Intent { act=com.tencent.tpns.mqttchannel.FEEDBACK pkg=com.tencent.now } U=0: not found
+W/ActivityManager( 1415): ==/==> myworkspace.mobile.clients.android/10108 for provider myworkspace.mobile.clients.android.XGVIP_PUSH_AUTH: user 0: XXXX
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): dump activity in user build. From pid=12582, uid=2000
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): dump activity in user build. From pid=12613, uid=2000
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): dump activity in user build. From pid=12646, uid=2000
+W/ActivityManager( 1415): dump activity in user build. From pid=12665, uid=2000
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +216ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): dump activity in user build. From pid=12707, uid=2000
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): dump activity in user build. From pid=12745, uid=2000
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +159ms (total +11s309ms)
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): dump activity in user build. From pid=12791, uid=2000
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +160ms
+W/ActivityManager( 1415): Unable to start service Intent { act=com.tencent.tpns.mqttchannel.FEEDBACK pkg=com.tencent.now } U=0: not found
+W/ActivityManager( 1415): ==/==> myworkspace.mobile.clients.android/10108 for provider myworkspace.mobile.clients.android.XGVIP_PUSH_AUTH: user 0: XXXX
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): dump activity in user build. From pid=12846, uid=2000
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +173ms
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +193ms
+W/ActivityManager( 1415): dump activity in user build. From pid=13042, uid=2000
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +177ms
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): dump activity in user build. From pid=13073, uid=2000
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +162ms
+W/ActivityManager( 1415): dump activity in user build. From pid=13105, uid=2000
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +160ms
+W/ActivityManager( 1415): dump activity in user build. From pid=13140, uid=2000
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +176ms
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): dump activity in user build. From pid=13173, uid=2000
+W/ActivityManager( 1415): dump activity in user build. From pid=13176, uid=2000
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +162ms
+W/ActivityManager( 1415): dump activity in user build. From pid=13214, uid=2000
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +173ms
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): Unable to start service Intent { act=com.tencent.tpns.mqttchannel.FEEDBACK pkg=com.tencent.now } U=0: not found
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): ==/==> myworkspace.mobile.clients.android/10108 for provider myworkspace.mobile.clients.android.XGVIP_PUSH_AUTH: user 0: XXXX
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): dump activity in user build. From pid=13283, uid=2000
+W/ActivityManager( 1415): dump activity in user build. From pid=13287, uid=2000
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): dump activity in user build. From pid=13312, uid=2000
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +201ms
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): dump activity in user build. From pid=13356, uid=2000
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +186ms
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): dump activity in user build. From pid=13394, uid=2000
+I/ActivityManager( 1415): Killing 10277:com.bbk.facewake/1000 (adj 15): empty for 1876s
+I/ActivityManager( 1415): Killing 9445:com.android.camera/u0a83 (adj 15): empty for 3229s
+I/ActivityManager( 1415): Process com.tencent.now (pid 2592) has died
+I/ActivityManager( 1415): Start proc 13442:com.android.camera/u0a83 for broadcast com.android.camera/.PreloadCameraReceiver
+W/ActivityManager( 1415): dump activity in user build. From pid=13464, uid=2000
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+I/ActivityManager( 1415): Start proc 13486:com.tencent.now/u0a201 for activity com.tencent.now/.app.startup.LauncherActivity
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +1s638ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +535ms
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.mainpage.activity.LiveMainActivity} from uid 10201 on display 0
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{2fa7b556 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.mainpage.activity.LiveMainActivity: +912ms
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): dump activity in user build. From pid=14014, uid=2000
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +294ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +423ms
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{32bcc00c u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+W/ActivityManager( 1415): dump activity in user build. From pid=14106, uid=2000
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +227ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +300ms
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{2739e4be u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+W/ActivityManager( 1415): dump activity in user build. From pid=14273, uid=2000
+I/ActivityManager( 1415): Controller Pid : 14275
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +356ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +248ms (total +650ms)
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{26770f01 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +310ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +308ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +288ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{1d288cfc u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +304ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +358ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +296ms
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{1358b18c u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +260ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{8640056 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +244ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{354b8f48 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): Controller Pid : 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{3dd50090 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): dump activity in user build. From pid=14592, uid=2000
+I/ActivityManager( 1415): Controller Pid : 14584
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +399ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +254ms (total +585ms)
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{1c6d78b9 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+W/ActivityManager( 1415): mCallerApp.pid =1415,mCallerApp.uid=1000
+W/ActivityManager( 1415): mCallingPidFilter=1415,mCallingUidFilter=1000
+I/ActivityManager( 1415): Start proc 14735:com.vivo.smartwakecustomgesture/u0a99 for service com.vivo.smartwakecustomgesture/com.custom.service.CustomGestureService
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{15750114 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.web.WebActivity (has extras)} from uid 10201 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {flg=0x14000000 cmp=com.tencent.now/.app.kroomactivity.KSongRoomActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.kroomactivity.KSongRoomActivity: +784ms (total +958ms)
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.vivo.browser/.MainActivity sel=act=android.intent.action.MAIN cat=[android.intent.category.APP_BROWSER]}} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {flg=0x14000000 cmp=com.tencent.now/.app.videoroom.RoomActivity (has extras)} from uid 10201 on display 0
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{2185cd61 u0 com.tencent.now/.app.kroomactivity.KSongRoomActivity t136 f}
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.videoroom.RoomActivity: +614ms
+I/ActivityManager( 1415): Controller Pid : 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): dump activity in user build. From pid=15022, uid=2000
+I/ActivityManager( 1415): Controller Pid : 15016
+W/ActivityManager( 1415): dump activity in user build. From pid=15131, uid=2000
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {flg=0x10000000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +725ms
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+W/ActivityManager( 1415): startActivity called from finishing ActivityRecord{17b9caf u0 com.tencent.now/.app.startup.LauncherActivity t136 f}; forcing Intent.FLAG_ACTIVITY_NEW_TASK for: Intent { cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras) }
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{17b9caf u0 com.tencent.now/.app.startup.LauncherActivity t136 f}
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +304ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +271ms
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{2b6306bb u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{e37e0c0 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +250ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +301ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+W/ActivityManager( 1415): startActivity called from finishing ActivityRecord{38251e8f u0 com.tencent.now/.app.startup.LauncherActivity t136 f}; forcing Intent.FLAG_ACTIVITY_NEW_TASK for: Intent { cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras) }
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{38251e8f u0 com.tencent.now/.app.startup.LauncherActivity t136 f}
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +258ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +301ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +191ms
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{1395ba9e u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +355ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +239ms
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{13ad92fd u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{19cd1d02 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): Controller Pid : 0
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{1c0a1708 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): Controller Pid : 15415
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +394ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +348ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{147cfe0a u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Controller Pid : 0
+W/ActivityManager( 1415): Unable to start service Intent { act=com.tencent.tpns.mqttchannel.FEEDBACK pkg=com.tencent.now } U=0: not found
+W/ActivityManager( 1415): mCallerApp.pid =1415,mCallerApp.uid=1000
+W/ActivityManager( 1415): mCallingPidFilter=1415,mCallingUidFilter=1000
+W/ActivityManager( 1415): reason = Periodic
+W/ActivityManager( 1415): Unable to launch app: com.tencent.mtt/10191 for syncservice callerPackage android Intent { act=android.content.SyncAdapter cmp=com.tencent.mtt/.browser.push.external.account.SyncService (has extras) }: process is forbid to start by firewall
+W/ActivityManager( 1415): ==/==> myworkspace.mobile.clients.android/10108 for provider myworkspace.mobile.clients.android.XGVIP_PUSH_AUTH: user 0: XXXX
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Controller Pid : 15836
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +320ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +282ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +279ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +244ms
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{1a068a27 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +283ms
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{3696c009 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +444ms (total +608ms)
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +218ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +239ms
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{11a15d34 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{15f4742b u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +276ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{25904b17 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {act=android.intent.action.ASSIST flg=0x34000000 cmp=com.tencent.mtt/.businesscenter.intent.IntentDispatcherActivity (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +273ms (total +615ms)
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +247ms
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{1973cd85 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): Controller Pid : 0
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{d0b64f6 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+ user 0: XXXX
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10020 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Controller Pid : 15836
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +320ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +282ms
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +279ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +244ms
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{1a068a27 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +283ms
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{3696c009 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +444ms (total +608ms)
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +218ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +239ms
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{11a15d34 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{15f4742b u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bbk.launcher2/.Launcher (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +276ms
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{25904b17 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tencent.now/.app.startup.LauncherActivity} from uid 2000 on display 0
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+W/ActivityManager( 1415): getRunningAppProcesses: caller 10201 does not hold REAL_GET_TASKS; limiting output
+I/ActivityManager( 1415): START u0 {act=android.intent.action.ASSIST flg=0x34000000 cmp=com.tencent.mtt/.businesscenter.intent.IntentDispatcherActivity (has extras)} from uid 1000 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.LauncherActivity: +273ms (total +615ms)
+I/ActivityManager( 1415): START u0 {cmp=com.tencent.now/.app.startup.splash.SplashActivity (has extras)} from uid 10201 on display 0
+I/ActivityManager( 1415): Displayed com.tencent.now/.app.startup.splash.SplashActivity: +247ms
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{1973cd85 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}
+I/ActivityManager( 1415): Controller Pid : 0
+W/ActivityManager( 1415): Duplicate finish request for ActivityRecord{d0b64f6 u0 com.tencent.now/.app.startup.splash.SplashActivity t136 f}

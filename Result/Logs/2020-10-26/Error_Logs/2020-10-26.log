@@ -1,0 +1,67 @@
+2020-10-26 10:57:20,570 - AdbTools.py [line:142] - ERROR: name 'conf' is not defined
+2020-10-26 10:58:25,615 - AdbTools.py [line:144] - ERROR: optvalue() missing 1 required positional argument: 'self'
+2020-10-26 12:10:08,222 - AppStability.py [line:178] - ERROR: 设备20c6befc安装失败，错误信息：验证授权失败,用户主动取消安装
+2020-10-26 12:10:50,662 - AppStability.py [line:178] - ERROR: 设备20c6befc安装失败，错误信息：验证授权失败,用户主动取消安装
+2020-10-26 15:55:52,688 - AppStability.py [line:178] - ERROR: 设备20c6befc安装失败，错误信息：文件未通过认证 >> 设置开启未知来源
+2020-10-26 15:56:49,954 - AppStability.py [line:178] - ERROR: 设备20c6befc安装失败，错误信息：INSTALL_FAILED_CANCELLED_BY_USER 验证授权失败,用户主动取消安装
+2020-10-26 15:57:22,873 - AppStability.py [line:178] - ERROR: 设备20c6befc安装失败，错误信息：INSTALL_FAILED_CANCELLED_BY_USER 验证授权失败,取消安装
+2020-10-26 15:58:29,319 - AppStability.py [line:178] - ERROR: 设备20c6befc安装失败，错误信息：INSTALL_PARSE_FAILED_NO_CERTIFICATES 文件未通过认证 >> 设置开启未知来源
+2020-10-26 15:59:08,450 - AppStability.py [line:178] - ERROR: 设备20c6befc安装失败，错误信息：INSTALL_PARSE_FAILED_NO_CERTIFICATES 禁止了usb模式下安装应用文件未通过认证 >> 设置开启未知来源
+2020-10-26 15:59:52,505 - AppStability.py [line:178] - ERROR: 设备20c6befc安装失败，错误信息：INSTALL_FAILED_CANCELLED_BY_USER 验证授权失败,用户主动取消安装
+2020-10-26 16:01:21,639 - AdbTools.py [line:87] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-10-26 17:25:22,208 - AppStability.py [line:188] - ERROR: not all arguments converted during string formatting
+2020-10-26 17:30:26,242 - AdbTools.py [line:87] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-10-26 17:31:05,990 - AdbTools.py [line:87] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-10-26 17:31:15,789 - AdbTools.py [line:87] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-10-26 17:31:20,847 - AdbTools.py [line:87] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-10-26 17:31:25,554 - AdbTools.py [line:87] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-10-26 17:31:41,270 - AdbTools.py [line:87] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-10-26 17:31:44,909 - AdbTools.py [line:87] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-10-26 17:33:17,175 - AppStability.py [line:191] - ERROR: 'Monkey' object has no attribute 'mansgerlog'
+2020-10-26 17:33:44,038 - AppStability.py [line:190] - ERROR: 'Monkey' object has no attribute 'mansgerlog'
+2020-10-26 17:34:15,240 - AppStability.py [line:190] - ERROR: not all arguments converted during string formatting
+2020-10-26 17:35:24,148 - AppStability.py [line:188] - ERROR: not all arguments converted during string formatting
+2020-10-26 17:36:11,334 - AppStability.py [line:188] - ERROR: not all arguments converted during string formatting
+2020-10-26 17:36:26,630 - AppStability.py [line:188] - ERROR: not all arguments converted during string formatting
+2020-10-26 17:38:11,297 - AppStability.py [line:188] - ERROR: not all arguments converted during string formatting
+2020-10-26 17:38:22,031 - AppStability.py [line:188] - ERROR: not all arguments converted during string formatting
+2020-10-26 17:38:47,009 - AppStability.py [line:188] - ERROR: not all arguments converted during string formatting
+2020-10-26 17:39:18,721 - AppStability.py [line:188] - ERROR: not all arguments converted during string formatting
+2020-10-26 17:39:30,451 - AppStability.py [line:188] - ERROR: not all arguments converted during string formatting
+2020-10-26 17:39:58,479 - AppStability.py [line:188] - ERROR: not all arguments converted during string formatting
+2020-10-26 18:05:51,331 - AppStability.py [line:191] - ERROR: not enough arguments for format string
+2020-10-26 18:06:11,861 - AppStability.py [line:191] - ERROR: not enough arguments for format string
+2020-10-26 18:18:33,701 - AppStability.py [line:191] - ERROR: _exit() missing required argument 'status' (pos 1)
+2020-10-26 19:05:34,451 - AppStability.py [line:179] - ERROR: 设备20c6befc安装失败，错误信息：INSTALL_PARSE_FAILED_NO_CERTIFICATES 禁止了USB模式下安装应用文件未通过认证 >> 设置开启未知来源
+2020-10-26 20:29:53,734 - DictClean.py [line:152] - ERROR: [Errno 2] No such file or directory: '..\\Result\\ActivtyMansger.log'
+2020-10-26 20:30:43,281 - DictClean.py [line:152] - ERROR: [Errno 2] No such file or directory: '..\\Result\\ActivtyMansger.log'
+2020-10-26 20:30:56,299 - DictClean.py [line:152] - ERROR: type object 'YamlHandle' has no attribute 'run_activity'
+2020-10-26 20:33:08,888 - DictClean.py [line:151] - ERROR: type object 'YamlHandle' has no attribute 'run_activity'
+2020-10-26 20:35:24,592 - DictClean.py [line:150] - ERROR: list index out of range
+2020-10-26 20:45:37,144 - DictClean.py [line:154] - ERROR: name 'a' is not defined
+2020-10-26 20:50:59,527 - DictClean.py [line:152] - ERROR: [Errno 2] No such file or directory: ''
+2020-10-26 21:01:09,933 - DictClean.py [line:155] - ERROR: local variable 'display' referenced before assignment
+2020-10-26 21:01:20,760 - DictClean.py [line:155] - ERROR: list index out of range
+2020-10-26 21:01:35,555 - DictClean.py [line:156] - ERROR: list index out of range
+2020-10-26 21:11:53,172 - DictClean.py [line:159] - ERROR: [Errno 2] No such file or directory: '..\\Config\\WhitlePackages/2020-10-26'
+2020-10-26 21:13:26,381 - DictClean.py [line:159] - ERROR: [Errno 2] No such file or directory: '..\\Result\\ActivityTemp/2020-10-26'
+2020-10-26 21:17:12,809 - DictClean.py [line:163] - ERROR: [Errno 2] No such file or directory: '..\\Result\\ActivityTemp/2020-10-26'
+2020-10-26 21:18:25,156 - DictClean.py [line:164] - ERROR: [Errno 2] No such file or directory: '..\\Result\\ActivityTemp/2020-10-26'
+2020-10-26 21:18:40,568 - DictClean.py [line:164] - ERROR: [Errno 2] No such file or directory: '..\\Result\\ActivityTemp/2020-10-26'
+2020-10-26 21:18:44,127 - DictClean.py [line:164] - ERROR: [Errno 2] No such file or directory: '..\\Result\\ActivityTemp/2020-10-26'
+2020-10-26 21:19:50,054 - DirTools.py [line:219] - ERROR: ..\Result\Logs\2020-10-26已存在，跳过创建！
+2020-10-26 21:19:50,059 - DictClean.py [line:163] - ERROR: [Errno 2] No such file or directory: '..\\Result\\ActivityTemp/2020-10-26'
+2020-10-26 21:20:46,544 - DirTools.py [line:219] - ERROR: ..\Result已存在，跳过创建！
+2020-10-26 21:20:46,548 - DictClean.py [line:163] - ERROR: [Errno 2] No such file or directory: '..\\Result\\ActivityTemp/2020-10-26'
+2020-10-26 21:21:19,131 - DictClean.py [line:161] - ERROR: [Errno 2] No such file or directory: '..\\Result\\ActivityTemp/2020-10-26'
+2020-10-26 21:21:29,895 - DictClean.py [line:160] - ERROR: not enough arguments for format string
+2020-10-26 21:22:52,238 - DictClean.py [line:160] - ERROR: [Errno 2] No such file or directory: '..\\Result\\ActivtyMansger.log'
+2020-10-26 21:23:17,741 - DictClean.py [line:161] - ERROR: [Errno 2] No such file or directory: '..\\Result\\ActivtyMansger.log'
+2020-10-26 21:23:50,040 - DictClean.py [line:159] - ERROR: [Errno 2] No such file or directory: '..\\Result\\ActivtyMansger.log'
+2020-10-26 21:24:57,473 - DictClean.py [line:159] - ERROR: [Errno 2] No such file or directory: '..\\Result\\ActivtyMansger.log'
+2020-10-26 21:28:25,468 - AppStability.py [line:100] - ERROR: 'Monkey' object has no attribute 'whiteapath'
+2020-10-26 21:29:29,569 - AppStability.py [line:100] - ERROR: [Errno 2] No such file or directory: '..\\Config\\\\WhiteActivity.txt'
+2020-10-26 21:30:27,160 - AppStability.py [line:100] - ERROR: 'Monkey' object has no attribute 'whitelist'
+2020-10-26 21:35:58,895 - AppStability.py [line:103] - ERROR: multiple repeat at position 5
+2020-10-26 21:36:59,149 - AppStability.py [line:102] - ERROR: name 'activity' is not defined
+2020-10-26 21:37:06,204 - AppStability.py [line:102] - ERROR: name 'activity' is not defined

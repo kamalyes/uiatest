@@ -7,9 +7,10 @@
 # Desc: Yaml格式文本内容
 # Date： 2020/10/9 17:11
 '''
-import yaml,json
+import re,os,yaml,json,time
 from Logger.GlobalLog import Logger
 logger = Logger.write_log()#调用日志模块
+from Utils.DirTools import  Doc_Process
 
 # 初始化列表、及yaml文件的异常抛出
 tmp_list = []
@@ -130,6 +131,33 @@ class YamlHandle():
             logger.error("该内容不支持转换、请检查是否为JSON或Body或List类型")
             return False
 
+    @classmethod
+    def filterkey(self, filepath, target,keyword=None):
+        """
+        清洗运行的窗口日志、过滤出有效的activity
+        :param filepath 读取的文件路径
+        :param target 目标存储路径
+        :param keyword 过滤的关键字
+        :return:
+        """
+        result =[]
+        try:
+            for line in open(filepath):
+                isspace = line.strip()
+                if len(isspace) != 0:
+                    display = re.compile("%s.*?.y"%(keyword)).findall(isspace)
+                    if  len(display):
+                        result.append(display[0])
+            distinct= set(result)
+            logger.info('去重：%s'%(distinct))
+            # 写入文本
+            for i in distinct:
+                file = open('%s'%(target), 'a')
+                file.write('\n' + str(i))
+                file.close()
+        except Exception as FileNotFoundError:
+            logger.error(FileNotFoundError)
+
 if __name__ == '__main__':
     data = YamlHandle.yamldata(filepath = r'..\YamlData\Register.yaml')
     YamlHandle.getdict(key="name", data=data)
@@ -140,3 +168,4 @@ if __name__ == '__main__':
     name = ['连发行', '凤芬林', '濮刚亨', '竺丹澜', '计发亮']
     verify = ['iUMayr', '5vSpIa', 'Iq0tvj', 'XZYvVm', 'gAPIDr']
     logger.info(YamlHandle.dataconver(method="ListToDict",frist=name,second=verify))
+    YamlHandle.filterkey(filepath=r'..\Config\WhiteActivity.txt',keyword='com.tencent.now',target='..\Result\ActivityTemp')
