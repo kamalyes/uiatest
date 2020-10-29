@@ -99,9 +99,9 @@ class YamlHandle():
             file.close()
 
     @classmethod
-    def StrToJson(self,method=None,string=None):
+    def dataconver(self,method=None,string=None,frist=None,second=None):
         """
-        Str文本内容与JSON格式互转
+        Str文本内容与JSON格式及俩个List类型互转
         :param method: 流转方式判断
         :param string: 字符
         :return: result：返回结果集 False：为空时返回
@@ -113,21 +113,30 @@ class YamlHandle():
             for i in range(0, len(str)):
                 string = str[i].split('=')
                 result[string[0]] = string[1];
-            logger.info("数据转化成功：%s"%(result))
             return result
         elif method == "JsonToBody":
             logger.info("检索到该Json有%s个键值对、开始清洗拼接数据！！！"%(len(string)))
             for key in string.keys():
                 urlParamsStr += ('%s=%s&' % (key, string[key]))
-            logger.info("数据转化成功：%s"%(urlParamsStr[:-1]))
             return urlParamsStr[:-1]
+        elif method == "ListToDict":
+            if len(frist) > len(second) or len(frist) < len(second):
+                logger.info("List长度不一致")
+            else:
+                for i in range(len(frist)):
+                    result[frist[i]] = second[i]
+                return result
         else:
-            logger.error("该内容不支持转换、请检查是否为JSON或Body类型")
+            logger.error("该内容不支持转换、请检查是否为JSON或Body或List类型")
             return False
+
 if __name__ == '__main__':
     data = YamlHandle.yamldata(filepath = r'..\YamlData\Register.yaml')
-    # logger.info(YamlHandle.getdict(key="name", data=data))
-    # logger.info(YamlHandle.changetype(filepath=r'..\YamlData\Register.yaml'))
-    # YamlHandle.writeyaml(filepath = r'..\YamlData\Token.yaml',data={'a':'b'},method="w")
-    changetype =  YamlHandle.StrToJson(method="BodyToJson",string="staticpage=sQsjulfPwmSj1e%3D&traceid=F90C0001&callback=parentowxe&time=1602858806&alg=v3&sig=eFh4clp0cXh")
-    changetype =  YamlHandle.StrToJson(method="JsonToBody",string={'staticpage': 'sQsjulfPwmSj1e%3D', 'traceid': 'F90C0001', 'callback': 'parentowxe', 'time': '1602858806', 'alg': 'v3', 'sig': 'eFh4clp0cXh'})
+    YamlHandle.getdict(key="name", data=data)
+    YamlHandle.changetype(filepath=r'..\YamlData\Register.yaml')
+    YamlHandle.writeyaml(filepath = r'..\YamlData\Token.yaml',data={'a':'b'},method="w")
+    YamlHandle.dataconver(method="BodyToJson",string="staticpage=sQsjulfPwmSj1e%3D&traceid=F90C0001&callback=parentowxe&time=1602858806&alg=v3&sig=eFh4clp0cXh")
+    YamlHandle.dataconver(method="JsonToBody",string={'staticpage': 'sQsjulfPwmSj1e%3D', 'traceid': 'F90C0001', 'callback': 'parentowxe', 'time': '1602858806', 'alg': 'v3', 'sig': 'eFh4clp0cXh'})
+    name = ['连发行', '凤芬林', '濮刚亨', '竺丹澜', '计发亮']
+    verify = ['iUMayr', '5vSpIa', 'Iq0tvj', 'XZYvVm', 'gAPIDr']
+    logger.info(YamlHandle.dataconver(method="ListToDict",frist=name,second=verify))
