@@ -11,12 +11,11 @@ import re,os,sys,time
 import subprocess
 from Logger.GlobalLog import Logger
 from Utils.ConfigParser import  IniHandle
-from Utils.DirTools import  Doc_Process
-from Utils.AdbTools import Adb_Manage
-IniHandle = IniHandle()
-Adb = Adb_Manage()
+from Utils.DirTools import  DocProcess
+from Utils.AdbTools import AdbManage
 logger = Logger.write_log()
-getpwd =Doc_Process.get_superior_dir()
+getpwd =DocProcess.getSuperiorDir()
+
 class Monkey():
     def __init__(self,method=None):
         """
@@ -25,12 +24,12 @@ class Monkey():
         :param commod  命令
         """
         # 文件读取及存储的路径
-        self.package = IniHandle.optvalue(node="Monkey_Test",key="package")
-        self.local = IniHandle.optvalue(node="Monkey_Test",key="local")
-        self.sdcard = IniHandle.optvalue(node="Monkey_Test",key="sdcard")
-        self.whiteapath = IniHandle.optvalue(node="Monkey_Test",key="whiteapath")
+        self.package = IniHandle.optValue(node="Monkey_Test",key="package")
+        self.local = IniHandle.optValue(node="Monkey_Test",key="local")
+        self.sdcard = IniHandle.optValue(node="Monkey_Test",key="sdcard")
+        self.whiteapath = IniHandle.optValue(node="Monkey_Test",key="whiteapath")
 
-        self.apkpath =os.path.join(getpwd,IniHandle.optvalue(node="Monkey_Test",key="apkpath"))
+        self.apkpath =os.path.join(getpwd,IniHandle.optValue(node="Monkey_Test",key="apkpath"))
         self.local_date = time.strftime('%Y-%m-%d', time.localtime(time.time()))
         if method == "local":
             self.crashlog = os.path.join(getpwd,self.local,"Crashlog.log")
@@ -44,20 +43,20 @@ class Monkey():
             self.mangerlog = os.path.join("%s/ActivtyMansger.log"%(self.sdcard))
 
         # commod 命令
-        self.operation = IniHandle.optvalue(node="Monkey_Test",key="operation")
-        self.ignore =  IniHandle.optvalue(node="Monkey_Test",key="ignore")
+        self.operation = IniHandle.optValue(node="Monkey_Test",key="operation")
+        self.ignore =  IniHandle.optValue(node="Monkey_Test",key="ignore")
         self.commod = ('%s %s'%(self.operation,self.ignore))
         # MAinActivity&白名单窗口
-        self.mainactivity = IniHandle.optvalue(node="Monkey_Test",key="mainactivity")
-        self.devices = IniHandle.optvalue(node="Monkey_Test", key="devices").split(";")
+        self.mainactivity = IniHandle.optValue(node="Monkey_Test",key="mainactivity")
+        self.devices = IniHandle.optValue(node="Monkey_Test", key="devices").split(";")
 
-    def checklocal(self):
+    def checkLocal(self):
         """
         检查本地是否安装包名
         :return:
         """
         result = []
-        devices = Adb.check_devices_status()
+        devices = Adb_Manage.check_devices_status()
         if len(devices)==1:
             packageName = subprocess.getstatusoutput('adb shell pm list packages "| grep %s"' % (self.package))[1][8:].strip('\r\n')
             result.append(packageName)
@@ -67,7 +66,7 @@ class Monkey():
                 result.append(packageName)
         return result
 
-    def backwhite(self):
+    def setBackWhite(self):
         """
         通过白名单机制进行二次封装Monkey自定义Activity
         :return:
@@ -85,7 +84,7 @@ class Monkey():
             logger.info("当前位于：%s不需要跳转！！！" % (activity))
 
     @classmethod
-    def statusbar(self,method,devices):
+    def setStatusbar(self,method,devices):
         """
         开启/关闭状态栏
         :param method: 方式：开启还是关闭
@@ -102,18 +101,17 @@ class Monkey():
             os.popen('adb -s %s shell wm overscan 0,0,0,-200' % (devices))
             logger.info("运行前关闭一些障碍 隐藏掉状态栏&底下的返回控件")
 
-
-    def native(self):
+    def start(self):
         """
         运行前环境部署/原生态的Monkey瞎跑
         :return:
         """
-        devices = Adb.check_devices_status()
+        devices = AdbManage.checkDevicesStatus()
         if devices !=False:
             for i in range(len(devices)):
                 if devices[i] in self.devices or devices is not None:
-                    packages = self.checklocal()
-                    logger.info('接收到checklocal方法传回来的包名信息：%s%s' % (packages, type(packages)))
+                    packages = self.checkLocal()
+                    logger.info('接收到checkLocal方法传回来的包名信息：%s%s' % (packages, type(packages)))
                     if packages[i] == '':
                         logger.warning("当前设备：%s 没有安装被测软件即将安装：%s" % (devices[i], self.apkpath))
                         status = subprocess.getstatusoutput('adb -s %s install -r %s' % (devices[i], self.apkpath))
@@ -163,15 +161,15 @@ class Monkey():
                     else:
                         logger.info("当前设备 %s 已安装被测软件：%s" % (devices[i], packages[i]))
                         try:
-                            Monkey.statusbar(method='close',devices=devices[i])
+                            Monkey.setStatusbar(method='close',devices=devices[i])
                             os.popen('adb -s %s shell logcat -c && adb -s %s shell logcat -b crash > %s'%(devices[i],devices[i],self.crashlog))
                             os.popen('adb -s %s shell logcat ActivityManager:I *:s > %s' % (devices[i],self.mangerlog))
                             os.popen('adb -s %s shell monkey -p %s %s >%s'%(devices[i],self.package,self.commod,self.monkeylog))
                         except Exception as e:
                             logger.error(e)
                         finally:
-                            Monkey.statusbar(method='open',devices=devices[i])
+                            Monkey.setStatusbar(method='open',devices=devices[i])
 
 if __name__ == '__main__':
-    Monkey(method='local').native()
-    # Monkey().backwhite()
+    Monkey(method='local').start()
+    # Monkey().setBackWhite()

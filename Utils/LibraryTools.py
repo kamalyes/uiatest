@@ -12,7 +12,7 @@ from Logger.GlobalLog import  Logger # 导入日志模块
 logger = Logger.write_log()#调用日志模块
 
 class JarManage():
-    def check_import(self,filepath):
+    def checkImport(self,filepath):
         """
         导入所需要的第三方库
         :param filepath 自动（requirement）导入文件的路径
@@ -34,7 +34,7 @@ class JarManage():
         except Exception as ModuleNotFoundError:
             logger.error("导入库阶段出错,%s"%(ModuleNotFoundError))
 
-    def updatejar(self):
+    def updateJar(self):
         """
         # 批量更新python所有的三方库
         :param com_list 显示需要更新的python列表并存储到list中
@@ -59,5 +59,5 @@ class JarManage():
         subprocess.call(com_list)
 
 if __name__ == '__main__':
-    # JarManage().check_import(filepath=r'../requirements.txt')
-    JarManage().updatejar()
+    # JarManage().checkImport(filepath=r'../requirements.txt')
+    JarManage().updateJar()

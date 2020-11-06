@@ -11,11 +11,16 @@
 import base64
 import binascii
 from hashlib import sha1, md5
+
+from Crypto.Cipher import AES
+from Crypto.Cipher import DES
+from Crypto.Hash import SHA256
+
 from Logger.GlobalLog import Logger
 logger = Logger.write_log()#调用日志模块
 class Helper():
     @classmethod
-    def base64_encrypt(self,key):
+    def base64Encrypt(self,key):
         """
         base64 算法加密
         :return:加密后的字符
@@ -24,7 +29,7 @@ class Helper():
         return binary
 
     @classmethod
-    def base64_decrypt(self, binary):
+    def base64Decrypt(self, binary):
         """
         base64 算法解密
         binary 需要转成2进制格式才可以转换，所以我们这里再手动转换一下
@@ -34,7 +39,7 @@ class Helper():
         return b64decode
 
     @classmethod
-    def md5_encrypt(self, decode_msg):
+    def md5Encrypt(self, decode_msg):
         """
         md5 算法加密
         :param decode_msg: 需加密的字符串
@@ -45,7 +50,7 @@ class Helper():
         return hl.hexdigest()
 
     @classmethod
-    def sha1_encrypt(self, decode_msg):
+    def sha1Encrypt(self, decode_msg):
         """
         sha1 算法加密
         :param decode_msg: 需加密的字符串
@@ -56,7 +61,7 @@ class Helper():
         return sh.hexdigest()
 
     @classmethod
-    def sha256_encrypt(self, decode_msg):
+    def sha256Encrypt(self, decode_msg):
         """
         sha256 算法加密
         :param decode_msg: 需加密的字符串
@@ -67,7 +72,7 @@ class Helper():
         return sh.hexdigest()
 
     @classmethod
-    def des_encrypt(self, decode_msg, key):
+    def desEncrypt(self, decode_msg, key):
         """
         DES 算法加密
         :param decode_msg: 需加密的字符串,长度必须为8的倍数，不足添加'='
@@ -80,7 +85,7 @@ class Helper():
         return binascii.b2a_hex(text).decode()
 
     @classmethod
-    def aes_encrypt(self, decode_msg, key, vi):
+    def aesEncrypt(self, decode_msg, key, vi):
         """
         AES 算法的加密
         :param decode_msg: 需加密的字符串
@@ -93,7 +98,7 @@ class Helper():
         return binascii.b2a_hex(txt).decode()
 
     @classmethod
-    def aes_decrypt(self, decode_msg, key, vi):
+    def aesDecrypt(self, decode_msg, key, vi):
         """
         AES 算法的解密
         :param decode_msg: 需解密的字符串
@@ -106,8 +111,8 @@ class Helper():
         return obj.decrypt(decode_msg).decode()
 
 if __name__ == '__main__':
-    print(Helper.base64_encrypt(key="你好"))
-    print(Helper.base64_decrypt(binary=Helper().base64_encrypt(key="你好")))
-    print(Helper.md5_encrypt('你好'))
+    print(Helper.base64Encrypt(key="你好"))
+    print(Helper.base64Decrypt(binary=Helper().base64Encrypt(key="你好")))
+    print(Helper.md5Encrypt('你好'))
 
 

@@ -170,6 +170,6 @@ if __name__ == '__main__':
     logger.info(wookbook)
     once_read = ExcelHandle.once_read(workbook=wookbook)
     list_excel = ExcelHandle.list_excel(workbook=wookbook)
-    cell = ExcelHandle.cell_process(filepath=r'..\Config\Interface.xlsx')
+    cell = ExcelHandle.cell_process(filepath=r'..\Config\district.xls')
     logger.info(once_read)
-    ExcelHandle.copy_excel(filepath=r"E:\WorkSpace\PycharmProjects\AutoFramework\Config\Interface.xlsx")
+    ExcelHandle.copy_excel(filepath=r'..\Config\district.xls')

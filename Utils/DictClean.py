@@ -10,16 +10,15 @@
 import re,os,yaml,json,time
 from Logger.GlobalLog import Logger
 logger = Logger.write_log()#调用日志模块
-from Utils.DirTools import  Doc_Process
+from Utils.DirTools import  DocProcess
 
 # 初始化列表、及yaml文件的异常抛出
 tmp_list = []
 yaml.warnings({'YAMLLoadWarning': False})  # 禁用加载器warnings报警
 
 class YamlHandle():
-
     @classmethod
-    def changetype(self,filepath):
+    def changeType(self,filepath):
         """
         Json或Yaml格式化
         :param target: 目标文件路径
@@ -36,7 +35,7 @@ class YamlHandle():
             file.close()
 
     @classmethod
-    def yamldata(self,filepath):
+    def yamlData(self,filepath):
         """
         定义对应的yaml路径输出dict类型的data、
         :param filepath: 目标文件路径
@@ -55,7 +54,7 @@ class YamlHandle():
             file.close()
 
     @classmethod
-    def getdict(self,key,data):
+    def getDict(self,key,data):
         """
         输出dict类型的data--value值
         :param filepath: 目标文件路径
@@ -69,17 +68,17 @@ class YamlHandle():
 
         for value in data.values():
             if isinstance(value, dict):
-                self.getdict(key=key, data=value)
+                self.getDict(key=key, data=value)
             elif isinstance(value, (list, tuple)):
                 for mony in value:
                     if isinstance(mony, dict):
-                        self.getdict(key=key, data=mony)
+                        self.getDict(key=key, data=mony)
                     elif isinstance(mony, (list, tuple)):
-                        self.getdict(key, data=mony)
+                        self.getDict(key, data=mony)
         return tmp_list
 
     @classmethod
-    def writeyaml(self,filepath,data,method):
+    def writeYamlFile(self,filepath,data,method):
         """
         将dict类型数据写入yaml
         :param filepath: 目标文件路径
@@ -100,7 +99,7 @@ class YamlHandle():
             file.close()
 
     @classmethod
-    def dataconver(self,method=None,string=None,frist=None,second=None):
+    def dataConver(self,method=None,string=None,frist=None,second=None):
         """
         Str文本内容与JSON格式及俩个List类型互转
         :param method: 流转方式判断
@@ -132,7 +131,7 @@ class YamlHandle():
             return False
 
     @classmethod
-    def filterkey(self, filepath, target,keyword=None):
+    def filterKey(self, filepath, target,keyword=None):
         """
         清洗运行的窗口日志、过滤出有效的activity
         :param filepath 读取的文件路径
@@ -159,13 +158,13 @@ class YamlHandle():
             logger.error(FileNotFoundError)
 
 if __name__ == '__main__':
-    data = YamlHandle.yamldata(filepath = r'..\YamlData\Register.yaml')
-    YamlHandle.getdict(key="name", data=data)
-    YamlHandle.changetype(filepath=r'..\YamlData\Register.yaml')
-    YamlHandle.writeyaml(filepath = r'..\YamlData\Token.yaml',data={'a':'b'},method="w")
-    YamlHandle.dataconver(method="BodyToJson",string="staticpage=sQsjulfPwmSj1e%3D&traceid=F90C0001&callback=parentowxe&time=1602858806&alg=v3&sig=eFh4clp0cXh")
-    YamlHandle.dataconver(method="JsonToBody",string={'staticpage': 'sQsjulfPwmSj1e%3D', 'traceid': 'F90C0001', 'callback': 'parentowxe', 'time': '1602858806', 'alg': 'v3', 'sig': 'eFh4clp0cXh'})
+    data = YamlHandle.yamlData(filepath = r'..\yamlData\Register.yaml')
+    YamlHandle.getDict(key="name", data=data)
+    YamlHandle.changeType(filepath=r'..\yamlData\Register.yaml')
+    YamlHandle.writeYamlFile(filepath = r'..\yamlData\Token.yaml',data={'a':'b'},method="w")
+    YamlHandle.dataConver(method="BodyToJson",string="staticpage=sQsjulfPwmSj1e%3D&traceid=F90C0001&callback=parentowxe&time=1602858806&alg=v3&sig=eFh4clp0cXh")
+    YamlHandle.dataConver(method="JsonToBody",string={'staticpage': 'sQsjulfPwmSj1e%3D', 'traceid': 'F90C0001', 'callback': 'parentowxe', 'time': '1602858806', 'alg': 'v3', 'sig': 'eFh4clp0cXh'})
     name = ['连发行', '凤芬林', '濮刚亨', '竺丹澜', '计发亮']
     verify = ['iUMayr', '5vSpIa', 'Iq0tvj', 'XZYvVm', 'gAPIDr']
-    logger.info(YamlHandle.dataconver(method="ListToDict",frist=name,second=verify))
-    YamlHandle.filterkey(filepath=r'..\Config\WhiteActivity.txt',keyword='com.tencent.now',target='..\Result\ActivityTemp')
+    logger.info(YamlHandle.dataConver(method="ListToDict",frist=name,second=verify))
+    YamlHandle.filterKey(filepath=r'..\Config\WhiteActivity.txt',keyword='com.tencent.now',target='..\Result\ActivityTemp')

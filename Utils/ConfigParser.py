@@ -23,7 +23,7 @@ class IniHandle():
             logger.error("文件读取失败，请检查%s是否存在,错误信息：%s" % (filepath,FileNotFoundError))
 
     @classmethod
-    def openconfig(self,filepath=None):
+    def openConfig(self,filepath=None):
         """
         打开指定的ini文件
         :param filepath:
@@ -39,7 +39,7 @@ class IniHandle():
         except Exception as FileNotFoundError:
             logger.error("文件读取失败，请检查%s是否存在,错误信息：%s"%(filepath,FileNotFoundError))
 
-    def checksection(self, section,option=None):
+    def checkSection(self, section,option=None):
         """
         检查节点
         :param section:
@@ -53,7 +53,7 @@ class IniHandle():
         except Exception as  e:
             logger.info("无此节点，错误信息%s"%(e))
 
-    def allsection(self):
+    def allSection(self):
         """
         获取ini文件下所有的section值
         :return:  all_section
@@ -70,7 +70,7 @@ class IniHandle():
         else:
             raise ValueError(section)
 
-    def sectoption(self,section):
+    def sectOption(self,section):
         """
         获取指定section下的option的键值对
         :return: List形式的 [('a', 'b'),('aa', 'bb')]
@@ -78,7 +78,7 @@ class IniHandle():
         if self.conf.has_section(section):
             return self.conf.items(section)
 
-    def optvalue(self,node,key):
+    def optValue(self,node,key):
         """
         获取指定section下option的value值
         :param filepath 需要读取的文件
@@ -88,17 +88,17 @@ class IniHandle():
         """
         return self.conf.get(node, key)
 
-    def  allitems(self):
+    def allItems(self):
         """
         打印配置文件所有的值(该方法并不是很常用)
         :return:
         """
-        for section in self.allsection():
+        for section in self.allSection():
             logger.info("[" + section + "]")
             for K, V in self.conf.items(section):
                 logger.info(K + "=" + V)
 
-    def readsections(self):
+    def readSections(self):
         """
         读取所有section到字典中
         :return:
@@ -113,7 +113,7 @@ class IniHandle():
             res_2.clear()
         return res_1
 
-    def rmseoption(self, section, key=None):
+    def rmseOption(self, section, key=None):
         """
         删除一个 section中的一个item（以键值KEY为标识）
         :param section:
@@ -121,13 +121,13 @@ class IniHandle():
         :return:
         """
         if key is None:
-            self.checksection(section)
+            self.checkSection(section)
             self.conf.remove_section(section)
         else:
-            self.checksection(section, key)
+            self.checkSection(section, key)
             self.conf.remove_option(section, key)
 
-    def addsection(self, section):
+    def addSection(self, section):
         """
         添加一个section
         :param section:
@@ -135,7 +135,7 @@ class IniHandle():
         """
         self.conf.add_section(section)
 
-    def additem(self, section, key, value):
+    def addItem(self, section, key, value):
         """
         往section添加key和value
         :param section:
@@ -145,24 +145,24 @@ class IniHandle():
         """
         self.conf.set(section, key, value)
 
-    @classmethod
-    def readconfig(self):
+    def readConfig(self):
         conf_ini = r"../Config/config.ini"
         conf = configparser.ConfigParser()
         conf.read(conf_ini, encoding="utf-8")
         return conf
 
+IniHandle = IniHandle()
 
 if __name__ == '__main__':
     filepath = r'../Config/config.ini'
     logger.info(IniHandle(filepath))
     IniHandle = IniHandle()
-    logger.info(IniHandle.allsection())
-    logger.info(IniHandle.openconfig(filepath))
-    logger.info(IniHandle.optvalue(node="Proxy_Setting",key="proxy_switch"))
-    # logger.info(IniHandle().allsection())
+    logger.info(IniHandle.allSection())
+    logger.info(IniHandle.openConfig(filepath))
+    logger.info(IniHandle.optValue(node="Proxy_Setting",key="proxy_switch"))
+    # logger.info(IniHandle().allSection())
     logger.info(IniHandle.options("Proxy_Setting"))
-    logger.info(IniHandle.sectoption('Proxy_Setting'))
-    # logger.info(IniHandle().allitems())式展示：%s"%(dics))
-    IniHandle.checksection("Proxy_Setting")
-    IniHandle.rmseoption(section="rose")
+    logger.info(IniHandle.sectOption('Proxy_Setting'))
+    # logger.info(IniHandle().allItems())式展示：%s"%(dics))
+    IniHandle.checkSection("Proxy_Setting")
+    IniHandle.rmseOption(section="rose")

@@ -1,35 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3441837-af8b-49a4-9ba7-515a2bcf2224" name="Default" comment=":bug:Fix the exception when multiple devices run monkey script">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/AssertTools.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/InspectCrawling.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/ProxyPool.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/district.xls" afterPath="$PROJECT_DIR$/Config/district.xls" />
+    <list default="true" id="f3441837-af8b-49a4-9ba7-515a2bcf2224" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Config/district.xls.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Result/Logs/2020-11-06/Default_Logs/2020-11-06.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Result/Logs/2020-11-06/Error_Logs/2020-11-06.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Utils/GeneralTools.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Config/InterfaceCase.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resources/DejaVuSans.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Result/Logs/2020-10-26/Default_Logs/2020-10-26.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Result/Logs/2020-10-26/Error_Logs/2020-10-26.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Start_Run.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/Circulation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/FaceRecogn.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/PieChart.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/RegularFiltering.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/ReptilesTools.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/RequestTools.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/Verification.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/ActivityTemp" afterPath="$PROJECT_DIR$/Result/ActivityTemp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/AdbTools.py" afterPath="$PROJECT_DIR$/Utils/AdbTools.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/AppStability.py" afterPath="$PROJECT_DIR$/Utils/AppStability.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/Ciphers.py" afterPath="$PROJECT_DIR$/Utils/Ciphers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/ConfigParser.py" afterPath="$PROJECT_DIR$/Utils/ConfigParser.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/DictClean.py" afterPath="$PROJECT_DIR$/Utils/DictClean.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/DirTools.py" afterPath="$PROJECT_DIR$/Utils/DirTools.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/ExcelTools.py" afterPath="$PROJECT_DIR$/Utils/ExcelTools.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/LibraryTools.py" afterPath="$PROJECT_DIR$/Utils/LibraryTools.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/ProxyNetwork.py" afterPath="$PROJECT_DIR$/Utils/ProxyNetwork.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/RandomText.py" afterPath="$PROJECT_DIR$/Utils/RandomText.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/ReadTestCases.py" afterPath="$PROJECT_DIR$/Utils/ReadTestCases.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/RegularFiltering.py" afterPath="$PROJECT_DIR$/Utils/RegularFiltering.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/RequestTools.py" afterPath="$PROJECT_DIR$/Utils/RequestTools.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/SystemTime.py" afterPath="$PROJECT_DIR$/Utils/SystemTime.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/ValidityIDCard.py" afterPath="$PROJECT_DIR$/Utils/ValidityIDCard.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YamlData/Headers.yaml" afterPath="$PROJECT_DIR$/YamlData/Headers.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YamlData/ResponseJson.yaml" afterPath="$PROJECT_DIR$/YamlData/ResponseJson.yaml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Common/ScannerCase.py" afterPath="$PROJECT_DIR$/Utils/ScannerCase.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
     </list>
     <list id="64fc7dad-501b-421b-bef5-4a86b337f677" name="YuYanQing5920" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Result/Logs/2020-10-27/Default_Logs/2020-10-27.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Result/Logs/2020-10-27/Error_Logs/2020-10-27.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Result/Logs/ActivtyMansger.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Result/Logs/Crashlog.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Result/Logs/RunMonkey.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/WhiteActivity.txt" afterPath="$PROJECT_DIR$/Config/WhiteActivity.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <file path="$PROJECT_DIR$/Result/Logs/2020-10-27/Default_Logs/2020-10-27.log" ignored="true" />
-    <file path="$PROJECT_DIR$/Result/Logs/2020-10-27/Error_Logs/2020-10-27.log" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,19 +49,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/AutoFramework$AdbTools.coverage" NAME="AdbTools Coverage Results" MODIFIED="1603681111298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
-    <SUITE FILE_PATH="coverage/AutoFramework$DirTools.coverage" NAME="DirTools Coverage Results" MODIFIED="1603796348548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
-    <SUITE FILE_PATH="coverage/AutoFramework$DictClean.coverage" NAME="DictClean Coverage Results" MODIFIED="1603790519968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
-    <SUITE FILE_PATH="coverage/AutoFramework$RegularFiltering.coverage" NAME="RegularFiltering Coverage Results" MODIFIED="1603796541068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
-    <SUITE FILE_PATH="coverage/AutoFramework$CheckEnviron.coverage" NAME="CheckEnviron Coverage Results" MODIFIED="1603796380950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
-    <SUITE FILE_PATH="coverage/AutoFramework$AppStability.coverage" NAME="AppStability Coverage Results" MODIFIED="1604593019658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
-    <SUITE FILE_PATH="coverage/AutoFramework$ReadTestCases.coverage" NAME="ReadTestCases Coverage Results" MODIFIED="1603796566926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
-    <SUITE FILE_PATH="coverage/AutoFramework$ProxyNetwork.coverage" NAME="ProxyNetwork Coverage Results" MODIFIED="1604415778720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
-    <SUITE FILE_PATH="coverage/AutoFramework$ConfigParser.coverage" NAME="ConfigParser Coverage Results" MODIFIED="1603796364201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
-    <SUITE FILE_PATH="coverage/AutoFramework$RequestTools.coverage" NAME="RequestTools Coverage Results" MODIFIED="1603797597361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$Verification.coverage" NAME="Verification Coverage Results" MODIFIED="1607237411178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$AdbTools.coverage" NAME="AdbTools Coverage Results" MODIFIED="1604648638732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$Appium.coverage" NAME="Appium Coverage Results" MODIFIED="1607230961762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
+    <SUITE FILE_PATH="coverage/AutoFramework$DirTools.coverage" NAME="DirTools Coverage Results" MODIFIED="1607236627150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$ExcelTools.coverage" NAME="ExcelTools Coverage Results" MODIFIED="1607236631731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$DictClean.coverage" NAME="DictClean Coverage Results" MODIFIED="1607236623007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$GeneralTools.coverage" NAME="GeneralTools Coverage Results" MODIFIED="1607236519827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$RegularFiltering.coverage" NAME="RegularFiltering Coverage Results" MODIFIED="1607230877679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$CheckEnviron.coverage" NAME="CheckEnviron Coverage Results" MODIFIED="1607231378130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$AppStability.coverage" NAME="AppStability Coverage Results" MODIFIED="1604648754739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$ReadTestCases.coverage" NAME="ReadTestCases Coverage Results" MODIFIED="1607230899168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$ProxyNetwork.coverage" NAME="ProxyNetwork Coverage Results" MODIFIED="1607230853735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$LibraryTools.coverage" NAME="LibraryTools Coverage Results" MODIFIED="1607236636908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$ConfigParser.coverage" NAME="ConfigParser Coverage Results" MODIFIED="1604647596592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$SystemTime.coverage" NAME="SystemTime Coverage Results" MODIFIED="1607237187483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$setup.coverage" NAME="setup Coverage Results" MODIFIED="1607231304750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AutoFramework$RequestTools.coverage" NAME="RequestTools Coverage Results" MODIFIED="1607234055460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/AutoFramework$Ciphers.coverage" NAME="Ciphers Coverage Results" MODIFIED="1603796377741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
-    <SUITE FILE_PATH="coverage/AutoFramework$CheckStatus.coverage" NAME="CheckStatus Coverage Results" MODIFIED="1603796372683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$PieChart.coverage" NAME="PieChart Coverage Results" MODIFIED="1607230826085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$CheckStatus.coverage" NAME="CheckStatus Coverage Results" MODIFIED="1607236614470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$ValidityIDCard.coverage" NAME="ValidityIDCard Coverage Results" MODIFIED="1607237374187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/AutoFramework$ProxyPool.coverage" NAME="ProxyPool Coverage Results" MODIFIED="1603797778733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$XmindToTapd_3_7.coverage" NAME="XmindToTapd_3.7 Coverage Results" MODIFIED="1607237441815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$GlobalLog.coverage" NAME="GlobalLog Coverage Results" MODIFIED="1607237464590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Logger" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -60,43 +83,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MySQLDB.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/MySQLDB.py">
+      <file leaf-file-name="AdbTools.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/AdbTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReadTestCases.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/ReadTestCases.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequestTools.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/RequestTools.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2332">
-              <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+            <state relative-caret-position="24">
+              <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
               <folding>
-                <element signature="e#181#192#0" expanded="true" />
+                <element signature="e#173#185#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DictClean.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/DictClean.py">
+      <file leaf-file-name="DirTools.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Utils/DirTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3674">
-              <caret line="168" column="28" lean-forward="false" selection-start-line="168" selection-start-column="28" selection-end-line="168" selection-end-column="28" />
+            <state relative-caret-position="436">
+              <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -105,8 +108,8 @@
       <file leaf-file-name="AppStability.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils/AppStability.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="39" column="15" lean-forward="false" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+            <state relative-caret-position="525">
+              <caret line="75" column="32" lean-forward="false" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
               <folding>
                 <element signature="e#180#201#0" expanded="true" />
               </folding>
@@ -114,8 +117,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AreaCode.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/AreaCode.py">
+      <file leaf-file-name="ConfigParser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/ConfigParser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1368">
+              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2020-11-06.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Result/Logs/2020-11-06/Error_Logs/2020-11-06.log">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -124,41 +137,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Verification.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Utils/Verification.py">
+      <file leaf-file-name="2020-11-06.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Result/Logs/2020-11-06/Default_Logs/2020-11-06.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="59" column="17" lean-forward="false" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CheckEnviron.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/CheckEnviron.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ciphers.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/Ciphers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Circulation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/Circulation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -177,9 +160,51 @@
     <findStrings>
       <find>tage</find>
       <find>4</find>
+      <find>check_rootstatus</find>
+      <find>get_ipconfig</find>
+      <find>get_PhoneInfo</find>
+      <find>getPhoneInfo</find>
+      <find>kill_process</find>
+      <find>aes_decrypt</find>
+      <find>addItem</find>
+      <find>proxy_state</find>
+      <find>get_response</find>
+      <find>IniHandle</find>
+      <find>readconfig</find>
+      <find>filterkey</find>
+      <find>Doc_Process</find>
+      <find>cell_process</find>
+      <find>updatejar</find>
+      <find>sample_list</find>
+      <find>excel_data</find>
+      <find>get_t</find>
+      <find>generateId</find>
+      <find>to_sql</find>
+      <find>get_content</find>
+      <find>delete_log</find>
+      <find>write_log</find>
+      <find>ADB</find>
+      <find>Adb_Manage</find>
+      <find>getpwd</find>
     </findStrings>
     <replaceStrings>
       <replace>5</replace>
+      <replace>aesDecrypt</replace>
+      <replace>getResponse</replace>
+      <replace>optValue</replace>
+      <replace>readConfig</replace>
+      <replace>filterKey</replace>
+      <replace>DocProcess</replace>
+      <replace>cellProcess</replace>
+      <replace>updateJar</replace>
+      <replace>sampleList</replace>
+      <replace>excelData</replace>
+      <replace>getGenerateId</replace>
+      <replace>toSql</replace>
+      <replace>getContent</replace>
+      <replace>delete</replace>
+      <replace>write</replace>
+      <replace>Manage</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -201,20 +226,37 @@
         <option value="$PROJECT_DIR$/Utils/CleanDisPlay.py" />
         <option value="$PROJECT_DIR$/Config/WhitlePackages" />
         <option value="$PROJECT_DIR$/Config/config.ini" />
-        <option value="$PROJECT_DIR$/Utils/AdbTools.py" />
         <option value="$PROJECT_DIR$/Config/WhiteActivity.txt" />
-        <option value="$PROJECT_DIR$/Utils/ReadTestCases.py" />
-        <option value="$PROJECT_DIR$/Utils/DirTools.py" />
-        <option value="$PROJECT_DIR$/Utils/DictClean.py" />
         <option value="$PROJECT_DIR$/Utils/RegularFiltering.py" />
         <option value="$PROJECT_DIR$/Result/Logs/2020-10-27/Default_Logs/2020-10-27.log" />
         <option value="$PROJECT_DIR$/Result/Logs/2020-10-27/Error_Logs/2020-10-27.log" />
         <option value="$PROJECT_DIR$/Result/ActivityTemp" />
         <option value="$PROJECT_DIR$/Utils/ProxyPool.py" />
-        <option value="$PROJECT_DIR$/Utils/ProxyNetwork.py" />
         <option value="$PROJECT_DIR$/Utils/appstability.py" />
-        <option value="$PROJECT_DIR$/Utils/AppStability.py" />
+        <option value="$PROJECT_DIR$/TestCase/T.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/YamlData/ResponseJson.yaml" />
         <option value="$PROJECT_DIR$/Utils/RequestTools.py" />
+        <option value="$PROJECT_DIR$/Utils/Ciphers.py" />
+        <option value="$PROJECT_DIR$/Utils/DirTools.py" />
+        <option value="$PROJECT_DIR$/Utils/ExcelTools.py" />
+        <option value="$PROJECT_DIR$/Utils/DictClean.py" />
+        <option value="$PROJECT_DIR$/Utils/GeneralTools.py" />
+        <option value="$PROJECT_DIR$/Utils/LibraryTools.py" />
+        <option value="$PROJECT_DIR$/Utils/MySQLDB.py" />
+        <option value="$PROJECT_DIR$/Utils/ProxyNetwork.py" />
+        <option value="$PROJECT_DIR$/Utils/RandomText.py" />
+        <option value="$PROJECT_DIR$/Utils/ReadTestCases.py" />
+        <option value="$PROJECT_DIR$/Utils/SystemTime.py" />
+        <option value="$PROJECT_DIR$/Utils/ValidityIDCard.py" />
+        <option value="$PROJECT_DIR$/Logger/GlobalLoguru.py" />
+        <option value="$PROJECT_DIR$/Logger/GlobalLog.py" />
+        <option value="$PROJECT_DIR$/Utils/ConfigParser.py" />
+        <option value="$PROJECT_DIR$/Utils/AdbTools.py" />
+        <option value="$PROJECT_DIR$/Utils/AppStability.py" />
+        <option value="$PROJECT_DIR$/Result/Logs/2020-11-06/Error_Logs/2020-11-06.log" />
+        <option value="$PROJECT_DIR$/Result/Logs/2020-11-06/Default_Logs/2020-11-06.log" />
       </list>
     </option>
   </component>
@@ -245,8 +287,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -256,20 +296,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AutoFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AutoFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AutoFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YamlData" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -318,26 +344,8 @@
               <option name="myItemId" value="Logs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AutoFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AutoFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Result" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Logs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2020-10-27" />
+              <option name="myItemId" value="2020-11-06" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -363,11 +371,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="2020-10-27" />
+              <option name="myItemId" value="2020-11-06" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Default_Logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutoFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutoFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Logger" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -415,12 +437,14 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ApiAutoTest" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="nodejs_interpreter_path" value="D:/Program Files/2019 NodeJS/node_global/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="D:\Program Files\2019 NodeJS\node_global\node.exe" />
@@ -435,7 +459,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.AppStability">
-    <configuration default="false" name="ReadTestCases" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="XmindToTapd_3.7" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -448,30 +472,30 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="AutoFramework" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/ReadTestCases.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/XmindToTapd_3.7.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="RequestTools" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="GlobalLog" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Logger" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="AutoFramework" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/RequestTools.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Logger/GlobalLog.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="ProxyPool" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="AdbTools" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -484,25 +508,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="AutoFramework" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/ProxyPool.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ProxyNetwork" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="AutoFramework" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/ProxyNetwork.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/AdbTools.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -520,7 +526,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="AutoFramework" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\Work_Spaces\PyCharm_Project\AutoFramework\Utils\AppStability.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/AppStability.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ConfigParser" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AutoFramework" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/ConfigParser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -740,19 +764,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.ReadTestCases" />
-      <item index="1" class="java.lang.String" itemvalue="Python.RequestTools" />
-      <item index="2" class="java.lang.String" itemvalue="Python.ProxyPool" />
-      <item index="3" class="java.lang.String" itemvalue="Python.ProxyNetwork" />
-      <item index="4" class="java.lang.String" itemvalue="Python.AppStability" />
+      <item index="0" class="java.lang.String" itemvalue="Python.XmindToTapd_3.7" />
+      <item index="1" class="java.lang.String" itemvalue="Python.GlobalLog" />
+      <item index="2" class="java.lang.String" itemvalue="Python.AdbTools" />
+      <item index="3" class="java.lang.String" itemvalue="Python.AppStability" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ConfigParser" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.AppStability" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ProxyNetwork" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ProxyPool" />
-        <item index="3" class="java.lang.String" itemvalue="Python.RequestTools" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ReadTestCases" />
+        <item index="1" class="java.lang.String" itemvalue="Python.AdbTools" />
+        <item index="2" class="java.lang.String" itemvalue="Python.ConfigParser" />
+        <item index="3" class="java.lang.String" itemvalue="Python.GlobalLog" />
+        <item index="4" class="java.lang.String" itemvalue="Python.XmindToTapd_3.7" />
       </list>
     </recent_temporary>
   </component>
@@ -782,7 +806,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603790537579</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=":bug:Fix the exception when multiple devices run monkey script">
+      <created>1605761785878</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605761785878</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -796,15 +827,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15575501" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5021119" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26193118" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.49788806" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32963374" sideWeight="0.49788806" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -862,252 +893,28 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=":bug:Fix the exception when multiple devices run monkey script" />
-    <option name="LAST_COMMIT_MESSAGE" value=":bug:Fix the exception when multiple devices run monkey script" />
+    <MESSAGE value=":art:Modify the code format to big hump and add classmethod to replace it with () reference" />
+    <option name="LAST_COMMIT_MESSAGE" value=":art:Modify the code format to big hump and add classmethod to replace it with () reference" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Utils/DirTools.py</url>
+          <line>10</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Utils/MySQLDB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/ProxyNetwork.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/RequestTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2684">
-          <caret line="131" column="90" lean-forward="false" selection-start-line="131" selection-start-column="90" selection-end-line="131" selection-end-column="90" />
-          <folding>
-            <element signature="e#181#192#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/PieChart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/WhiteActivity.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="44" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/AppStability.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#180#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1452">
-          <caret line="66" column="24" lean-forward="false" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/AdbTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2596">
-          <caret line="123" column="20" lean-forward="true" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/A.py" />
-    <entry file="file://$PROJECT_DIR$/Config/WhiteActivity.txt" />
-    <entry file="file://$PROJECT_DIR$/Config/WhiteTemp.txt" />
-    <entry file="file://$PROJECT_DIR$/Utils/CleanDisPlay.py" />
-    <entry file="file://$PROJECT_DIR$/Utils/RandomText.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Result/ActivtyMansger.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Result/RunMonkey.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-924">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Result/Crashlog.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/ReptilesTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2016.3/system/python_stubs/959216962/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="2823" column="4" lean-forward="false" selection-start-line="2813" selection-start-column="7" selection-end-line="2823" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/ConfigParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2200">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/CheckStatus.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/AssertTools.py" />
-    <entry file="file://$PROJECT_DIR$/Utils/AdbTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="247" column="41" lean-forward="false" selection-start-line="247" selection-start-column="41" selection-end-line="247" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Result/Logs/ActivtyMansger.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="53" lean-forward="false" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Result/Logs/Crashlog.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Result/Logs/RunMonkey.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/RegularFiltering.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="60" lean-forward="true" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Result/Logs/2020-10-27/Error_Logs/2020-10-27.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Result/Logs/2020-10-27/Default_Logs/2020-10-27.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Result/Logs/RunMonkey.log" />
+    <entry file="file://$PROJECT_DIR$/Result/Logs/2020-10-27/Error_Logs/2020-10-27.log" />
+    <entry file="file://$PROJECT_DIR$/Result/Logs/2020-10-27/Default_Logs/2020-10-27.log" />
     <entry file="file://$PROJECT_DIR$/Utils/InspectCrawling.py" />
-    <entry file="file://$PROJECT_DIR$/Utils/LibraryTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utils/ProxyPool.py" />
-    <entry file="file://$PROJECT_DIR$/YamlData/ResponseJson.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="46" lean-forward="false" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/YamlData/http" />
-    <entry file="file://$PROJECT_DIR$/Utils/PieChart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="36" column="59" lean-forward="false" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/ScannerCase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/DirTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4972">
-          <caret line="228" column="72" lean-forward="false" selection-start-line="228" selection-start-column="72" selection-end-line="228" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Python37/Lib/subprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/WhiteActivity.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/ProxyNetwork.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Result/ActivityTemp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1115,39 +922,234 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/CheckEnviron.py">
+    <entry file="file://$PROJECT_DIR$/Utils/Circulation.py" />
+    <entry file="file://$PROJECT_DIR$/Utils/FaceRecogn.py" />
+    <entry file="file://$PROJECT_DIR$/Utils/PieChart.py" />
+    <entry file="file://$PROJECT_DIR$/Utils/RegularFiltering.py" />
+    <entry file="file://$PROJECT_DIR$/Utils/ReptilesTools.py" />
+    <entry file="file://$PROJECT_DIR$/TestCase/T.py" />
+    <entry file="file://$PROJECT_DIR$/Common/Appium.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        <state relative-caret-position="123">
+          <caret line="372" column="32" lean-forward="true" selection-start-line="372" selection-start-column="32" selection-end-line="372" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Start_Run.py" />
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YamlData/ResponseJson.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YamlData/Headers.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/Ciphers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="436">
+          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/Circulation.py">
+    <entry file="file://D:/Program Files/Python37/Lib/configparser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="542">
+          <caret line="1173" column="22" lean-forward="true" selection-start-line="1173" selection-start-column="22" selection-end-line="1173" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/GeneralTools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="103" column="26" lean-forward="true" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/AreaCode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="60" column="6" lean-forward="false" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/CheckEnviron.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/CheckStatus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="55" column="29" lean-forward="false" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/DictClean.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3674">
-          <caret line="168" column="28" lean-forward="false" selection-start-line="168" selection-start-column="28" selection-end-line="168" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="257">
+          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/ExcelTools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="134" column="11" lean-forward="false" selection-start-line="134" selection-start-column="11" selection-end-line="134" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/LibraryTools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/MySQLDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="53" column="11" lean-forward="true" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/ProxyNetwork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/RandomText.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="142" column="39" lean-forward="false" selection-start-line="142" selection-start-column="39" selection-end-line="142" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/ReadTestCases.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="809">
+          <caret line="45" column="30" lean-forward="false" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/ScannerCase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/SendEmali.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="137" column="99" lean-forward="true" selection-start-line="137" selection-start-column="99" selection-end-line="137" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/SystemTime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="144" column="41" lean-forward="true" selection-start-line="144" selection-start-column="41" selection-end-line="144" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/ValidityIDCard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/Verification.py" />
+    <entry file="file://$PROJECT_DIR$/Utils/XmindToTapd_3.7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logger/Console.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logger/GlobalLog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logger/GlobalLoguru.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="24" column="83" lean-forward="false" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logger/MyLogger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/WhiteActivity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="72" column="135" lean-forward="true" selection-start-line="72" selection-start-column="135" selection-end-line="72" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Python37/Lib/subprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28186">
+          <caret line="557" column="4" lean-forward="false" selection-start-line="557" selection-start-column="4" selection-end-line="557" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/ConfigParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Result/Logs/2020-11-06/Error_Logs/2020-11-06.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1155,46 +1157,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/ReadTestCases.py">
+    <entry file="file://$PROJECT_DIR$/Result/Logs/2020-11-06/Default_Logs/2020-11-06.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/RequestTools.py">
+    <entry file="file://$PROJECT_DIR$/Utils/AdbTools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2332">
-          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+        <state relative-caret-position="24">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding>
-            <element signature="e#181#192#0" expanded="true" />
+            <element signature="e#173#185#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/AppStability.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="39" column="15" lean-forward="false" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+        <state relative-caret-position="525">
+          <caret line="75" column="32" lean-forward="false" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
           <folding>
             <element signature="e#180#201#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/AreaCode.py">
+    <entry file="file://$PROJECT_DIR$/Utils/DirTools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/Verification.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="59" column="17" lean-forward="false" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+        <state relative-caret-position="436">
+          <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="16" />
           <folding />
         </state>
       </provider>

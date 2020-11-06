@@ -14,7 +14,6 @@ pandas
 shutil
 random
 loguru
-crypto
 zipfile
 logging
 smtplib

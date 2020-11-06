@@ -24,15 +24,15 @@ class IdNumber(str):
         self.birth_month = int(self.id[10:12])
         self.birth_day = int(self.id[12:14])
 
-    def get_area_name(self):
+    def getAreaName(self):
         """根据区域编号取出区域名称"""
         return AreaCode.AREA_INFO[self.area_id]
 
-    def get_birthday(self):
+    def getBirthday(self):
         """通过身份证号获取出生日期"""
         return "{0}-{1}-{2}".format(self.birth_year, self.birth_month, self.birth_day)
 
-    def get_age(self):
+    def getAge(self):
         """通过身份证号获取年龄"""
         now = (datetime.now() + timedelta(days=1))
         year, month, day = now.year, now.month, now.day
@@ -45,11 +45,11 @@ class IdNumber(str):
             else:
                 return year - self.birth_year
 
-    def get_sex(self):
+    def getSex(self):
         """通过身份证号获取性别， 女生：0，男生：1"""
         return int(self.id[16:17]) % 2
 
-    def get_check_digit(self):
+    def getCheckDigit(self):
         """通过身份证号获取校验码"""
         check_sum = 0
         for i in range(0, 17):
@@ -58,16 +58,16 @@ class IdNumber(str):
         return check_digit if check_digit < 10 else 'X'
 
     @classmethod
-    def verify_id(cls, id_number):
+    def checkVerifyId(cls, id_number):
         """校验身份证是否正确"""
         if re.match(AreaCode.ID_NUMBER_18_REGEX, id_number):
-            check_digit = cls(id_number).get_check_digit()
+            check_digit = cls(id_number).getCheckDigit()
             return str(check_digit) == id_number[-1]
         else:
             return bool(re.match(AreaCode.ID_NUMBER_15_REGEX, id_number))
 
     @classmethod
-    def generate_id(cls, sex=0):
+    def getGenerateId(cls, sex=0):
         """随机生成身份证号，sex = 0表示女性，sex = 1表示男性"""
         # 随机生成一个区域码(6位数)
         id_number = str(random.choice(list(AreaCode.AREA_INFO.keys())))
@@ -80,17 +80,17 @@ class IdNumber(str):
         # 性别码(1位数)
         id_number += str(random.randrange(sex, 10, step=2))
         # 校验码(1位数)
-        return id_number + str(cls(id_number).get_check_digit())
+        return id_number + str(cls(id_number).getCheckDigit())
 
 
 if __name__ == '__main__':
     random_sex = random.randint(0, 1)  # 随机生成男(1)或女(0)
-    idcard = IdNumber.generate_id(random_sex)# 随机生成身份证号
+    idcard = IdNumber.getGenerateId(random_sex)# 随机生成身份证号
     logger.info(idcard)
     logger.info(IdNumber(idcard).area_id)  # 地址编码:431121
-    logger.info(IdNumber(idcard).get_area_name())  # 地址:湖南省永州市祁阳县
-    logger.info(IdNumber(idcard).get_birthday())  # 生日:1999-3-15
-    logger.info(IdNumber(idcard).get_age())  # 年龄:21(岁)
-    logger.info(IdNumber(idcard).get_sex())  # 性别:1(男)
-    logger.info(IdNumber(idcard).get_check_digit())  # 校验码:1
-    logger.info(IdNumber.verify_id(idcard))  # 检验身份证是否正确:True
+    logger.info(IdNumber(idcard).getAreaName())  # 地址:湖南省永州市祁阳县
+    logger.info(IdNumber(idcard).getBirthday())  # 生日:1999-3-15
+    logger.info(IdNumber(idcard).getAge())  # 年龄:21(岁)
+    logger.info(IdNumber(idcard).getSex())  # 性别:1(男)
+    logger.info(IdNumber(idcard).getCheckDigit())  # 校验码:1
+    logger.info(IdNumber.checkVerifyId(idcard))  # 检验身份证是否正确:True

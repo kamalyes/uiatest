@@ -18,70 +18,70 @@ class TimeUtil:
         self.curtime = curtime
 
     @classmethod
-    def get_timestemp(self):
+    def getTimestemp(self):
         """
         获取当前时间戳
-        :return: get_timestemp
+        :return:
         """
         return time.time()
 
     @classmethod
-    def get_date(self):
+    def getDate(self):
         """
         获取当地日期的年月日
-        :return get_date
+        :return
         """
         return time.strftime("%Y-%m-%d")
 
     @classmethod
-    def get_time(self):
+    def getTime(self):
         """
         获取当地日期的时分秒
-        :return: get_time
+        :return:
         """
         return time.strftime("%H:%M:%S")
 
     @classmethod
-    def get_datetime(self):
+    def getDateTime(self):
         """
         当地日期的年月日时分秒
-        :return: get_datetime
+        :return:
         """
         return time.strftime("%Y-%m-%d %H:%M:%S")
 
     @classmethod
-    def get_chinesedate(self):
+    def getChinaDate(self):
         """
         当前本地日期的年月日
-        :return: get_chinesedate
+        :return:
         """
         strTime = time.strftime("%Y-%m-%d", time.localtime())
         return strTime
 
     @classmethod
-    def get_chinesetime(self):
+    def getChinaTime(self):
         """
         当前本地日期的时分秒
-        :return: get_chinesetime
+        :return:
         """
         strTime = time.strftime("%H-%M-%S", time.localtime())
         return strTime
 
     @classmethod
-    def get_chinesedatetime(self):
+    def getChinaDateTime(self):
         """
         当前本地日期的年月日时分秒
-        :return: get_chinesedatetime
+        :return:
         """
         strTime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
         return strTime
 
     @classmethod
-    def compute_date(self, day_interval):
+    def computeDate(self, day_interval):
         """
         日期偏移
         :param day_interval: 想要偏移的天数
-        :return compute_date
+        :return
         """
         today = datetime.date.today()
         if isinstance(day_interval, int) and day_interval >= 0:
@@ -90,11 +90,11 @@ class TimeUtil:
             return today - datetime.timedelta(days=abs(day_interval))
 
     @classmethod
-    def timestamp_to_date(self, timestamp):
+    def timestampTodate(self, timestamp):
         """
         时间戳格式化为xxx年xx月xx日
         :return timestamp_to_date
-        :param timestamp:
+        :param
         :return:
         """
         if not isinstance(timestamp, (int, float)):
@@ -105,12 +105,12 @@ class TimeUtil:
         return specific_data
 
     @classmethod
-    def get_everyday(self, start, end):
+    def getEveryDay(self, start, end):
         """
         中间时差计算
         :param start: 开始日期
         :param end:   结束日期
-        :return getEveryDay
+        :return
         """
         date_list = []
         begin_date = datetime.datetime.strptime(start, "%Y-%m-%d")
@@ -123,26 +123,26 @@ class TimeUtil:
         return date_list
 
     @classmethod
-    def get_singtime(self, singletime):
+    def getSingTime(self, singletime):
         """
         单个日期初始化时间戳年月日时分秒、转化为时间戳
         :param singletime:
-        :return time_stamp
+        :return
         """
         singletime = time.strptime(singletime, '%Y-%m-%d %H:%M:%S')
         time_stamp = int(time.mktime(singletime))
         return time_stamp
 
 if __name__ == "__main__":
-    logger.info(TimeUtil.get_timestemp())
-    logger.info(TimeUtil.get_date())
-    logger.info(TimeUtil.get_time())
-    logger.info(TimeUtil.get_datetime())
-    logger.info(TimeUtil.get_chinesedate())
-    logger.info(TimeUtil.get_chinesetime())
-    logger.info(TimeUtil.get_chinesedatetime())
-    logger.info(TimeUtil.compute_date(10))
-    logger.info(TimeUtil.compute_date(-6))
-    logger.info(TimeUtil.timestamp_to_date(1603282677.5209892))
-    logger.info(TimeUtil.get_everyday("2020-06-05", "2020-07-01"))
-    logger.info(TimeUtil.get_singtime("2020-06-01 18:50:00"))
+    logger.info(TimeUtil.getTimestemp())
+    logger.info(TimeUtil.getDate())
+    logger.info(TimeUtil.getTime())
+    logger.info(TimeUtil.getDateTime())
+    logger.info(TimeUtil.getChinaDate())
+    logger.info(TimeUtil.getChinaTime())
+    logger.info(TimeUtil.getChinaDateTime())
+    logger.info(TimeUtil.computeDate(10))
+    logger.info(TimeUtil.computeDate(-6))
+    logger.info(TimeUtil.timestampTodate(1603282677.5209892))
+    logger.info(TimeUtil.getEveryDay("2020-06-05", "2020-07-01"))
+    logger.info(TimeUtil.getSingTime("2020-06-01 18:50:00"))

@@ -13,11 +13,11 @@ logger = Logger.write_log()#调用日志模块
 
 from Logger.GlobalLog import Logger
 logger = Logger.write_log()
-from Utils.RequestTools import HttpsServer
+from Utils.GeneralTools import HttpsServer
 
 class GetProxy():
     @classmethod
-    def get_content(self):
+    def getContent(self):
         """
         循环遍历爬取各子页面数据
         :param  page  设置爬取的url
@@ -34,4 +34,4 @@ class GetProxy():
     def clean_data(self,data):
         logger.info("bb")
 
-GetProxy.get_content()
+GetProxy.getContent()

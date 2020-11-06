@@ -12,9 +12,9 @@ import os
 import zipfile,gzip,shutil
 from Logger.GlobalLog import Logger
 logger = Logger.write_log()#调用日志模块
-class Doc_Process(object):
+class DocProcess(object):
     @classmethod
-    def get_pwd(self):
+    def getPwd(self):
         """
         获取当前文件路径
         :return: pwd
@@ -23,7 +23,7 @@ class Doc_Process(object):
         return pwd
 
     @classmethod
-    def get_superior_dir(self):
+    def getSuperiorDir(self):
         """
         获取上级目录
         :return:  superior_directory
@@ -32,7 +32,7 @@ class Doc_Process(object):
         return superior_directory
 
     @classmethod
-    def get_superior_dirs(self):
+    def getSuperiorDirs(self):
         """
         获取上上级目录
         :return: superior_directorys
@@ -41,7 +41,7 @@ class Doc_Process(object):
         return superior_directorys
 
     @classmethod
-    def get_dirlist(self,filePath):
+    def getDirList(self,filePath):
         '''
         获取指定目录下所有的文件名并返回一个列表，剔除其中的__init__.py和__pycache__。
         :param filePath:
@@ -53,12 +53,12 @@ class Doc_Process(object):
             full_file_name = os.path.join(filePath, file_name)
             all_files.append(full_file_name)
             if os.path.isdir(full_file_name):
-                next_level_files = self.get_dirlist(full_file_name)
+                next_level_files = self.getDirList(full_file_name)
                 all_files.extend(next_level_files)
         return all_files
 
     @classmethod
-    def creat_zip(self,method,filepath,target_path=""):
+    def creatZip(self,method,filepath,target_path=""):
         """
         打包文件为压缩包
         :param filepath  被打包的文件路径
@@ -98,7 +98,7 @@ class Doc_Process(object):
             zip_file.close()
 
     @classmethod
-    def un_zip(self,method,filepath,target_path=""):
+    def unZip(self,method,filepath,target_path=""):
         """
         解压多种类型的压缩包
         :param method: 类型判断
@@ -124,7 +124,7 @@ class Doc_Process(object):
             zip_file.close()
 
     @classmethod
-    def get_filetype(self,file_path):
+    def getFileState(self,file_path):
         """
         判断传入的文件状态
         :param file_path:  检查的文件路径
@@ -159,7 +159,7 @@ class Doc_Process(object):
             logger.error(IOError)
 
     @classmethod
-    def copy_file(self,filepath, target):
+    def copyFile(self,filepath, target):
         """
         复制文件
         :param method:
@@ -181,7 +181,7 @@ class Doc_Process(object):
             logger.error('请检查filepath是否正确！')
 
     @classmethod
-    def remove_file(self,filepath):
+    def removeFile(self,filepath):
         """
         删除文件或文件夹
         :param filepath:
@@ -204,7 +204,7 @@ class Doc_Process(object):
             logger.error(FileNotFoundError)
 
     @classmethod
-    def make_file(self,filepath):
+    def makeFile(self,filepath):
         """
         创建多级文件夹(注意这里必须上级文件夹存在才可以)
         :param filepath:
@@ -221,12 +221,12 @@ class Doc_Process(object):
             logger.error(FileNotFoundError)
 
 if __name__ == '__main__':
-    logger.info(Doc_Process.get_pwd())
-    logger.info(Doc_Process.get_superior_dir())
-    logger.info(Doc_Process.get_superior_dirs())
-    # Doc_Process.creat_zip(method="allfile",filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils",target_path="aaaa.gzip")
-    # Doc_Process.get_filetype(file_path=r"E:\WorkSpace\PycharmProjects\UiAutomationFramework\Utils\not_exist.py")
-    # Doc_Process.copy_file(filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils",target=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils\COPYS")
-    # Doc_Process.remove_file(filepath=r"..\Result\Logs\2020-09-21\Default_Logs\2020-09-21.log")
-    # Doc_Process.make_file(filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils\AA\aaa")
-    # Doc_Process.get_dirlist(filePath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils")
+    logger.info(DocProcess.getPwd())
+    logger.info(DocProcess.getSuperiorDir())
+    logger.info(DocProcess.getSuperiorDirs())
+    # DocProcess.creatZip(method="allfile",filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils",target_path="aaaa.gzip")
+    # DocProcess.getFileState(file_path=r"E:\WorkSpace\PycharmProjects\UiAutomationFramework\Utils\not_exist.py")
+    # DocProcess.copyFile(filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils",target=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils\COPYS")
+    # DocProcess.removeFile(filepath=r"..\Result\Logs\2020-09-21\Default_Logs\2020-09-21.log")
+    # DocProcess.makeFile(filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils\AA\aaa")
+    # DocProcess.getDirList(filePath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils")

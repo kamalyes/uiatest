@@ -16,7 +16,7 @@ IniHandle = IniHandle()
 
 class OverallSitua():
     @classmethod
-    def excel_data(self):
+    def excelData(self):
         """
         将excel数据转化为Dict便于其它模块调用
         :return:
@@ -27,7 +27,7 @@ class OverallSitua():
         return data
 
     @classmethod
-    def data_formact(self,data=None):
+    def dataFormact(self,data=None):
         """
         接收data数据清洗一遍
         :return:
@@ -43,11 +43,11 @@ class OverallSitua():
         code = IniHandle.optvalue(node='TestCase_Info', key='code')
         status = IniHandle.optvalue(node='TestCase_Info', key='status')
 
-        data = self.excel_data()
+        data = self.excelData()
         for i in range(len(data)):
             di = data[i]
             # logger.info(type(dict))
             logger.info("%s%s"%(di.keys(),di.values()))
 
 if __name__ == '__main__':
-    OverallSitua.data_formact()
+    OverallSitua.dataFormact()
