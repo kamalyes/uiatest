@@ -21,6 +21,9 @@ logger = Logger.write_log()   # 调用日志模块
 IniHandle =  IniHandle()
 
 class HttpsServer():
+    def __init__(self):
+        self.seesion = requests.Session
+
     @classmethod
     def proxy_state(self):
         """
@@ -126,7 +129,7 @@ class HttpsServer():
 
             if method in ('get','Get','GET'):
                 logger.info("get请求！！！")
-                response = requests.get(address, params=data, headers=headers)
+                response = requests.get(address, params=data, headers=headers,verify=False)
 
             elif  method in ('post','Post','POST'):
                 logger.info("正在对地址：%s 发起Post请求！！！" % (address))
@@ -142,9 +145,9 @@ class HttpsServer():
                 logger.info("正在对地址：%s 发起Delete请求！！！" % (address))
                 if type(data) == dict:
                     data = json.dumps(data).encode(encoding='utf-8')
-                    response = requests.post(address, json=data, headers=headers, timeout=5)
+                    response = requests.delete(address, json=data, headers=headers, timeout=5,verify=False)
                 elif type(data) == str:
-                    response = requests.post(address, data=data, headers=headers, timeout=5)
+                    response = requests.delete(address, data=data, headers=headers, timeout=5,verify=False)
                 else:
                     logger.warning("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
 
@@ -152,9 +155,9 @@ class HttpsServer():
                 logger.info("正在对地址：%s 发起Put请求！！！" % (address))
                 if type(data) == dict:
                     data = json.dumps(data).encode(encoding='utf-8')
-                    response = requests.post(address, json=data, headers=headers, timeout=5)
+                    response = requests.put(address, json=data, headers=headers, timeout=5)
                 elif type(data) == str:
-                    response = requests.post(address, data=data, headers=headers, timeout=5)
+                    response = requests.put(address, data=data, headers=headers, timeout=5)
                 else:
                     logger.warning("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
 
@@ -162,9 +165,9 @@ class HttpsServer():
                 logger.info("正在对地址：%s 发起Trace请求！！！" % (address))
                 if type(data) == dict:
                     data = json.dumps(data).encode(encoding='utf-8')
-                    response = requests.post(address, json=data, headers=headers, timeout=5)
+                    response = requests.trace(address, json=data, headers=headers, timeout=5)
                 elif type(data) == str:
-                    response = requests.post(address, data=data, headers=headers, timeout=5)
+                    response = requests.trace(address, data=data, headers=headers, timeout=5)
                 else:
                     logger.warning("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
 
@@ -172,9 +175,9 @@ class HttpsServer():
                 logger.info("正在对地址：%s 发起Head请求！！！" % (address))
                 if type(data) == dict:
                     data = json.dumps(data).encode(encoding='utf-8')
-                    response = requests.post(address, json=data, headers=headers, timeout=5)
+                    response = requests.head(address, json=data, headers=headers, timeout=5)
                 elif type(data) == str:
-                    response = requests.post(address, data=data, headers=headers, timeout=5)
+                    response = requests.head(address, data=data, headers=headers, timeout=5)
                 else:
                     logger.warning("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
 
@@ -182,9 +185,9 @@ class HttpsServer():
                 logger.info("正在对地址：%s 发起Options请求！！！" % (address))
                 if type(data) == dict:
                     data = json.dumps(data).encode(encoding='utf-8')
-                    response = requests.post(address, json=data, headers=headers, timeout=5)
+                    response = requests.options(address, json=data, headers=headers, timeout=5)
                 elif type(data) == str:
-                    response = requests.post(address, data=data, headers=headers, timeout=5)
+                    response = requests.options(address, data=data, headers=headers, timeout=5)
                 else:
                     logger.warning("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
 
@@ -193,9 +196,9 @@ class HttpsServer():
                 # logger.info("正在对地址：%s 发起Patch请求！！！" % (address))
                 # if type(data) == dict:
                 #     data = json.dumps(data).encode(encoding='utf-8')
-                #     response = requests.post(address, json=data, headers=headers, timeout=5)
+                #     response = requests.patch(address, json=data, headers=headers, timeout=5)
                 # elif type(data) == str:
-                #     response = requests.post(address, data=data, headers=headers, timeout=5)
+                #     response = requests.patch(address, data=data, headers=headers, timeout=5)
                 # else:
                 # logger.warning("请检查传入的data数据结构是否正确，暂只支持json、str类型的传参！！！")
 

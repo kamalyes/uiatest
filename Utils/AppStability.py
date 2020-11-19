@@ -84,6 +84,25 @@ class Monkey():
         else:
             logger.info("当前位于：%s不需要跳转！！！" % (activity))
 
+    @classmethod
+    def statusbar(self,method,devices):
+        """
+        开启/关闭状态栏
+        :param method: 方式：开启还是关闭
+        :param devices: 设备号
+        :return:
+        """
+        if method == 'open':
+            os.popen('adb -s %s shell settings put global policy_control null' % (devices))
+            os.popen('adb -s %s shell wm overscan 0,0,0,0' % (devices))
+            logger.info("已恢复状态栏&底下的返回控件")
+
+        elif method == 'close':
+            os.popen('adb -s %s shell settings put global policy_control immersive.full=*' % (devices))
+            os.popen('adb -s %s shell wm overscan 0,0,0,-200' % (devices))
+            logger.info("运行前关闭一些障碍 隐藏掉状态栏&底下的返回控件")
+
+
     def native(self):
         """
         运行前环境部署/原生态的Monkey瞎跑
@@ -143,19 +162,15 @@ class Monkey():
                             logger.error("设备%s安装失败，错误信息：%s %s" % (devices[i], installInfo,errors[installInfo]))
                     else:
                         logger.info("当前设备 %s 已安装被测软件：%s" % (devices[i], packages[i]))
-                    try:
-                        # 运行前关闭一些障碍 隐藏掉状态栏&底下的返回控件
-                        os.popen('adb -s %s shell settings put global policy_control immersive.full=*' % (devices[i]))
-                        os.popen('adb -s %s shell wm overscan 0,0,0,-200' % (devices[i]))
-                        os.popen('adb -s %s shell logcat -c && adb -s %s shell logcat -b crash > %s'%(devices[i],devices[i],self.crashlog))
-                        os.popen('adb -s %s shell logcat ActivityManager:I *:s > %s' % (devices[i],self.mangerlog))
-                        os.popen('adb -s %s shell monkey -p %s %s >%s'%(devices[i],self.package,self.commod,self.monkeylog))
-                    except Exception as e:
-                        logger.error(e)
-                    finally:
-                        # 恢复状态栏&底下的返回控件
-                        os.popen('adb -s %s shell settings put global policy_control null' % (devices[i]))
-                        os.popen('adb -s %s shell wm overscan 0,0,0,0' % (devices[i]))
+                        try:
+                            Monkey.statusbar(method='close',devices=devices[i])
+                            os.popen('adb -s %s shell logcat -c && adb -s %s shell logcat -b crash > %s'%(devices[i],devices[i],self.crashlog))
+                            os.popen('adb -s %s shell logcat ActivityManager:I *:s > %s' % (devices[i],self.mangerlog))
+                            os.popen('adb -s %s shell monkey -p %s %s >%s'%(devices[i],self.package,self.commod,self.monkeylog))
+                        except Exception as e:
+                            logger.error(e)
+                        finally:
+                            Monkey.statusbar(method='open',devices=devices[i])
 
 if __name__ == '__main__':
     Monkey(method='local').native()

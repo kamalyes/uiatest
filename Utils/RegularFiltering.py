@@ -9,5 +9,9 @@
 '''
 
 from Logger.GlobalLog import  Logger # 导入日志模块
+from Utils.DictClean import YamlHandle
 logger = Logger.write_log()#调用日志模块
+
+print(YamlHandle.filterkey(filepath=r'..\Config\WhiteActivity.txt', keyword='com.tencent.now',
+                           target='..\Result\ActivityTemp'))
 

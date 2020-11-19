@@ -12,6 +12,7 @@ from Utils.ExcelTools import *
 from Logger.GlobalLog import Logger
 logger =Logger.write_log()
 from Utils.ConfigParser import IniHandle
+IniHandle = IniHandle()
 
 class OverallSitua():
     @classmethod
@@ -47,8 +48,6 @@ class OverallSitua():
             di = data[i]
             # logger.info(type(dict))
             logger.info("%s%s"%(di.keys(),di.values()))
-
-
 
 if __name__ == '__main__':
     OverallSitua.data_formact()

@@ -149,12 +149,12 @@ class YamlHandle():
                     if  len(display):
                         result.append(display[0])
             distinct= set(result)
-            logger.info('去重：%s'%(distinct))
             # 写入文本
             for i in distinct:
                 file = open('%s'%(target), 'a')
                 file.write('\n' + str(i))
                 file.close()
+            return distinct
         except Exception as FileNotFoundError:
             logger.error(FileNotFoundError)
 

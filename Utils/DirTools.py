@@ -224,7 +224,6 @@ if __name__ == '__main__':
     logger.info(Doc_Process.get_pwd())
     logger.info(Doc_Process.get_superior_dir())
     logger.info(Doc_Process.get_superior_dirs())
-    logger.info(Doc_Process.readlines(filepath=r"E:\WorkSpace\PycharmProjects\AutoFramework\Result\Logs\2020-10-23\ActivityMansger.log"))
     # Doc_Process.creat_zip(method="allfile",filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils",target_path="aaaa.gzip")
     # Doc_Process.get_filetype(file_path=r"E:\WorkSpace\PycharmProjects\UiAutomationFramework\Utils\not_exist.py")
     # Doc_Process.copy_file(filepath=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils",target=r"D:\Work_Spaces\PyCharm_Project\UiAutomationFramework\Utils\COPYS")
