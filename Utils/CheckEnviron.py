@@ -10,7 +10,7 @@
 from Utils import LibraryTools
 from Utils import AdbTools
 
-adbManage = AdbTools.Adb_Manage()
+AdbManage = AdbTools.AdbManage()
 jarManage = LibraryTools.JarManage()
 
 class Environment(object):
@@ -21,7 +21,7 @@ class Environment(object):
         :param jarManage.check_import    检查本地导入模块是否下载
         :return:
         """
-        adbManage.check_filtered()
-        jarManage.check_import(filepath=r'../requirements.txt')
+        AdbManage.checkFiltered()
+        jarManage.checkImport(filepath=r'../requirements.txt')
 
 Environment.run()

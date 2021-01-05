@@ -7,7 +7,7 @@
 # Desc: Monkey脚本
 # Date： 2020/10/23 10:57
 '''
-import re,os,sys,time
+import re,os,time
 import subprocess
 from Logger.GlobalLog import Logger
 from Utils.ConfigParser import  IniHandle
@@ -15,6 +15,10 @@ from Utils.DirTools import  DocProcess
 from Utils.AdbTools import AdbManage
 logger = Logger.write_log()
 getpwd =DocProcess.getSuperiorDir()
+
+
+class Adb_Manage(object):
+    pass
 
 class Monkey():
     def __init__(self,method=None):

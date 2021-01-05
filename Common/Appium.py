@@ -7,7 +7,6 @@
 # Desc: PyCharm
 # Date： 2020/9/15 19:00
 '''
-import configparser
 import os,re,time,base64
 from appium import webdriver
 from selenium.webdriver.common.by import By
@@ -15,13 +14,9 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
 from Logger.GlobalLog import Logger
 logger = Logger.write_log()  #导入日志模块
-conf_ini = "../Config/config.ini"
-conf = configparser.ConfigParser()
-conf.read(conf_ini,encoding="utf-8")
-appium_service = conf.get("APPNIUM_SERVER", "service_ip")
 
 class AppDevice(object):
-    def __init__(self, platform_name, device_name, app_package, app_activity, wait_time=10):
+    def __init__(self,ip,port, platform_name, device_name, app_package, app_activity,uuid, wait_time=10,newCommandTimeout=None):
         """
         初始化
         :param platform_name: 平台名（Android / IOS）
@@ -30,21 +25,25 @@ class AppDevice(object):
         :param app_activity: app activity
         :param wait_time: 选择元素时等待时间，默认为10秒
         """
-        if not (platform_name and device_name and app_package and app_activity):
+        if not (ip and port and platform_name and device_name and app_package and app_activity,newCommandTimeout):
             logger.error("应用程序选择初始失败！")
 
         self.__platform_name = platform_name
         self.__device_name = device_name
         self.__app_package = app_package
         self.__app_activity = app_activity
-
+        self.__uuid = uuid
         desired_caps = {
             "platformName": platform_name,
             "deviceName": device_name,
             "appPackage": app_package,
-            "appActivity": app_activity
+            "appActivity": app_activity,
+            "noReset": True,
+            "noSign" : True,
+            "uuid":uuid,
+            "newCommandTimeout":60000
         }
-        self.__driver = webdriver.Remote(appium_service, desired_caps)
+        self.__driver = webdriver.Remote("http://%s:%s/wd/hub"%(ip,port), desired_caps)
         self.__driver_wait = WebDriverWait(self.__driver, wait_time)
 
     def tap(self, positions, duration=None, delay=None):
@@ -128,7 +127,7 @@ class AppDevice(object):
             else:
                 element = self.__driver.find_element_by_id(element_id)
         except Exception as TypeError:
-            logger.error("按id查找元素失败！ ")
+            raise ("按id查找元素失败！%s "%(TypeError))
         return element
 
     def find_elements_by_id(self, element_id, wait=True, wait_time=None):
@@ -149,7 +148,7 @@ class AppDevice(object):
             else:
                 results = self.__driver.find_elements_by_id(element_id)
         except Exception as TypeError:
-            logger.error("按id查找元素失败！")
+            raise ("按id匹配所有元素失败！%s "%(TypeError))
         return results
 
     def find_element_by_class(self, element_class, wait=True, wait_time=None):
@@ -170,7 +169,7 @@ class AppDevice(object):
             else:
                 results = self.__driver.find_element_by_class_name(element_class)
         except Exception as TypeError:
-            logger.error("按类查找元素失败！ ")
+            raise ("按类名查找元素失败！%s"%(TypeError))
         return results
 
     def find_elements_by_class(self, element_class, wait=True, wait_time=None):
@@ -191,8 +190,30 @@ class AppDevice(object):
             else:
                 results = self.__driver.find_elements_by_class_name(element_class)
         except Exception as TypeError:
-            logger.error("按类名查找元素失败！ ")
+            raise ("按类名查找元素失败 %s "%(TypeError))
         return results
+
+    def find_element_by_xpath(self,element,wait=True,wait_time=None):
+        """
+        xpath定位元素
+        :param text:
+        :param wait:
+        :param wait_time:
+        :return:
+        """
+        results = None
+        driver_wait = self.__driver_wait
+        if wait_time:
+            driver_wait = WebDriverWait(self.__driver, wait_time)
+        try:
+            if wait:
+                results = driver_wait.until(expected_conditions.presence_of_all_elements_located((By.CLASS_NAME, element)))
+            else:
+                results = self.__driver.find_element_by_xpath("%s"%(element))
+        except Exception as TypeError:
+            raise ("按xpath定位查找元素失败 %s "%(TypeError))
+        return results
+
 
     def find_element_by_path_tree(self, path_tree, wait=True, wait_time=None):
         """

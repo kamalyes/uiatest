@@ -73,6 +73,37 @@ class AdbManage():
             return True
 
     @classmethod
+    def getApkInfo(self,apkPath):
+        """
+        获取安卓包的基本信息
+        若提示无命令权限、解决方法：在\build-tools\目录下的任意文件夹下查找aapt，复制到\platform-tools 如果还不行，尝试配置环境变量！
+        :param filepath:
+        :return:
+        """
+        try:
+            if apkPath is None :
+                logger.error('安装包不存在！')
+            else:
+                p = subprocess.Popen("aapt dump badging %s" % apkPath, stdout=subprocess.PIPE,
+                                     stderr=subprocess.PIPE,
+                                     stdin=subprocess.PIPE, shell=True)
+                (output, err) = p.communicate()
+                match = re.compile("package: name='(\S+)' versionCode='(\d+)' versionName='(\S+)'").match(
+                    output.decode())
+                if not match:
+                    raise Exception("can't get packageinfo")
+                packageName = match.group(1)
+                versionCode = match.group(2)
+                versionName = match.group(3)
+
+                logger.info('PackageName：' + packageName)
+                logger.info('VersionCode：' + versionCode)
+                logger.info('VersionName：' + versionName)
+                return packageName, versionName, versionCode
+        except Exception as FileNotFoundError:
+            logger.error(FileNotFoundError)
+
+    @classmethod
     def checkDevicesStatus(self):
         """
         检查设备是否连接成功，如果成功返回Device_Nmae，否则返回False
@@ -131,7 +162,7 @@ class AdbManage():
             if status in(1,2):
 
                 # 循环遍历出所有已连接的终端设备,便于后期调用
-                print(apklist)
+                logger.info(apklist)
                 logger.info("成功接收到checkLocalFile方法return的安装包绝对路径：{}".format(apklist[index]))
                 logger.info("检索到的设备：%s" % (devices))
                 for dev_name in devices:
@@ -162,7 +193,7 @@ class AdbManage():
                 for dev_name in devices:
                     logger.info("当前终端ID：%s，卸载过程中请勿移除USB连接！！！" %(dev_name))
                     uninstall_info = subprocess.getstatusoutput('adb -s %s uninstall %s'%(dev_name,package_name))
-                    print(uninstall_info)
+                    logger.info(uninstall_info)
                     if uninstall_info[1] == "Success":
                         logger.info("%s卸载成功%s"%(package_name,uninstall_info[1]))
                     else:
@@ -435,7 +466,7 @@ class AdbManage():
         :param crash_logcat  crash崩溃日志
         :param history_logcat 历史crash日志（不需要二次触发）
         :return: True False
-        /dev/log/main ： 主应用程序log，除了下三个外，其他用户空间log将写入此节点，包括System.out.print及System.erro.print等
+        /dev/log/main ： 主应用程序log，除了下三个外，其他用户空间log将写入此节点，包括System.out.logger.info及System.erro.logger.info等
         /dev/log/events ： 系统事件信息，二进制log信息将写入此节点，需要程序解析
         /dev/log/radio ： 射频通话相关信息，tag 为"HTC_RIL" "RILJ" "RILC" "RILD" "RIL" "AT" "GSM" "STK"的log信息将写入此节点
         /dev/log/system ： 低等级系统信息和debugging,为了防止mian缓存区溢出,而从中分离出来
@@ -513,7 +544,7 @@ class AdbManage():
                     # device_info = subprocess.getstatusoutput("adb devices -l")
                 return release, model, vm_size
 
-                    # print(dev_name)
+                    # logger.info(dev_name)
                     # cmd = "adb -s " + dev_name + " shell cat /system/build.prop "
                     # # phone_info = os.popen(cmd).readlines()
                     # phone_info = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE).stdout.readlines()
@@ -538,7 +569,7 @@ class AdbManage():
                     #             result["device"] = temp[len(device_id):]
                     #             break
                     # logger.info(result)
-                    # print(dev_name)
+                    # logger.info(dev_name)
                     # return release, model, brand, device_id
         except Exception as TypeError:
             logger.error(TypeError)
@@ -926,13 +957,13 @@ class AdbManage():
                 logger.info(switch_dir)
         except Exception as TypeError:
             logger.error(TypeError)
-            
+
 
 if __name__ == '__main__':
     AdbManage.checkFiltered()
     AdbManage.checkLocalFile()
     AdbManage.checkAdbPath() #该方法可以不用执行、类部类已操作
-    checkDevicesStatus=AdbManage.checkDevicesStatus()
+    # checkDevicesStatus=AdbManage.checkDevicesStatus()
     # AdbManage.uninstallApk(checkDevicesStatus,package_name="com.tencent.mobileqq")
     # AdbManage.installApk(AdbManage.checkLocalFile(),checkDevicesStatus)
     # AdbManage.clearPackage(checkDevicesStatus,package_name="com.tencent.mobileqq")
@@ -944,7 +975,7 @@ if __name__ == '__main__':
     # AdbManage.fileTransfer(checkDevicesStatus,method="remove",source="/sdcard/test.txt")
     # AdbManage.getProcess(checkDevicesStatus,keyword="com.tencent.mobileqq")
     # AdbManage.getScreenshot(checkDevicesStatus,source="sdcard")
-    AdbManage.getIpconfig(checkDevicesStatus)
+    # AdbManage.getIpconfig(checkDevicesStatus)
     # AdbManage.logcatMagement(checkDevicesStatus,method="crash_logcat",filePath = "../Result/Android_Logs/Crash_Logs/")
     # AdbManage.getDeviceTime(checkDevicesStatus)
     # AdbManage.switchDirectory(checkDevicesStatus,filePath="/sdcard")
@@ -972,6 +1003,7 @@ if __name__ == '__main__':
     # AdbManage.call(checkDevicesStatus,number=501893067)
     # AdbManage.openUrl(checkDevicesStatus,url="https://www.baidu.com")
     # AdbManage.startApp(checkDevicesStatus,package_name="com.tencent.mobileqq")
-    AdbManage.sendKeyevent(checkDevicesStatus,keyword='10')
-    AdbManage.getMenTotal(checkDevicesStatus)
-    AdbManage.getCpuKel(checkDevicesStatus)
+    # AdbManage.sendKeyevent(checkDevicesStatus,keyword='10')
+    # AdbManage.getMenTotal(checkDevicesStatus)
+    # AdbManage.getCpuKel(checkDevicesStatus)
+    AdbManage.getApkInfo('../ApkPath/app-release.apk')
