@@ -1,8 +1,7 @@
 # -*- coding:utf-8 -*-
-#!/usr/bin/env python 3.7
 # Python version 2.7.16 or 3.7.6
 '''
-# FileName： RequestComm.py
+# FileName： OkHttps.py
 # Author : YuYanQing
 # Desc: request二次封装
 # Date： 2021/2/1 0:37
@@ -15,7 +14,7 @@ from faker import Factory
 from Logger.GlobalLog import Logger
 logger = Logger.write_log()
 
-class OpenServlet():
+class Prepare():
     def __init__(self,auth=None,proxies=None):
         """
         :param auth:   证书
@@ -148,7 +147,7 @@ class OpenServlet():
         headers.setdefault("Content-Type", content_type)
         return headers
 
-    def send_requests(self, url,method,params_key=None,data=None,file_var=None,file_path=None,headers=None):
+    def request(self, url,method,params_key=None,data=None,file_var=None,file_path=None,headers=None):
         """
         :param method: 请求方法
         :param url: 请求url
@@ -265,8 +264,8 @@ class OpenServlet():
         return response
 
 if __name__ == '__main__':
-    OpenServlet = OpenServlet()
-    get = OpenServlet.send_requests("https://www.baidu.com","GET","params")
-    post = OpenServlet.send_requests("https://www.baidu.com","post","json")
-    logger.info(OpenServlet.set_headers(type="from"))
+    Prepare = Prepare()
+    get = Prepare.request("https://www.baidu.com","GET","params")
+    post = Prepare.request("https://www.baidu.com","post","json")
+    logger.info(Prepare.set_headers(type="from"))
 
