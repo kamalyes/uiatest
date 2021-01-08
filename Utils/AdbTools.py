@@ -11,14 +11,16 @@
 import os,re
 import platform,datetime
 import subprocess
+from time import sleep
+
 from Logger.GlobalLog import Logger
-from Utils.DirTools import DocProcess
+from Utils import DirTools
 from Utils.ConfigParser import IniHandle
+
 logger = Logger.write_log()#调用日志模块
 
-class AdbManage():
-    @classmethod
-    def checkFiltered(self):
+class Adb_Manage(object):
+    def check_filtered(self):
         '''
         检查本地环境是Win还是Linux
         :return:
@@ -33,8 +35,7 @@ class AdbManage():
             logger.error("不支持该系统环境下运行！！！")
         return filter
 
-    @classmethod
-    def checkLocalFile(self):
+    def check_local_file(self):
         """
         检查本地文件是否存在
         :param superiordirectory:上级目录
@@ -42,8 +43,8 @@ class AdbManage():
         :return apk_filepath：拼接后的安卓包完整目录
         """
         apklist = []
-        superiordirectory = DocProcess.getSuperiorDir()
-        logger.info("上级所在目录为：{}".format(superiordirectory))
+        superiordirectory = DirTools.Doc_Process().get_superior_dir()
+        # logger.info("上级所在目录为：{}".format(superiordirectory))
         general_file = superiordirectory + "\APKPath"
         # logger.info("APK存储路径：{}".format(general_file))
         try:
@@ -56,8 +57,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def checkAdbPath(self):
+    def check_adb_path(self):
         """
         检查adb 判断是否设置环境变量ANDROID_HOME
         :param adb_info adb环境信息
@@ -72,46 +72,14 @@ class AdbManage():
             # logger.info("\n%s"%(adb_info[1]))
             return True
 
-    @classmethod
-    def getApkInfo(self,apkPath):
-        """
-        获取安卓包的基本信息
-        若提示无命令权限、解决方法：在\build-tools\目录下的任意文件夹下查找aapt，复制到\platform-tools 如果还不行，尝试配置环境变量！
-        :param filepath:
-        :return:
-        """
-        try:
-            if apkPath is None :
-                logger.error('安装包不存在！')
-            else:
-                p = subprocess.Popen("aapt dump badging %s" % apkPath, stdout=subprocess.PIPE,
-                                     stderr=subprocess.PIPE,
-                                     stdin=subprocess.PIPE, shell=True)
-                (output, err) = p.communicate()
-                match = re.compile("package: name='(\S+)' versionCode='(\d+)' versionName='(\S+)'").match(
-                    output.decode())
-                if not match:
-                    raise Exception("can't get packageinfo")
-                packageName = match.group(1)
-                versionCode = match.group(2)
-                versionName = match.group(3)
-
-                logger.info('PackageName：' + packageName)
-                logger.info('VersionCode：' + versionCode)
-                logger.info('VersionName：' + versionName)
-                return packageName, versionName, versionCode
-        except Exception as FileNotFoundError:
-            logger.error(FileNotFoundError)
-
-    @classmethod
-    def checkDevicesStatus(self):
+    def check_devices_status(self):
         """
         检查设备是否连接成功，如果成功返回Device_Nmae，否则返回False
         :param devices_info：CMD输入
         :return devices：设备ID
         """
         try:
-            adb_info = self.checkAdbPath()
+            adb_info = self.check_adb_path()
             if adb_info == True:
                 devices = re.findall('\n(.+?)\t', subprocess.getstatusoutput("adb devices")[1])
                 if devices != []:
@@ -125,8 +93,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error("Device Connect Fail:", TypeError)
 
-    @classmethod
-    def checkRootStatus(self,devices):
+    def check_rootstatus(self,devices):
         """
         检查设备ROOT状态
         :param devices: 设备ID
@@ -148,8 +115,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def installApk(self,apklist, devices,index=""):
+    def install_apk(self,apklist, devices,index=""):
         """
         检查本地文件是否存在
         :param devices:设备号
@@ -162,8 +128,8 @@ class AdbManage():
             if status in(1,2):
 
                 # 循环遍历出所有已连接的终端设备,便于后期调用
-                logger.info(apklist)
-                logger.info("成功接收到checkLocalFile方法return的安装包绝对路径：{}".format(apklist[index]))
+                print(apklist)
+                logger.info("成功接收到check_local_file方法return的安装包绝对路径：{}".format(apklist[index]))
                 logger.info("检索到的设备：%s" % (devices))
                 for dev_name in devices:
                     logger.info("当前终端ID：%s，安装过程中请勿移除USB连接！！！" % (dev_name))
@@ -179,8 +145,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def uninstallApk(self,devices,package_name=""):
+    def uninstall_apk(self,devices,package_name=""):
         """
         卸载apk
         :param devices:设备号
@@ -193,7 +158,8 @@ class AdbManage():
                 for dev_name in devices:
                     logger.info("当前终端ID：%s，卸载过程中请勿移除USB连接！！！" %(dev_name))
                     uninstall_info = subprocess.getstatusoutput('adb -s %s uninstall %s'%(dev_name,package_name))
-                    logger.info(uninstall_info)
+                    print(uninstall_info)
+                    sleep(30)
                     if uninstall_info[1] == "Success":
                         logger.info("%s卸载成功%s"%(package_name,uninstall_info[1]))
                     else:
@@ -201,8 +167,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def clearPackage(self,devices,package_name):
+    def clear_package(self,devices,package_name):
         """
         清理apk缓存
         :param devices:设备号
@@ -225,8 +190,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def getIpconfig(self,devices):
+    def get_ipconfig(self,devices):
         """
         获取已连接的手机WIFI_IP
         :param ipconfig：wlan0基本Ip信息
@@ -248,8 +212,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def remoteConnectdev(self,devices, ipv4):
+    def remote_connectdev(self,devices, ipv4):
         """
         远程连接手机
         :param check_ip：检查网络是否通
@@ -259,21 +222,21 @@ class AdbManage():
             if ipv4 == False:
                 pass
             else:
-                check_ip = os.popen("ping {}".format(ipv4)).read()
-                restart_adb = os.popen("adb tcpip 5555").read()
-                str = "Ping 请求找不到主机 None。请检查该名称，然后重试。"
-                if str == check_ip or restart_adb == "":
-                    logger.error("adb tcpip模式重启adb失败%s" % (check_ip))
-                else:
-                    logger.info("adb tcpip模式重启adb成功！！！")
-                    connect = os.popen("adb connect {}".format(ipv4)).read()
-                    logger.info(connect)
-            return check_ip
+                for dev_name in devices:
+                    check_ip = os.popen("ping {}".format(ipv4)).read()
+                    restart_adb = os.popen("adb tcpip 5555").read()
+                    str = "Ping 请求找不到主机 None。请检查该名称，然后重试。"
+                    if str == check_ip or restart_adb == "":
+                        logger.error("adb tcpip模式重启adb失败%s" % (check_ip))
+                    else:
+                        logger.info("adb tcpip模式重启adb成功！！！")
+                        connect = os.popen("adb connect {}".format(ipv4)).read()
+                        logger.info(connect)
+                return check_ip
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def getCurrentPackage(self,devices=None):
+    def get_current_package(self,devices=None):
         '''
         获取当前运行
         :param devices: 设备号
@@ -291,8 +254,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def getBatteryInfo(self,devices):
+    def get_battery_info(self,devices):
         '''
         获取Android手机电池电量
           status: 1            #电池状态：2：充电状态 ，其他数字为非充电状态
@@ -318,8 +280,7 @@ class AdbManage():
         except Exception as  TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def createFile(self,devices, method, filePath=""):
+    def create_file(self,devices, method, filePath=""):
         """
         创建目录
         :param  split_path：清理文件尾椎
@@ -359,8 +320,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def fileTransfer(self,devices, method, source, target=""):
+    def file_transfer(self,devices, method, source, target=""):
         """
         文件基本操作
         :param pull 从手机端拉取文件到电脑端
@@ -403,8 +363,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def getProcess(self,devices, keyword):
+    def get_process(self,devices, keyword):
         """
         获取进程信息
         :param devices: 设备ID
@@ -428,8 +387,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def getScreenshot(self,devices, source):
+    def get_screenshot(self,devices, source):
         """
         手机截图
         :param nowtime 当前本地格式化的毫秒级时间
@@ -457,8 +415,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def logcatMagement(self,devices,method,filePath):
+    def logcat_magement(self,devices,method,filePath):
         """
         日志管理
         :param clear_logcat  清理日志
@@ -466,7 +423,7 @@ class AdbManage():
         :param crash_logcat  crash崩溃日志
         :param history_logcat 历史crash日志（不需要二次触发）
         :return: True False
-        /dev/log/main ： 主应用程序log，除了下三个外，其他用户空间log将写入此节点，包括System.out.logger.info及System.erro.logger.info等
+        /dev/log/main ： 主应用程序log，除了下三个外，其他用户空间log将写入此节点，包括System.out.print及System.erro.print等
         /dev/log/events ： 系统事件信息，二进制log信息将写入此节点，需要程序解析
         /dev/log/radio ： 射频通话相关信息，tag 为"HTC_RIL" "RILJ" "RILC" "RILD" "RIL" "AT" "GSM" "STK"的log信息将写入此节点
         /dev/log/system ： 低等级系统信息和debugging,为了防止mian缓存区溢出,而从中分离出来
@@ -497,8 +454,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.info(TypeError)
 
-    @classmethod
-    def analysisCrash(self, filePath,file_Name=""):
+    def analysis_crash(self, filePath,file_Name=""):
         """
         分析logcat日志
         :param key_word：关键字
@@ -521,8 +477,7 @@ class AdbManage():
         file.close()
         return count
 
-    @classmethod
-    def getPhoneInfo(self,devices):
+    def get_phone_info(self,devices):
         """
         得到手机信息(ROOT手机(处理起来不是很好且市面上root手机覆盖率较小、先放着后期搞)、非ROOT手机不同处理)
         :param release:系统版本
@@ -544,7 +499,7 @@ class AdbManage():
                     # device_info = subprocess.getstatusoutput("adb devices -l")
                 return release, model, vm_size
 
-                    # logger.info(dev_name)
+                    # print(dev_name)
                     # cmd = "adb -s " + dev_name + " shell cat /system/build.prop "
                     # # phone_info = os.popen(cmd).readlines()
                     # phone_info = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE).stdout.readlines()
@@ -569,13 +524,13 @@ class AdbManage():
                     #             result["device"] = temp[len(device_id):]
                     #             break
                     # logger.info(result)
-                    # logger.info(dev_name)
+                    # print(dev_name)
                     # return release, model, brand, device_id
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def getDeviceTime(self, devices):
+
+    def get_device_time(self, devices):
         """
         获取设备时间
         :param devices 设备ID
@@ -592,8 +547,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def getMenTotal(self,devices):
+    def get_men_total(self,devices):
         """
         得到内存 (ROOT用户使用)
         :param devices:设备号
@@ -617,8 +571,8 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def getCpuKel(self,devices):
+
+    def get_cpu_kel(self,devices):
         """
         得到CPU内核版本 (ROOT用户使用)
         :param devices:
@@ -641,7 +595,6 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
     def reboot(self, devices):
         """
         重启Iphone
@@ -659,8 +612,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def fileExists(self, devices, target):
+    def file_exists(self, devices, target):
         """
         判断文件在目标路径是否存在
         :param devices:设备号
@@ -682,8 +634,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def isInstall(self, devices, package_name):
+    def is_install(self, devices, package_name):
         """
         判断目标app在设备上是否已安装
         :param package_name: 目标app包名
@@ -705,8 +656,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def getDisplayState(self, devices):
+    def get_display_state(self, devices):
         """
         获取屏幕状态(部分手机特别是华为、该方法不可用、后续再摸索)
         :return: window_policy 亮屏(mScreenOnEarly=true mScreenOnFully=true )/灭屏(mScreenOnEarly=False mScreenOnFully=False )
@@ -722,8 +672,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def getPid(self,devices,package_name):
+    def get_ps_pid(self,devices,package_name):
         """
         获取进程pid
         :param devices: 设备ID
@@ -748,8 +697,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def killProcess(self, devices,pid):
+    def kill_process(self, devices,pid):
         """
         杀死进程 需要Root权限不推荐使用
         :return: kill_pid
@@ -765,24 +713,22 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def quitApp(self, devices,package_name):
+    def quit_app(self, devices,package_name):
         """
         退出应用
-        :return: quitApp
+        :return: quit_app
         """
         try:
             if devices == False:
                 pass
             else:
                 for dev_name in devices:
-                    quitApp = subprocess.getstatusoutput("adb -s %s shell am force-stop %s " %(dev_name,package_name))[1].replace("\n", "")
+                    quit_app = subprocess.getstatusoutput("adb -s %s shell am force-stop %s " %(dev_name,package_name))[1].replace("\n", "")
                     logger.info("已成功退出%s " % (package_name))
-                    return quitApp
+                    return quit_app
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
     def recovery(self,devices):
         """
         重启设备并进入recovery模式
@@ -799,7 +745,6 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
     def fastboot(self,devices):
         """
         重启设备并进入fastboot模式
@@ -816,8 +761,8 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def getWifiState(self,devices):
+
+    def get_wifi_state(self,devices):
         """
         获取WiFi连接状态
         :return: wifi_state
@@ -837,8 +782,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def getDataState(self,devices):
+    def get_data_state(self,devices):
         """
         获取移动网络连接状态
         :return: data_state
@@ -847,14 +791,12 @@ class AdbManage():
             if devices == False:
                 pass
             else:
-                for dev_name in devices:
-                    data_state = subprocess.getstatusoutput("adb -s %s shell dumpsys telephony.registry | grep 'mDataConnectionState'" % (dev_name))[1].replace("\n", "")
-                    return data_state
+                data_state = subprocess.getstatusoutput("adb -s %s shell dumpsys telephony.registry | grep 'mDataConnectionState'" % (dev_name))[1].replace("\n", "")
+                return data_state
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def checkNetworkState(self,devices):
+    def get_network_state(self,devices):
         """
         设备是否连上互联网
         :return:True
@@ -873,7 +815,6 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
     def call(self, devices,number):
         """
         拨打电话
@@ -892,25 +833,23 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def openUrl(self,devices,url):
+    def open_url(self,devices,url):
         """
         打开网页
-        :return: openUrl
+        :return: open_url
         """
         try:
             if devices == False:
                 pass
             else:
                 for dev_name in devices:
-                    openUrl = subprocess.getstatusoutput("adb -s %s shell am start -a android.intent.action.VIEW -d %s" % (dev_name, url))[1].replace("\n", "")
-                    logger.info("%s " % (openUrl))
-                    return openUrl
+                    open_url = subprocess.getstatusoutput("adb -s %s shell am start -a android.intent.action.VIEW -d %s" % (dev_name, url))[1].replace("\n", "")
+                    logger.info("%s " % (open_url))
+                    return open_url
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def startApp(self, devices,package_name):
+    def start_application(self, devices,package_name):
         """
         启动一个应用
         :return start_app：开启
@@ -926,8 +865,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def sendKeyevent(self, devices,keyword):
+    def send_keyevent(self, devices,keyword):
         """
         发送一个按键事件即键盘输入
         :param keyword：按键按键事件
@@ -944,8 +882,7 @@ class AdbManage():
         except Exception as TypeError:
             logger.error(TypeError)
 
-    @classmethod
-    def switchDirectory(self,devices,filePath=""):
+    def switch_directory(self,devices,filePath=""):
         """
         切换目录(写到一半不想写的def 也不怎么常用到先别引用、先占个位)
         :param devices:设备号
@@ -957,53 +894,51 @@ class AdbManage():
                 logger.info(switch_dir)
         except Exception as TypeError:
             logger.error(TypeError)
-
-
 if __name__ == '__main__':
-    AdbManage.checkFiltered()
-    AdbManage.checkLocalFile()
-    AdbManage.checkAdbPath() #该方法可以不用执行、类部类已操作
-    # checkDevicesStatus=AdbManage.checkDevicesStatus()
-    # AdbManage.uninstallApk(checkDevicesStatus,package_name="com.tencent.mobileqq")
-    # AdbManage.installApk(AdbManage.checkLocalFile(),checkDevicesStatus)
-    # AdbManage.clearPackage(checkDevicesStatus,package_name="com.tencent.mobileqq")
-    # AdbManage.getCurrentPackage(checkDevicesStatus)
-    # AdbManage.getBatteryInfo(checkDevicesStatus)
-    # AdbManage.remoteConnectdev(checkDevicesStatus,AdbManage.getIpconfig(checkDevicesStatus))
-    # AdbManage.createFile(checkDevicesStatus,method="touch",filePath="/sdcard/mkdirtes/test.txt")
-    # AdbManage.getCurrentPackage(checkDevicesStatus)
-    # AdbManage.fileTransfer(checkDevicesStatus,method="remove",source="/sdcard/test.txt")
-    # AdbManage.getProcess(checkDevicesStatus,keyword="com.tencent.mobileqq")
-    # AdbManage.getScreenshot(checkDevicesStatus,source="sdcard")
-    # AdbManage.getIpconfig(checkDevicesStatus)
-    # AdbManage.logcatMagement(checkDevicesStatus,method="crash_logcat",filePath = "../Result/Android_Logs/Crash_Logs/")
-    # AdbManage.getDeviceTime(checkDevicesStatus)
-    # AdbManage.switchDirectory(checkDevicesStatus,filePath="/sdcard")
-    # AdbManage.analysisCrash(filePath="../Result/Android_Logs/Crash_Logs/",file_Name="2020-0908-16-55-49-508162-Crash.log")
-    # AdbManage.getPhoneInfo(checkDevicesStatus)
+    adb = Adb_Manage()
+    adb.check_filtered()
+    adb.check_local_file()
+    # adb.check_adb_path() #该方法可以不用执行、类部类已操作
+    check_devices_status=adb.check_devices_status()
+    # adb.uninstall_apk(check_devices_status,package_name="com.tencent.mobileqq")
+    # adb.install_apk(adb.check_local_file(),check_devices_status)
+    # adb.clear_package(check_devices_status,package_name="com.tencent.mobileqq")
+    # adb.get_current_package(check_devices_status)
+    # adb.get_battery_info(check_devices_status)
+    # adb.remote_connectdev(check_devices_status,adb.get_ipconfig(check_devices_status))
+    # adb.create_file(check_devices_status,method="touch",filePath="/sdcard/mkdirtes/test.txt")
+    # adb.get_current_package(check_devices_status)
+    # adb.file_transfer(check_devices_status,method="remove",source="/sdcard/test.txt")
+    # adb.get_process(check_devices_status,keyword="com.tencent.mobileqq")
+    # adb.get_screenshot(check_devices_status,source="sdcard")
+    adb.get_ipconfig(check_devices_status)
+    # adb.logcat_magement(check_devices_status,method="crash_logcat",filePath = "../Result/Android_Logs/Crash_Logs/")
+    # adb.get_device_time(check_devices_status)
+    # adb.switch_directory(check_devices_status,filePath="/sdcard")
+    # adb.analysis_crash(filePath="../Result/Android_Logs/Crash_Logs/",file_Name="2020-0908-16-55-49-508162-Crash.log")
+    # adb.get_phone_info(check_devices_status)
     # while True:
-    #     AdbManage.reboot(checkDevicesStatus)
-    # AdbManage.fileExists(checkDevicesStatus,target="/sdcard")
+    #     adb.reboot(check_devices_status)
+    # adb.file_exists(check_devices_status,target="/sdcard")
     # while True:
     #     time.sleep(3)
-    #     if AdbManage.isInstall(checkDevicesStatus, package_name="com.tencent.mobileqq") ==False:
+    #     if adb.is_install(check_devices_status, package_name="com.tencent.mobileqq") ==False:
     #         logger.info("Installing！！！")
-    #         AdbManage.installApk(adb.checkLocalFile(),checkDevicesStatus)
+    #         adb.install_apk(adb.check_local_file(),check_devices_status)
     #     else:
     #         logger.info("UnInstalling！！！")
-    #         AdbManage.uninstallApk(checkDevicesStatus,package_name="com.tencent.mobileqq")
-    # AdbManage.getPid(checkDevicesStatus, package_name="com.tencent.mobileqq:MSF")
-    # AdbManage.killProcess(checkDevicesStatus, index=0,pid=adb.getPid(checkDevicesStatus, keyword="com.tencent.mobileqq:MSF", index=0))
-    # AdbManage.quitApp(checkDevicesStatus,package_name="com.tencent.mobileqq")
-    # AdbManage.recovery(checkDevicesStatus)
-    # AdbManage.fastboot(checkDevicesStatus, index=0)
-    # AdbManage.getWifiState(checkDevicesStatus)
-    # AdbManage.getDataState(checkDevicesStatus)
-    # AdbManage.checkNetworkState(checkDevicesStatus)
-    # AdbManage.call(checkDevicesStatus,number=501893067)
-    # AdbManage.openUrl(checkDevicesStatus,url="https://www.baidu.com")
-    # AdbManage.startApp(checkDevicesStatus,package_name="com.tencent.mobileqq")
-    # AdbManage.sendKeyevent(checkDevicesStatus,keyword='10')
-    # AdbManage.getMenTotal(checkDevicesStatus)
-    # AdbManage.getCpuKel(checkDevicesStatus)
-    AdbManage.getApkInfo('../ApkPath/app-release.apk')
+    #         adb.uninstall_apk(check_devices_status,package_name="com.tencent.mobileqq")
+    # adb.get_ps_pid(check_devices_status, package_name="com.tencent.mobileqq:MSF")
+    # adb.kill_process(check_devices_status, index=0,pid=adb.get_ps_pid(check_devices_status, keyword="com.tencent.mobileqq:MSF", index=0))
+    # adb.quit_app(check_devices_status,package_name="com.tencent.mobileqq")
+    # adb.recovery(check_devices_status)
+    # adb.fastboot(check_devices_status, index=0)
+    # adb.get_wifi_state(check_devices_status)
+    # adb.get_data_state(check_devices_status)
+    # adb.get_network_state(check_devices_status)
+    # adb.call(check_devices_status,number=501893067)
+    # adb.open_url(check_devices_status,url="https://www.baidu.com")
+    # adb.start_application(check_devices_status,package_name="com.tencent.mobileqq")
+    # adb.send_keyevent(check_devices_status,keyword='10')
+    adb.get_men_total(check_devices_status)
+    adb.get_cpu_kel(check_devices_status)
