@@ -43,7 +43,7 @@ class Adb_Manage(object):
         :return apk_filepath：拼接后的安卓包完整目录
         """
         apklist = []
-        superiordirectory = DirTools.Doc_Process().get_superior_dir()
+        superiordirectory = DirTools.DocProcess().getSuperiorDir()
         # logger.info("上级所在目录为：{}".format(superiordirectory))
         general_file = superiordirectory + "\APKPath"
         # logger.info("APK存储路径：{}".format(general_file))

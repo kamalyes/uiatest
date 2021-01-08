@@ -1,0 +1,73 @@
+2020-11-06 16:00:10,415 - AdbTools.py [line:90] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 16:00:33,157 - AdbTools.py [line:90] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 16:08:56,923 - AdbTools.py [line:90] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:20:40,821 - AdbTools.py [line:101] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:24:23,294 - AdbTools.py [line:107] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:24:23,309 - AdbTools.py [line:90] - ERROR: 'gbk' codec can't decode byte 0xae in position 3748: illegal multibyte sequence
+2020-11-06 17:25:21,374 - AdbTools.py [line:107] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:26:07,758 - AdbTools.py [line:107] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:26:12,919 - AdbTools.py [line:107] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:26:41,290 - AdbTools.py [line:107] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:27:03,849 - AdbTools.py [line:107] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:27:03,849 - AdbTools.py [line:90] - ERROR: chmod() missing required argument 'mode' (pos 2)
+2020-11-06 17:28:02,270 - AdbTools.py [line:107] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:28:02,270 - AdbTools.py [line:90] - ERROR: open() missing required argument 'flags' (pos 2)
+2020-11-06 17:28:08,534 - AdbTools.py [line:107] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:31:47,008 - AdbTools.py [line:123] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:31:47,008 - AdbTools.py [line:106] - ERROR: can't get packageinfo
+2020-11-06 17:32:11,077 - AdbTools.py [line:123] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:32:11,077 - AdbTools.py [line:106] - ERROR: can't get packageinfo
+2020-11-06 17:32:19,382 - AdbTools.py [line:123] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:32:19,398 - AdbTools.py [line:106] - ERROR: can't get packageinfo
+2020-11-06 17:32:23,533 - AdbTools.py [line:123] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:32:23,533 - AdbTools.py [line:106] - ERROR: 'str' object has no attribute 'decode'
+2020-11-06 17:32:52,490 - AdbTools.py [line:108] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:32:52,490 - AdbTools.py [line:91] - ERROR: 'str' object has no attribute 'decode'
+2020-11-06 17:32:59,249 - AdbTools.py [line:108] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:33:07,961 - AdbTools.py [line:108] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:33:07,993 - AdbTools.py [line:91] - ERROR: 'gbk' codec can't decode byte 0xae in position 3748: illegal multibyte sequence
+2020-11-06 17:33:22,451 - AdbTools.py [line:108] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:33:22,466 - AdbTools.py [line:91] - ERROR: 'gbk' codec can't decode byte 0xae in position 3748: illegal multibyte sequence
+2020-11-06 17:33:31,099 - AdbTools.py [line:108] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:33:31,099 - AdbTools.py [line:91] - ERROR: 'str' object has no attribute 'decode'
+2020-11-06 17:33:51,772 - AdbTools.py [line:108] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:33:51,807 - AdbTools.py [line:91] - ERROR: 'gbk' codec can't decode byte 0xae in position 3748: illegal multibyte sequence
+2020-11-06 17:34:06,729 - AdbTools.py [line:123] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:34:06,744 - AdbTools.py [line:106] - ERROR: 'gbk' codec can't decode byte 0xae in position 3748: illegal multibyte sequence
+2020-11-06 17:34:27,985 - AdbTools.py [line:123] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:34:28,001 - AdbTools.py [line:106] - ERROR: can't get packageinfo
+2020-11-06 17:39:01,751 - AdbTools.py [line:117] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:39:01,751 - AdbTools.py [line:100] - ERROR: can't get packageinfo
+2020-11-06 17:39:11,788 - AdbTools.py [line:117] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2020-11-06 17:39:11,803 - AdbTools.py [line:100] - ERROR: can't get packageinfo
+2020-11-06 17:39:19,852 - AdbTools.py [line:100] - ERROR: can't get packageinfo
+2020-11-06 17:39:31,476 - AdbTools.py [line:99] - ERROR: can't get packageinfo
+2020-11-06 17:39:40,185 - AdbTools.py [line:98] - ERROR: can't get packageinfo
+2020-11-06 17:40:44,008 - AdbTools.py [line:99] - ERROR: 'gbk' codec can't decode byte 0xae in position 3748: illegal multibyte sequence
+2020-11-06 17:41:04,102 - AdbTools.py [line:99] - ERROR: 'gbk' codec can't decode byte 0xae in position 3748: illegal multibyte sequence
+2020-11-06 17:42:08,733 - AdbTools.py [line:99] - ERROR: 'gbk' codec can't decode byte 0xae in position 3748: illegal multibyte sequence
+2020-11-06 17:42:15,086 - AdbTools.py [line:99] - ERROR: 'gbk' codec can't decode byte 0xae in position 3748: illegal multibyte sequence
+2020-11-06 17:42:25,690 - AdbTools.py [line:100] - ERROR: 'gbk' codec can't decode byte 0xae in position 3748: illegal multibyte sequence
+2020-11-06 17:44:08,963 - AdbTools.py [line:99] - ERROR: '_io.TextIOWrapper' object has no attribute 'readall'
+2020-11-06 17:44:18,059 - AdbTools.py [line:99] - ERROR: 'gbk' codec can't decode byte 0xae in position 3748: illegal multibyte sequence
+2020-11-06 17:44:21,386 - AdbTools.py [line:99] - ERROR: 'gbk' codec can't decode byte 0xae in position 3748: illegal multibyte sequence
+2020-11-06 17:44:50,945 - AdbTools.py [line:99] - ERROR: 'gbk' codec can't decode byte 0xae in position 3748: illegal multibyte sequence
+2020-11-06 17:45:01,064 - AdbTools.py [line:99] - ERROR: 'gbk' codec can't decode byte 0xae in position 3748: illegal multibyte sequence
+2020-11-06 17:45:23,576 - AdbTools.py [line:97] - ERROR: 'gbk' codec can't decode byte 0xae in position 3748: illegal multibyte sequence
+2020-11-06 17:47:03,839 - AdbTools.py [line:104] - ERROR: type object 'AdbManage' has no attribute 'apkPath'
+2020-11-06 17:48:22,894 - AdbTools.py [line:104] - ERROR: can't get packageinfo
+2020-11-06 17:48:27,916 - AdbTools.py [line:104] - ERROR: can't get packageinfo
+2020-11-06 17:48:36,865 - AdbTools.py [line:104] - ERROR: can't get packageinfo
+2020-11-06 17:49:02,893 - AdbTools.py [line:104] - ERROR: can't get packageinfo
+2020-11-06 17:49:09,659 - AdbTools.py [line:104] - ERROR: can't get packageinfo
+2020-11-06 17:59:55,839 - Appium.py [line:34] - ERROR: 应用程序选择初始失败！
+2020-11-06 18:07:02,955 - Appium.py [line:34] - ERROR: 应用程序选择初始失败！
+2020-11-06 18:07:23,763 - Appium.py [line:35] - ERROR: 应用程序选择初始失败！
+2020-11-06 18:07:52,621 - Appium.py [line:34] - ERROR: 应用程序选择初始失败！
+2020-11-06 18:08:17,845 - Appium.py [line:34] - ERROR: 应用程序选择初始失败！
+2020-11-06 18:08:48,474 - Appium.py [line:34] - ERROR: 应用程序选择初始失败！
+2020-11-06 20:23:49,589 - AppiumServer.py [line:85] - ERROR: port 4723 is available !
+2020-11-06 20:24:16,644 - AppiumServer.py [line:85] - ERROR: port 555 is available !
+2020-11-06 20:24:40,293 - AppiumServer.py [line:85] - ERROR: 端口：555 暂未启用 !
+2020-11-06 20:30:42,132 - AppiumTools.py [line:92] - ERROR: 端口：555 暂未启用 !
+2020-11-06 20:31:09,969 - AppiumTools.py [line:92] - ERROR: 端口：555 未启用

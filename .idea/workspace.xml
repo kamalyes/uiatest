@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3441837-af8b-49a4-9ba7-515a2bcf2224" name="Default" comment=":bug:Rebuilding monkey automation and repairing parent folder">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/district.xls" afterPath="$PROJECT_DIR$/Config/district.xls" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Config/InterfaceCase.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Monkey/AppStability.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Result/Logs/2021-01-08/Default_Logs/2021-01-08.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Result/Logs/2021-01-08/Error_Logs/2021-01-08.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/config.ini" afterPath="$PROJECT_DIR$/Config/config.ini" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/AdbTools.py" afterPath="$PROJECT_DIR$/Utils/AdbTools.py" />
     </list>
     <list id="64fc7dad-501b-421b-bef5-4a86b337f677" name="YuYanQing5920" comment=":bug:Add appium bootstrap and fix assertion import">
@@ -18,7 +20,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Result/Logs/2020-12-10/Error_Logs/2020-12-10.log" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Result/Logs/2021-01-05/Default_Logs/2021-01-05.log" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Result/Logs/2021-01-05/Error_Logs/2021-01-05.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/WhiteActivity.txt" afterPath="$PROJECT_DIR$/Config/WhiteActivity.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/Logs/2020-11-06/Default_Logs/2020-11-06.log" afterPath="$PROJECT_DIR$/Result/Logs/2020-11-06/Default_Logs/2020-11-06.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/Logs/2020-11-06/Error_Logs/2020-11-06.log" afterPath="$PROJECT_DIR$/Result/Logs/2020-11-06/Error_Logs/2020-11-06.log" />
     </list>
@@ -31,7 +32,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/AutoFramework$Verification.coverage" NAME="Verification Coverage Results" MODIFIED="1607237411178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
-    <SUITE FILE_PATH="coverage/AutoFramework$AdbTools.coverage" NAME="AdbTools Coverage Results" MODIFIED="1607310633803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$AdbTools.coverage" NAME="AdbTools Coverage Results" MODIFIED="1610114426199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/AutoFramework$RunAppium.coverage" NAME="RunAppium Coverage Results" MODIFIED="1600132837721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
     <SUITE FILE_PATH="coverage/AutoFramework$Appium.coverage" NAME="Appium Coverage Results" MODIFIED="1607572641644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
     <SUITE FILE_PATH="coverage/AutoFramework$AppiumTools.coverage" NAME="AppiumTools Coverage Results" MODIFIED="1609819212693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
@@ -51,11 +52,12 @@
     <SUITE FILE_PATH="coverage/AutoFramework$PublicMethod.coverage" NAME="PublicMethod Coverage Results" MODIFIED="1604650805205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
     <SUITE FILE_PATH="coverage/AutoFramework$Nosetest_UCTestCase_testCreateFolder.coverage" NAME="Nosetest UCTestCase.testCreateFolder Coverage Results" MODIFIED="1607609384930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/AutoFramework$Nosetests_in_test_start_app.coverage" NAME="Nosetests in test_start_app Coverage Results" MODIFIED="1607602561682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
+    <SUITE FILE_PATH="coverage/AutoFramework$WeLinkRequest.coverage" NAME="WeLinkRequest Coverage Results" MODIFIED="1610123765406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WeLink" />
     <SUITE FILE_PATH="coverage/AutoFramework$DirTools.coverage" NAME="DirTools Coverage Results" MODIFIED="1607236627150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/AutoFramework$DictClean.coverage" NAME="DictClean Coverage Results" MODIFIED="1607236623007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/AutoFramework$RegularFiltering.coverage" NAME="RegularFiltering Coverage Results" MODIFIED="1607230877679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
-    <SUITE FILE_PATH="coverage/AutoFramework$AppStability.coverage" NAME="AppStability Coverage Results" MODIFIED="1604650136767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/AutoFramework$AssertTools.coverage" NAME="AssertTools Coverage Results" MODIFIED="1609819003019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$AppStability.coverage" NAME="AppStability Coverage Results" MODIFIED="1610114518007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Monkey" />
     <SUITE FILE_PATH="coverage/AutoFramework$GetDeviceMsgs__1_.coverage" NAME="GetDeviceMsgs (1) Coverage Results" MODIFIED="1604663500579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/AutoFramework$ConfigParser.coverage" NAME="ConfigParser Coverage Results" MODIFIED="1604647596592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/AutoFramework$LibraryTools.coverage" NAME="LibraryTools Coverage Results" MODIFIED="1609809811603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
@@ -78,11 +80,21 @@
       <file leaf-file-name="AdbTools.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils/AdbTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="912">
+              <caret line="45" column="64" lean-forward="false" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
               <folding>
                 <element signature="e#173#185#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DirTools.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/DirTools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,26 +119,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckEnviron.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/CheckEnviron.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CheckStatus.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/CheckStatus.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LibraryTools.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils/LibraryTools.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -137,43 +129,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AssertTools.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/AssertTools.py">
+      <file leaf-file-name="AppStability.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Monkey/AppStability.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppiumTools.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/AppiumTools.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2307">
-              <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            <state relative-caret-position="1758">
+              <caret line="155" column="13" lean-forward="false" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
               <folding>
-                <element signature="e#151#160#0" expanded="true" />
+                <element signature="e#180#197#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppStability.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Monkey/AppStability.py">
+      <file leaf-file-name="WeLinkRequest.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WeLink/WeLinkRequest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="251">
+              <caret line="122" column="31" lean-forward="true" selection-start-line="122" selection-start-column="31" selection-end-line="122" selection-end-column="31" />
+              <folding>
+                <element signature="e#182#193#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <file leaf-file-name="ConfigParser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/ConfigParser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="3840">
+              <caret line="161" column="34" lean-forward="false" selection-start-line="161" selection-start-column="26" selection-end-line="161" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -190,11 +174,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>get_response</find>
       <find>IniHandle</find>
       <find>readconfig</find>
       <find>filterkey</find>
-      <find>Doc_Process</find>
       <find>cell_process</find>
       <find>updatejar</find>
       <find>sample_list</find>
@@ -220,6 +202,8 @@
       <find>xpath</find>
       <find>raw_input</find>
       <find>坐标</find>
+      <find>getsuperior</find>
+      <find>Doc_Process</find>
     </findStrings>
     <replaceStrings>
       <replace>5</replace>
@@ -228,7 +212,6 @@
       <replace>optValue</replace>
       <replace>readConfig</replace>
       <replace>filterKey</replace>
-      <replace>DocProcess</replace>
       <replace>cellProcess</replace>
       <replace>updateJar</replace>
       <replace>sampleList</replace>
@@ -245,6 +228,7 @@
       <replace>depolyDev</replace>
       <replace>getDeviceIds</replace>
       <replace>input</replace>
+      <replace>DocProcess</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -258,7 +242,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Result/Logs/2020-10-27/Default_Logs/2020-10-27.log" />
         <option value="$PROJECT_DIR$/Result/Logs/2020-10-27/Error_Logs/2020-10-27.log" />
         <option value="$PROJECT_DIR$/Result/ActivityTemp" />
         <option value="$PROJECT_DIR$/Utils/ProxyPool.py" />
@@ -294,7 +277,6 @@
         <option value="$PROJECT_DIR$/Common/InitServer.py" />
         <option value="$PROJECT_DIR$/Common/AppiumTools.py" />
         <option value="$PROJECT_DIR$/Utils/GetDeviceMsgs.py" />
-        <option value="$PROJECT_DIR$/Utils/AdbTools.py" />
         <option value="$PROJECT_DIR$/Common/start_appium.bat" />
         <option value="$PROJECT_DIR$/Utils/AppiumFindById.py" />
         <option value="$PROJECT_DIR$/Config/config.ini" />
@@ -308,7 +290,9 @@
         <option value="$PROJECT_DIR$/Utils/AppiumTools.py" />
         <option value="$PROJECT_DIR$/Logger/Console.py" />
         <option value="$PROJECT_DIR$/Utils/CheckEnviron.py" />
+        <option value="$PROJECT_DIR$/Utils/AdbTools.py" />
         <option value="$PROJECT_DIR$/Monkey/AppStability.py" />
+        <option value="$PROJECT_DIR$/WeLink/WeLinkRequest.py" />
       </list>
     </option>
   </component>
@@ -339,8 +323,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -363,96 +345,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AutoFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AutoFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestCase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AutoFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AutoFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Monkey" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AutoFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AutoFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Logger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AutoFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AutoFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AutoFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AutoFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AutoFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AutoFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ApkPath" />
+              <option name="myItemId" value="WeLink" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -475,7 +375,7 @@
       <recent name="D:\Work_Spaces\PyCharm_Project\AutoFramework\Result" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.AppiumTools">
+  <component name="RunManager" selected="Python.WeLinkRequest">
     <configuration default="false" name="test_start_app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -512,25 +412,25 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="CheckEnviron" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="AppStability" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Monkey" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="AutoFramework" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/CheckEnviron.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Monkey/AppStability.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="LibraryTools" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="AdbTools" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -543,25 +443,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="AutoFramework" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/LibraryTools.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/AdbTools.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="AssertTools" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="WeLinkRequest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WeLink" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="AutoFramework" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/AssertTools.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WeLink/WeLinkRequest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -783,17 +683,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.test_start_app" />
       <item index="1" class="java.lang.String" itemvalue="Python.AppiumTools" />
-      <item index="2" class="java.lang.String" itemvalue="Python.CheckEnviron" />
-      <item index="3" class="java.lang.String" itemvalue="Python.LibraryTools" />
-      <item index="4" class="java.lang.String" itemvalue="Python.AssertTools" />
+      <item index="2" class="java.lang.String" itemvalue="Python.AppStability" />
+      <item index="3" class="java.lang.String" itemvalue="Python.AdbTools" />
+      <item index="4" class="java.lang.String" itemvalue="Python.WeLinkRequest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.AppiumTools" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test_start_app" />
-        <item index="2" class="java.lang.String" itemvalue="Python.AssertTools" />
-        <item index="3" class="java.lang.String" itemvalue="Python.LibraryTools" />
-        <item index="4" class="java.lang.String" itemvalue="Python.CheckEnviron" />
+        <item index="0" class="java.lang.String" itemvalue="Python.WeLinkRequest" />
+        <item index="1" class="java.lang.String" itemvalue="Python.AppStability" />
+        <item index="2" class="java.lang.String" itemvalue="Python.AdbTools" />
+        <item index="3" class="java.lang.String" itemvalue="Python.AppiumTools" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test_start_app" />
       </list>
     </recent_temporary>
   </component>
@@ -844,7 +744,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609819082989</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary=":bug:Rebuilding monkey automation and repairing parent folder">
+      <created>1610114196583</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610114196583</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -890,16 +797,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15575501" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5021119" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26193118" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3107658" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30010718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4328524" sideWeight="0.49788806" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4328524" sideWeight="0.49788806" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39955604" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -939,7 +846,8 @@
     <MESSAGE value=":bug:Fix the exception when multiple devices run monkey script" />
     <MESSAGE value=":art:Modify the code format to big hump and add classmethod to replace it with () reference" />
     <MESSAGE value=":bug:Add appium bootstrap and fix assertion import" />
-    <option name="LAST_COMMIT_MESSAGE" value=":bug:Add appium bootstrap and fix assertion import" />
+    <MESSAGE value=":bug:Rebuilding monkey automation and repairing parent folder" />
+    <option name="LAST_COMMIT_MESSAGE" value=":bug:Rebuilding monkey automation and repairing parent folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -949,32 +857,11 @@
           <line>10</line>
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Utils/RandomText.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="142" column="39" lean-forward="false" selection-start-line="142" selection-start-column="39" selection-end-line="142" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/ReadTestCases.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="45" column="30" lean-forward="false" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/ScannerCase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utils/SendEmali.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="507">
@@ -1053,13 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/ConfigParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utils/AppStability.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -1127,14 +1007,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/DirTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Program Files/Python37/Lib/http/client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6168">
@@ -1167,7 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="86" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="94" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1187,37 +1058,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/LibraryTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1488">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/AssertTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utils/CheckEnviron.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/AdbTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding>
-            <element signature="e#173#185#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1237,21 +1082,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/DirTools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/AdbTools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="45" column="64" lean-forward="false" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+          <folding>
+            <element signature="e#173#185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Utils/AppiumTools.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2307">
           <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="e#151#160#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/AssertTools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/LibraryTools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1488">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/ConfigParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3840">
+          <caret line="161" column="34" lean-forward="false" selection-start-line="161" selection-start-column="26" selection-end-line="161" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Monkey/AppStability.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        <state relative-caret-position="1758">
+          <caret line="155" column="13" lean-forward="false" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
+          <folding>
+            <element signature="e#180#197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeLink/2021-01-08-抽奖记录.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeLink/2021-01-09-抽奖记录.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeLink/WeLinkRequest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="122" column="31" lean-forward="true" selection-start-line="122" selection-start-column="31" selection-end-line="122" selection-end-column="31" />
+          <folding>
+            <element signature="e#182#193#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
