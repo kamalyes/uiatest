@@ -7,6 +7,7 @@
 # Desc: Adb工具类
 # Date： 2020/9/6 18:56
 '''
+import linecache
 import os,re
 import platform,datetime
 import subprocess
@@ -234,6 +235,21 @@ class Adb_Manage(object):
             logger.info(connect)
         return check_ip
 
+    def grepEnterActivity(self,package):
+        """
+        过滤指定包名的一些信息及主入口
+        :return:
+        """
+        content = os.popen('%s shell dumpsys package %s "'%(self.commod,package)) # 读取当前页面
+        lines = content.readlines()
+        index = 0
+        for line in lines:
+            index += 1
+            if "Non-Data Actions:" in line.strip():
+                activity = lines[index+1].strip().split(" ")[1]
+                logger.info("捕捉到主入口：%s"%(activity))
+                return activity
+
     def grepActivity(self):
         """
         过滤当前Actviity
@@ -360,28 +376,37 @@ class Adb_Manage(object):
             logger.error("%s" % (screen[1]))
             return False
 
-    def analysisCrash(self, filePath,file_Name=""):
+    def analysisCrash(self, filePath):
         """
         分析logcat日志
         :param key_word：关键字
         :param filePath：文件路径
-        :param file_Name：文件名
         :return: count   用于统计数量
        """
-        count = 0
-        key_word = ['ANR', 'FATAL']
-        Crash_Path =filePath+file_Name
-        with open(Crash_Path, 'rt', encoding="utf-8") as file:
-            for line in file:
-                for word in key_word:
-                    if word in line:
-                        text = file.readlines()
-                        with open(filePath + "/CrashInfo.txt", "a") as w:
-                            w.writelines(text)
-                            count += 1
-                            w.close()
-        file.close()
-        return count
+        try:
+            if os.path.exists(filePath):
+                logger.info("正在过滤文本：%s"%(filePath))
+                with open(filePath,"r") as file:
+                    lines = file.readlines()
+                    index = 0
+                    count = 0
+                    rows = []
+                    for line in lines:
+                        index += 1
+                        if "crash" in line:
+                            count +=1
+                            startStr = linecache.getline(filePath, index)
+                            rows.append(index)
+                            maxIndex = index + 35
+                            for i in range(index,maxIndex):
+                                connetStr = linecache.getline(filePath, i)
+                    logger.info("Bug数量：%s   行数：%s"%(count,rows))
+        except FileNotFoundError:
+            logger.error('无法打开指定的文件！！！')
+        except LookupError:
+            logger.error('指定了未知的编码！！！')
+        except UnicodeDecodeError:
+            logger.error('读取文件时解码错误！！！')
 
     def getPhoneInfo(self):
         """
@@ -687,3 +712,5 @@ if __name__ == '__main__':
     # adb.reboot()
     # adb.recovery()
     # adb.fastboot()
+    # adb.analysisCrash(r"E:\WorkSpace\PycharmProjects\AutoFramework\Result\AutoMonkey\20200109-Crash.log")
+    # adb.grepEnterActivity("com.mryu.devstudy")

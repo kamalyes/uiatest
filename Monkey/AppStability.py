@@ -5,7 +5,7 @@
 # FileName： AppStability.py
 # Author : v_yanqyu
 # Desc: Monkey脚本
-# Date： 2020/10/25 10:57
+# Date： 2020/1:11 10:57
 '''
 import linecache
 import re,os,time
@@ -18,7 +18,7 @@ Adb = Adb_Manage()
 logger = Logger.write_log()
 getpwd =DocProcess.getSuperiorDir()
 class Monkey():
-    def __init__(self,device):
+    def __init__(self,device=None):
         """
         :param device:  设备ID
         :param today 当前时间
@@ -27,10 +27,8 @@ class Monkey():
         :param tempFile 临时文件
         :param allMonkeyLog 所有的日志文件
         :param allcrashLog crash日志文件路径
-
         :param package 测试包名
         :param mactivity 主窗口
-
         :param grepMonkey adb shell "ps | grep monkey"
         :param apkpath 安装包路径
         :param operation Monkey事件参数
@@ -41,19 +39,24 @@ class Monkey():
         :param commod 将monkey指定的参数都统一加一起
         """
         # 文件读取及存储的路径
-        self.devices = device
-        self.shell = "adb -s %s shell"%(device)
+        if device is None:
+            devices = re.findall('\n(.+?)\t', subprocess.getstatusoutput("adb devices")[1])
+            self.devices = devices[0]
+        else:
+            self.devices = device
         self.send = int(time.time())
-        self.today = time.strftime("%Y%m%d%H%M%S").replace("4","6")
-        self.logPath =r"/sdcard/AutoMonkey/"
         self.resultPath =r"../Result/"
+        self.shell = "adb -s %s shell"%(self.devices)
+        self.today = time.strftime("%Y%m%d%H%M%S").replace("4","6")
+        self.package = IniHandle.optValue(node="Monkey_Test",key="package")
+        self.logPath =r"/sdcard/AutoMonkey/%s/"%(self.package)
         self.AutoMonkeyPath =r"%sAutoMonkey"%(self.resultPath)
-        self.tempFile = r"../Result/%s-AllMonkey.log"%(self.today)
-        self.allMonkeyLog = "%s%s-AllMonkey.log"%(self.logPath,self.today)
+        # Monkey [option] <count> 1>default.txt 2>error.txt
+        self.default = "%s%s-default.log"%(self.logPath,self.today)
+        self.error = "%s%s-error.log"%(self.logPath,self.today)
         self.allCrashLog = r"%s%s-Crash.log"%(self.logPath,self.today)
         self.apkpath =os.path.join(getpwd,IniHandle.optValue(node="Monkey_Test",key="apkpath"))
         # 包名及主activity
-        self.package = IniHandle.optValue(node="Monkey_Test",key="package")
         self.mactivity = IniHandle.optValue(node="Monkey_Test",key="mainactivity")
         # commodMonkey 命令
         self.grepMonkey = IniHandle.optValue(node="Monkey_Test",key="grepMonkey")
@@ -62,7 +65,8 @@ class Monkey():
         self.ignore =  IniHandle.optValue(node="Monkey_Test",key="ignore")
         self.loglevel = IniHandle.optValue(node="Monkey_Test",key="loglevel")
         self.count = IniHandle.optValue(node="Monkey_Test",key="count")
-        self.commod = ('%s monkey -p %s %s %s %s %s -s %s %s "> %s"'%(self.shell,self.package,self.operation,self.throttle,self.ignore,self.loglevel,self.send,self.count,self.allMonkeyLog))
+        self.commod = ('%s monkey -p %s %s %s %s %s -s %s %s " 1> %s 2>%s"'%(self.shell,self.package,self.operation,self.throttle,self.ignore,self.loglevel,self.send,self.count,self.default,self.error))
+        self.time =IniHandle.optValue(node="Monkey_Test",key="time")
 
     def checklocal(self):
         """
@@ -74,24 +78,24 @@ class Monkey():
 
     def uninstallApk(self):
         if self.checklocal() !='':
-            uninstallInfo = subprocess.getstatusoutput('adb -s %s uninstall %s' % (self.devices, self.apkpath))
-            if 'Success' in uninstallInfo[1]:
+            uninstall = subprocess.getstatusoutput('adb -s %s uninstall %s' % (self.devices, self.apkpath))
+            if 'Success' in uninstall[1]:
                 logger.info("设备：%s 卸载%s成功" % (self.devices, self.apkpath))
                 return True
             else:
-                logger.error("设备：%s 卸载失败，错误信息：%s" % (self.devices, uninstallInfo[1] ))
+                logger.error("设备：%s 卸载失败，错误信息：%s" % (self.devices, uninstall[1] ))
 
     def installApk(self):
         """
         安装测试APK
         :return:
         """
-        installInfo = subprocess.getstatusoutput('adb -s %s install -r %s' % (self.devices, self.apkpath))
-        if 'Success' in installInfo[1]:
+        install = subprocess.getstatusoutput('adb -s %s install -r %s' % (self.devices, self.apkpath))
+        if 'Success' in install[1]:
             logger.info("设备：%s 安装%s成功" % (self.devices, self.apkpath))
             return True
         else:
-            logger.error("设备：%s 安装失败，错误信息：%s" % (self.devices, installInfo[1]))
+            logger.error("设备：%s 安装失败，错误信息：%s" % (self.devices, install[1]))
 
     def killMonkeyThread(self):
         """
@@ -100,11 +104,11 @@ class Monkey():
         """
         try:
             monkeyPid = []
-            grepMonkey = subprocess.Popen(self.grepMonkey, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+            monkey = subprocess.Popen(self.grepMonkey, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
                                           stderr=subprocess.PIPE).stdout.readlines()
             # [b'shell        29622 29127 4135336  56328 futex_wait_queue_me 0 S com.android.commands.monkey\r\n']
-            if len(grepMonkey) != 0:
-                port = str(grepMonkey[0]).split(" ")
+            if len(monkey) != 0:
+                port = str(monkey[0]).split(" ")
                 for i in range(len(port)):
                     if port[i] != "":
                         monkeyPid.append(port[i])
@@ -132,7 +136,8 @@ class Monkey():
         """
         clearLog = "%s logcat -c " % (self.shell)
         grepCrash ='adb logcat -b "crash" -f %s' % (self.allCrashLog)
-        clearLogInfo = os.popen(clearLog)
+        clearLogInfo =  os.popen(clearLog)
+        clearLogInfo.close()
         logger.info(clearLog)
         if clearLogInfo == "1":
             logger.error("%s"%(clearLogInfo))
@@ -147,20 +152,17 @@ class Monkey():
         :return:
         """
         coverPage = subprocess.getstatusoutput('%s am start -n %s' % (self.shell,self.mactivity))
-        error = re.findall(r'not.*', str(coverPage[1]))
-        if error !=[]:
-            logger.info("跳转Activity失败ErrorInfo：\n%s"%(str(coverPage[1])))
-        else :
-            logger.info("成功跳转至Activity：%s"%(self.mactivity))
+        logger.info("%s"%(str(coverPage[1])))
 
     def initFile(self):
         """
         初始化文件(发现6系统的删除了文件后需要重启设备才看到，bug记录下)
         :return:
         """
-        logger.info("初始化日志存储位置：\nCrash：%s\nMonkey：%s" % (self.allCrashLog, self.allMonkeyLog))
+        logger.info("初始化日志存储位置：\nCrash：%s\nMonkey：[%s,%s]" % (self.allCrashLog, self.default,self.error))
         os.popen("%s ''rm -rf %s''" % (self.shell, self.logPath))
-        os.popen("%s ''mkdir %s''" % (self.shell, self.logPath))
+        os.popen("%s ''mkdir -p %s''" % (self.shell, self.logPath))
+
 
     def pullFile(self):
         """
@@ -178,7 +180,17 @@ class Monkey():
         subprocess.Popen("%s settings put global policy_control null" % (self.shell))
         os.popen('%s wm overscan 0,0,0,0' % (self.shell))
 
-    def startMonkey(self,policy=None):
+    def forceApp(self, package):
+        """
+        退出应用
+        :return: quit_app
+        """
+        stop = subprocess.getstatusoutput("%s am force-stop %s " % (self.shell, package))
+        logger.info("%s am force-stop %s " % (self.shell, package))
+        logger.info("已成功退出%s " % (package))
+        return stop
+
+    def startMonkey(self,policy=None,uninstall=None,install=None):
         """
         首次启动Monkey
         :param policy:  是否需要设置底部键盘栏及状态栏隐藏
@@ -194,11 +206,17 @@ class Monkey():
             subprocess.Popen("%s settings put global policy_control null"%(self.shell))
         self.initFile()
         self.killMonkeyThread()
-        self.uninstallApk()
-        self.installApk()
+        self.forceApp(self.package)
+        if uninstall !=None:
+            self.uninstallApk()
+        if install !=None:
+            self.installApk()
         logger.info("Monkey最终的运行参数：%s"%(self.commod))
         subprocess.Popen(self.commod)
         self.grepCrashLog()
+        # while True:
+        #     time.sleep(int(self.time))
+        #     self.startActivity()
 
     def getRelust(self):
         """
@@ -238,5 +256,8 @@ class Monkey():
             logger.error('读取文件时解码错误！！！')
 
 if __name__ == '__main__':
-    Monkey("538640ed").startMonkey()
+    Monkey().startMonkey("full")
+    # Monkey("538640ed").getRelust()
+    # Monkey().killMonkeyThread()
+    # Monkey().initFile()
     # Monkey("538640ed").grepError(r"D:\Work_Spaces\PyCharm_Project\AutoFramework\Result\AutoMonkey\20200109-Crash.log")
