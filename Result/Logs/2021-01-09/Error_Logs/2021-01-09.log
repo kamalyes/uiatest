@@ -1,0 +1,8 @@
+2021-01-09 12:01:21,003 - AdbTools.py [line:89] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2021-01-09 13:38:09,471 - AdbTools.py [line:89] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2021-01-09 13:38:09,554 - AdbTools.py [line:89] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2021-01-09 18:02:40,923 - AppStability.py [line:85] - ERROR: 设备：D8H6R19630008844 安装失败，错误信息：'D8H6R19630008844' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2021-01-09 18:03:07,800 - AppStability.py [line:85] - ERROR: 设备：D8H6R19630008844 安装失败，错误信息：/system/bin/sh: install: not found
+2021-01-09 18:03:35,905 - AppStability.py [line:85] - ERROR: 设备：D8H6R19630008844 安装失败，错误信息：/system/bin/sh: install: not found
+2021-01-09 18:05:52,099 - AppStability.py [line:85] - ERROR: 设备：D8H6R19630008844 安装失败，错误信息：/system/bin/sh: install: not found

@@ -1,0 +1,83 @@
+2021-01-09 22:15:56.551 18558-18558/com.mryu.devstudy I/openSDK_LOG.QQAuth: setAccessToken(), validTimeInSecond = -1
+2021-01-09 22:15:56.552 18558-18558/com.mryu.devstudy I/openSDK_LOG.Tencent: checkLogin()
+2021-01-09 22:15:56.550 18558-18558/com.mryu.devstudy I/openSDK_LOG.HttpUtils: OpenApi requestAsync
+2021-01-09 22:15:56.559 18558-18558/com.mryu.devstudy D/NetworkSecurityConfig: No Network Security Config specified, using platform default
+2021-01-09 22:15:56.575 18558-18558/com.mryu.devstudy D/ActivityThread: add activity client record, r= ActivityRecord{ecf0b7e token=android.os.BinderProxy@957c5cc {com.mryu.devstudy/com.mryu.devstudy.activity.SplashActivity}} token= android.os.BinderProxy@957c5cc
+2021-01-09 22:15:56.578 18558-18558/com.mryu.devstudy D/ZrHung.AppEyeUiProbe: notify runnable to start.
+2021-01-09 22:15:56.582 18558-18558/com.mryu.devstudy D/OpenGLRenderer: Skia GL Pipeline
+2021-01-09 22:15:56.588 18558-18558/com.mryu.devstudy D/OpenGLRenderer:   HWUI Binary is  enabled
+2021-01-09 22:15:56.588 18558-18558/com.mryu.devstudy D/OpenGLRenderer: disableOutlineDraw is true
+2021-01-09 22:15:56.589 18558-18531/com.mryu.devstudy I/openSDK_LOG.HttpUtils: OpenApi request
+2021-01-09 22:15:56.592 18558-18525/com.mryu.devstudy I/openSDK_LOG.HttpUtils: -->openUrl2 encodedParam =status_os=9&status_version=28&status_machine=SPN-AL00&sdkp=a&sdkv=3.5.1.lite&appid=1110529550 -- url = https://cgi.connect.qq.com/qqconnectopen/openapi/policy_conf?
+2021-01-09 22:15:56.595 18558-18531/com.mryu.devstudy I/openSDK_LOG.HttpUtils: -->openUrl2 encodedParam =status_os=9&format=json&status_version=28&status_machine=SPN-AL00&pf=openmobile_android&sdkp=a&sdkv=3.5.1.lite&reqType=checkLogin -- url = https://openmobile.qq.com/v3/user/get_info?
+2021-01-09 22:15:56.597 18558-18516/com.mryu.devstudy E/openSDK_LOG: -->obtainFileWriter() old log file permission denied
+2021-01-09 22:15:56.608 18558-18558/com.mryu.devstudy W/m.mryu.devstud: Accessing hidden field Landroid/view/WindowInsets;->CONSUMED:Landroid/view/WindowInsets; (light greylist, reflection)
+2021-01-09 22:15:56.609 18558-18558/com.mryu.devstudy W/m.mryu.devstud: Accessing hidden method Landroid/graphics/Insets;->of(IIII)Landroid/graphics/Insets; (light greylist, linking)
+2021-01-09 22:15:56.625 18558-18558/com.mryu.devstudy W/InputMethodManager: startInputReason = 1
+2021-01-09 22:15:56.628 18558-18558/com.mryu.devstudy W/InputMethodManager: startInputReason = 5
+2021-01-09 22:15:56.628 18558-18536/com.mryu.devstudy I/ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+2021-01-09 22:15:56.628 18558-18536/com.mryu.devstudy I/ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+2021-01-09 22:15:56.629 18558-18536/com.mryu.devstudy I/iGraphics: [0020080c] pn: com.mryu.devstudy, p: 18558
+2021-01-09 22:15:56.629 18558-18536/com.mryu.devstudy I/iGraphics: [0030080c] no spt app: com.mryu.devstudy
+2021-01-09 22:15:56.629 18558-18536/com.mryu.devstudy I/OpenGLRenderer: Initialized EGL, version 1.5, mEglDisplay 0x1
+2021-01-09 22:15:56.630 18558-18536/com.mryu.devstudy D/OpenGLRenderer: Swap behavior 2
+2021-01-09 22:15:56.651 18558-18536/com.mryu.devstudy D/mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+2021-01-09 22:15:56.663 18558-18551/com.mryu.devstudy D/HiTouch_PressGestureDetector: onAttached, package=com.mryu.devstudy, windowType=1, mHiTouchRestricted=false
+2021-01-09 22:15:56.981 18558-18533/com.mryu.devstudy W/m.mryu.devstud: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setAlpnProtocols([B)V (light greylist, reflection)
+2021-01-09 22:15:57.321 18558-18533/com.mryu.devstudy W/m.mryu.devstud: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getAlpnSelectedProtocol()[B (light greylist, reflection)
+2021-01-09 22:15:57.376 18558-18531/com.mryu.devstudy I/openSDK_LOG.HttpUtils: -->openUrl2 response cdoe =200
+2021-01-09 22:15:57.382 18558-18531/com.mryu.devstudy I/openSDK_LOG.HttpUtils: OpenApi onComplete
+2021-01-09 22:15:57.527 18558-18527/com.mryu.devstudy D/SplashActivity: mTimeHandler：Handler (com.mryu.devstudy.activity.SplashActivity$5) {235f008}
+2021-01-09 22:15:57.527 18558-18558/com.mryu.devstudy D/SplashActivity: mSkipTimeText ClickableStatus is true
+2021-01-09 22:15:58.527 18558-18527/com.mryu.devstudy D/SplashActivity: mTimeHandler：Handler (com.mryu.devstudy.activity.SplashActivity$5) {235f008}
+2021-01-09 22:15:58.527 18558-18558/com.mryu.devstudy D/SplashActivity: mSkipTimeText ClickableStatus is true
+2021-01-09 22:15:59.528 18558-18527/com.mryu.devstudy D/SplashActivity: mTimeHandler：Handler (com.mryu.devstudy.activity.SplashActivity$5) {235f008}
+2021-01-09 22:15:59.528 18558-18558/com.mryu.devstudy D/SplashActivity: mSkipTimeText ClickableStatus is true
+2021-01-09 22:15:00.030 18558-18558/com.mryu.devstudy D/skia: --- Failed to create image decoder with message 'unimplemented'
+2021-01-09 22:15:00.032 18558-18558/com.mryu.devstudy D/HwGalleryCacheManagerImpl: mIsEffect:false
+2021-01-09 22:15:00.535 18558-18527/com.mryu.devstudy D/SplashActivity: mTimeHandler：Handler (com.mryu.devstudy.activity.SplashActivity$5) {235f008}
+2021-01-09 22:15:00.536 18558-18558/com.mryu.devstudy D/SplashActivity: mSkipTimeText ClickableStatus is true
+2021-01-09 22:15:00.561 18558-18558/com.mryu.devstudy D/ZrHung.AppEyeUiProbe: stop checker.
+2021-01-09 22:15:00.570 18558-18558/com.mryu.devstudy W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@73de711
+2021-01-09 22:15:00.571 18558-18558/com.mryu.devstudy D/ZrHung.AppEyeUiProbe: notify runnable to start.
+2021-01-09 22:15:00.581 18558-18558/com.mryu.devstudy V/ActivityThread: callActivityOnCreate
+2021-01-09 22:15:00.595 18558-18558/com.mryu.devstudy D/AndroidRuntime: Shutting down VM
+2021-01-09 22:15:00.598 18558-18558/com.mryu.devstudy W/m.mryu.devstud: Accessing hidden method Lcom/msic/qarth/PatchStore;->createDisableExceptionQarthFile(Ljava/lang/Throwable;)Z (blacklist, JNI)
+2021-01-09 22:15:00.599 18558-18558/com.mryu.devstudy I/QarthLog: [PatchStore] createDisableExceptionQarthFile
+2021-01-09 22:15:00.599 18558-18558/com.mryu.devstudy I/QarthLog: [PatchStore] create disable file for com.mryu.devstudy uid is 11006
+    
+    --------- beginning of crash
+2021-01-09 22:15:00.600 18558-18558/com.mryu.devstudy E/AndroidRuntime: FATAL EXCEPTION: main
+    Process: com.mryu.devstudy, PID: 18558
+    java.lang.RuntimeException: Unable to start activity ComponentInfo{com.mryu.devstudy/com.mryu.devstudy.activity.LoginActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3576)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3658)
+        at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:86)
+        at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:117)
+        at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:75)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2209)
+        at android.os.Handler.dispatchMessage(Handler.java:112)
+        at android.os.Looper.loop(Looper.java:216)
+        at android.app.ActivityThread.main(ActivityThread.java:7586)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:525)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1035)
+     Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
+        at com.mryu.devstudy.activity.LoginActivity.setListener(LoginActivity.java:159)
+        at com.mryu.devstudy.activity.LoginActivity.onCreate(LoginActivity.java:115)
+        at android.app.Activity.performCreate(Activity.java:7507)
+        at android.app.Activity.performCreate(Activity.java:7597)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1280)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3555)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3658) 
+        at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:86) 
+        at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:117) 
+        at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:75) 
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2209) 
+        at android.os.Handler.dispatchMessage(Handler.java:112) 
+        at android.os.Looper.loop(Looper.java:216) 
+        at android.app.ActivityThread.main(ActivityThread.java:7586) 
+        at java.lang.reflect.Method.invoke(Native Method) 
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:525) 
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1035) 
+2021-01-09 22:15:00.609 18558-18558/? I/Process: Sending signal. PID: 18558 SIG: 9

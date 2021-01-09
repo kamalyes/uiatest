@@ -86,7 +86,7 @@ class Adb_Manage(object):
                     # logger.info("设备连接成功%s" % (devices))
                     return devices
                 else:
-                    logger.error("请检查目标设备是否与主机连接成功！！！")
+                    # logger.error("请检查目标设备是否与主机连接成功！！！")
                     return False
             else:
                 logger.error("本地没有配置Android_SDK环境！！！")
@@ -253,6 +253,25 @@ class Adb_Manage(object):
                 return pwd_activity
         except Exception as TypeError:
             logger.error(TypeError)
+
+    def grepActivity(self,devices=None):
+        """
+        过滤当前Actviity
+        :return:
+        """
+        activity = []
+        if len(devices) == 1:
+            content = os.popen('adb shell dumpsys activity  |findstr "mResumedActivity" ').read()  # 读取当前页面
+            grepactivity = re.compile(r'com.*').findall(content)[0].split(' ')[0]
+            activity.append(grepactivity)
+        elif len(devices) > 1:
+            for i in range(len(devices)):
+                content = os.popen(
+                    'adb -s %s shell dumpsys activity  |findstr "mResumedActivity" ' % (devices[i])).read()  # 读取当前页面
+                grepactivity = re.compile(r'com.*').findall(content)[0].split(' ')[0]
+                activity.append(grepactivity)
+        # logger.info('当前运行窗口：%s' % (activity))
+        return activity
 
     def get_battery_info(self,devices):
         '''
