@@ -1,0 +1,6 @@
+2021-01-11 20:12:28,689 - AdbTools.py [line:27] - ERROR: 设备未找到
+2021-01-11 20:12:48,942 - AdbTools.py [line:27] - ERROR: 设备未找到
+2021-01-11 20:13:09,185 - AdbTools.py [line:27] - ERROR: 'bool' object is not subscriptable
+2021-01-11 20:15:35,790 - AdbTools.py [line:113] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2021-01-11 20:15:37,216 - AdbTools.py [line:113] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2021-01-11 20:15:40,104 - AdbTools.py [line:113] - ERROR: 请检查目标设备是否与主机连接成功！！！

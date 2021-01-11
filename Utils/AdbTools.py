@@ -14,11 +14,18 @@ from Logger.GlobalLog import Logger
 from Utils import DirTools
 logger = Logger.write_log()#调用日志模块
 class Adb_Manage(object):
-    def __init__(self):
+    def __init__(self,devicesId=None):
         """
         初始化设备id
+        Traceback (most recent call last):（报错异常原因 设备未找到）
+            adb = Adb_Manage()
+            self.devicesId = self.getDevices()[0]
+        TypeError: 'bool' object is not subscriptable
         """
-        self.devicesId = self.getDevices()[0]
+        if devicesId ==None:
+            self.devicesId = self.getDevices()[0]
+        else:
+            self.devicesId = devicesId
         self.commod = "adb -s %s"%(self.devicesId)
 
     def checkFiltered(self):
@@ -96,20 +103,17 @@ class Adb_Manage(object):
         :param devices_info：CMD输入
         :return devices：设备ID
         """
-        try:
-            adb_info = self.getSdkPath()
-            if adb_info == True:
-                devices = re.findall('\n(.+?)\t', subprocess.getstatusoutput("adb devices")[1])
-                if devices != []:
-                    # logger.info("设备连接成功%s" % (devices))
-                    return devices
-                else:
-                    # logger.error("请检查目标设备是否与主机连接成功！！！")
-                    return False
+        adb_info = self.getSdkPath()
+        if adb_info == True:
+            devices = re.findall('\n(.+?)\t', subprocess.getstatusoutput("adb devices")[1])
+            if devices != []:
+                # logger.info("设备连接成功%s" % (devices))
+                return devices
             else:
-                logger.error("本地没有配置Android_SDK环境！！！")
-        except Exception as TypeError:
-            logger.error("Device Connect Fail:", TypeError)
+                logger.error("请检查目标设备是否与主机连接成功！！！")
+                return False
+        else:
+            logger.error("本地没有配置Android_SDK环境！！！")
 
     def getRootStatus(self):
         """
