@@ -7,8 +7,13 @@
 # Desc: Monkey脚本
 # Date： 2020/10/25 10:57
 '''
+import linecache
 import re,os,time
+import shutil
 import subprocess
+
+import itertools
+
 from Logger.GlobalLog import Logger
 from Utils.ConfigParser import  IniHandle
 from Utils.DirTools import  DocProcess
@@ -62,7 +67,6 @@ class Monkey():
         self.loglevel = IniHandle.optValue(node="Monkey_Test",key="loglevel")
         self.count = IniHandle.optValue(node="Monkey_Test",key="count")
         self.commod = ('%s monkey -p %s %s %s %s %s -s %s %s "> %s"'%(self.shell,self.package,self.operation,self.throttle,self.ignore,self.loglevel,self.send,self.count,self.allMonkeyLog))
-        self.keyword = IniHandle.optValue(node="Monkey_Test",key="keyword").split(",")
 
     def checklocal(self):
         """
@@ -71,6 +75,15 @@ class Monkey():
         """
         packageName = subprocess.getstatusoutput('%s pm list packages "| grep %s"' % (self.shell,self.package))[1][8:].strip('\r\n')
         return packageName
+
+    def uninstallApk(self):
+        if self.checklocal() !='':
+            uninstallInfo = subprocess.getstatusoutput('adb -s %s uninstall %s' % (self.devices, self.apkpath))
+            if 'Success' in uninstallInfo[1]:
+                logger.info("设备：%s 卸载%s成功" % (self.devices, self.apkpath))
+                return True
+            else:
+                logger.error("设备：%s 卸载失败，错误信息：%s" % (self.devices, uninstallInfo[1] ))
 
     def installApk(self):
         """
@@ -146,7 +159,7 @@ class Monkey():
 
     def initFile(self):
         """
-        初始化文件
+        初始化文件(发现6系统的删除了文件后需要重启设备才看到，bug记录下)
         :return:
         """
         logger.info("初始化日志存储位置：\nCrash：%s\nMonkey：%s" % (self.allCrashLog, self.allMonkeyLog))
@@ -185,6 +198,8 @@ class Monkey():
             subprocess.Popen("%s settings put global policy_control null"%(self.shell))
         self.initFile()
         self.killMonkeyThread()
+        self.uninstallApk()
+        self.installApk()
         logger.info("Monkey最终的运行参数：%s"%(self.commod))
         subprocess.Popen(self.commod)
         self.grepCrashLog()
@@ -198,19 +213,35 @@ class Monkey():
         self.coverSetting()
         self.pullFile()
 
-    def grepError(self):
-        filePath = []
-        for dirpath, dirnames, filenames in os.walk(self.AutoMonkeyPath):
-            logger.info("检索到路径：%s下有%s个文件 %s"%(dirpath,len(filenames),filenames))
-            for i in range(len(filenames)):
-                filePath.append("%s/%s"%(dirpath,filenames[i]))
-            logger.info("拼接路径：%s"%(filePath))
-            for i in range(len(filePath)):
-                with open(filePath[i]) as file:
-                    for line in file.readlines():
-                        line = line.strip('\n')
+    def grepError(self,filePath):
+        try:
+            tempPath = "%s.grep"%(filePath)
+            if os.path.exists(filePath):
+                logger.info("最终拼接路径：%s,输出路径：%s"%(filePath,tempPath))
+                with open(filePath,"r") as file,open(tempPath,"w") as res:
+                    lines = file.readlines()
+                    index = 0
+                    count = 0
+                    rows = []
+                    for line in lines:
+                        index += 1
+                        if "crash" in line:
+                            count +=1
+                            startStr = linecache.getline(filePath, index)
+                            rows.append(index)
+                            maxIndex = index + 35
+                            for i in range(index,maxIndex):
+                                connetStr = linecache.getline(filePath, i)
+                                res.write(connetStr)
+                    logger.info("Bug数量：%s   行数：%s"%(count,rows))
+        except FileNotFoundError:
+            logger.error('无法打开指定的文件！！！')
+        except LookupError:
+            logger.error('指定了未知的编码！！！')
+        except UnicodeDecodeError:
+            logger.error('读取文件时解码错误！！！')
 
 if __name__ == '__main__':
-    # Monkey("D8H6R19630008844").startMonkey()
-    Monkey("D8H6R19630008844").grepError()
+    Monkey("538640ed").startMonkey()
+    # Monkey("538640ed").grepError(r"D:\Work_Spaces\PyCharm_Project\AutoFramework\Result\AutoMonkey\20200109-Crash.log")
 

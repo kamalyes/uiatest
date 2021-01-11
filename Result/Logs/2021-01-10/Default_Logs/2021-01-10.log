@@ -68,3 +68,115 @@
 2021-01-10 06:16:15,812 - AppStability.py [line:207] - INFO: 拼接路径：['../Result/AutoMonkey/20200109-Crash.log', '../Result/AutoMonkey/2020010905-AllRunMonkey.log']
 2021-01-10 06:16:28,382 - AppStability.py [line:204] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
 2021-01-10 06:16:28,382 - AppStability.py [line:207] - INFO: 拼接路径：['../Result/AutoMonkey/20200109-Crash.log', '../Result/AutoMonkey/2020010905-AllRunMonkey.log']
+2021-01-10 23:14:29,704 - AppStability.py [line:204] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:14:29,704 - AppStability.py [line:207] - INFO: 拼接路径：['../Result/AutoMonkey/20200109-Crash.log', '../Result/AutoMonkey/2020010905-AllRunMonkey.log']
+2021-01-10 23:14:44,893 - AppStability.py [line:204] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:14:44,893 - AppStability.py [line:207] - INFO: 拼接路径：['../Result/AutoMonkey/20200109-Crash.log', '../Result/AutoMonkey/2020010905-AllRunMonkey.log']
+2021-01-10 23:15:59,469 - AppStability.py [line:204] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:15:59,469 - AppStability.py [line:207] - INFO: 拼接路径：['../Result/AutoMonkey/20200109-Crash.log', '../Result/AutoMonkey/2020010905-AllRunMonkey.log']
+2021-01-10 23:17:31,840 - AppStability.py [line:204] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:18:18,601 - AppStability.py [line:204] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:18:47,506 - AppStability.py [line:204] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:18:47,506 - AppStability.py [line:208] - INFO: 拼接路径：['../Result/AutoMonkey/20200109-Crash.log', '../Result/AutoMonkey/2020010905-AllRunMonkey.log']
+2021-01-10 23:18:59,666 - AppStability.py [line:204] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:18:59,666 - AppStability.py [line:207] - INFO: 拼接路径：['../Result/AutoMonkey/20200109-Crash.log', '../Result/AutoMonkey/2020010905-AllRunMonkey.log']
+2021-01-10 23:19:52,502 - AppStability.py [line:204] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:19:52,502 - AppStability.py [line:208] - INFO: 拼接路径：['../Result/AutoMonkey/20200109-Crash.log', '../Result/AutoMonkey/2020010905-AllRunMonkey.log']
+2021-01-10 23:20:06,449 - AppStability.py [line:204] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:20:06,449 - AppStability.py [line:208] - INFO: 拼接路径：['../Result/AutoMonkey/20200109-Crash.log', '../Result/AutoMonkey/2020010905-AllRunMonkey.log']
+2021-01-10 23:20:56,255 - AppStability.py [line:204] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:20:56,255 - AppStability.py [line:210] - INFO: 拼接路径：['../Result/AutoMonkey/20200109-Crash.log', '../Result/AutoMonkey/2020010905-AllRunMonkey.log']
+2021-01-10 23:21:09,592 - AppStability.py [line:204] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:21:26,173 - AppStability.py [line:204] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:21:47,609 - AppStability.py [line:204] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:21:47,609 - AppStability.py [line:209] - INFO: 拼接路径：['../Result/AutoMonkey/20200109-Crash.log', '../Result/AutoMonkey/2020010905-AllRunMonkey.log']
+2021-01-10 23:22:40,021 - AppStability.py [line:204] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log.bak', '2020010905-AllRunMonkey.log.bak']
+2021-01-10 23:22:40,021 - AppStability.py [line:209] - INFO: 拼接路径：['../Result/AutoMonkey/20200109-Crash.log.bak', '../Result/AutoMonkey/2020010905-AllRunMonkey.log.bak']
+2021-01-10 23:23:14,784 - AppStability.py [line:204] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log.bak.bak', '2020010905-AllRunMonkey.log.bak.bak']
+2021-01-10 23:23:14,784 - AppStability.py [line:209] - INFO: 拼接路径：['../Result/AutoMonkey/20200109-Crash.log.bak.bak']
+2021-01-10 23:23:14,784 - AppStability.py [line:209] - INFO: 拼接路径：['../Result/AutoMonkey/20200109-Crash.log.bak.bak', '../Result/AutoMonkey/2020010905-AllRunMonkey.log.bak.bak']
+2021-01-10 23:23:20,680 - AppStability.py [line:204] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log.bak.bak.bak', '2020010905-AllRunMonkey.log.bak.bak.bak']
+2021-01-10 23:23:20,681 - AppStability.py [line:209] - INFO: 拼接路径：../Result/AutoMonkey/20200109-Crash.log.bak.bak.bak
+2021-01-10 23:23:20,681 - AppStability.py [line:209] - INFO: 拼接路径：../Result/AutoMonkey/2020010905-AllRunMonkey.log.bak.bak.bak
+2021-01-10 23:26:10,538 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log.bak', '2020010905-AllRunMonkey.bak']
+2021-01-10 23:26:10,538 - AppStability.py [line:209] - INFO: 拼接路径：../Result/AutoMonkey/20200109-Crash.log.bak
+2021-01-10 23:27:23,271 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:27:23,271 - AppStability.py [line:208] - INFO: tempPath：../Result/AutoMonkey/20200109-Crash.log,filePath：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:31:56,438 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:32:04,861 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有3个文件 ['20200109-Crash.log', '20200109-Crash.log.bak', '2020010905-AllRunMonkey.log']
+2021-01-10 23:33:45,194 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有3个文件 ['20200109-Crash.log', '20200109-Crash.log.bak', '2020010905-AllRunMonkey.log']
+2021-01-10 23:33:45,194 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/20200109-Crash.log，tempPath：../Result/AutoMonkey/20200109-Crash.log.bak
+2021-01-10 23:34:03,619 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有3个文件 ['20200109-Crash.log', '20200109-Crash.log.bak', '2020010905-AllRunMonkey.log']
+2021-01-10 23:34:03,619 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/20200109-Crash.log，tempPath：../Result/AutoMonkey/20200109-Crash.log.bak
+2021-01-10 23:34:03,619 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/20200109-Crash.log.bak，tempPath：../Result/AutoMonkey/20200109-Crash.log.bak.bak
+2021-01-10 23:34:03,620 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/2020010905-AllRunMonkey.log，tempPath：../Result/AutoMonkey/2020010905-AllRunMonkey.log.bak
+2021-01-10 23:34:42,251 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有5个文件 ['20200109-Crash.log', '20200109-Crash.log.bak', '20200109-Crash.log.bak.bak', '2020010905-AllRunMonkey.log', '2020010905-AllRunMonkey.log.bak']
+2021-01-10 23:34:42,251 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/20200109-Crash.log，tempPath：../Result/AutoMonkey/20200109-Crash.log.bak
+2021-01-10 23:34:42,253 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/20200109-Crash.log.bak，tempPath：../Result/AutoMonkey/20200109-Crash.log.bak.bak
+2021-01-10 23:34:42,253 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/20200109-Crash.log.bak.bak，tempPath：../Result/AutoMonkey/20200109-Crash.log.bak.bak.bak
+2021-01-10 23:34:42,254 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/2020010905-AllRunMonkey.log，tempPath：../Result/AutoMonkey/2020010905-AllRunMonkey.log.bak
+2021-01-10 23:34:42,254 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/2020010905-AllRunMonkey.log.bak，tempPath：../Result/AutoMonkey/2020010905-AllRunMonkey.log.bak.bak
+2021-01-10 23:35:57,493 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:35:57,493 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/20200109-Crash.log，tempPath：../Result/AutoMonkey/20200109-Crash.log.bak
+2021-01-10 23:35:57,496 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/2020010905-AllRunMonkey.log，tempPath：../Result/AutoMonkey/2020010905-AllRunMonkey.log.bak
+2021-01-10 23:36:21,195 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有4个文件 ['20200109-Crash.log', '20200109-Crash.log.bak', '2020010905-AllRunMonkey.log', '2020010905-AllRunMonkey.log.bak']
+2021-01-10 23:36:21,195 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/20200109-Crash.log，tempPath：../Result/AutoMonkey/20200109-Crash.log.bak
+2021-01-10 23:36:21,196 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/20200109-Crash.log.bak，tempPath：../Result/AutoMonkey/20200109-Crash.log.bak.bak
+2021-01-10 23:36:21,196 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/2020010905-AllRunMonkey.log，tempPath：../Result/AutoMonkey/2020010905-AllRunMonkey.log.bak
+2021-01-10 23:36:21,197 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/2020010905-AllRunMonkey.log.bak，tempPath：../Result/AutoMonkey/2020010905-AllRunMonkey.log.bak.bak
+2021-01-10 23:36:52,506 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:36:52,506 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/20200109-Crash.log，tempPath：../Result/AutoMonkey/20200109-Crash.log.bak
+2021-01-10 23:36:52,507 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/2020010905-AllRunMonkey.log，tempPath：../Result/AutoMonkey/2020010905-AllRunMonkey.log.bak
+2021-01-10 23:37:24,444 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:37:24,445 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/20200109-Crash.log，tempPath：../Result/AutoMonkey/20200109-Crash.log.bak
+2021-01-10 23:37:24,446 - AppStability.py [line:207] - INFO: filePath：../Result/AutoMonkey/2020010905-AllRunMonkey.log，tempPath：../Result/AutoMonkey/2020010905-AllRunMonkey.log.bak
+2021-01-10 23:37:45,775 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:42:31,163 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:42:31,163 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:42:39,926 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:42:39,927 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:42:39,927 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/2020010905-AllRunMonkey.log
+2021-01-10 23:43:34,507 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:43:34,507 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:43:34,600 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:43:34,600 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:43:49,507 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:43:49,507 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:43:49,508 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/2020010905-AllRunMonkey.log
+2021-01-10 23:43:58,501 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:43:58,501 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:43:58,502 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/2020010905-AllRunMonkey.log
+2021-01-10 23:44:48,077 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:44:48,077 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:44:48,078 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/2020010905-AllRunMonkey.log
+2021-01-10 23:56:35,745 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:56:35,745 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:56:35,746 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/2020010905-AllRunMonkey.log
+2021-01-10 23:56:46,353 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:56:46,353 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:56:46,353 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/2020010905-AllRunMonkey.log
+2021-01-10 23:56:51,374 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:56:51,375 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:56:51,375 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/2020010905-AllRunMonkey.log
+2021-01-10 23:56:53,921 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:56:53,921 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:56:53,921 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/2020010905-AllRunMonkey.log
+2021-01-10 23:57:02,881 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:57:02,882 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:57:02,882 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/2020010905-AllRunMonkey.log
+2021-01-10 23:57:08,851 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:57:08,851 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:57:14,765 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:57:14,765 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:57:14,766 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/2020010905-AllRunMonkey.log
+2021-01-10 23:58:22,988 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:58:22,988 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:58:31,316 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:58:31,316 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:58:31,318 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/2020010905-AllRunMonkey.log
+2021-01-10 23:58:43,545 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:58:43,545 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:58:43,549 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/2020010905-AllRunMonkey.log
+2021-01-10 23:59:20,014 - AppStability.py [line:203] - INFO: 检索到路径：../Result/AutoMonkey下有2个文件 ['20200109-Crash.log', '2020010905-AllRunMonkey.log']
+2021-01-10 23:59:20,014 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/20200109-Crash.log
+2021-01-10 23:59:20,020 - AppStability.py [line:206] - INFO: 最终拼接路径：../Result/AutoMonkey/2020010905-AllRunMonkey.log
