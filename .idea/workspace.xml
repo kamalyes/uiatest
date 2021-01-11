@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3441837-af8b-49a4-9ba7-515a2bcf2224" name="Default" comment=":bug:Rebuilding monkey automation and repairing parent folder">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Result/AutoMonkey/2020010905-AllRunMonkey.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Result/Logs/2021-01-09/Default_Logs/2021-01-09.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Result/Logs/2021-01-09/Error_Logs/2021-01-09.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Result/Logs/2021-01-10/Default_Logs/2021-01-10.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Result/Logs/2021-01-11/Default_Logs/2021-01-11.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Result/Logs/2021-01-11/Error_Logs/2021-01-11.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/AdbFrame" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/config.ini" afterPath="$PROJECT_DIR$/Config/config.ini" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monkey/AppStability.py" afterPath="$PROJECT_DIR$/Monkey/AppStability.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/AutoMonkey/20200109-Crash.log" afterPath="$PROJECT_DIR$/Result/AutoMonkey/20200109-Crash.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/Logs/2021-01-09/Default_Logs/2021-01-09.log" afterPath="$PROJECT_DIR$/Result/Logs/2021-01-09/Default_Logs/2021-01-09.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result/Logs/2021-01-10/Default_Logs/2021-01-10.log" afterPath="$PROJECT_DIR$/Result/Logs/2021-01-10/Default_Logs/2021-01-10.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/AdbTools.py" afterPath="$PROJECT_DIR$/Utils/AdbTools.py" />
     </list>
     <list id="64fc7dad-501b-421b-bef5-4a86b337f677" name="YuYanQing5920" comment=":bug:Add appium bootstrap and fix assertion import" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +22,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/AutoFramework$Verification.coverage" NAME="Verification Coverage Results" MODIFIED="1607237411178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
-    <SUITE FILE_PATH="coverage/AutoFramework$AdbTools.coverage" NAME="AdbTools Coverage Results" MODIFIED="1610114426199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/AutoFramework$AdbTools.coverage" NAME="AdbTools Coverage Results" MODIFIED="1610365384773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/AutoFramework$RunAppium.coverage" NAME="RunAppium Coverage Results" MODIFIED="1600132837721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
     <SUITE FILE_PATH="coverage/AutoFramework$Appium.coverage" NAME="Appium Coverage Results" MODIFIED="1607572641644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
     <SUITE FILE_PATH="coverage/AutoFramework$AppiumTools.coverage" NAME="AppiumTools Coverage Results" MODIFIED="1609819212693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
@@ -38,6 +40,7 @@
     <SUITE FILE_PATH="coverage/AutoFramework$ValidityIDCard.coverage" NAME="ValidityIDCard Coverage Results" MODIFIED="1607237374187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/AutoFramework$ProxyPool.coverage" NAME="ProxyPool Coverage Results" MODIFIED="1603797778733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/AutoFramework$GlobalLog.coverage" NAME="GlobalLog Coverage Results" MODIFIED="1607237464590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Logger" />
+    <SUITE FILE_PATH="coverage/AutoFramework$AdbFrame.coverage" NAME="AdbFrame Coverage Results" MODIFIED="1610364508617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/AutoFramework$PublicMethod.coverage" NAME="PublicMethod Coverage Results" MODIFIED="1604650805205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
     <SUITE FILE_PATH="coverage/AutoFramework$Nosetest_UCTestCase_testCreateFolder.coverage" NAME="Nosetest UCTestCase.testCreateFolder Coverage Results" MODIFIED="1607609384930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/AutoFramework$Nosetests_in_test_start_app.coverage" NAME="Nosetests in test_start_app Coverage Results" MODIFIED="1607602561682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
@@ -68,12 +71,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="DirTools.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/DirTools.py">
+      <file leaf-file-name="AdbTools.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Utils/AdbTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="216">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="e#172#184#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,7 +96,7 @@
       <file leaf-file-name="config.ini" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Config/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
+            <state relative-caret-position="1752">
               <caret line="73" column="17" lean-forward="false" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
               <folding />
             </state>
@@ -101,7 +106,7 @@
       <file leaf-file-name="WeLinkRequest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WeLink/WeLinkRequest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
+            <state relative-caret-position="6384">
               <caret line="271" column="69" lean-forward="false" selection-start-line="271" selection-start-column="69" selection-end-line="271" selection-end-column="69" />
               <folding>
                 <element signature="e#182#193#0" expanded="true" />
@@ -110,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppStability.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AppStability.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Monkey/AppStability.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="85" column="16" lean-forward="false" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
+            <state relative-caret-position="183">
+              <caret line="132" column="29" lean-forward="false" selection-start-line="132" selection-start-column="26" selection-end-line="132" selection-end-column="29" />
               <folding>
                 <element signature="e#180#196#0" expanded="true" />
               </folding>
@@ -126,7 +131,7 @@
         <entry file="file://D:/Program Files/Python37/Lib/subprocess.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="574">
-              <caret line="288" column="30" lean-forward="true" selection-start-line="288" selection-start-column="30" selection-end-line="288" selection-end-column="30" />
+              <caret line="557" column="4" lean-forward="false" selection-start-line="557" selection-start-column="4" selection-end-line="557" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -135,7 +140,7 @@
       <file leaf-file-name="RunMonkey.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Result/RunMonkey.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-53677">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -145,7 +150,7 @@
       <file leaf-file-name="ConfigParser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils/ConfigParser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
+            <state relative-caret-position="2088">
               <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
               <folding />
             </state>
@@ -163,40 +168,38 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Adb_Manage</find>
-      <find>getpwd</find>
-      <find>info</find>
-      <find>Logger</find>
-      <find>print</find>
-      <find>Glo</find>
-      <find>Logger.info</find>
-      <find>deviceMsgs</find>
-      <find>initDevices</find>
-      <find>getD</find>
-      <find>dev</find>
-      <find>xpath</find>
-      <find>raw_input</find>
       <find>坐标</find>
       <find>getsuperior</find>
       <find>Doc_Process</find>
       <find>monkeyProt</find>
       <find>ALLru</find>
       <find>Send</find>
-      <find>mkdir</find>
       <find>Today</find>
       <find>coverPage</find>
       <find>sys</find>
       <find>po</find>
-      <find>4</find>
       <find>Auto</find>
       <find>parameter</find>
       <find>re</find>
       <find>re.</find>
       <find>bakPath</find>
+      <find>__get_process</find>
+      <find>check_rootstatus</find>
+      <find>rootInfo[1]</find>
+      <find>安装</find>
+      <find>inst</find>
+      <find>(&quot;%s install %s&quot;%(self.commod,apkPath)</find>
+      <find>getIp</find>
+      <find>mkdir</find>
+      <find>dev_name</find>
+      <find>start</find>
+      <find>get_wifi_password_list</find>
+      <find>install</find>
+      <find>cat</find>
+      <find>Ipv4</find>
+      <find>4</find>
     </findStrings>
     <replaceStrings>
-      <replace>aesDecrypt</replace>
-      <replace>getResponse</replace>
       <replace>optValue</replace>
       <replace>readConfig</replace>
       <replace>filterKey</replace>
@@ -222,6 +225,10 @@
       <replace>send</replace>
       <replace>startActivity</replace>
       <replace>subprocess.Popen</replace>
+      <replace>self.devicesId</replace>
+      <replace>get_process</replace>
+      <replace>message</replace>
+      <replace>getWifiPassword</replace>
       <replace>5</replace>
     </replaceStrings>
   </component>
@@ -236,8 +243,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Utils/ExcelTools.py" />
-        <option value="$PROJECT_DIR$/Utils/DictClean.py" />
         <option value="$PROJECT_DIR$/Utils/GeneralTools.py" />
         <option value="$PROJECT_DIR$/Utils/LibraryTools.py" />
         <option value="$PROJECT_DIR$/Utils/MySQLDB.py" />
@@ -274,19 +279,21 @@
         <option value="$PROJECT_DIR$/Utils/CheckEnviron.py" />
         <option value="$PROJECT_DIR$/WeLink/WeLinkRequest.py" />
         <option value="$PROJECT_DIR$/Config/WhiteActivity.txt" />
-        <option value="$PROJECT_DIR$/Utils/AdbTools.py" />
         <option value="$PROJECT_DIR$/Monkey/NativeMonkey.py" />
         <option value="$PROJECT_DIR$/Monkey/a.py" />
         <option value="$PROJECT_DIR$/AutoMonkeyTest/2021-01-09-Crash.log" />
         <option value="$PROJECT_DIR$/Result/AutoMonkey/2020010905-AllRunMonkey.log" />
         <option value="$PROJECT_DIR$/Result/AutoMonkey/20200109-Crash.log.bak" />
-        <option value="$PROJECT_DIR$/Result/Logs/2021-01-11/Error_Logs/2021-01-11.log" />
         <option value="$PROJECT_DIR$/Monkey/result.txt" />
         <option value="$PROJECT_DIR$/Monkey/editReport.py" />
         <option value="$PROJECT_DIR$/Result/AutoMonkey/20200109-Crash.log" />
         <option value="$PROJECT_DIR$/Monkey/GrepCrash.bat" />
         <option value="$PROJECT_DIR$/Config/config.ini" />
+        <option value="$PROJECT_DIR$/Utils/AdbFrame" />
         <option value="$PROJECT_DIR$/Monkey/AppStability.py" />
+        <option value="$PROJECT_DIR$/Utils/AdbFrame.py" />
+        <option value="$PROJECT_DIR$/Result/Logs/2021-01-11/Error_Logs/2021-01-11.log" />
+        <option value="$PROJECT_DIR$/Utils/AdbTools.py" />
       </list>
     </option>
   </component>
@@ -317,7 +324,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -369,6 +376,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Result" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutoFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutoFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Result" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Logs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -448,7 +473,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -473,7 +498,7 @@
       <recent name="D:\Work_Spaces\PyCharm_Project\AutoFramework\Result" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.AppStability">
+  <component name="RunManager" selected="Python.AdbTools">
     <configuration default="false" name="AppStability" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -510,42 +535,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="NativeMonkey" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Monkey" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="AutoFramework" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Monkey/NativeMonkey.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="a" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Monkey" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="AutoFramework" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Monkey/a.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="editReport" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -560,6 +549,42 @@
       <module name="AutoFramework" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Monkey/editReport.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="AdbFrame" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AutoFramework" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/AdbFrame.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="AdbTools" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AutoFramework" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/AdbTools.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -781,17 +806,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.AppStability" />
       <item index="1" class="java.lang.String" itemvalue="Python.WeLinkRequest" />
-      <item index="2" class="java.lang.String" itemvalue="Python.NativeMonkey" />
-      <item index="3" class="java.lang.String" itemvalue="Python.a" />
-      <item index="4" class="java.lang.String" itemvalue="Python.editReport" />
+      <item index="2" class="java.lang.String" itemvalue="Python.editReport" />
+      <item index="3" class="java.lang.String" itemvalue="Python.AdbFrame" />
+      <item index="4" class="java.lang.String" itemvalue="Python.AdbTools" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.AppStability" />
-        <item index="1" class="java.lang.String" itemvalue="Python.editReport" />
-        <item index="2" class="java.lang.String" itemvalue="Python.WeLinkRequest" />
-        <item index="3" class="java.lang.String" itemvalue="Python.a" />
-        <item index="4" class="java.lang.String" itemvalue="Python.NativeMonkey" />
+        <item index="0" class="java.lang.String" itemvalue="Python.AdbTools" />
+        <item index="1" class="java.lang.String" itemvalue="Python.AdbFrame" />
+        <item index="2" class="java.lang.String" itemvalue="Python.AppStability" />
+        <item index="3" class="java.lang.String" itemvalue="Python.editReport" />
+        <item index="4" class="java.lang.String" itemvalue="Python.WeLinkRequest" />
       </list>
     </recent_temporary>
   </component>
@@ -903,7 +928,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23600845" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5021119" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279743" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26152197" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30010718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -916,6 +940,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279743" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -963,27 +988,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Program Files/Python37/Lib/http/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6168">
-          <caret line="264" column="0" lean-forward="false" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApkPath/aapt.exe">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Appium.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Logger/Console.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4176">
@@ -1058,16 +1062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/AdbTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5640">
-          <caret line="242" column="0" lean-forward="false" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
-          <folding>
-            <element signature="e#173#185#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utils/DirTools.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -1130,96 +1124,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="5" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="82" selection-end-column="82" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Result/AutoMonkey/2020010905-AllRunMonkey.log.bak" />
-    <entry file="file://$PROJECT_DIR$/Result/AutoMonkey/2020010905-AllRunMonkey.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Result/AutoMonkey/2020010905-AllRunMonkey.log" />
     <entry file="file://$PROJECT_DIR$/Result/Crashlog.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Result/RunMonkey.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-53677">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Result/Logs/2021-01-11/Error_Logs/2021-01-11.log">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Monkey/result.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Monkey/AAA.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Monkey/editReport.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="82" column="27" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Monkey/result.txt" />
+    <entry file="file://$PROJECT_DIR$/Monkey/AAA.txt" />
+    <entry file="file://$PROJECT_DIR$/Monkey/editReport.py" />
     <entry file="file://$PROJECT_DIR$/Utils/ConfigParser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="2088">
           <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Result/AutoMonkey/com.mryu.devstudy-20200109-Crash.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Result/AutoMonkey/0.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Result/AutoMonkey/com.mryu.devstudy-20200109-Crash.log" />
+    <entry file="file://$PROJECT_DIR$/Result/AutoMonkey/0.bak" />
     <entry file="file://$PROJECT_DIR$/Result/AutoMonkey/20200109-Crash.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="67" column="67" lean-forward="true" selection-start-line="67" selection-start-column="67" selection-end-line="67" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1227,53 +1168,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="574">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Result/AutoMonkey/20200109-Crash.log.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Result/AutoMonkey/20200109-Crash.log.grep">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Monkey/GrepCrash.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Result/AutoMonkey/20200109-Crash.log.bak" />
+    <entry file="file://$PROJECT_DIR$/Result/AutoMonkey/20200109-Crash.log.grep" />
+    <entry file="file://$PROJECT_DIR$/Monkey/GrepCrash.bat" />
     <entry file="file://$PROJECT_DIR$/Config/config.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
+        <state relative-caret-position="1752">
           <caret line="73" column="17" lean-forward="false" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Python37/Lib/subprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="288" column="30" lean-forward="true" selection-start-line="288" selection-start-column="30" selection-end-line="288" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeLink/WeLinkRequest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
+        <state relative-caret-position="6384">
           <caret line="271" column="69" lean-forward="false" selection-start-line="271" selection-start-column="69" selection-end-line="271" selection-end-column="69" />
           <folding>
             <element signature="e#182#193#0" expanded="true" />
@@ -1281,12 +1192,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/AdbFrame" />
+    <entry file="file://D:/Program Files/Python37/Lib/subprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="557" column="4" lean-forward="false" selection-start-line="557" selection-start-column="4" selection-end-line="557" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Monkey/AppStability.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="85" column="16" lean-forward="false" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
+        <state relative-caret-position="183">
+          <caret line="132" column="29" lean-forward="false" selection-start-line="132" selection-start-column="26" selection-end-line="132" selection-end-column="29" />
           <folding>
             <element signature="e#180#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/AdbFrame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Result/Logs/2021-01-11/Default_Logs/2021-01-11.log">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Result/Logs/2021-01-11/Error_Logs/2021-01-11.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="58" lean-forward="false" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/AdbTools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#172#184#0" expanded="true" />
           </folding>
         </state>
       </provider>

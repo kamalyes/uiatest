@@ -9,11 +9,7 @@
 '''
 import linecache
 import re,os,time
-import shutil
 import subprocess
-
-import itertools
-
 from Logger.GlobalLog import Logger
 from Utils.ConfigParser import  IniHandle
 from Utils.DirTools import  DocProcess
@@ -244,4 +240,3 @@ class Monkey():
 if __name__ == '__main__':
     Monkey("538640ed").startMonkey()
     # Monkey("538640ed").grepError(r"D:\Work_Spaces\PyCharm_Project\AutoFramework\Result\AutoMonkey\20200109-Crash.log")
-

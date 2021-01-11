@@ -7,20 +7,21 @@
 # Desc: Adb工具类
 # Date： 2020/9/6 18:56
 '''
-
 import os,re
 import platform,datetime
 import subprocess
-from time import sleep
-
 from Logger.GlobalLog import Logger
 from Utils import DirTools
-from Utils.ConfigParser import IniHandle
-
 logger = Logger.write_log()#调用日志模块
-
 class Adb_Manage(object):
-    def check_filtered(self):
+    def __init__(self):
+        """
+        初始化设备id
+        """
+        self.devicesId = self.getDevices()[0]
+        self.commod = "adb -s %s"%(self.devicesId)
+
+    def checkFiltered(self):
         '''
         检查本地环境是Win还是Linux
         :return:
@@ -35,7 +36,7 @@ class Adb_Manage(object):
             logger.error("不支持该系统环境下运行！！！")
         return filter
 
-    def check_local_file(self):
+    def checklocalFile(self):
         """
         检查本地文件是否存在
         :param superiordirectory:上级目录
@@ -57,7 +58,7 @@ class Adb_Manage(object):
         except Exception as TypeError:
             logger.error(TypeError)
 
-    def check_adb_path(self):
+    def getSdkPath(self):
         """
         检查adb 判断是否设置环境变量ANDROID_HOME
         :param adb_info adb环境信息
@@ -72,14 +73,31 @@ class Adb_Manage(object):
             # logger.info("\n%s"%(adb_info[1]))
             return True
 
-    def check_devices_status(self):
+    def adb(self,args):
+        """
+        adb命令
+        :return:
+        """
+        adb = "adb -s %s %s"%(self.devicesId,str(args)) # 由于有些命令不能跟shell
+        logger.info("%s"%(adb))
+
+    def shell(self,args):
+        """
+        adb shell 命令
+        :param args:
+        :return:
+        """
+        shell = "adb -s %s shell %s"%(self.devicesId,str(args))
+        logger.info("%s"%(shell))
+
+    def getDevices(self):
         """
         检查设备是否连接成功，如果成功返回Device_Nmae，否则返回False
         :param devices_info：CMD输入
         :return devices：设备ID
         """
         try:
-            adb_info = self.check_adb_path()
+            adb_info = self.getSdkPath()
             if adb_info == True:
                 devices = re.findall('\n(.+?)\t', subprocess.getstatusoutput("adb devices")[1])
                 if devices != []:
@@ -93,187 +111,136 @@ class Adb_Manage(object):
         except Exception as TypeError:
             logger.error("Device Connect Fail:", TypeError)
 
-    def check_rootstatus(self,devices):
+    def getRootStatus(self):
         """
         检查设备ROOT状态
         :param devices: 设备ID
         :param root_info：root检测用的
         :return:True：() Flase：(3, 'E must be run as root')
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    root_info = subprocess.getstatusoutput("adb -s %s remount"%(dev_name))
-                    if root_info[0] == 0 and root_info[1] =="remount succeeded" :
-                        logger.info("设备ID：%sROOT授权成功，%s"%(dev_name,root_info[1]))
-                        return True
-                    else:
-                        logger.error("设备ID：%s没有ROOT授权，%s"%(dev_name,root_info[1]))
-                        return False
-        except Exception as TypeError:
-            logger.error(TypeError)
+        root = subprocess.getstatusoutput("%s shell remount" % (self.commod))
+        status ,message = root[0],root[1]
+        if status == 0 and message == "remount succeeded":
+            logger.info("设备ID：%sROOT授权成功，%s" % (self.devicesId, message))
+            return True
+        else:
+            logger.error("设备ID：%s没有ROOT授权，%s" % (self.devicesId, message))
+            return False
 
-    def install_apk(self,apklist, devices,index=""):
+    def checklocal(self,package):
         """
-        检查本地文件是否存在
-        :param devices:设备号
-        :param apk_filepath：拼接后的安卓包完整目录
+        检查本地是否安装包名
+        :return:
         """
-        try:
-            if devices == False :
-                pass
-            status= IniHandle().optvalue(node="Android_Info", key="install_status")
-            if status in(1,2):
+        packageName = subprocess.getstatusoutput('%s shell pm list packages "| grep %s"' % (self.commod,package))[1][8:].strip('\r\n')
+        return packageName
 
-                # 循环遍历出所有已连接的终端设备,便于后期调用
-                print(apklist)
-                logger.info("成功接收到check_local_file方法return的安装包绝对路径：{}".format(apklist[index]))
-                logger.info("检索到的设备：%s" % (devices))
-                for dev_name in devices:
-                    logger.info("当前终端ID：%s，安装过程中请勿移除USB连接！！！" % (dev_name))
-                    install_info = subprocess.getstatusoutput(r'adb -s %s install -r %s' % (dev_name, apklist[index]))
-                    install_status = install_info[1]
-                    if install_status == "Success" and status == 1 :
-                        logger.info("设备：%s安装成功！！！" % (dev_name))
-                    elif install_status == "Success" and status == 2 :
-                        logger.info("设备：%s覆盖安装成功！！！" % (dev_name))
-                    else:
-                        # 可在此做判断是否安装成功并展示error
-                        logger.error("设备：%s安装失败%s" % (dev_name, install_info[1]))
-        except Exception as TypeError:
-            logger.error(TypeError)
+    def uninstallApk(self,apkPath):
+        logger.info('%s shell uninstall %s' % (self.commod, apkPath))
+        uninstall = subprocess.getstatusoutput('%s shell uninstall %s' % (self.commod, apkPath))
+        status,message = uninstall[0],uninstall[1]
+        if status == 0 or "Success" in message:
+            logger.info("设备：%s 卸载%s成功" % (self.devicesId, self.apkpath))
+            return True
+        else:
+            logger.error("设备：%s 卸载失败，错误信息：%s" % (self.devicesId, message ))
 
-    def uninstall_apk(self,devices,package_name=""):
+    def installApk(self, apkPath):
         """
-        卸载apk
-        :param devices:设备号
-        :param package_name:包名
+        安装apk文件
+        :param 安装包路径
+        :return:
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    logger.info("当前终端ID：%s，卸载过程中请勿移除USB连接！！！" %(dev_name))
-                    uninstall_info = subprocess.getstatusoutput('adb -s %s uninstall %s'%(dev_name,package_name))
-                    print(uninstall_info)
-                    sleep(30)
-                    if uninstall_info[1] == "Success":
-                        logger.info("%s卸载成功%s"%(package_name,uninstall_info[1]))
-                    else:
-                        logger.error("%s设备卸载%s失败：%s"%(dev_name,package_name,uninstall_info[1]))
-        except Exception as TypeError:
-            logger.error(TypeError)
+        logger.info("%s install %s"%(self.commod,apkPath))
+        insatll = subprocess.getstatusoutput("%s install %s"%(self.commod,apkPath))
+        status,message = insatll[0],insatll[1]
+        head,tail = os.path.split(apkPath)
+        if status == 0 or "Success" in message:
+            logger.info("设备：%s 安装 %s成功" % (self.devicesId, tail))
+        elif "Failure [-200]" in message:
+            logger.info("设备：%s 取消安装！！！" % (self.devicesId))
+        else:
+            logger.info("设备：%s 安装失败,ErrorInfo" % (self.devicesId, message))
 
-    def clear_package(self,devices,package_name):
+    def clearPackage(self,package):
         """
-        清理apk缓存
-        :param devices:设备号
-        :param package_name:包名
+        清理数据缓存
+        :param package: 包名
+        :return:
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    logger.info("当前终端ID：%s，清除数据过程中请勿移除USB连接！！！" % (dev_name))
-                    clear_info = subprocess.getstatusoutput('adb -s %s shell pm clear %s'% (dev_name,package_name))
-                    clear_status = clear_info[1]
-                    if clear_status == "Success":
-                        logger.info("设备：%s清除数据成功" % (dev_name))
-                    elif clear_status == "Failed":
-                        logger.error("设备：%s清除数据失败！！！" % (dev_name))
-                    else:
-                        logger.error("抛出异常事件，请检查本地是否已安装 %s"%(package_name))
-        except Exception as TypeError:
-            logger.error(TypeError)
+        logger.info("当前终端ID：%s，清除数据过程中请勿移除USB连接！！！" % (self.devicesId))
+        clear = subprocess.getstatusoutput('adb -s %s shell pm clear %s' % (self.devicesId, package))
+        status,message = clear[0],clear[1]
+        if status == 0 or "Success" in message:
+            logger.info("设备：%s清除数据成功" % (self.devicesId))
+        else:
+            logger.error("设备：%s清除数据失败,ErrorInfo：%s" % (self.devicesId,message))
 
-    def get_ipconfig(self,devices):
+    def getIpconfig(self):
         """
         获取已连接的手机WIFI_IP
         :param ipconfig：wlan0基本Ip信息
         :return ip
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    ipconfig = os.popen("adb -s %s shell ifconfig wlan0"%(dev_name)).read().replace(" ","") # window下使用findstr
-                    if "wlan0:Cannotassignrequestedaddress" in ipconfig:
-                        logger.error("获取%s设备WIFI_IP失败,请检查是否连接网络！！！%s" % (dev_name,ipconfig))
-                    else:
-                        ipv4 = re.findall(r'\binetaddr:\S*?Bcast\b',ipconfig)[0].rsplit(":")[1].rsplit("Bcast")[0]
-                        ipv6 = re.findall(r'\binet6addr:\S*?Scope\b', ipconfig)[0].rsplit("inet6addr:")[1].rsplit("Scope")[0]
-                        logger.info("检索到设备%s当前IPV4：%s,IPV6：%s" % (dev_name,ipv4,ipv6))
-                return ipv4,ipv6
-        except Exception as TypeError:
-            logger.error(TypeError)
+        ipconfig = os.popen("%s shell ifconfig wlan0" % (self.commod)).read().replace(" ", "")  # window下使用findstr
+        if "wlan0:Cannotassignrequestedaddress" in ipconfig:
+            logger.error("获取%s设备WIFI_IP失败,请检查是否连接网络！！！%s" % (self.devicesId, ipconfig))
+        else:
+            ipv4 = re.findall(r'\binetaddr:\S*?Bcast\b', ipconfig)[0].rsplit(":")[1].rsplit("Bcast")[0]
+            ipv6 = re.findall(r'\binet6addr:\S*?Scope\b', ipconfig)[0].rsplit("inet6addr:")[1].rsplit("Scope")[0]
+            logger.info("检索到设备%s当前IPV4：%s,IPV6：%s" % (self.devicesId, ipv4, ipv6))
+        return ipv4, ipv6
 
-    def remote_connectdev(self,devices, ipv4):
+    def dump_xml(self,source, filename):
         """
-        远程连接手机
-        :param check_ip：检查网络是否通
-        :return devices：设备ID
+        dump apk xml文件
+        :return:
         """
-        try:
-            if ipv4 == False:
-                pass
-            else:
-                for dev_name in devices:
-                    check_ip = os.popen("ping {}".format(ipv4)).read()
-                    restart_adb = os.popen("adb tcpip 5555").read()
-                    str = "Ping 请求找不到主机 None。请检查该名称，然后重试。"
-                    if str == check_ip or restart_adb == "":
-                        logger.error("adb tcpip模式重启adb失败%s" % (check_ip))
-                    else:
-                        logger.info("adb tcpip模式重启adb成功！！！")
-                        connect = os.popen("adb connect {}".format(ipv4)).read()
-                        logger.info(connect)
-                return check_ip
-        except Exception as TypeError:
-            logger.error(TypeError)
+        return os.popen('%s shell aapt dump xmlstrings %s %s'%(self.commod) % (source, filename))
 
-    def get_current_package(self,devices=None):
-        '''
-        获取当前运行
-        :param devices: 设备号
-        :return: pwd_activity：package/activity
-        '''
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    activity = os.popen("adb -s %s shell dumpsys window windows | grep -E 'mCurrentFocus'"%(dev_name)).read()  # window下使用findstr
-                    pwd_activity = activity.strip()
-                    logger.info("检索到设备%s当前Activity：%s" % (dev_name, pwd_activity))
-                return pwd_activity
-        except Exception as TypeError:
-            logger.error(TypeError)
+    def uiautomator_dump(self):
+        """
+        获取屏幕uiautomator xml文件
+        :return:
+        """
+        return  os.popen("%s shell uiautomator dump "%(self.commod)[1].strip())
 
-    def grepActivity(self,devices=None):
+    def getMacAddress(self):
+        """
+        获取设备MAC地址
+        :return:
+        """
+        mac = subprocess.getstatusoutput("%s shell 'cat /sys/class/net/wlan0/address'"%(self.commod))
+        print(mac)
+
+    def remoteConnectdev(self,ipv4):
+        """
+        远程连接设备
+        :param ipv4:
+        :return:
+        """
+        check_ip = os.popen("ping {}".format(ipv4)).read()
+        restart_adb = os.popen("adb tcpip 5555").read()
+        str = "Ping 请求找不到主机 None。请检查该名称，然后重试。"
+        if str == check_ip or restart_adb == "":
+            logger.error("adb tcpip模式重启adb失败%s" % (check_ip))
+        else:
+            logger.info("adb tcpip模式重启adb成功！！！")
+            connect = os.popen("adb connect {}".format(ipv4)).read()
+            logger.info(connect)
+        return check_ip
+
+    def grepActivity(self):
         """
         过滤当前Actviity
         :return:
         """
-        activity = []
-        if len(devices) == 1:
-            content = os.popen('adb shell dumpsys activity  |findstr "mResumedActivity" ').read()  # 读取当前页面
-            grepactivity = re.compile(r'com.*').findall(content)[0].split(' ')[0]
-            activity.append(grepactivity)
-        elif len(devices) > 1:
-            for i in range(len(devices)):
-                content = os.popen(
-                    'adb -s %s shell dumpsys activity  |findstr "mResumedActivity" ' % (devices[i])).read()  # 读取当前页面
-                grepactivity = re.compile(r'com.*').findall(content)[0].split(' ')[0]
-                activity.append(grepactivity)
-        # logger.info('当前运行窗口：%s' % (activity))
+        content = os.popen('%s shell dumpsys activity  |findstr "mResumedActivity"'%(self.commod)).read()  # 读取当前页面
+        activity = re.compile(r'com.*').findall(content)[0].split(' ')[0]
+        logger.info("获取到当前运行的Activity：%s"%(activity))
         return activity
 
-    def get_battery_info(self,devices):
+    def getBatteryInfo(self):
         '''
         获取Android手机电池电量
           status: 1            #电池状态：2：充电状态 ，其他数字为非充电状态
@@ -286,20 +253,13 @@ class Adb_Manage(object):
           temperature: 335      #电池温度，单位是0.1摄氏度
           technology: Li-poly    #电池种类=
         '''
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    battery = os.popen("adb -s %s shell dumpsys battery"%(dev_name)).read().split("\n")  # window下使用findstr
-                    batterystatus = battery[7]
-                    batterylevel = battery[10]
-                    logger.info("成功获取到{}设备电池信息：{},{}".format(dev_name, batterystatus, batterylevel))
-                return battery, batterystatus, batterylevel
-        except Exception as  TypeError:
-            logger.error(TypeError)
+        battery = os.popen("%s shell dumpsys battery" % (self.commod)).read().split("\n")  # window下使用findstr
+        batterystatus = battery[7]
+        batterylevel = battery[10]
+        logger.info("成功获取到{}设备电池信息：{},{}".format(self.devicesId, batterystatus, batterylevel))
+        return battery, batterystatus, batterylevel
 
-    def create_file(self,devices, method, filePath=""):
+    def createFile(self, method, filePath):
         """
         创建目录
         :param  split_path：清理文件尾椎
@@ -307,106 +267,75 @@ class Adb_Manage(object):
         :param  method: 调用的方法元素、mkdir：创建文件、 touch：创建文件夹
         :param  make_dir：创建文件夹、且会携带返回结果集
         :param  touch_file: 创建文件
-        :param  devices：设备号
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    if method == "mkdir":
-                        # 清理文件尾椎例如：/sdcard/maketest/aaa.text 自动过滤掉为/sdcard/maketest/aaa
-                        split_path = os.path.splitext(filePath)[0]
-                        make_dir = subprocess.getstatusoutput('adb -s %s shell "mkdir -p %s"'% (dev_name,split_path))
-                        if make_dir[0] == 1:
-                            logger.error("%s Mkdir失败：%s" % (dev_name,make_dir[1]))
-                        else:
-                            logger.info("%s Mkdir %s成功！！！" % (dev_name,make_dir))
-                            return split_path
+        head, tail = os.path.split(filePath)
+        # 清理文件尾椎例如：/sdcard/maketest/AutoFramework.text 自动过滤掉为/sdcard/maketest/AutoFramework
+        mkdir = subprocess.getstatusoutput("%s shell ''mkdir %s''" % (self.commod, filePath))
+        status, message = mkdir[0], mkdir[1]
+        if status == 0 or "Success" in message:
+            logger.info("创建文件夹%s成功" % (tail))
+        elif "File exists" in message:
+            logger.error("文件夹已存在跳过创建！！！")
+        else:
+            logger.error("文件夹创建失败 ErrorInfo：%s" % (message))
 
-                    elif method == "touch":
-                        for dev_name in devices:
-                            touch_file = subprocess.getstatusoutput('adb -s %s shell  "touch %s"' %(dev_name,filePath))
-                            if touch_file[0] == 1:
-                                logger.error("%s TouchFile失败：%s" % (dev_name,touch_file[1]))
-                            elif touch_file[0] == 0:
-                                logger.info("%s Touch %s 成功！！！" % (dev_name,filePath))
-                                return touch_file
-                            else:
-                                logger.error("未知错误")
-                        else:
-                            pass
-        except Exception as TypeError:
-            logger.error(TypeError)
-
-    def file_transfer(self,devices, method, source, target=""):
+    def removeFile(self,filePath):
         """
-        文件基本操作
-        :param pull 从手机端拉取文件到电脑端
-        :param push 从电脑端复制文件至手机端
-        :param remove：强制删除文件
-        :param subprocess方法检查返回结果集 1为假 0为真 反人类
+        删除文件
+        :return:
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    if method == "pull" or method == "Pull":
-                        pull = subprocess.getstatusoutput('adb -s %s pull %s %s"' % (dev_name,source, target))
-                        logger.debug(pull)
-                        if pull[0] == 0:
-                            logger.info("%s Pull：%s文件到 %s成功." % (dev_name,source, target))
-                            return pull
-                        else:
-                            logger.error("%s Pull文件失败，%s" % (dev_name,pull[1].replace(": ", "_")))
+        # remove = subprocess.getstatusoutput('%s shell "rm -rf %s" ' % (self.commod, filePath))
+        # 判断文件夹是否存在来检测是否被删除成功（暂未找到更好的办法处理判断）
+        path = subprocess.getstatusoutput('%s shell "cd %s" ' % (self.commod, filePath))
+        status,message = path[0],path[1]
+        if "No such file or directory" in message:
+            logger.info("设备：%s 已成功删除掉文件： %s"%(self.devicesId,filePath))
+        else:
+            logger.info("设备：%s 删除文件失败"%(self.devicesId))
 
-                    elif method == "push" or method == "Push":
-                        push = subprocess.getstatusoutput('adb -s %s push %s %s"' % (dev_name,source, target))
-                        if push[0] == 0:
-                            logger.info("%s Push：%s文件到 %s" % (dev_name,source, target))
-                            return push
-                        else:
-                            logger.error("%s Push文件失败，%s" % (dev_name,push[1].replace(": ", "_")))
+    def pullFile(self,filePath,targetPath):
+        """
+        将Phone设备中的运行日志Pull至PC
+        :param filePath:
+        :param targetPath:
+        :return:
+        """
 
-                    elif method == "remove" or method == "Remove":
-                        remove = subprocess.getstatusoutput('adb -s %s shell "rm -rf %s" ' % (dev_name,source))
-                        # 以下暂未找到更好的办法处理判断是否已删除
-                        if remove[0] == 0:
-                            logger.info("%s删除%s文件成功" % (dev_name,source))
-                            return remove
-                        else:
-                            logger.info("%s删除%s文件失败" % (dev_name,source))
-                    else:
-                        logger.error("未知错误！！！")
-        except Exception as TypeError:
-            logger.error(TypeError)
+        pullInfo =subprocess.getoutput("%s pull %s %s"%(self.commod,filePath,targetPath))
+        if "adb: error" in pullInfo:
+            logger.info("Pull文件至移动端：%s失败，ErrorInfo：%s"%(self.devicesId,pullInfo))
+        else:
+            logger.info("Pull File is Ok")
 
-    def get_process(self,devices, keyword):
+    def pushFile(self,filePath,targetPath):
+        """
+        Push文件至移动端
+        :param filePath:
+        :param targetPath:
+        :return:
+        """
+        pushInfo =subprocess.getoutput("%s push %s %s"%(self.commod,filePath,targetPath))
+        if "adb: error" in pushInfo:
+            logger.info("Push文件至移动端：%s失败，ErrorInfo：%s"%(self.devicesId,pushInfo))
+        else:
+            logger.info("Push File is Ok")
+
+    def getProcess(self, packages):
         """
         获取进程信息
-        :param devices: 设备ID
-        :param process: 进程info
-        :return: process_id
+        :param packages: 包名
+        :return:
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    process = subprocess.getstatusoutput("adb -s shell ps |grep '%s'" % (dev_name,keyword))
-                    process_status = process[0]
-                    process_info = process[1]
-                    if process_status == 0:
-                        logger.info("\n%s" % (process_info))
-                        return process
-                    else:
-                        logger.error("暂未获取到%s的进程信息" % (keyword))
-                        return False
-        except Exception as TypeError:
-            logger.error(TypeError)
+        process = subprocess.getstatusoutput("%s shell ps |grep '%s'" % (self.commod, packages))
+        status,messages = process[0],process[1]
+        if status == 0:
+            logger.info("\n%s" % (messages))
+            return process
+        else:
+            logger.error("暂未获取到%s的进程信息" % (packages))
+            return False
 
-    def get_screenshot(self,devices, source):
+    def getScreenshot(self,target):
         """
         手机截图
         :param nowtime 当前本地格式化的毫秒级时间
@@ -415,65 +344,19 @@ class Adb_Manage(object):
         :param screen_status 截图时的状态
         :return:
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    nowtime = datetime.datetime.now().strftime('%Y-%m%d-%H-%M-%S-%f')
-                    logger.info(nowtime)
-                    filePath = "/%s/%s.png" % (source, nowtime)
-                    screen_info = subprocess.getstatusoutput("adb -s %s shell screencap -p %s" % (dev_name,filePath))
-                    screen_status = screen_info[0]
-                    if screen_status == 0:
-                        logger.info("截图成功%s" % (filePath))
-                        return filePath
-                    else:
-                        logger.error("%s" % (screen_info[1]))
-                        return False
-        except Exception as TypeError:
-            logger.error(TypeError)
+        nowtime = datetime.datetime.now().strftime('%Y-%m%d-%H-%M-%S-%f')
+        logger.info(nowtime)
+        filePath = "/%s/%s.png" % (target, nowtime)
+        screen = subprocess.getstatusoutput("adb -s %s shell screencap -p %s" % (self.devicesId, filePath))
+        screen_status = screen[0]
+        if screen_status == 0:
+            logger.info("截图成功%s" % (filePath))
+            return filePath
+        else:
+            logger.error("%s" % (screen[1]))
+            return False
 
-    def logcat_magement(self,devices,method,filePath):
-        """
-        日志管理
-        :param clear_logcat  清理日志
-        :param cache_logcat  缓存日志
-        :param crash_logcat  crash崩溃日志
-        :param history_logcat 历史crash日志（不需要二次触发）
-        :return: True False
-        /dev/log/main ： 主应用程序log，除了下三个外，其他用户空间log将写入此节点，包括System.out.print及System.erro.print等
-        /dev/log/events ： 系统事件信息，二进制log信息将写入此节点，需要程序解析
-        /dev/log/radio ： 射频通话相关信息，tag 为"HTC_RIL" "RILJ" "RILC" "RILD" "RIL" "AT" "GSM" "STK"的log信息将写入此节点
-        /dev/log/system ： 低等级系统信息和debugging,为了防止mian缓存区溢出,而从中分离出来
-        """
-        try:
-            if devices == False:
-                pass
-            else:
-                for  dev_name in devices:
-                    nowtime = datetime.datetime.now().strftime('%Y-%m%d-%H-%M-%S-%f')
-                    if not os.path.exists(filePath):
-                        os.makedirs(filePath)
-                    if method == "logcat -c":
-                        clear_logcat = subprocess.getstatusoutput("adb -s %s shell logcat -c -b main -b events -b radio -b system" % (dev_name))
-                        logger.info("手机内所有日志清理完成！！！")
-                    elif method == "cache_logcat":
-                        cache_logcat = subprocess.getstatusoutput("adb -s %s shell logcat -c && adb logcat -v threadtime| tee %s%s.log" % (dev_name,filePath,nowtime))
-                        logger.info("业务日志已重定向至%s"%(filePath))
-                    elif method == "crash_logcat":
-                        crash_logcat = subprocess.getstatusoutput("adb -s %s shell logcat -c && adb -s %s logcat -b crash > %s%s-Crash.log"%(dev_name,dev_name,filePath,nowtime))
-                        if crash_logcat[0] == "0":
-                            logger.info("日志成功保存至：%s"%(filePath))
-                        else:
-                            logger.error("断口或文件被占用,清理失败Error：%s"%(crash_logcat[1]))
-                    else:
-                        logger.error("未知错误！！！")
-                    return filePath
-        except Exception as TypeError:
-            logger.info(TypeError)
-
-    def analysis_crash(self, filePath,file_Name=""):
+    def analysisCrash(self, filePath,file_Name=""):
         """
         分析logcat日志
         :param key_word：关键字
@@ -496,7 +379,7 @@ class Adb_Manage(object):
         file.close()
         return count
 
-    def get_phone_info(self,devices):
+    def getPhoneInfo(self):
         """
         得到手机信息(ROOT手机(处理起来不是很好且市面上root手机覆盖率较小、先放着后期搞)、非ROOT手机不同处理)
         :param release:系统版本
@@ -505,459 +388,298 @@ class Adb_Manage(object):
         :param device_id 设备号
         :return: result 以上综合信息
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    release = subprocess.getstatusoutput("adb -s %s shell getprop ro.build.version.release" % (dev_name))[1].strip()
-                    model = subprocess.getstatusoutput("adb -d -s %s shell getprop ro.product.model" % (dev_name))[1].strip()
-                    vm_size = subprocess.getstatusoutput("adb -s %s shell wm size" %(dev_name))[1]
-                    result = {"release": release, "model": model, "vm_size": vm_size}
-                    logger.info(result)
-                    # device_info = subprocess.getstatusoutput("adb devices -l")
-                return release, model, vm_size
+        release = subprocess.getstatusoutput("%s shell getprop ro.build.version.release" % (self.commod))[1].strip()
+        model = subprocess.getstatusoutput("%s shell getprop ro.product.model" % (self.commod))[1].strip()
+        vm_size = subprocess.getstatusoutput("%s shell wm size" % (self.commod))[1]
+        result = {"release": release, "model": model, "vm_size": vm_size}
+        logger.info(result)
+        return release, model, vm_size
 
-                    # print(dev_name)
-                    # cmd = "adb -s " + dev_name + " shell cat /system/build.prop "
-                    # # phone_info = os.popen(cmd).readlines()
-                    # phone_info = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE).stdout.readlines()
-                    # release = "ro.build.version.release="  # 版本
-                    # model = "ro.product.model="  # 型号
-                    # brand = "ro.product.brand="  # 品牌
-                    # device_id = "ro.product.device="  # 设备名
-                    # result = {"release": release, "model": model, "brand": brand, "device": device_id}
-                    # for line in phone_info:
-                    #     for i in line.split():
-                    #         temp = i.decode()
-                    #         if temp.find(release) >= 0:
-                    #             result["release"] = temp[len(release):]
-                    #             break
-                    #         if temp.find(model) >= 0:
-                    #             result["model"] = temp[len(model):]
-                    #             break
-                    #         if temp.find(brand) >= 0:
-                    #             result["brand"] = temp[len(brand):]
-                    #             break
-                    #         if temp.find(device_id) >= 0:
-                    #             result["device"] = temp[len(device_id):]
-                    #             break
-                    # logger.info(result)
-                    # print(dev_name)
-                    # return release, model, brand, device_id
-        except Exception as TypeError:
-            logger.error(TypeError)
-
-
-    def get_device_time(self, devices):
+    def getDeviceTime(self):
         """
         获取设备时间
-        :param devices 设备ID
-        :return: device_time 系统时间
+        :return:
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    device_time = subprocess.getstatusoutput("adb -s %s shell date" % (dev_name))[1]
-                    logger.info("当前系统时间：%s" % (device_time))
-                return device_time
-        except Exception as TypeError:
-            logger.error(TypeError)
+        time = subprocess.getstatusoutput("adb -s %s shell date" % (self.commod))[1]
+        logger.info("当前系统时间：%s" % (time))
+        return time
 
-    def get_men_total(self,devices):
+    def getMenTotal(self):
         """
         得到内存 (ROOT用户使用)
         :param devices:设备号
         :return: men_total
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    cmd = 'adb -s %s shell cat /proc/meminfo' % (dev_name)
-                    get_cmd = os.popen(cmd).readlines()
-                    men_total = 0
-                    men_total_str = "MemTotal"
-                    for line in get_cmd:
-                        if line.find(men_total_str) >= 0:
-                            men_total = line[len(men_total_str) + 1:].replace("kB", "").strip()
-                            break
-                    logger.info("得到设备：%s的内存：%s"%(dev_name,str(men_total)+"-KB"))
-                    return str(men_total)+"-KB"
-        except Exception as TypeError:
-            logger.error(TypeError)
+        cmd = '%s shell cat /proc/meminfo' % (self.commod)
+        get_cmd = os.popen(cmd).readlines()
+        men_total = 0
+        men_total_str = "MemTotal"
+        for line in get_cmd:
+            if line.find(men_total_str) >= 0:
+                men_total = line[len(men_total_str) + 1:].replace("kB", "").strip()
+                break
+        logger.info("得到设备：%s的内存：%s" % (self.devicesId, str(men_total) + "-KB"))
+        return str(men_total) + "-KB"
 
 
-    def get_cpu_kel(self,devices):
+    def getCpuKel(self):
         """
         得到CPU内核版本 (ROOT用户使用)
         :param devices:
         :return: int_cpu
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    cmd = "adb -s " + dev_name + " shell cat /proc/cpuinfo"
-                    get_cmd = os.popen(cmd).readlines()
-                    find_str = "processor"
-                    int_cpu = 0
-                    for line in get_cmd:
-                        if line.find(find_str) >= 0:
-                            int_cpu += 1
-                            logger.info("得到设备：%s的CPU内核版本：%s" % (dev_name, str(int_cpu) + "核"))
-                            return str(int_cpu) + "核"
-        except Exception as TypeError:
-            logger.error(TypeError)
+        cmd = " %s shell cat /proc/cpuinfo"%(self.commod)
+        get_cmd = os.popen(cmd).readlines()
+        find_str = "processor"
+        int_cpu = 0
+        for line in get_cmd:
+            if line.find(find_str) >= 0:
+                int_cpu += 1
+                logger.info("得到设备：%s的CPU内核版本：%s" % (self.devicesId, str(int_cpu) + "核"))
+                return str(int_cpu) + "核"
 
-    def reboot(self, devices):
-        """
-        重启Iphone
-        :param reboot:重启
-        :return: reboot_info
-        """
-        try:
-           if devices == False:
-               pass
-           else:
-               for index in range(len(devices)):
-                   reboot_info = subprocess.getstatusoutput("adb -s %s shell reboot" % (devices[0]))
-                   logger.info("设备ID：%s 正在重启请稍后！！！" % (devices[0]))
-               return reboot_info
-        except Exception as TypeError:
-            logger.error(TypeError)
-
-    def file_exists(self, devices, target):
+    def fileExists(self, target):
         """
         判断文件在目标路径是否存在
         :param devices:设备号
         :param target：目标文件路径
         :return: True
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    file_info = subprocess.getstatusoutput("adb -s %s shell ls %s" % (dev_name, target))
-                    if file_info[0] == 1:
-                        logger.error("%s文件不存在！！！" % (target))
-                        return False
-                    else:
-                        logger.info("%s文件存在！！！" % (target))
-                return True
-        except Exception as TypeError:
-            logger.error(TypeError)
+        file = subprocess.getstatusoutput("%s shell ls %s" % (self.commod, target))
+        if file[0] == 1:
+            logger.error("%s文件不存在！！！" % (target))
+            return False
+        else:
+            logger.info("%s文件存在！！！" % (target))
+            return True
 
-    def is_install(self, devices, package_name):
+    def isInstall(self, package):
         """
         判断目标app在设备上是否已安装
-        :param package_name: 目标app包名
+        :param package: 目标app包名
         :return:
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    file_info = subprocess.getstatusoutput("adb -s %s shell pm list packages %s" % (dev_name, package_name))
-                    logger.info(file_info)
-                    if file_info[1] == "":
-                        logger.error("本地未安装：package_name：%s" % (package_name))
-                        return False
-                    else:
-                        logger.info("本地已安装：package_name：%s" % (package_name))
-                return package_name
-        except Exception as TypeError:
-            logger.error(TypeError)
+        file = subprocess.getstatusoutput("%s shell pm list packages %s" % (self.commod, package))
+        logger.info("grepPackage："%(file))
+        if file[1] == "":
+            logger.error("本地未安装：%s" % (package))
+            return False
+        else:
+            logger.info("本地已安装：%s" % (package))
+            return package
 
-    def get_display_state(self, devices):
+    def getDisplayState(self):
         """
         获取屏幕状态(部分手机特别是华为、该方法不可用、后续再摸索)
         :return: window_policy 亮屏(mScreenOnEarly=true mScreenOnFully=true )/灭屏(mScreenOnEarly=False mScreenOnFully=False )
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    window_policy = subprocess.getstatusoutput("adb -s %s shell dumpsys window policy|grep mScreenOn" % (dev_name))[1].replace("\n","")
-                    logger.info("当前屏幕状态：%s "%(window_policy))
-                    return window_policy
-        except Exception as TypeError:
-            logger.error(TypeError)
+        window_policy = \
+        subprocess.getstatusoutput("%s shell dumpsys window policy|grep mScreenOn" % (self.commod))[1].strip()
+        logger.info("当前屏幕状态：%s " % (window_policy))
+        return window_policy
 
-    def get_ps_pid(self,devices,package_name):
+    def rotation_screen(self, param):
+        """
+        旋转屏幕
+        :param param: 0 >> 纵向，禁止自动旋转; 1 >> 自动旋转
+        :return:
+        """
+        subprocess.getstatusoutput('%s shell /system/bin/content insert --uri content://settings/system --bind '
+                   'name:s:accelerometer_rotation --bind value:i:%s'%(param))
+
+    def getPsPid(self,package):
         """
         获取进程pid
-        :param devices: 设备ID
-        :param package_name: 包名
+        :param package: 包名
         :return: pid
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    ps_pid = subprocess.getstatusoutput("adb -s %s shell ps |grep '%s' "% (dev_name,package_name))
-                    pid_split =ps_pid[1].strip().split(" ")
-                    while "" in pid_split:
-                        pid_split.remove("")
-                    pid = pid_split[1]
-                    if ps_pid[0] == 0:
-                        logger.info("%s成功获取到：%s - Pid：%s " % (devices,package_name,pid))
-                        return pid
-                    else:
-                        logger.error("%s获取进程失败！！！"%(package_name))
-        except Exception as TypeError:
-            logger.error(TypeError)
+        ps_pid = subprocess.getstatusoutput("%s shell ps |grep '%s' " % (self.commod, package))
+        pid_split = ps_pid[1].strip().split(" ")
+        while "" in pid_split:
+            pid_split.remove("")
+        pid = pid_split[1]
+        if ps_pid[0] == 0:
+            logger.info("%s成功获取到：%s - Pid：%s " % (self.devicesId, package, pid))
+            return pid
+        else:
+            logger.error("%s获取进程失败！！！" % (package))
 
-    def kill_process(self, devices,pid):
+    def killProcess(self,pid):
         """
         杀死进程 需要Root权限不推荐使用
         :return: kill_pid
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    kill_pid = subprocess.getstatusoutput("adb -s %s shell kill %s " % (dev_name),pid)[1].replace("\n", "")
-                    logger.info("进程已被干掉：%s " % (kill_pid))
-                    return kill_pid
-        except Exception as TypeError:
-            logger.error(TypeError)
+        kill = subprocess.getstatusoutput("%s shell kill %s " % (self.commod, pid))[1].strip()
+        logger.info("%s" % (kill))
+        return kill
 
-    def quit_app(self, devices,package_name):
+    def startApp(self,package):
+        """
+        启动一个应用
+        :return start_app：开启
+        """
+        start = subprocess.getstatusoutput("%s shell am start -n %s" % (self.commod, package))[1].strip()
+        logger.info("正在启动：%s " % (package))
+        return start
+
+    def forceApp(self, package):
         """
         退出应用
         :return: quit_app
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    quit_app = subprocess.getstatusoutput("adb -s %s shell am force-stop %s " %(dev_name,package_name))[1].replace("\n", "")
-                    logger.info("已成功退出%s " % (package_name))
-                    return quit_app
-        except Exception as TypeError:
-            logger.error(TypeError)
+        stop = subprocess.getstatusoutput("%s shell am force-stop %s " % (self.commod, package))
+        logger.info("已成功退出%s " % (package))
+        return stop
 
-    def recovery(self,devices):
+    def reboot(self):
+        """
+        重启Iphone
+        :param reboot:重启
+        :return: reboot_info
+        """
+        reboot = subprocess.getstatusoutput("%s shell reboot" % (self.commod))
+        logger.info("设备ID：%s 正在重启请稍后！！！" % (self.devicesId))
+        return reboot
+
+    def recovery(self):
         """
         重启设备并进入recovery模式
-        :return: reboot_recovery
+        :return: recovery
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    reboot_recovery = subprocess.getstatusoutput("adb -s %s reboot recovery " % (dev_name))[1].replace("\n", "")
-                    logger.info("设备%s已成功重启设备并进入recovery模式" % (dev_name))
-                    return reboot_recovery
-        except Exception as TypeError:
-            logger.error(TypeError)
+        recovery = subprocess.getstatusoutput("%s shell reboot recovery " % (self.commod))
+        if recovery[0] == "0":
+            logger.info("设备%s已成功重启设备并进入recovery模式" % (self.devicesId))
+            return True
+        else:
+            logger.error("设备%s进入recovery模式失败"%(self.devicesId))
 
-    def fastboot(self,devices):
+    def fastboot(self):
         """
         重启设备并进入fastboot模式
-        :return: reboot_fastboot
+        :return: fastboot
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    reboot_fastboot = subprocess.getstatusoutput("adb -s %s reboot bootloader " % (dev_name))[1].replace("\n", "")
-                    logger.info("设备%s已成功重启设备并进入fastboot模式" % (dev_name))
-                    return reboot_fastboot
-        except Exception as TypeError:
-            logger.error(TypeError)
+        fastboot = subprocess.getstatusoutput("%s shell reboot bootloader " % (self.commod))[1].strip()
+        logger.info("设备%s已成功重启设备并进入fastboot模式" % (self.devicesId))
+        return fastboot
 
-
-    def get_wifi_state(self,devices):
+    def getWifiState(self):
         """
         获取WiFi连接状态
         :return: wifi_state
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    wifi_state = subprocess.getstatusoutput("adb -s %s shell dumpsys wifi | grep ^Wi-Fi " % (dev_name))[1].replace("\n", "")
-                    if wifi_state =="Wi-Fi is disabled":
-                        logger.error("%s "%(wifi_state))
-                        return  False
-                    else:
-                        logger.info("%s " % (wifi_state))
-                        return wifi_state
-        except Exception as TypeError:
-            logger.error(TypeError)
+        state = subprocess.getstatusoutput("%s shell dumpsys wifi | grep ^Wi-Fi " % (self.commod))[1].strip()
+        if state == "Wi-Fi is disabled":
+            logger.error("%s " % (state))
+            return False
+        else:
+            logger.info("%s " % (state))
+            return state
 
-    def get_data_state(self,devices):
+    def getDataState(self):
         """
         获取移动网络连接状态
-        :return: data_state
+        :return: state
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                data_state = subprocess.getstatusoutput("adb -s %s shell dumpsys telephony.registry | grep 'mDataConnectionState'" % (dev_name))[1].replace("\n", "")
-                return data_state
-        except Exception as TypeError:
-            logger.error(TypeError)
+        state = subprocess.getstatusoutput("%s shell dumpsys telephony.registry | grep 'mDataConnectionState'" % (self.commod))[1].strip()
+        if "mDataConnectionState=-1" in state:
+            logger.error("设备：%s 未启用移动网络 详情：%s"%(self.devicesId,state.replace("\n","")))
+            return False
+        else:
+            return state
 
-    def get_network_state(self,devices):
+    def getNetworkState(self):
         """
         设备是否连上互联网
         :return:True
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    network_state = subprocess.getstatusoutput("adb -s %s shell ping -w 1 www.baidu.com" % (dev_name))[1].replace("\n", "")
-                    if "ping: unknown host" in network_state:
-                        logger.error("网络未连接！！！")
-                    else:
-                        logger.info("设备已连上互联网：%s " % (network_state))
-                        return True
-        except Exception as TypeError:
-            logger.error(TypeError)
+        network = subprocess.getstatusoutput("%s shell ping -w 1 www.baidu.com" % (self.commod))[1].strip()
+        if "ping: unknown host" in network:
+            logger.error("网络未连接！！！")
+        else:
+            logger.info("设备已连上互联网：%s " % (network))
+            return True
 
-    def call(self, devices,number):
+    def getWifiPassword(self):
+        """
+        获取WIFI密码列表
+        :return:
+        """
+        if not self.root():
+            print('The device not root.')
+            return []
+        l = re.findall(re.compile('ssid=".+?"\s{3}psk=".+?"'), subprocess.getstatusoutput('%s shell su -c cat /data/misc/wifi/*.conf'%(self.commod))[1])
+        return [re.findall(re.compile('".+?"'), i) for i in l]
+
+    def call(self, number):
         """
         拨打电话
         :param index：设备序列
         :param number: 电话号码
         :return:call_info
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    call_info = subprocess.getstatusoutput("adb -s %s shell am start -a android.intent.action.CALL -d tel:%s" % (dev_name,number))[1].replace("\n", "")
-                    logger.info("正在呼叫：%s " % (call_info))
-                    return call_info
-        except Exception as TypeError:
-            logger.error(TypeError)
 
-    def open_url(self,devices,url):
+        call_info = subprocess.getstatusoutput("%s shell am start -a android.intent.action.CALL -d tel:%s" % (self.commod, number))[1].strip()
+        logger.info("正在呼叫：%s " % (call_info))
+        return call_info
+
+    def openUrl(self,devices,url):
         """
         打开网页
-        :return: open_url
+        :return: openUrl
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    open_url = subprocess.getstatusoutput("adb -s %s shell am start -a android.intent.action.VIEW -d %s" % (dev_name, url))[1].replace("\n", "")
-                    logger.info("%s " % (open_url))
-                    return open_url
-        except Exception as TypeError:
-            logger.error(TypeError)
 
-    def start_application(self, devices,package_name):
-        """
-        启动一个应用
-        :return start_app：开启
-        """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    start_app = subprocess.getstatusoutput("adb -s %s shell am start -n %s" % (dev_name, package_name))[1].replace("\n", "")
-                    logger.info("正在启动：%s " % (package_name))
-                    return start_app
-        except Exception as TypeError:
-            logger.error(TypeError)
+        openUrl = subprocess.getstatusoutput("%s shell am start -a android.intent.action.VIEW -d %s" % (self.commod, url))[1].strip()
+        logger.info("%s " % (openUrl))
+        return openUrl
 
-    def send_keyevent(self, devices,keyword):
+    def sendKey(self, keyword):
         """
         发送一个按键事件即键盘输入
         :param keyword：按键按键事件
         :return: send_key
         """
-        try:
-            if devices == False:
-                pass
-            else:
-                for dev_name in devices:
-                    send_key = subprocess.getstatusoutput("adb -s %s shell input keyevent %s" % (dev_name, keyword))[1].replace("\n", "")
-                    logger.info("正在疯狂输入：%s " %(keyword))
-                    return send_key
-        except Exception as TypeError:
-            logger.error(TypeError)
+        send_key = subprocess.getstatusoutput("%s shell input keyevent %s" % (self.commod, keyword))[1].strip()
+        logger.info("正在疯狂输入：%s " % (keyword))
+        return send_key
 
-    def switch_directory(self,devices,filePath=""):
+    def switchDir(self,filePath=""):
         """
         切换目录(写到一半不想写的def 也不怎么常用到先别引用、先占个位)
-        :param devices:设备号
         :return: dir_path
         """
-        try:
-            for dev_name in devices:
-                switch_dir = subprocess.getstatusoutput("adb -s %s shell cd %s"%(dev_name,filePath))
-                logger.info(switch_dir)
-        except Exception as TypeError:
-            logger.error(TypeError)
+        switch = subprocess.getstatusoutput("%s shell cd %s" % (self.commod, filePath))
+        logger.info(switch)
+
 if __name__ == '__main__':
     adb = Adb_Manage()
-    adb.check_filtered()
-    adb.check_local_file()
-    # adb.check_adb_path() #该方法可以不用执行、类部类已操作
-    check_devices_status=adb.check_devices_status()
-    # adb.uninstall_apk(check_devices_status,package_name="com.tencent.mobileqq")
-    # adb.install_apk(adb.check_local_file(),check_devices_status)
-    # adb.clear_package(check_devices_status,package_name="com.tencent.mobileqq")
-    # adb.get_current_package(check_devices_status)
-    # adb.get_battery_info(check_devices_status)
-    # adb.remote_connectdev(check_devices_status,adb.get_ipconfig(check_devices_status))
-    # adb.create_file(check_devices_status,method="touch",filePath="/sdcard/mkdirtes/test.txt")
-    # adb.get_current_package(check_devices_status)
-    # adb.file_transfer(check_devices_status,method="remove",source="/sdcard/test.txt")
-    # adb.get_process(check_devices_status,keyword="com.tencent.mobileqq")
-    # adb.get_screenshot(check_devices_status,source="sdcard")
-    adb.get_ipconfig(check_devices_status)
-    # adb.logcat_magement(check_devices_status,method="crash_logcat",filePath = "../Result/Android_Logs/Crash_Logs/")
-    # adb.get_device_time(check_devices_status)
-    # adb.switch_directory(check_devices_status,filePath="/sdcard")
-    # adb.analysis_crash(filePath="../Result/Android_Logs/Crash_Logs/",file_Name="2020-0908-16-55-49-508162-Crash.log")
-    # adb.get_phone_info(check_devices_status)
-    # while True:
-    #     adb.reboot(check_devices_status)
-    # adb.file_exists(check_devices_status,target="/sdcard")
-    # while True:
-    #     time.sleep(3)
-    #     if adb.is_install(check_devices_status, package_name="com.tencent.mobileqq") ==False:
-    #         logger.info("Installing！！！")
-    #         adb.install_apk(adb.check_local_file(),check_devices_status)
-    #     else:
-    #         logger.info("UnInstalling！！！")
-    #         adb.uninstall_apk(check_devices_status,package_name="com.tencent.mobileqq")
-    # adb.get_ps_pid(check_devices_status, package_name="com.tencent.mobileqq:MSF")
-    # adb.kill_process(check_devices_status, index=0,pid=adb.get_ps_pid(check_devices_status, keyword="com.tencent.mobileqq:MSF", index=0))
-    # adb.quit_app(check_devices_status,package_name="com.tencent.mobileqq")
-    # adb.recovery(check_devices_status)
-    # adb.fastboot(check_devices_status, index=0)
-    # adb.get_wifi_state(check_devices_status)
-    # adb.get_data_state(check_devices_status)
-    # adb.get_network_state(check_devices_status)
-    # adb.call(check_devices_status,number=501893067)
-    # adb.open_url(check_devices_status,url="https://www.baidu.com")
-    # adb.start_application(check_devices_status,package_name="com.tencent.mobileqq")
-    # adb.send_keyevent(check_devices_status,keyword='10')
-    adb.get_men_total(check_devices_status)
-    adb.get_cpu_kel(check_devices_status)
+    # adb.getRootStatus()
+    # adb.checklocal("com.mryu.devstudy")
+    # adb.installApk(r"D:\Work_Spaces\PyCharm_Project\AutoFramework\ApkPath\app-release.apk")
+    # adb.clearPackage("com.mryu.devstudy")
+    # adb.getIpconfig()
+    # adb.remoteConnectdev("10.94.253.120")
+    # adb.grepActivity()
+    # adb.getBatteryInfo()
+    # adb.createFile("mkdir","/sdcard/AutoMonkey")
+    # adb.removeFile("/sdcard/AutoMonkey")
+    # adb.pullFile("/sdcard/AutoMonkey",r"D:\Work_Spaces\PyCharm_Project\AutoFramework\Result")
+    # adb.pushFile(r"D:\Work_Spaces\PyCharm_Project\AutoFramework\Result","/sdcard")
+    # adb.getProcess("com.tencent.mobileqq")
+    # adb.getScreenshot("/sdcard")
+    # adb.getPhoneInfo()
+    # adb.getDeviceTime()
+    # adb.getMenTotal()
+    # adb.getCpuKel()
+    # adb.isInstall("com.mryu.devstudy")
+    # adb.getDisplayState()
+    # adb.getPsPid("com.mryu.devstudy")
+    # adb.killProcess(15621)
+    # adb.forceApp("com.mryu.devstudy")
+    # adb.getWifiState()
+    # adb.getDataState()
+    # adb.getNetworkState()
+    # adb.getMacAddress()
+    # adb.call(15666)
+    # adb.reboot()
+    # adb.recovery()
+    # adb.fastboot()
