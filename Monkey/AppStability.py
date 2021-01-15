@@ -134,7 +134,7 @@ class Monkey():
         监听crash日志
         :return:
         """
-        clearLog = "%s logcat -c " % (self.shell)
+        clearLog = "%s logcat -b all -c" % (self.shell)  #  加上-b all 修复failed to clear the 'main' log
         grepCrash ='adb logcat -b "crash" -f %s' % (self.allCrashLog)
         clearLogInfo =  os.popen(clearLog)
         clearLogInfo.close()
@@ -266,6 +266,7 @@ class Monkey():
         default = "%s%s-restart-default.log"%(self.logPath,send)
         error = "%s%s-restart-error.log"%(self.logPath,send)
         recommod = ('%s monkey -p %s %s %s %s %s -s %s %s " 1> %s 2>%s"'%(self.shell,self.package,self.operation,self.throttle,self.ignore,self.loglevel,send,self.count,default,error))
+        logger.info("重跑Monkey最终的运行参数：%s"%(recommod))
         subprocess.Popen(recommod)
         self.grepCrashLog()
 
@@ -275,4 +276,5 @@ if __name__ == '__main__':
     # Monkey().killMonkeyThread()
     # Monkey().initFile()
     # Monkey("538640ed").grepError(r"D:\Work_Spaces\PyCharm_Project\AutoFramework\Result\AutoMonkey\20200109-Crash.log")
-    Monkey().restartMonkey("1610763767")
+    # Monkey().startMonkey()
+    Monkey().restartMonkey(5551515)

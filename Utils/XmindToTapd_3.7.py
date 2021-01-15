@@ -7,18 +7,10 @@
 # Desc: XmindToTapd小工具
 # Date： 2020/7/16 15:55
 '''
-
-import os
-import xlwt
-import xmind
-import logging
-import xlrd
-import chardet
-
+import os,xlwt,xmind
+import logging,xlrd,chardet
 # 为了解决向excel中写入中文字符的问题
-import sys
-import copy
-import importlib
+import sys,copy,importlib
 importlib.reload(sys)
 # 对输入编码转码处理
 decode_list = ["GB2312", "utf-8", "ISO-8859-2", "ascii", "windows-1252"]
@@ -48,10 +40,9 @@ def get_decode_str(en_string):
             continue
     return de_string
 
-
-# 限定xmind用例层次为7层
+# 限定xmind用例层次为10层
 def max_sub_num_is_true(note, num):
-    # print note.getTitle()
+    print(note.getTitle())
     lens = note.getSubTopics()
     if lens:
         num = num + 1
@@ -60,7 +51,7 @@ def max_sub_num_is_true(note, num):
             if not result:
                 return False
     else:
-        return False if num > 5 else True
+        return False if num > 10 else True
     return True
 
 
@@ -230,7 +221,7 @@ class XmindFileHandle:
                     self.log_print(note.getTitle() + "  节点无子节点")
                 continue
             if not max_sub_num_is_true(note, 2):
-                raise FormatError("xmind层次结构超过5层，请修改后重试!")
+                raise FormatError("xmind层次结构超过8层，请修改后重试!")
             notedic = {}  # 每条分支转换的用例字典
             notepaths = []  # 功能点下所有用例字典列表
             notepaths = self.read_topics(note, notedic, notepaths, flag_ok=flag_ok1)
@@ -437,11 +428,12 @@ class ExeclFileHandle(case):
         sheet1.set_panes_frozen(True)
         sheet1.set_horz_split_pos(1)  # 冻结首行
         # 设置格式
-        sheet1.col(0).width = 256 * 50
-        sheet1.col(1).width = 256 * 13
+        sheet1.col(0).width = 256 * 40
+        sheet1.col(1).width = 256 * 60
+        sheet1.col(2).width = 256 * 15
         sheet1.col(3).width = 256 * 50
         sheet1.col(4).width = 256 * 50
-        sheet1.col(5).width = 256 * 30
+        sheet1.col(5).width = 256 * 50
         xlwt.add_palette_colour("custom_colour", 0x21)
         new_workbook.set_colour_RGB(0x21, 146, 205, 220)
         xlwt.add_palette_colour("custom_colour1", 0x22)
@@ -450,12 +442,6 @@ class ExeclFileHandle(case):
         new_workbook.set_colour_RGB(0x23, 149, 179, 215)
         style_title = xlwt.easyxf(
             'font:bold on,name Arial;align:wrap on;borders:left thin,right thin,top thin,bottom thin;pattern:pattern solid,fore_colour orange')
-        style_table1 = xlwt.easyxf(
-            'font:bold on,name Arial;align:wrap on;borders:left thin,right thin,top thin,bottom thin;pattern:pattern solid,fore_colour custom_colour')
-        style_table2 = xlwt.easyxf(
-            'font:bold on,name Arial;align:wrap on;borders:left thin,right thin,top thin,bottom thin;pattern:pattern solid,fore_colour custom_colour1')
-        style_table3 = xlwt.easyxf(
-            'font:bold on,name Arial;align:wrap on;borders:left thin,right thin,top thin,bottom thin;pattern:pattern solid,fore_colour custom_colour2')
         style_item = xlwt.easyxf(
             'font:name Times New Roman;align:wrap on,vert center;borders:left thin,right thin,top thin,bottom thin')
         style_item_for_prioroty = xlwt.easyxf(
@@ -517,10 +503,10 @@ if __name__ == '__main__':
                 Xmind转Tapd工具 By Liquor\n\
 #########################################################\n\
 使用规范如下：\n\
-1、xmind文件不超过7级分层；\n \
-2、根节点为需求或模块名称，末节点为用例名称，中间节点为1-3级目录； \n\
+1、xmind文件不超过10级分层；\n \
+2、根节点为需求或模块名称，末节点为用例名称，中间节点为1-9级目录； \n\
 3、末节点必须包含用例优先级标志（添加用例优先级方法，末节点--右键  \n\
---图标--任务优先级/旗子，其中红旗为0级，优先级1-3为用例1-3级）；\n\
+--图标--任务优先级/旗子，其中红旗为0级，优先级1-6为用例1-6级）；\n\
 4、节点上的备注可选填 输入/输出/备注"
             print(instruct)
             if is_macOS:
