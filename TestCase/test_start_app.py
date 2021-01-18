@@ -7,7 +7,7 @@
 # Desc: //TODO
 # Date： 2020/12/10 11:54
 '''
-from Common.Appium import AppDevice
+from Appium.AppiumTools import AppDevice
 import unittest
 class UCTestCase(unittest.TestCase):
     def testCreateFolder(self):

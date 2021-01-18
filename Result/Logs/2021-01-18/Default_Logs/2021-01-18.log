@@ -1,0 +1,5 @@
+2021-01-18 11:15:14,704 - LibraryTools.py [line:58] - INFO: 检查更新情况:
+2021-01-18 11:08:47,279 - LibraryTools.py [line:58] - INFO: 检查更新情况:
+2021-01-18 11:15:38,523 - LibraryTools.py [line:58] - INFO: 检查更新情况:
+2021-01-18 11:16:17,909 - LibraryTools.py [line:58] - INFO: 检查更新情况:
+2021-01-18 13:17:42,167 - AppiumTools.py [line:48] - INFO: 正在启动Appium服务{IP：127.0.0.1,Port：5920}

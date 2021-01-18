@@ -1,0 +1,410 @@
+# -*- coding:utf-8 -*-
+#!/usr/bin/env python 3.7
+# Python version 2.7.16 or 3.7.6
+'''
+# FileName： AppiumTools.py
+# Author : v_yanqyu
+# Desc: PyCharm
+# Date： 2020/9/15 19:00
+'''
+import os,re,time,base64
+from appium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support.ui import WebDriverWait
+from Logger.GlobalLog import Logger
+logger = Logger.write_log()  #导入日志模块
+
+class AppDevice(object):
+    def __init__(self,ip,port, platform_name, device_name, app_package, app_activity,uuid, wait_time=10,newCommandTimeout=None):
+        """
+        初始化
+        :param platform_name: 平台名（Android / IOS）
+        :param device_name: 设备名
+        :param app_package: app package
+        :param app_activity: app activity
+        :param wait_time: 选择元素时等待时间，默认为10秒
+        """
+        if not (ip and port and platform_name and device_name and app_package and app_activity,newCommandTimeout):
+            logger.error("应用程序选择初始失败！")
+
+        self.__platform_name = platform_name
+        self.__device_name = device_name
+        self.__app_package = app_package
+        self.__app_activity = app_activity
+        self.__uuid = uuid
+        desired_caps = {
+            "platformName": platform_name,
+            "deviceName": device_name,
+            "appPackage": app_package,
+            "appActivity": app_activity,
+            "noReset": True,
+            "noSign" : True,
+            "uuid":uuid,
+            "newCommandTimeout":60000
+        }
+        self.__driver = webdriver.Remote("http://%s:%s/wd/hub"%(ip,port), desired_caps)
+        self.__driver_wait = WebDriverWait(self.__driver, wait_time)
+
+    def tap(self, positions, duration=None, delay=None):
+        """
+        指定位置点击
+        :param positions: 位置数组 [(100, 20), (100, 60), (100, 100)]
+        :param duration: 间隔
+        :param delay: 延迟点击
+        :return:
+        """
+        if delay:
+            time.sleep(delay)
+        self.__driver.tap(positions, duration)
+
+    def tap_and_wait_for(self, positions, duration=None, delay=None, id_name=None, class_name=None, label_text=None,
+                         retry=3):
+        """
+        点击后等待元素加载
+        :param positions: 点击位置
+        :param duration: 点击时间间隔
+        :param delay: 延迟点击
+        :param id_name: id
+        :param class_name: class
+        :param label_text: 标签文本
+        :param retry: 重试次数
+        :return:
+        """
+        if not (id_name or class_name):
+            logger.error("必须至少选择一个id名称或类名称。")
+        failed = 0
+        while failed < retry:
+            self.tap(positions, duration, delay)
+            if self.wait_for(id_name=id_name, class_name=class_name, label_text=label_text):
+                logger.info("点击成功！位置 -> {0}".format(positions))
+                return
+            failed += 1
+        logger.error("点击失败！位置 -> {0}".format(positions))
+
+    def wait_for(self, id_name=None, class_name=None, label_text=None, wait_time=None):
+        """
+        等待页面中元素加载
+        :param id_name: id 和 class 必须有其中一个
+        :param class_name:
+        :param label_text: 标签文本
+        :param wait_time: 等待时间
+        :return: 是否等到了
+        """
+        has_found = False
+        if not (id_name or class_name):
+            logger.error("必须至少选择一个id名称或类名称。")
+
+        element = None
+        if id_name:
+            element = self.find_element_by_id(id_name, wait_time=wait_time)
+        elif class_name:
+            element = self.find_element_by_class(class_name, wait_time=wait_time)
+
+        if element:
+            if label_text and element.text != label_text:
+                has_found = False
+            else:
+                has_found = True
+
+        return has_found
+
+    def find_element_by_id(self, element_id, wait=True, wait_time=None):
+        """
+        通过 id 查找匹配的单个元素
+        :param element_id: element id
+        :param wait: 选择元素是否等待，默认为等待，等待时长初始化时设置
+        :param wait_time:
+        :return: element or None
+        """
+        element = None
+        driver_wait = self.__driver_wait
+        if wait_time:
+            driver_wait = WebDriverWait(self.__driver, wait_time)
+        try:
+            if wait:
+                element = driver_wait.until(expected_conditions.presence_of_element_located((By.ID, element_id)))
+            else:
+                element = self.__driver.find_element_by_id(element_id)
+        except Exception as TypeError:
+            raise ("按id查找元素失败！%s "%(TypeError))
+        return element
+
+    def find_elements_by_id(self, element_id, wait=True, wait_time=None):
+        """
+        通过 id 查找匹配的所有元素
+        :param element_id:
+        :param wait:
+        :param wait_time:
+        :return:
+        """
+        results = None
+        driver_wait = self.__driver_wait
+        if wait_time:
+            driver_wait = WebDriverWait(self.__driver, wait_time)
+        try:
+            if wait:
+                results = driver_wait.until(expected_conditions.presence_of_all_elements_located((By.ID, element_id)))
+            else:
+                results = self.__driver.find_elements_by_id(element_id)
+        except Exception as TypeError:
+            raise ("按id匹配所有元素失败！%s "%(TypeError))
+        return results
+
+    def find_element_by_class(self, element_class, wait=True, wait_time=None):
+        """
+        通过 class name 查找匹配的单个元素
+        :param element_class:
+        :param wait:
+        :param wait_time:
+        :return:
+        """
+        results = None
+        driver_wait = self.__driver_wait
+        if wait_time:
+            driver_wait = WebDriverWait(self.__driver, wait_time)
+        try:
+            if wait:
+                results = driver_wait.until(expected_conditions.presence_of_element_located((By.CLASS_NAME, element_class)))
+            else:
+                results = self.__driver.find_element_by_class_name(element_class)
+        except Exception as TypeError:
+            raise ("按类名查找元素失败！%s"%(TypeError))
+        return results
+
+    def find_elements_by_class(self, element_class, wait=True, wait_time=None):
+        """
+        通过 class name 查找匹配的所有元素
+        :param element_class:
+        :param wait:
+        :param wait_time:
+        :return:
+        """
+        results = None
+        driver_wait = self.__driver_wait
+        if wait_time:
+            driver_wait = WebDriverWait(self.__driver, wait_time)
+        try:
+            if wait:
+                results = driver_wait.until(expected_conditions.presence_of_all_elements_located((By.CLASS_NAME, element_class)))
+            else:
+                results = self.__driver.find_elements_by_class_name(element_class)
+        except Exception as TypeError:
+            raise ("按类名查找元素失败 %s "%(TypeError))
+        return results
+
+    def find_element_by_xpath(self,element,wait=True,wait_time=None):
+        """
+        xpath定位元素
+        :param text:
+        :param wait:
+        :param wait_time:
+        :return:
+        """
+        results = None
+        driver_wait = self.__driver_wait
+        if wait_time:
+            driver_wait = WebDriverWait(self.__driver, wait_time)
+        try:
+            if wait:
+                results = driver_wait.until(expected_conditions.presence_of_all_elements_located((By.CLASS_NAME, element)))
+            else:
+                results = self.__driver.find_element_by_xpath("%s"%(element))
+        except Exception as TypeError:
+            raise ("按xpath定位查找元素失败 %s "%(TypeError))
+        return results
+
+
+    def find_element_by_path_tree(self, path_tree, wait=True, wait_time=None):
+        """
+        路径查找单个元素，语法风格 => #apro>.text>input[4]
+        FIXME beta方法，未充分考虑所有情况。使用需谨慎
+        :param path_tree:
+        :param wait:
+        :param wait_time:
+        :return:
+        """
+        element = self.find_elements_by_path_tree(path_tree, wait, wait_time)
+        if element:
+            return element[0]
+        return None
+
+    def find_elements_by_path_tree(self, path_tree, wait=True, wait_time=None):
+        """
+        路径查找所有元素，语法风格 => #apro>.text>input[4]
+        FIXME beta方法，未充分考虑所有情况。使用需谨慎
+        :param path_tree:
+        :param wait:
+        :param wait_time:
+        :return:
+        """
+        element = None
+        selects = re.split("[\s+>]", path_tree)
+        sel_len = len(selects)
+
+        for i in range(sel_len):
+            sel = selects[i]
+            position = None
+
+            if re.match(".*?\[\d+]$", sel):
+                index = sel.rindex("[")
+                position = sel[index + 1:len(sel) - 1]
+                sel = sel[:index]
+
+            if sel.startswith("#"):
+                sel = sel[1:]
+                if not element:
+                    element = self.find_elements_by_id(sel, wait, wait_time)
+                else:
+                    element = element.find_elements_by_id(sel)
+            elif sel.startswith("."):
+                sel = sel[1:]
+                if not element:
+                    element = self.find_elements_by_class(sel, wait, wait_time)
+                else:
+                    element = element.find_elements_by_class_name(sel)
+
+            if not element:
+                return []
+
+            if position:
+                element = element[int(position)]  # FIXME 这里处理 下标越界异常（有滑块验证码导致的）
+
+            if i < sel_len - 1 and isinstance(element, list):
+                element = element[0]
+
+        if not isinstance(element, list):
+            return [element]
+        return element
+
+    def click_element_by_path_tree(self, path_tree, wait=True, wai_time=None):
+        """
+        路径查找，并点击，语法风格 => #apro>.text>input[4]
+        FIXME beta方法，未充分考虑所有情况。使用需谨慎
+        :param path_tree:
+        :param wait:
+        :param wai_time:
+        :return:
+        """
+        element = self.find_element_by_path_tree(path_tree, wait, wai_time)
+        if element:
+            element.click()
+
+    def click_element_by_id(self, element_id, wait=True, wait_time=None):
+        """
+        通过 id 点击元素
+        :param element_id:
+        :param wait:
+        :param wait_time:
+        :return:
+        """
+        element = self.find_element_by_id(element_id, wait, wait_time)
+        if element:
+            element.click()
+
+    def click_element_by_class(self, element_class, wait=True, wait_time=None):
+        """
+        通过 class 点击元素
+        :param element_class:
+        :param wait:
+        :param wait_time:
+        :return:
+        """
+        element = self.find_element_by_class(element_class, wait, wait_time)
+        if element:
+            element.click()
+
+    def press_key(self, key_code, times=1):
+        """
+        按下指定按键
+        :param key_code:
+        :param times: 次数
+        :return: None
+        """
+        for i in range(times):
+            self.__driver.press_keycode(key_code)
+
+    def press_key_by_ime(self, ime_name, key_code, times=1):
+        """
+        使用指定输入法按下按键
+        TODO 判断输入法是否成功启动
+        :param ime_name: 输入法全称，查看方式 KeyCode shell ime list -s
+        :param key_code: 按键码
+        :param times: 次数
+        :return:
+        """
+        os.system("KeyCode shell ime set {ime_name}".format(ime_name=ime_name))
+        self.press_key(key_code, times)
+
+    @staticmethod
+    def swap_ime(ime_name):
+        """
+        切换输入法
+        :param ime_name: 输入法全称，查看方式 KeyCode shell ime list -s
+        :return:
+        """
+        os.system("KeyCode shell ime set {ime_name}".format(ime_name=ime_name))
+
+    def send_keys_by_ADBKeyboard(self, keyword, id_name=None, class_name=None, wait=True, wait_time=None):
+        """
+        TODO 待修改，修改成使用adb输入内容，使用appnium输入
+        TODO 输入法切换是否成功，判断。是否启动完毕
+        向输入框中输入内容
+        * id / class / xpath 至少需要给一个
+        * 使用 KeyCode 输入
+        * 虚拟机中需要安装 ADBKeyboard https://github.com/senzhk/ADBKeyBoard
+        :param keyword: 欲输入的文本
+        :param id_name:
+        :param class_name:
+        :param wait:
+        :param wait_time:
+        :return:
+        """
+        os.system("KeyCode shell ime set com.android.adbkeyboard/.AdbIME")
+        if not (id_name or class_name):
+            logger.error("必须至少选择一个id名称或类名称。")
+
+        element = None
+        if id_name:
+            element = self.find_element_by_id(id_name, wait, wait_time)
+        elif class_name:
+            element = self.find_element_by_class(class_name, wait, wait_time)
+
+        if element:
+            element.click()
+            encode_keyword = str(base64.b64encode(keyword.encode("utf-8")), "utf-8")
+            os.system("KeyCode -s {device} shell am broadcast -a ADB_INPUT_B64 --es msg \"{keyword}\"".format(
+                device=self.__device_name,
+                keyword=encode_keyword
+            ))
+
+    def swipe(self, start_position=None, end_position=None, times=1, duration=1000, delay=0, interval=0):
+        """
+        滚动屏幕
+        :param start_position: 滑动起点坐标
+        :param end_position: 滑动结束点坐标
+        :param times: 滑动次数
+        :param duration: 滑动时长
+        :param delay: 延迟多久后开始滑动
+        :param interval: 每次滑动的间隔
+        :return:
+        """
+        if start_position is None:
+            start_position = [600, 1200]
+        if end_position is None:
+            end_position = [600, 500]
+
+        if delay > 0:
+            time.sleep(delay)
+
+        for index in range(times):
+            self.__driver.swipe(start_position[0], start_position[1], end_position[0], end_position[1], duration)
+            if interval > 0 and index < times - 1:
+                time.sleep(interval)
+
+    def close(self):
+        """
+        close
+        :return:
+        """
+        self.__driver.close_app()

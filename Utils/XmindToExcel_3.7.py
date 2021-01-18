@@ -128,25 +128,25 @@ class XmindFileHandle:
             notedic = {}  # 每条分支转换的用例字典
             notepaths = []  # 功能点下所有用例字典列表
             notepaths = self.readTopics(note, notedic, notepaths, flag_ok=flag_ok1)
-            for k in range(0, len(notepaths)):  # 循环取每条路径解析存储用例对象
+            for noteKey in range(0, len(notepaths)):  # 循环取每条路径解析存储用例对象
                 Casefile = InitVariable()
                 Casefile.setdirectory(root_topic.getTitle())
-                if notepaths[k].__contains__(u'用例层级'):
-                    Casefile.settable(notepaths[k][u'用例层级'])
+                if notepaths[noteKey].__contains__(u'用例层级'):
+                    Casefile.settable(notepaths[noteKey][u'用例层级'])
                 else:
                     Casefile.settable(' ')  # 空节点，默认填空
-                if notepaths[k].__contains__(u'优先级'):
-                    Casefile.setpriority(notepaths[k][u'优先级'])
-                if notepaths[k].__contains__(u'前置条件'):
-                    Casefile.setprecond(notepaths[k][u'前置条件'])
-                if notepaths[k].__contains__(u'输入'):
-                    Casefile.setstep(notepaths[k][u'输入'])
-                if notepaths[k].__contains__(u'输出'):
-                    Casefile.setresult(notepaths[k][u'输出'])
-                if notepaths[k].__contains__(u'备注'):
-                    Casefile.setnotes(notepaths[k][u'备注'])
-                if notepaths[k].__contains__(u'用例名称'):
-                    Casefile.setname(notepaths[k][u'用例名称'])
+                if notepaths[noteKey].__contains__(u'优先级'):
+                    Casefile.setpriority(notepaths[noteKey][u'优先级'])
+                if notepaths[noteKey].__contains__(u'前置条件'):
+                    Casefile.setprecond(notepaths[noteKey][u'前置条件'])
+                if notepaths[noteKey].__contains__(u'输入'):
+                    Casefile.setstep(notepaths[noteKey][u'输入'])
+                if notepaths[noteKey].__contains__(u'输出'):
+                    Casefile.setresult(notepaths[noteKey][u'输出'])
+                if notepaths[noteKey].__contains__(u'备注'):
+                    Casefile.setnotes(notepaths[noteKey][u'备注'])
+                if notepaths[noteKey].__contains__(u'用例名称'):
+                    Casefile.setname(notepaths[noteKey][u'用例名称'])
                 self.Case_list.append(Casefile)
         if not flag_ok1[0]:
             print("部分测试用例没有标记优先级，请添加后重试!")
@@ -160,11 +160,11 @@ class XmindFileHandle:
                 notesdic[u'优先级'] = marks[u'优先级']
                 notes = self.readNoteDict(note)
                 if notes is not None:
-                    if notes.__contains__(u'前置条件'):
+                    if u'前置条件' in notes.keys():
                         Caseprecond = notes[u'前置条件']
                     else:
                         Caseprecond = ''
-                    if u'输入' in notes.keys():
+                    if notes.__contains__(u'输入'):
                         Casestep = notes[u'输入']
                     else:
                         Casestep = ''
@@ -177,7 +177,7 @@ class XmindFileHandle:
                     else:
                         Casenote = ''
                 else:
-                    Casestep,Caseprecond,Caseprecond, Caseresult, Casenote = '', '', '','',''
+                    Caseprecond,Casestep,Caseprecond,Caseresult, Casenote = '', '', '','',''
                 tempdic = copy.copy(notesdic)
                 notesdic = {}
                 if note.getTitle() is None:
@@ -204,7 +204,7 @@ class XmindFileHandle:
             else:
                 Casepath = Casepath + "-" + note.getTitle()
             for i in lens:
-                self.readTopics(i, notesdic, notepaths, Casepath, Casestep,Caseprecond, Casenote, flag_ok)
+                self.readTopics(i, notesdic, notepaths, Casepath,Caseprecond, Casestep, Casenote, flag_ok)
         return notepaths
 
     def readNotes(self, topic):
@@ -423,15 +423,14 @@ class ExeclFileHandle(InitVariable):
 
 if __name__ == '__main__':
     instruct = "\
-    #########################################################\n\
-                    Xmind转Excel工具 By Liquor\n\
-    #########################################################\n\
-    使用规范如下：\n\
-    1、xmind文件不超过10级分层；\n \
-    2、根节点为需求或模块名称，末节点为用例名称，中间节点为1-9级目录； \n\
-    3、末节点必须包含用例优先级标志（添加用例优先级方法，末节点--右键  \n\
-    --图标--任务优先级/旗子，其中红旗为0级，优先级1-6为用例1-6级）；\n\
-    4、节点上的备注可选填 输入/输出/备注"
+#########################################################\n\
+   Xmind转Excel工具 By Liquor Email：mryu168@163.com\n\
+#########################################################\n\
+使用规范如下：\n\
+1、xmind文件不超过10级分层\n\
+2、根节点为需求或模块名称，末节点为用例名称，中间节点为1-9级目录 \n\
+3、末节点必须包含用例优先级标志其中红旗为0级，优先级1-6为用例1-6级）\n\
+4、节点上的备注可选填 输入/输出/备注"
     print(instruct)
     while True:
         filePath = input(r"请将要转换的xmind文件拖至此处,按q退出:").replace('"', '')

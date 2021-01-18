@@ -204,7 +204,7 @@ class XmindFileHandle:
     def __init__(self):
         self.case_list = []
         # 根据需要修改
-        self.marker_to_priority = {'flag-red': 0, 'priority-1': 1, 'priority-2': 2, 'priority-3': 3}
+        self.marker_to_priority = {'flag-red': 0, 'priority-1': 1, 'priority-2': 2, 'priority-3': 3,'priority-4': 4,'priority-5': 5,'priority-6': 6,'priority-7': 7}
 
     def read_xmind(self, filepath):
         ver = ""  # 版本号
@@ -496,45 +496,44 @@ class ExeclFileHandle(case):
 
 
 if __name__ == '__main__':
-    try:
-        while True:
-            instruct ="\
+    instruct = "\
 #########################################################\n\
-                Xmind转Tapd工具 By Liquor\n\
+   Xmind转Tapd工具 By Liquor Email：mryu168@163.com\n\
 #########################################################\n\
 使用规范如下：\n\
-1、xmind文件不超过10级分层；\n \
-2、根节点为需求或模块名称，末节点为用例名称，中间节点为1-9级目录； \n\
-3、末节点必须包含用例优先级标志（添加用例优先级方法，末节点--右键  \n\
---图标--任务优先级/旗子，其中红旗为0级，优先级1-6为用例1-6级）；\n\
+1、xmind文件不超过10级分层\n\
+2、根节点为需求或模块名称，末节点为用例名称，中间节点为1-9级目录 \n\
+3、末节点必须包含用例优先级标志其中红旗为0级，优先级1-6为用例1-6级）\n\
 4、节点上的备注可选填 输入/输出/备注"
-            print(instruct)
-            if is_macOS:
-                filePath = os.path.abspath(input(r"请将要转换的xmind文件拖至此处:").replace('"', ''))
-                story_id = input("请输入需求ID:")
-                username = input("请输入创建人:")
-                xls_filename = str(filePath.split(os.sep)[-1]).replace(".xmind", "")
-            else:
-                # windows
-                filePath = os.path.abspath(input(r"请将要转换的xmind文件拖至此处:".encode("gb18030")).replace('"', ''))
-                filePath = filePath.decode("gb18030")
-                story_id = input("请输入需求ID:".encode("gb18030"))
-                username = input("请输入需求ID:".encode("gb18030"))
-                xls_filename = filePath.split(os.sep)[-1].replace(".xmind", "")
-            xls_filepath = os.path.split(filePath)[0]
-            if filePath.split('.')[-1] == 'xmind':
-                xmind_file = XmindFileHandle()
-                excel_file = ExeclFileHandle()
-                newpath = get_decode_str(filePath)
-                lists = xmind_file.read_xmind(newpath)
-                if not lists:
-                    raise RuntimeError("读取xmind文件失败")
+    print(instruct)
+    try:
+        while True:
+                if is_macOS:
+                    filePath = os.path.abspath(input(r"请将要转换的xmind文件拖至此处:").replace('"', ''))
+                    story_id = input("请输入需求ID:")
+                    username = input("请输入创建人:")
+                    xls_filename = str(filePath.split(os.sep)[-1]).replace(".xmind", "")
                 else:
-                    excel_filepath = excel_file.write_excel_file(lists, path=xls_filepath, filename=xls_filename,
-                                                                 story_id=story_id, username=username)
-                    xmind_file.log_print(u"转换后excel路径:%s" % excel_filepath)
-            else:
-                xmind_file.log_print("输入文件非xmind和xls类型!!")
+                    # windows
+                    filePath = os.path.abspath(input(r"请将要转换的xmind文件拖至此处:".encode("gb18030")).replace('"', ''))
+                    filePath = filePath.decode("gb18030")
+                    story_id = input("请输入需求ID:".encode("gb18030"))
+                    username = input("请输入需求ID:".encode("gb18030"))
+                    xls_filename = filePath.split(os.sep)[-1].replace(".xmind", "")
+                xls_filepath = os.path.split(filePath)[0]
+                if filePath.split('.')[-1] == 'xmind':
+                    xmind_file = XmindFileHandle()
+                    excel_file = ExeclFileHandle()
+                    newpath = get_decode_str(filePath)
+                    lists = xmind_file.read_xmind(newpath)
+                    if not lists:
+                        raise RuntimeError("读取xmind文件失败")
+                    else:
+                        excel_filepath = excel_file.write_excel_file(lists, path=xls_filepath, filename=xls_filename,
+                                                                     story_id=story_id, username=username)
+                        xmind_file.log_print(u"转换后excel路径:%s" % excel_filepath)
+                else:
+                    xmind_file.log_print("输入文件非xmind和xls类型!!")
     except Exception as e:
         if "invalid worksheet name" in str(e):
             print ("xmind根节点带有windows不支持命名excel sheet的字符（如：?\ * | “ < : /）,请修改根节点名称")
