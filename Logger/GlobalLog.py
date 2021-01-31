@@ -7,65 +7,45 @@
 # Desc: PyCharm
 # Date： 2020/7/15 16:15
 '''
-import logging,shutil
-import time,datetime
-import os,configparser
-conf_ini = r"../Config/config.ini"
-conf = configparser.ConfigParser()
-conf.read(conf_ini,encoding="utf-8")
-log_dir = conf.get("Logger_Path", "log_dir")
-def_dir = conf.get("Logger_Path", "def_log_dir")
-err_dir = conf.get("Logger_Path", "error_log_dir")
 
-class Logger(object):
-    @classmethod
+import logging,shutil
+import os,time,datetime
+import BaseSetting
+
+class Logger():
+    def __init__(self):
+        """
+        初始化目录
+        :param result_dir 主程序目录
+        :param local_data 时间格式存储目录
+        :param default_file 默认的日志文件路径
+        :param error_file 错误的日志文件路径
+        """
+        self.result_dir = os.path.join(BaseSetting.AbsPath, "Result")
+        self.local_date = time.strftime('%Y-%m-%d', time.localtime(time.time()))
+        self.default_file = os.path.join(self.result_dir,self.local_date)
+        self.error_file = os.path.join(self.result_dir,self.local_date)
+
     def write_log(self):
         """
         日志处理(写入文本、控制台输出)
-        :param logs_path： 日志存储总路径
-        :param all_log_path：info、default日志存放路径
-        :param error_log_path：error日志存储路径
-        :param date_file_path 区分日期创建文件夹
-        :param all_log_name：默认日志文件名
-        :param error_log_name：错误日志文件名
-        :param console：控制台输出
-        :return logger
+        :return:
         """
-        # 获取项目的根目录
-        project_path = os.getcwd()
-        logs_path = os.path.join(project_path, log_dir)
-        local_date = time.strftime('%Y-%m-%d', time.localtime(time.time()))
-        # 日期文件夹路径
-        date_file_path = os.path.join(logs_path, local_date)
-        # 如果没有日期文件夹，创建该文件夹
-        if not os.path.exists(date_file_path):
-            os.makedirs(date_file_path)
-        # 完整日志存放路径
-        all_log_path = os.path.join(date_file_path, def_dir)
-        # 如果没有完整日志文件夹，创建该文件夹
-        if not os.path.exists(all_log_path) :
-            os.makedirs(all_log_path)
-        # 错误日志存放路径
-        error_log_path = os.path.join(date_file_path, err_dir)
-        # 如果没有错误日志文件夹，创建该文件夹
-        if not os.path.exists(error_log_path):
-            os.makedirs(error_log_path)
-        # 获取本地时间，转为年月日时分秒格式
-        local_time = time.strftime('%Y-%m-%d', time.localtime(time.time()))
-        # 设置日志文件名
-        all_log_name = all_log_path + local_time + '.log'
-        error_log_name = error_log_path + local_time + '.log'
+        if not os.path.exists(self.default_file):
+            os.makedirs(self.default_file)
+        if not os.path.exists(self.error_file):
+            os.makedirs(self.error_file)
 
         # 创建一个logger
         logger = logging.getLogger()
         logger.setLevel(logging.INFO)
 
         # 创建defaul_log_handler写入所有日志
-        defaul_log = logging.FileHandler(all_log_name,encoding='utf-8')
+        defaul_log = logging.FileHandler(os.path.join(self.default_file,"%s-default.log"%(self.local_date)),encoding='utf-8')
         defaul_log.setLevel(logging.DEBUG)
 
         # 创建error_log_handler写入所有日志
-        error_log = logging.FileHandler(error_log_name,encoding='utf-8')
+        error_log = logging.FileHandler(os.path.join(self.error_file,"%s-error.log"%(self.local_date)),encoding='utf-8')
         error_log.setLevel(logging.ERROR)
 
         # 创建console_handler写入所有日志
@@ -88,53 +68,27 @@ class Logger(object):
             logger.addHandler(console)
         return logger
 
-    @classmethod
-    def delete_log(self,days=''):
+    def delete_log(self, days=None):
         """
         大于多少天的日志自动删除
-        :param today   获取当前时间
-        :param offset  计算偏移量,前xxx天
-        :param re_date 获取想要的日期的时间
         :param re_date_unix    前xxx天时间转换为时间戳
-        :param isremove      扫描到的符合条件的文件新增至list
-        :param not_conformity  不满足条件的文件list
-        :param log_dir     config拉过来的文件目录
+        :param days: 偏移量 若为正则往后日期 负值则前多少日
         :return:
         """
-        today = datetime.datetime.now()
-        offset = datetime.timedelta(days=days)
-        re_date = (today + offset)
+        re_date = (datetime.datetime.now() + datetime.timedelta(days=days))
         re_date_unix = int(time.mktime(re_date.timetuple()))
-        isremove = []
-        not_conformity = []
-        for dirpath, dirnames, filenames in os.walk(log_dir):
+        index = 0
+        for dirpath, dirnames, filenames in os.walk(self.result_dir):
             timeArray = os.stat(dirpath).st_mtime
             if timeArray < re_date_unix:
-                isremove.append(dirpath)
+                if index!=0:
+                    print("过期的文件：%s" % (dirpath))
+                    shutil.rmtree(dirpath, ignore_errors=True)
             else:
-                not_conformity.append(dirpath)
-        for i in range(len(isremove)):
-            if i ==  0:
-                continue
-            else:
-                head, tail = os.path.split(isremove[i])
-                if tail in("Default_Logs","Error_Logs"):
-                    continue
-                else:
-                    shutil.rmtree(isremove[i], ignore_errors=True)
-        if os.path.exists(isremove[i]):
-            logger.info("删除(%s)失败！！！"%(isremove[i]))
-        else:
-            logger.info("成功删除%s"%(isremove[i]))
-        logger.info("过期的文件：%s" % (isremove))
-        logger.info("不满足条件的文件：%s"%(not_conformity))
+                print("不满足条件的文件：%s" % (dirpath))
+            index +=1
+Logger = Logger()
 
 if __name__ == '__main__':
-    logger = Logger.write_log()
-    delete = Logger.delete_log(days=5)
-    # 日志
-    logger.debug('this is a logger debug message')
-    logger.info('this is a logger info message')
-    logger.warning('this is a logger warning message')
-    logger.error('this is a logger error message')
-    logger.critical('this is a logger critical message')
+    Logger.write_log()
+    # Logger.delete_log(days=5)

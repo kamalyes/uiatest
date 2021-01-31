@@ -1,0 +1,6 @@
+2021-01-28 09:52:02,917 - AdbTools.py [line:132] - ERROR: 设备ID：D8H6R19630008844没有ROOT授权，/system/bin/sh: remount: not found
+2021-01-28 09:52:30,876 - AdbTools.py [line:38] - INFO: 检测到本地为Windows环境
+2021-01-28 09:52:33,263 - LibraryTools.py [line:33] - INFO: 扫描到本地已成功安装所需要库：['os', 're', 'sys', 'xlwt', 'json', 'xlrd', 'time', 'gzip', 'email', 'mysql', 'numpy', 'faker', 'pandas', 'shutil', 'random', 'loguru', 'zipfile', 'logging', 'smtplib', 'datetime', 'platform', 'configobj', 'subprocess', 'configparser', 'requests_toolbelt']
+2021-01-28 09:52:55,202 - AdbTools.py [line:38] - INFO: 检测到本地为Windows环境
+2021-01-28 09:52:55,806 - LibraryTools.py [line:33] - INFO: 扫描到本地已成功安装所需要库：['os', 're', 'sys', 'xlwt', 'json', 'xlrd', 'time', 'gzip', 'email', 'mysql', 'numpy', 'faker', 'pandas', 'shutil', 'random', 'loguru', 'zipfile', 'logging', 'smtplib', 'datetime', 'platform', 'configobj', 'subprocess', 'configparser', 'requests_toolbelt']
+2021-01-28 09:53:41,860 - LibraryTools.py [line:58] - INFO: 检查更新情况:

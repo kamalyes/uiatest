@@ -14,12 +14,13 @@ import subprocess
 from Logger.GlobalLog import Logger
 from Utils import DirTools
 logger = Logger.write_log()#调用日志模块
-class Adb_Manage(object):
+
+class AdbManage(object):
     def __init__(self,devicesId=None):
         """
         初始化设备id
         Traceback (most recent call last):（报错异常原因 设备未找到）
-            adb = Adb_Manage()
+            adb = AdbManage()
             self.devicesId = self.getDevices()[0]
         TypeError: 'bool' object is not subscriptable
         """
@@ -680,7 +681,7 @@ class Adb_Manage(object):
         logger.info(switch)
 
 if __name__ == '__main__':
-    adb = Adb_Manage()
+    adb = AdbManage()
     # adb.getRootStatus()
     # adb.checklocal("com.mryu.devstudy")
     # adb.installApk(r"D:\Work_Spaces\PyCharm_Project\AutoFramework\ApkPath\app-release.apk")
