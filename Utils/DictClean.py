@@ -7,10 +7,9 @@
 # Desc: Yaml格式文本内容
 # Date： 2020/10/9 17:11
 '''
-import re,os,yaml,json,time
+import re,yaml,json
 from Logger.GlobalLog import Logger
 logger = Logger.write_log()#调用日志模块
-from Utils.DirTools import  DocProcess
 
 # 初始化列表、及yaml文件的异常抛出
 tmp_list = []
@@ -161,7 +160,7 @@ if __name__ == '__main__':
     data = YamlHandle.yamlData(filepath = r'..\yamlData\Register.yaml')
     YamlHandle.getDict(key="name", data=data)
     YamlHandle.changeType(filepath=r'..\yamlData\Register.yaml')
-    YamlHandle.writeYamlFile(filepath = r'..\yamlData\Token.yaml',data={'a':'b'},method="w")
+    YamlHandle.writeYamlFile(filepath = r'Token.yaml',data={'a':'b'},method="w")
     YamlHandle.dataConver(method="BodyToJson",string="staticpage=sQsjulfPwmSj1e%3D&traceid=F90C0001&callback=parentowxe&time=1602858806&alg=v3&sig=eFh4clp0cXh")
     YamlHandle.dataConver(method="JsonToBody",string={'staticpage': 'sQsjulfPwmSj1e%3D', 'traceid': 'F90C0001', 'callback': 'parentowxe', 'time': '1602858806', 'alg': 'v3', 'sig': 'eFh4clp0cXh'})
     name = ['连发行', '凤芬林', '濮刚亨', '竺丹澜', '计发亮']

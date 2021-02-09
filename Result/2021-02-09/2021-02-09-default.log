@@ -1,0 +1,21 @@
+2021-02-09 15:52:19,552 - OkHttpRequests.py [line:255] - INFO: OK
+2021-02-09 15:53:53,306 - OkHttpRequests.py [line:255] - INFO: OK
+2021-02-09 15:56:59,935 - OkHttpRequests.py [line:257] - INFO: OK
+2021-02-09 15:58:21,085 - OkHttpRequests.py [line:257] - INFO: None
+2021-02-09 15:50:59,855 - OkHttpRequests.py [line:265] - INFO: None
+2021-02-09 15:50:58,356 - OkHttpRequests.py [line:266] - INFO: {'Content-Type': 'application/json; charset=utf-8'}
+2021-02-09 15:51:08,755 - OkHttpRequests.py [line:266] - INFO: {'Content-Type': 'application/json; charset=utf-8'}
+2021-02-09 15:51:35,031 - OkHttpRequests.py [line:266] - INFO: None
+2021-02-09 15:51:52,563 - OkHttpRequests.py [line:267] - INFO: {'Content-Type': 'application/json; charset=utf-8'}
+2021-02-09 15:51:58,379 - OkHttpRequests.py [line:267] - INFO: {'Content-Type': 'application/x-www-form-urlencoded'}
+2021-02-09 15:55:15,975 - OkHttpRequests.py [line:266] - INFO: None
+2021-02-09 15:55:05,897 - OkHttpRequests.py [line:267] - INFO: {'User-Agent': 'Mozilla/5.0 (Linux; U; Android 2.0; en-us; Milestone Build/ SHOLS_U2_01.03.1) AppleWebKit/530.17 (KHTML, like Gecko) Version/5.0 Mobile Safari/530.17', 'Content-Type': 'application/json; charset=utf-8'}
+2021-02-09 15:55:35,057 - OkHttpRequests.py [line:268] - INFO: {'Cookies': 'from', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 2.2; en-us; ADR6300 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/5.0 Mobile Safari/533.1', 'Content-Type': 'application/json; charset=utf-8'}
+2021-02-09 15:56:25,982 - OkHttpRequests.py [line:268] - INFO: {'Cookies': None, 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 3.0; en-us; Xoom Build/HRI39) AppleWebKit/525.10  (KHTML, like Gecko) Version/3.0.5 Mobile Safari/523.12.2', 'Content-Type': 'application/x-www-form-urlencoded'}
+2021-02-09 15:57:50,385 - OkHttpRequests.py [line:269] - INFO: {'Connection': None, 'Cookies': None, 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win65; x65) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'}
+2021-02-09 15:58:36,867 - OkHttpRequests.py [line:269] - INFO: {'Connection': None, 'Cookies': None, 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 1.5; en-us; htc_bahamas Build/CRB17) AppleWebKit/528.5  (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1', 'Content-Type': 'application/x-www-form-urlencoded'}
+2021-02-09 15:09:27,601 - OkHttpRequests.py [line:272] - INFO: {'Connection': None, 'Cookies': None, 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 1.5; en-us; sdk Build/CUPCAKE) AppleWebkit/528.5  (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1', 'Content-Type': 'application/x-www-form-urlencoded'}
+2021-02-09 15:22:19,525 - AdbTools.py [line:115] - ERROR: 请检查目标设备是否与主机连接成功！！！
+2021-02-09 15:23:15,050 - DictClean.py [line:51] - ERROR: [Errno 2] No such file or directory: '..\\yamlData\\Register.yaml'
+2021-02-09 15:23:51,935 - DictClean.py [line:117] - INFO: 检索到该Json有6个键值对、开始清洗拼接数据！！！
+2021-02-09 15:27:21,051 - ExcelTools.py [line:156] - WARNING: 已成功备份至：..\Config\district.xls.bak

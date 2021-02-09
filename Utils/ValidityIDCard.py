@@ -93,4 +93,4 @@ if __name__ == '__main__':
     logger.info(IdNumber(idcard).getAge())  # 年龄:21(岁)
     logger.info(IdNumber(idcard).getSex())  # 性别:1(男)
     logger.info(IdNumber(idcard).getCheckDigit())  # 校验码:1
-    logger.info(IdNumber.checkVerifyId(idcard))  # 检验身份证是否正确:True
+    logger.info("%s,%s"%(list[i],IdNumber.checkVerifyId("%s"%(list[i]))))  # 检验身份证是否正确:True

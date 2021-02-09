@@ -24,6 +24,7 @@ class Assertions:
                 return False
         except Exception as TypeError:
             return TypeError
+
     @classmethod
     def assert_time(self, time, expected_time):
         """
@@ -40,7 +41,6 @@ class Assertions:
                 return False
         except:
             raise
-
 
 if __name__ == '__main__':
     print(Assertions.assert_keyword("200",100))

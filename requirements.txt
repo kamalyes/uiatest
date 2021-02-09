@@ -1,11 +1,5 @@
-os
-re
-sys
 xlwt
-json
 xlrd
-time
-gzip
 email
 mysql
 numpy
