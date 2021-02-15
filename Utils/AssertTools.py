@@ -3,7 +3,7 @@
 # Python version 2.7.16 or 3.7.6
 '''
 # FileName： AssertTools.py
-# Author : v_yanqyu
+# Author : YuYanQing
 # Desc: Assert断言封装
 # Date： 2020/10/10 18:18
 '''

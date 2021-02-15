@@ -3,7 +3,7 @@
 # Python version 2.7.16 or 3.7.6
 '''
 # FileName： ExcelTools.py
-# Author : v_yanqyu
+# Author : YuYanQing
 # Desc: Excel工具类
 # Date： 2020/10/9 11:18
 '''

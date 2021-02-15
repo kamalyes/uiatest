@@ -3,7 +3,7 @@
 # Python version 2.7.16 or 3.7.6
 '''
 # FileName：SendEmali.py
-# Author : v_yanqyu
+# Author : YuYanQing
 # Desc:   邮件发送
 # Date： 2020/5/6 19:27
 '''

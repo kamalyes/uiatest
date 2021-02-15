@@ -3,7 +3,7 @@
 # Python version 2.7.16 or 3.7.6
 '''
 # FileName： DictClean.py
-# Author : v_yanqyu
+# Author : YuYanQing
 # Desc: Yaml格式文本内容
 # Date： 2020/10/9 17:11
 '''

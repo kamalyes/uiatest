@@ -3,7 +3,7 @@
 # Python version 2.7.16 or 3.7.6
 '''
 # FileName： ConfigParser.py
-# Author : v_yanqyu
+# Author : YuYanQing
 # Desc: ConfigFile 节点处理类
 # Date： 2020/9/6 15:55
 '''

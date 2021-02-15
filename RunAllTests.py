@@ -3,7 +3,7 @@
 # Python version 2.7.16 or 3.7.6
 '''
 # FileName： RunTest.py
-# Author : v_yanqyu
+# Author : YuYanQing
 # Desc: 运行(指定)目录下的所有测试用例，并生成HTML测试报告
 # Date： 2020/7/15 16:15
 '''

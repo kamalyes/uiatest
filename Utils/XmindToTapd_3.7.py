@@ -3,7 +3,7 @@
 # Python version 2.7.16 or 3.7.6
 '''
 # FileName： XmindToTapd_Tools.py
-# Author : v_yanqyu
+# Author : YuYanQing
 # Desc: XmindToTapd小工具
 # Date： 2020/7/16 15:55
 '''

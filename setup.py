@@ -3,7 +3,7 @@
 # Python version 2.7.16 or 3.7.6
 '''
 @File  : setup.py
-@Author: v_yanqyu
+@Author: YuYanQing
 @Desc  : 
 @Date  : 2020/10/1 10:39
 '''
@@ -31,7 +31,7 @@ with open('requirements.txt') as f:
 setup(
     name='AutoFramework',
     version=version,
-    description="AutoMationFramework",
+    description="自动化框架",
     long_description=readme,
     install_requires=install_requires,
     classifiers=[

@@ -3,7 +3,7 @@
 # Python version 2.7.16 or 3.7.6
 '''
 @File  : ValidityIDCard.py
-@Author: v_yanqyu
+@Author: YuYanQing
 @Desc  : 身份证效验&随机生成身份证信息
 @Date  : 2020/10/1 15:01
 '''

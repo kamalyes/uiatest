@@ -3,7 +3,7 @@
 # Python version 2.7.16 or 3.7.6
 '''
 @File  : LibraryTools.py
-@Author: v_yanqyu
+@Author: YuYanQing
 @Desc  : Py第三方库管理类
 @Date  : 2020/9/21 13:18
 '''

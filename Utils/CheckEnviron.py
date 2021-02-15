@@ -3,7 +3,7 @@
 # Python version 2.7.16 or 3.7.6
 '''
 @File  :CheckEnviron.py
-@Author:v_yanqyu
+@Author:YuYanQing
 @Desc  : 开始测试本地环境是否就位
 @Date  :2020/9/21 15:05
 '''

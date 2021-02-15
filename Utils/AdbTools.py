@@ -3,7 +3,7 @@
 # Python version 2.7.16 or 3.7.6
 '''
 # FileName： AdbTools.py
-# Author : v_yanqyu
+# Author : YuYanQing
 # Desc: Adb工具类
 # Date： 2020/9/6 18:56
 '''

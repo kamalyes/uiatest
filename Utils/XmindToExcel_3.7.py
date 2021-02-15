@@ -3,7 +3,7 @@
 # Python version 2.7.16 or 3.7.6
 '''
 # FileName： AppStability.py
-# Author : v_yanqyu
+# Author : YuYanQing
 # Desc: XmindToExcel
 # Date： 2020/1:11 10:57
 '''

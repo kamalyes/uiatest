@@ -3,7 +3,7 @@
 # Python version 2.7.16 or 3.7.6
 '''
 # FileName： RunTest.py
-# Author : v_yanqyu
+# Author : YuYanQing
 # Desc: 用户登录
 # Date： 2020/7/15 16:15
 '''

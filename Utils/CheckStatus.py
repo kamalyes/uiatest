@@ -3,7 +3,7 @@
 # Python version 2.7.16 or 3.7.6
 '''
 # FileName： CheckStatus.py
-# Author : v_yanqyu
+# Author : YuYanQing
 # Desc: 根据穿过来的status_code返回相应的文案
 # Date： 2020/10/21 17:57
 '''

@@ -3,7 +3,7 @@
 # Python version 2.7.16 or 3.7.6
 '''
 # FileName： AppiumTools.py
-# Author : v_yanqyu
+# Author : YuYanQing
 # Desc: PyCharm
 # Date： 2020/9/15 19:00
 '''
