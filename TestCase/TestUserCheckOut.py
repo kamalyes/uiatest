@@ -8,8 +8,8 @@
 # Date： 2020/7/15 16:15
 '''
 import unittest
-from Utils.OkHttps import OpenServlet
-OpenServlet = OpenServlet()
+from Utils.OkHttps import Prepare
+Prepare = Prepare()
 class TestClass(unittest.TestCase):
     """ 用户注销登录 （说明）"""
 
@@ -22,8 +22,8 @@ class TestClass(unittest.TestCase):
     def test_check_out(self):
         """ 正确账号&密码（子函数说明） """
         try:
-            res = OpenServlet.send_requests("https://www.baidu.com", "post", "json")
-            status_code = OpenServlet.get_status_code(res)
+            res = Prepare.send_requests("https://www.baidu.com", "post", "json")
+            status_code = Prepare.get_status_code(res)
             self.assertNotEqual(status_code, 200, "请求成功")
         except AssertionError:
             raise

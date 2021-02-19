@@ -13,8 +13,8 @@ import subprocess
 from Logger.GlobalLog import Logger
 from Utils.ConfigParser import  IniHandle
 from Utils.DirTools import  DocProcess
-from Utils.AdbTools import Adb_Manage
-Adb = Adb_Manage()
+from Utils.AdbTools import AdbManage
+Adb = AdbManage()
 logger = Logger.write_log()
 getpwd =DocProcess.getSuperiorDir()
 class Monkey():

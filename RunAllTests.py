@@ -29,4 +29,4 @@ class RunAllTests(object):
         file.close()
 
 if __name__ == "__main__":
-    RunAllTests("E:\WorkSpace\PycharmProjects\AutoFramework\TestCase","Result/").run()
+    RunAllTests("TestCase","Result/").run()

@@ -12,7 +12,6 @@ import unittest
 from Utils.AssertDecide import is_not_null
 from Utils.DingTalkRobot import CardItem, ActionCard, DingtalkChatbot, FeedLink
 
-
 class TestDingtalkChatbot(unittest.TestCase):
     """DingtalkChatbot 测试用例"""
 

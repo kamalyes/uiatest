@@ -6,6 +6,7 @@
 # Desc: request二次封装
 # Date： 2021/2/1 0:37
 '''
+import json
 from random import choice
 
 import requests
@@ -147,7 +148,7 @@ class Prepare():
         headers.setdefault("Content-Type", content_type)
         return headers
 
-    def request(self, url,method,params_key=None,data=None,file_var=None,file_path=None,headers=None):
+    def request(self, url,method,params_key=None,data=None,file_var=None,file_path=None,headers=None,**kwargs):
         """
         :param method: 请求方法
         :param url: 请求url
@@ -167,11 +168,11 @@ class Prepare():
         if headers ==None:
             headers = self.set_headers()
         if params_key == 'params':
-            response = self.session.request(method=method, url=url, params=data, headers=headers)
+            response = self.session.request(method=method, url=url, params=data, headers=headers,**kwargs)
         elif params_key == 'data':
-            response = self.session.request(method=method, url=url, data=data, files=files, headers=headers)
+            response = self.session.request(method=method, url=url, data=data, files=files, headers=headers,**kwargs)
         elif params_key == 'json':
-            response = self.session.request(method=method, url=url, json=data, files=files, headers=headers)
+            response = self.session.request(method=method, url=url, json=data, files=files, headers=headers,**kwargs)
         else:
             raise ValueError('可选关键字为：get/delete/head/options/请求使用params, post/put/patch请求可使用json（application/json）/data')
         # url = response.url
