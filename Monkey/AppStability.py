@@ -10,6 +10,8 @@
 import linecache
 import re,os,time
 import subprocess
+
+from BaseSetting import AbsPath
 from Logger.GlobalLog import Logger
 from Utils.ConfigParser import  IniHandle
 from Utils.DirTools import  DocProcess
@@ -46,6 +48,7 @@ class Monkey():
             self.devices = device
         self.send = int(time.time())
         self.resultPath =r"../Result/"
+        self.adb = "adb -s %s "%(self.devices)
         self.shell = "adb -s %s shell"%(self.devices)
         self.today = time.strftime("%Y%m%d%H%M%S").replace("4","6")
         self.package = IniHandle.optValue(node="Monkey_Test",key="package")
@@ -65,8 +68,11 @@ class Monkey():
         self.ignore =  IniHandle.optValue(node="Monkey_Test",key="ignore")
         self.loglevel = IniHandle.optValue(node="Monkey_Test",key="loglevel")
         self.count = IniHandle.optValue(node="Monkey_Test",key="count")
-        self.commod = ('%s monkey -p %s %s %s %s %s -s %s %s " 1> %s 2>%s"'%(self.shell,self.package,self.operation,self.throttle,self.ignore,self.loglevel,self.send,self.count,self.default,self.error))
+        self.commod = ('%s monkey -p %s %s %s %s %s -s %s %s '%(self.shell,self.package,self.operation,self.throttle,self.ignore,self.loglevel,self.send,self.count))
         self.time =IniHandle.optValue(node="Monkey_Test",key="time")
+        self.out_put = " 1> %s 2>%s"%(self.default,self.error)
+        self.sd_path = r"/data/local/tmp"
+        self.local_date = time.strftime('%Y-%m-%d', time.localtime(time.time()))
 
     def checklocal(self):
         """
@@ -76,26 +82,52 @@ class Monkey():
         packageName = subprocess.getstatusoutput('%s pm list packages "| grep %s"' % (self.shell,self.package))[1][8:].strip('\r\n')
         return packageName
 
-    def uninstallApk(self):
-        if self.checklocal() !='':
-            uninstall = subprocess.getstatusoutput('adb -s %s uninstall %s' % (self.devices, self.apkpath))
-            if 'Success' in uninstall[1]:
-                logger.info("设备：%s 卸载%s成功" % (self.devices, self.apkpath))
-                return True
-            else:
-                logger.error("设备：%s 卸载失败，错误信息：%s" % (self.devices, uninstall[1] ))
-
-    def installApk(self):
+    def grepEnterActivity(self, package):
         """
-        安装测试APK
+        过滤指定包名的一些信息及主入口
         :return:
         """
-        install = subprocess.getstatusoutput('adb -s %s install -r %s' % (self.devices, self.apkpath))
-        if 'Success' in install[1]:
-            logger.info("设备：%s 安装%s成功" % (self.devices, self.apkpath))
-            return True
-        else:
-            logger.error("设备：%s 安装失败，错误信息：%s" % (self.devices, install[1]))
+        content = os.popen('%s dumpsys package %s "' % (self.shell, package))  # 读取当前页面
+        lines = content.readlines()
+        index = 0
+        for line in lines:
+            index += 1
+            if "Non-Data Actions:" in line.strip():
+                activity = lines[index + 1].strip().split(" ")[1]
+                print("捕捉到主入口：%s" % (activity))
+                return activity
+
+    def setBlacklist(self):
+        """
+        过滤黑名单日志
+        :return:
+        """
+        temp = subprocess.getstatusoutput('%s pm list packages' %(self.shell))[1].split("package:")
+        index = 0
+        packages = []
+        while index<len(temp):
+            if len(temp[index]) >1 :
+                packages.append(temp[index].strip())
+            index +=1
+        packages.remove(self.package); # 移除需要运行的软件
+        logger.info("检索到当前设备：%s本地已安装了%s个软件,分别为：%s"%(self.devices,len(packages),packages))
+        # 写入到本地
+        file_path = os.path.join(AbsPath,r"Config/blacklist.txt")
+        with open(file_path,"w") as file:
+            for i in range(len(packages)):
+                file.write("%s\n"%(packages[i]))
+        print("%s push %s %s"%(self.shell,file_path,self.sd_path))
+        subprocess.getstatusoutput("%s push %s %s"%(self.adb,file_path,self.sd_path))
+        return file_path
+
+    def setWhitelist(self):
+        """
+        设置白名单
+        :return:
+        """
+        file_path = os.path.join(AbsPath, r"Config/whitelist.txt")
+        subprocess.getstatusoutput("%s push %s %s" % (self.adb,file_path,self.sd_path))
+        return file_path
 
     def killMonkeyThread(self):
         """
@@ -163,7 +195,6 @@ class Monkey():
         os.popen("%s ''rm -rf %s''" % (self.shell, self.logPath))
         os.popen("%s ''mkdir -p %s''" % (self.shell, self.logPath))
 
-
     def pullFile(self):
         """
         将Phone设备中的运行日志导出至PC
@@ -190,7 +221,7 @@ class Monkey():
         logger.info("已成功退出%s " % (package))
         return stop
 
-    def startMonkey(self,policy=None,uninstall=None,install=None):
+    def startMonkey(self,policy=None,astrict=None):
         """
         首次启动Monkey
         :param policy:  是否需要设置底部键盘栏及状态栏隐藏
@@ -207,16 +238,24 @@ class Monkey():
         self.initFile()
         self.killMonkeyThread()
         self.forceApp(self.package)
-        if uninstall !=None:
-            self.uninstallApk()
-        if install !=None:
-            self.installApk()
-        logger.info("Monkey最终的运行参数：%s"%(self.commod))
-        subprocess.Popen(self.commod)
+        if astrict == "white":
+            file_path = self.setWhitelist()
+            commod = self.commod +"" +"--pkg-whitelist-file "+file_path+ self.out_put
+        elif astrict == "black":
+            file_path = self.setBlacklist()
+            print(file_path)
+            commod = self.commod +"" +" --pkg-blacklist-file "+file_path+ self.out_put
+        else:
+            commod = self.commod + "" + self.out_put
+        subprocess.Popen(commod)
         self.grepCrashLog()
         # while True:
         #     time.sleep(int(self.time))
         #     self.startActivity()
+        file_path = os.path.join(AbsPath, r"Result/%s/%s-monkey-cmd.txt"%(self.local_date,self.today))
+        with open(file_path,"w") as file:
+            file.write(commod)
+        logger.info("Monkey已成功运行 %s"%(commod))
 
     def getRelust(self):
         """
@@ -255,7 +294,7 @@ class Monkey():
         except UnicodeDecodeError:
             logger.error('读取文件时解码错误！！！')
 
-    def restartMonkey(self,send):
+    def restartMonkey(self,filepath):
         """
         重跑Monkey
         :return:
@@ -263,11 +302,10 @@ class Monkey():
         self.initFile()
         self.killMonkeyThread()
         self.forceApp(self.package)
-        default = "%s%s-restart-default.log"%(self.logPath,send)
-        error = "%s%s-restart-error.log"%(self.logPath,send)
-        recommod = ('%s monkey -p %s %s %s %s %s -s %s %s " 1> %s 2>%s"'%(self.shell,self.package,self.operation,self.throttle,self.ignore,self.loglevel,send,self.count,default,error))
-        logger.info("重跑Monkey最终的运行参数：%s"%(recommod))
-        subprocess.Popen(recommod)
+        with open(filepath,"r") as file:
+            commod = file.readline()
+        file.close()
+        subprocess.Popen(commod)
         self.grepCrashLog()
 
 if __name__ == '__main__':
@@ -276,5 +314,7 @@ if __name__ == '__main__':
     # Monkey().killMonkeyThread()
     # Monkey().initFile()
     # Monkey("538640ed").grepError(r"D:\Work_Spaces\PyCharm_Project\AutoFramework\Result\AutoMonkey\20200109-Crash.log")
-    # Monkey().startMonkey()
-    Monkey().restartMonkey(5551515)
+    # Monkey().grep_blacklist()
+    Monkey().startMonkey(astrict="white")
+    # Monkey().restartMonkey(r"E:\WorkSpace\PycharmProjects\AutoFramework\Result\2021-02-20\20210220170135-monkey-cmd.txt")
+    # Monkey().grepEnterActivity("com.tencent.now")
