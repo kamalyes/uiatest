@@ -122,7 +122,7 @@ class EmailSendLib(object):
         finally:
             email_cursor.quit()
 if __name__ == '__main__':
-    Email = EmailSendLib(user_email="mryu168@163.com",passwd="EKCXFRDVJLSUUITM",title="test",smtp_server="smtp.163.com",addressee="mryu168@163.com")
+    Email = EmailSendLib(user_email="mryu168@163.com",passwd="xxxx",title="test",smtp_server="smtp.163.com",addressee="mryu168@163.com")
     # 发送文本 send_type 参数需要指定为 plain，因为 plain 为默认参数所以可以忽略
     Email.send('测试邮件(标题)', '测试邮件(内容) - 文本')
 

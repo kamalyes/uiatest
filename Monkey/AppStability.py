@@ -309,12 +309,12 @@ class Monkey():
         self.grepCrashLog()
 
 if __name__ == '__main__':
-    # Monkey().startMonkey("full")
-    # Monkey("538640ed").getRelust()
+    Monkey().startMonkey("full")
+    # Monkey().getRelust()
     # Monkey().killMonkeyThread()
     # Monkey().initFile()
     # Monkey("538640ed").grepError(r"D:\Work_Spaces\PyCharm_Project\AutoFramework\Result\AutoMonkey\20200109-Crash.log")
     # Monkey().grep_blacklist()
-    Monkey().startMonkey(astrict="white")
+    # Monkey().startMonkey(astrict="white")
     # Monkey().restartMonkey(r"E:\WorkSpace\PycharmProjects\AutoFramework\Result\2021-02-20\20210220170135-monkey-cmd.txt")
-    # Monkey().grepEnterActivity("com.tencent.now")
+    Monkey().grepEnterActivity("com.mryu.devstudy")

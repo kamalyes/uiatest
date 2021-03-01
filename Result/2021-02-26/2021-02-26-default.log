@@ -1,0 +1,93 @@
+2021-02-26 00:01:50,668 - AppStability.py [line:194] - INFO: 初始化日志存储位置：
+Crash：/sdcard/AutoMonkey/com.tencent.now/20210226000150-Crash.log
+Monkey：[/sdcard/AutoMonkey/com.tencent.now/20210226000150-default.log,/sdcard/AutoMonkey/com.tencent.now/20210226000150-error.log]
+2021-02-26 00:01:50,924 - AppStability.py [line:151] - INFO: No monkey program is running the skip kill process
+2021-02-26 00:01:51,038 - AppStability.py [line:220] - INFO: adb -s D8H6R19630008844 shell am force-stop com.tencent.now 
+2021-02-26 00:01:51,038 - AppStability.py [line:221] - INFO: 已成功退出com.tencent.now 
+2021-02-26 00:01:51,269 - AppStability.py [line:173] - INFO: adb -s D8H6R19630008844 shell logcat -b all -c
+2021-02-26 00:01:51,270 - AppStability.py [line:177] - INFO: 已成功清理掉之前的日志......
+2021-02-26 00:01:51,270 - AppStability.py [line:178] - INFO: adb logcat -b "crash" -f /sdcard/AutoMonkey/com.tencent.now/20210226000150-Crash.log
+2021-02-26 00:01:51,273 - AppStability.py [line:258] - INFO: Monkey已成功运行 adb -s D8H6R19630008844 shell monkey -p com.tencent.now --pct-touch 40 --pct-motion 25 --pct-syskeys 0 --pct-nav 5 --pct-trackball 10 --throttle 1000 --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --monitor-native-crashes -v -v -v -s 1614268910 100000000 --pkg-whitelist-file D:\Work_Spaces\PyCharm_Project\AutoFramework\Config/whitelist.txt 1> /sdcard/AutoMonkey/com.tencent.now/20210226000150-default.log 2>/sdcard/AutoMonkey/com.tencent.now/20210226000150-error.log
+2021-02-26 00:03:54,955 - AppStability.py [line:194] - INFO: 初始化日志存储位置：
+Crash：/sdcard/AutoMonkey/com.mryu.devstudy/20210226000356-Crash.log
+Monkey：[/sdcard/AutoMonkey/com.mryu.devstudy/20210226000356-default.log,/sdcard/AutoMonkey/com.mryu.devstudy/20210226000356-error.log]
+2021-02-26 00:03:55,280 - AppStability.py [line:151] - INFO: No monkey program is running the skip kill process
+2021-02-26 00:03:55,445 - AppStability.py [line:220] - INFO: adb -s D8H6R19630008844 shell am force-stop com.mryu.devstudy 
+2021-02-26 00:03:55,446 - AppStability.py [line:221] - INFO: 已成功退出com.mryu.devstudy 
+2021-02-26 00:03:55,663 - AppStability.py [line:173] - INFO: adb -s D8H6R19630008844 shell logcat -b all -c
+2021-02-26 00:03:55,663 - AppStability.py [line:177] - INFO: 已成功清理掉之前的日志......
+2021-02-26 00:03:55,663 - AppStability.py [line:178] - INFO: adb logcat -b "crash" -f /sdcard/AutoMonkey/com.mryu.devstudy/20210226000356-Crash.log
+2021-02-26 00:03:55,668 - AppStability.py [line:258] - INFO: Monkey已成功运行 adb -s D8H6R19630008844 shell monkey -p com.mryu.devstudy --pct-touch 40 --pct-motion 25 --pct-syskeys 0 --pct-nav 5 --pct-trackball 10 --throttle 1000 --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --monitor-native-crashes -v -v -v -s 1614269034 100000000 --pkg-whitelist-file D:\Work_Spaces\PyCharm_Project\AutoFramework\Config/whitelist.txt 1> /sdcard/AutoMonkey/com.mryu.devstudy/20210226000356-default.log 2>/sdcard/AutoMonkey/com.mryu.devstudy/20210226000356-error.log
+2021-02-26 00:06:31,890 - AppStability.py [line:194] - INFO: 初始化日志存储位置：
+Crash：/sdcard/AutoMonkey/com.mryu.devstudy/20210226000631-Crash.log
+Monkey：[/sdcard/AutoMonkey/com.mryu.devstudy/20210226000631-default.log,/sdcard/AutoMonkey/com.mryu.devstudy/20210226000631-error.log]
+2021-02-26 00:06:32,190 - AppStability.py [line:151] - INFO: No monkey program is running the skip kill process
+2021-02-26 00:06:32,332 - AppStability.py [line:220] - INFO: adb -s D8H6R19630008844 shell am force-stop com.mryu.devstudy 
+2021-02-26 00:06:32,332 - AppStability.py [line:221] - INFO: 已成功退出com.mryu.devstudy 
+2021-02-26 00:06:32,518 - AppStability.py [line:173] - INFO: adb -s D8H6R19630008844 shell logcat -b all -c
+2021-02-26 00:06:32,518 - AppStability.py [line:177] - INFO: 已成功清理掉之前的日志......
+2021-02-26 00:06:32,518 - AppStability.py [line:178] - INFO: adb logcat -b "crash" -f /sdcard/AutoMonkey/com.mryu.devstudy/20210226000631-Crash.log
+2021-02-26 00:06:32,522 - AppStability.py [line:258] - INFO: Monkey已成功运行 adb -s D8H6R19630008844 shell monkey -p com.mryu.devstudy --pct-touch 40 --pct-motion 25 --pct-syskeys 0 --pct-nav 5 --pct-trackball 10 --throttle 1000 --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --monitor-native-crashes -v -v -v -s 1614269191 100000000 --pkg-whitelist-file D:\Work_Spaces\PyCharm_Project\AutoFramework\Config/whitelist.txt 1> /sdcard/AutoMonkey/com.mryu.devstudy/20210226000631-default.log 2>/sdcard/AutoMonkey/com.mryu.devstudy/20210226000631-error.log
+2021-02-26 00:06:38,452 - AppStability.py [line:194] - INFO: 初始化日志存储位置：
+Crash：/sdcard/AutoMonkey/com.mryu.devstudy/20210226000638-Crash.log
+Monkey：[/sdcard/AutoMonkey/com.mryu.devstudy/20210226000638-default.log,/sdcard/AutoMonkey/com.mryu.devstudy/20210226000638-error.log]
+2021-02-26 00:06:38,696 - AppStability.py [line:149] - INFO: Successfully kill monkey process：13728
+2021-02-26 00:06:38,898 - AppStability.py [line:220] - INFO: adb -s D8H6R19630008844 shell am force-stop com.mryu.devstudy 
+2021-02-26 00:06:38,898 - AppStability.py [line:221] - INFO: 已成功退出com.mryu.devstudy 
+2021-02-26 00:06:39,111 - AppStability.py [line:173] - INFO: adb -s D8H6R19630008844 shell logcat -b all -c
+2021-02-26 00:06:39,111 - AppStability.py [line:177] - INFO: 已成功清理掉之前的日志......
+2021-02-26 00:06:39,111 - AppStability.py [line:178] - INFO: adb logcat -b "crash" -f /sdcard/AutoMonkey/com.mryu.devstudy/20210226000638-Crash.log
+2021-02-26 00:06:39,116 - AppStability.py [line:258] - INFO: Monkey已成功运行 adb -s D8H6R19630008844 shell monkey -p com.mryu.devstudy --pct-touch 40 --pct-motion 25 --pct-syskeys 0 --pct-nav 5 --pct-trackball 10 --throttle 1000 --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --monitor-native-crashes -v -v -v -s 1614269198 100000000 --pkg-whitelist-file D:\Work_Spaces\PyCharm_Project\AutoFramework\Config/whitelist.txt 1> /sdcard/AutoMonkey/com.mryu.devstudy/20210226000638-default.log 2>/sdcard/AutoMonkey/com.mryu.devstudy/20210226000638-error.log
+2021-02-26 00:06:51,381 - AppStability.py [line:194] - INFO: 初始化日志存储位置：
+Crash：/sdcard/AutoMonkey/com.mryu.devstudy/20210226000651-Crash.log
+Monkey：[/sdcard/AutoMonkey/com.mryu.devstudy/20210226000651-default.log,/sdcard/AutoMonkey/com.mryu.devstudy/20210226000651-error.log]
+2021-02-26 00:06:51,625 - AppStability.py [line:149] - INFO: Successfully kill monkey process：13839
+2021-02-26 00:06:51,818 - AppStability.py [line:220] - INFO: adb -s D8H6R19630008844 shell am force-stop com.mryu.devstudy 
+2021-02-26 00:06:51,818 - AppStability.py [line:221] - INFO: 已成功退出com.mryu.devstudy 
+2021-02-26 00:06:51,980 - AppStability.py [line:173] - INFO: adb -s D8H6R19630008844 shell logcat -b all -c
+2021-02-26 00:06:51,981 - AppStability.py [line:177] - INFO: 已成功清理掉之前的日志......
+2021-02-26 00:06:51,981 - AppStability.py [line:178] - INFO: adb logcat -b "crash" -f /sdcard/AutoMonkey/com.mryu.devstudy/20210226000651-Crash.log
+2021-02-26 00:06:51,984 - AppStability.py [line:258] - INFO: Monkey已成功运行 adb -s D8H6R19630008844 shell monkey -p com.mryu.devstudy --pct-touch 40 --pct-motion 25 --pct-syskeys 0 --pct-nav 5 --pct-trackball 10 --throttle 1000 --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --monitor-native-crashes -v -v -v -s 1614269211 100000000 --pkg-whitelist-file D:\Work_Spaces\PyCharm_Project\AutoFramework\Config/whitelist.txt 1> /sdcard/AutoMonkey/com.mryu.devstudy/20210226000651-default.log 2>/sdcard/AutoMonkey/com.mryu.devstudy/20210226000651-error.log
+2021-02-26 00:07:09,488 - AppStability.py [line:194] - INFO: 初始化日志存储位置：
+Crash：/sdcard/AutoMonkey/com.mryu.devstudy/20210226000709-Crash.log
+Monkey：[/sdcard/AutoMonkey/com.mryu.devstudy/20210226000709-default.log,/sdcard/AutoMonkey/com.mryu.devstudy/20210226000709-error.log]
+2021-02-26 00:07:09,825 - AppStability.py [line:149] - INFO: Successfully kill monkey process：13941
+2021-02-26 00:07:10,056 - AppStability.py [line:220] - INFO: adb -s D8H6R19630008844 shell am force-stop com.mryu.devstudy 
+2021-02-26 00:07:10,057 - AppStability.py [line:221] - INFO: 已成功退出com.mryu.devstudy 
+2021-02-26 00:07:10,223 - AppStability.py [line:173] - INFO: adb -s D8H6R19630008844 shell logcat -b all -c
+2021-02-26 00:07:10,223 - AppStability.py [line:177] - INFO: 已成功清理掉之前的日志......
+2021-02-26 00:07:10,223 - AppStability.py [line:178] - INFO: adb logcat -b "crash" -f /sdcard/AutoMonkey/com.mryu.devstudy/20210226000709-Crash.log
+2021-02-26 00:07:10,226 - AppStability.py [line:258] - INFO: Monkey已成功运行 adb -s D8H6R19630008844 shell monkey -p com.mryu.devstudy --pct-touch 40 --pct-motion 25 --pct-syskeys 0 --pct-nav 5 --pct-trackball 10 --throttle 1000 --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --monitor-native-crashes -v -v -v -s 1614269229 100 --pkg-whitelist-file D:\Work_Spaces\PyCharm_Project\AutoFramework\Config/whitelist.txt 1> /sdcard/AutoMonkey/com.mryu.devstudy/20210226000709-default.log 2>/sdcard/AutoMonkey/com.mryu.devstudy/20210226000709-error.log
+2021-02-26 00:07:42,107 - AppStability.py [line:151] - INFO: No monkey program is running the skip kill process
+2021-02-26 01:12:51,864 - AppStability.py [line:194] - INFO: 初始化日志存储位置：
+Crash：/sdcard/AutoMonkey/com.mryu.devstudy/20210226011251-Crash.log
+Monkey：[/sdcard/AutoMonkey/com.mryu.devstudy/20210226011251-default.log,/sdcard/AutoMonkey/com.mryu.devstudy/20210226011251-error.log]
+2021-02-26 01:12:52,116 - AppStability.py [line:151] - INFO: No monkey program is running the skip kill process
+2021-02-26 01:12:52,227 - AppStability.py [line:220] - INFO: adb -s D8H6R19630008844 shell am force-stop com.mryu.devstudy 
+2021-02-26 01:12:52,227 - AppStability.py [line:221] - INFO: 已成功退出com.mryu.devstudy 
+2021-02-26 01:12:52,385 - AppStability.py [line:173] - INFO: adb -s D8H6R19630008844 shell logcat -b all -c
+2021-02-26 01:12:52,385 - AppStability.py [line:177] - INFO: 已成功清理掉之前的日志......
+2021-02-26 01:12:52,385 - AppStability.py [line:178] - INFO: adb logcat -b "crash" -f /sdcard/AutoMonkey/com.mryu.devstudy/20210226011251-Crash.log
+2021-02-26 01:12:52,390 - AppStability.py [line:258] - INFO: Monkey已成功运行 adb -s D8H6R19630008844 shell monkey -p com.mryu.devstudy --pct-touch 40 --pct-motion 25 --pct-syskeys 0 --pct-nav 5 --pct-trackball 10 --throttle 100 --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --monitor-native-crashes -v -v -v -s 1614273171 100  1> /sdcard/AutoMonkey/com.mryu.devstudy/20210226011251-default.log 2>/sdcard/AutoMonkey/com.mryu.devstudy/20210226011251-error.log
+2021-02-26 01:12:52,559 - AppStability.py [line:151] - INFO: No monkey program is running the skip kill process
+2021-02-26 01:12:52,686 - AppStability.py [line:204] - INFO: adb Pull /sdcard/AutoMonkey/com.mryu.devstudy/: 3 files pulled, 0 skipped. 0.0 MB/s (554 bytes in 0.011s)
+2021-02-26 01:13:15,197 - AppStability.py [line:194] - INFO: 初始化日志存储位置：
+Crash：/sdcard/AutoMonkey/com.mryu.devstudy/20210226011315-Crash.log
+Monkey：[/sdcard/AutoMonkey/com.mryu.devstudy/20210226011315-default.log,/sdcard/AutoMonkey/com.mryu.devstudy/20210226011315-error.log]
+2021-02-26 01:13:15,459 - AppStability.py [line:151] - INFO: No monkey program is running the skip kill process
+2021-02-26 01:13:15,734 - AppStability.py [line:220] - INFO: adb -s D8H6R19630008844 shell am force-stop com.mryu.devstudy 
+2021-02-26 01:13:15,735 - AppStability.py [line:221] - INFO: 已成功退出com.mryu.devstudy 
+2021-02-26 01:13:15,833 - AppStability.py [line:173] - INFO: adb -s D8H6R19630008844 shell logcat -b all -c
+2021-02-26 01:13:15,833 - AppStability.py [line:177] - INFO: 已成功清理掉之前的日志......
+2021-02-26 01:13:15,833 - AppStability.py [line:178] - INFO: adb logcat -b "crash" -f /sdcard/AutoMonkey/com.mryu.devstudy/20210226011315-Crash.log
+2021-02-26 01:13:15,837 - AppStability.py [line:258] - INFO: Monkey已成功运行 adb -s D8H6R19630008844 shell monkey -p com.mryu.devstudy --pct-touch 40 --pct-motion 25 --pct-syskeys 0 --pct-nav 5 --pct-trackball 10 --throttle 100 --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --monitor-native-crashes -v -v -v -s 1614273195 100  1> /sdcard/AutoMonkey/com.mryu.devstudy/20210226011315-default.log 2>/sdcard/AutoMonkey/com.mryu.devstudy/20210226011315-error.log
+2021-02-26 01:13:25,389 - AppStability.py [line:194] - INFO: 初始化日志存储位置：
+Crash：/sdcard/AutoMonkey/com.mryu.devstudy/20210226011325-Crash.log
+Monkey：[/sdcard/AutoMonkey/com.mryu.devstudy/20210226011325-default.log,/sdcard/AutoMonkey/com.mryu.devstudy/20210226011325-error.log]
+2021-02-26 01:13:25,640 - AppStability.py [line:151] - INFO: No monkey program is running the skip kill process
+2021-02-26 01:13:25,822 - AppStability.py [line:220] - INFO: adb -s D8H6R19630008844 shell am force-stop com.mryu.devstudy 
+2021-02-26 01:13:25,823 - AppStability.py [line:221] - INFO: 已成功退出com.mryu.devstudy 
+2021-02-26 01:13:25,925 - AppStability.py [line:173] - INFO: adb -s D8H6R19630008844 shell logcat -b all -c
+2021-02-26 01:13:25,925 - AppStability.py [line:177] - INFO: 已成功清理掉之前的日志......
+2021-02-26 01:13:25,925 - AppStability.py [line:178] - INFO: adb logcat -b "crash" -f /sdcard/AutoMonkey/com.mryu.devstudy/20210226011325-Crash.log
+2021-02-26 01:13:25,930 - AppStability.py [line:258] - INFO: Monkey已成功运行 adb -s D8H6R19630008844 shell monkey -p com.mryu.devstudy --pct-touch 40 --pct-motion 25 --pct-syskeys 0 --pct-nav 5 --pct-trackball 10 --throttle 100 --ignore-crashes --ignore-timeouts --ignore-security-exceptions --ignore-native-crashes --monitor-native-crashes -v -v -v -s 1614273205 100  1> /sdcard/AutoMonkey/com.mryu.devstudy/20210226011325-default.log 2>/sdcard/AutoMonkey/com.mryu.devstudy/20210226011325-error.log

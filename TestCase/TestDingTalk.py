@@ -14,7 +14,6 @@ from Utils.DingTalkRobot import CardItem, ActionCard, DingtalkChatbot, FeedLink
 
 class TestDingtalkChatbot(unittest.TestCase):
     """DingtalkChatbot 测试用例"""
-
     @classmethod
     def setUpClass(cls):
         cls.webhook = 'https://oapi.dingtalk.com/robot/send?access_token=77eb420ff2761ad516d974e1428c3e198b84faabc9c9ef8e86b2c71ac60bd0ea'
